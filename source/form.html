@@ -94,7 +94,7 @@
         </div>
       </section>
       <section class="my-plans">
-        <h2 class="my-plans__title">Мои планы:</h2>
+        <h2 class="user-form__subtitile">Мои планы:</h2>
         <ol class="my-plans__list plan-cards">
           <li class="plan-cards__item">
             <p class="plan-cards__countries">
@@ -122,16 +122,21 @@
       </section>
       <section class="add-plan">
         <h2 class="add-plan__title">Добавить план:</h2>
-        <section class="add-plan__steps arrival-dates">
-          <h3 class="arrival-dates__title">
-            <span class="arrival-dates__step">Шаг 1.</span>
+        <section class="add-plan__steps">
+          <h3 class="add-plan__subtitle">
+            <span class="add-plan__step">Шаг 1.</span>
             Даты пребывания
           </h3>
-          <p class="arrival-dates__text">
+          <p class="add-plan__text">
             Укажите предпочтительное количество попутчиков, которых
             вы хотели бы позвать в поездку, и ее предполагаемую длительность.
           </p>
-          <div class="arrival-dates__search search-form">
+          <ul class="markers-list">
+            <li class="markers-list__item">Даты</li>
+            <li class="markers-list__item">маршрут</li>
+            <li class="markers-list__item">развлечения</li>
+          </ul>
+          <div class="add-plan__search search-form">
             <p class="search-form__title">ищу попутчиков:
               <span class="search-form__type">чел.</span>
             </p>
@@ -171,7 +176,7 @@
               <span class="search-form__label">Можно с детьми</span>
             </label>
           </div>
-          <div class="arrival-dates__calendar calendar">
+          <div class="add-plan__calendar calendar">
             <div class="calendar__header">
               <button class="calendar__back">
                 <svg width="14" height="21" viewBox="0 0 14 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -255,7 +260,401 @@
               </tbody>
             </table>
           </div>
-          <a class="arrival-dates__next-step" href="">Следующий шаг</a>
+          <a class="add-plan__next-step" href="">Следующий шаг</a>
+        </section>
+        <section class="add-plan__route">
+          <h3 class="add-plan__subtitle">
+            <span class="add-plan__step">Шаг 2.</span>
+            Маршрут
+          </h3>
+          <p class="add-plan__text">Укажите страны, которые вы хотели бы посетить.
+            Это может быть одна или сразу несколько.
+          </p>
+          <ul class="markers-list">
+            <li class="markers-list__item">Даты</li>
+            <li class="markers-list__item">маршрут</li>
+            <li class="markers-list__item">развлечения</li>
+          </ul>
+          <section class="select-country">
+            <div class="select-country__selected">
+              <button class="select-country__button">Босния и герцеговина</button>
+              <div class="select-country__flag">
+                <img src="./img/bosnia-and-herzegovina.png" width="35" height="24" alt="">
+              </div>
+              <button class="select-country__button-close">
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.875 1.125L1.125 7.875" stroke="#AFB0B5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M1.125 1.125L7.875 7.875" stroke="#AFB0B5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="select-country__selected">
+              <button class="select-country__button">Чехия</button>
+              <div class="select-country__flag">
+                <img src="./img/czech.png"  width="35" height="24" alt="">
+              </div>
+              <button class="select-country__button-close">
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.875 1.125L1.125 7.875" stroke="#AFB0B5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M1.125 1.125L7.875 7.875" stroke="#AFB0B5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="select-country__selects">
+              <div class="select-country__select-button">
+                <button class="select-country__button">выберите страну</button>
+                <button class="select-country__button-close">
+                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.875 1.125L1.125 7.875" stroke="#AFB0B5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M1.125 1.125L7.875 7.875" stroke="#AFB0B5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+                <div class="country-toggle">
+                  <div class="country-toggle__letters">
+                    <input class="country-toggle__input" type="radio" name="country-letter" id="country-letter-1" checked="">
+                    <input class="country-toggle__input" type="radio" name="country-letter" id="country-letter-2">
+                    <input class="country-toggle__input" type="radio" name="country-letter" id="country-letter-3">
+                    <input class="country-toggle__input" type="radio" name="country-letter" id="country-letter-4">
+                    <input class="country-toggle__input" type="radio" name="country-letter" id="country-letter-5">
+                    <input class="country-toggle__input" type="radio" name="country-letter" id="country-letter-6">
+                    <input class="country-toggle__input" type="radio" name="country-letter" id="country-letter-7">
+                    <input class="country-toggle__input" type="radio" name="country-letter" id="country-letter-8">
+                    <input class="country-toggle__input" type="radio" name="country-letter" id="country-letter-9">
+                    <input class="country-toggle__input" type="radio" name="country-letter" id="country-letter-10">
+                    <input class="country-toggle__input" type="radio" name="country-letter" id="country-letter-11">
+                    <input class="country-toggle__input" type="radio" name="country-letter" id="country-letter-12">
+                    <input class="country-toggle__input" type="radio" name="country-letter" id="country-letter-13">
+                    <input class="country-toggle__input" type="radio" name="country-letter" id="country-letter-14">
+                    <input class="country-toggle__input" type="radio" name="country-letter" id="country-letter-15">
+                    <input class="country-toggle__input" type="radio" name="country-letter" id="country-letter-16">
+                    <input class="country-toggle__input" type="radio" name="country-letter" id="country-letter-17">
+                    <input class="country-toggle__input" type="radio" name="country-letter" id="country-letter-18">
+                    <input class="country-toggle__input" type="radio" name="country-letter" id="country-letter-19">
+                    <input class="country-toggle__input" type="radio" name="country-letter" id="country-letter-20">
+                    <input class="country-toggle__input" type="radio" name="country-letter" id="country-letter-21">
+                    <input class="country-toggle__input" type="radio" name="country-letter" id="country-letter-22">
+                    <input class="country-toggle__input" type="radio" name="country-letter" id="country-letter-23">
+                    <input class="country-toggle__input" type="radio" name="country-letter" id="country-letter-24">
+                    <input class="country-toggle__input" type="radio" name="country-letter" id="country-letter-25">
+                  </div>
+                  <ul class="country-toggle__letter-list">
+                    <li class="country-toggle__letter-item">
+                      <label class="country-toggle__label country-toggle__label--selected" for="country-letter-1">А</label>
+                    </li>
+                    <li class="country-toggle__letter-item">
+                      <label class="country-toggle__label" for="country-letter-2">Б</label>
+                    </li>
+                    <li class="country-toggle__letter-item">
+                      <label class="country-toggle__label" for="country-letter-3">В</label>
+                    </li>
+                    <li class="country-toggle__letter-item">
+                      <label class="country-toggle__label" for="country-letter-4">Г</label>
+                    </li>
+                    <li class="country-toggle__letter-item">
+                      <label class="country-toggle__label" for="country-letter-5">Д</label>
+                    </li>
+                    <li class="country-toggle__letter-item">
+                      <label class="country-toggle__label" for="country-letter-6">Е</label>
+                    </li>
+                    <li class="country-toggle__letter-item">
+                      <label class="country-toggle__label" for="country-letter-7">З</label>
+                    </li>
+                    <li class="country-toggle__letter-item">
+                      <label class="country-toggle__label" for="country-letter-8">И</label>
+                    </li>
+                    <li class="country-toggle__letter-item">
+                      <label class="country-toggle__label" for="country-letter-9">К</label>
+                    </li>
+                    <li class="country-toggle__letter-item">
+                      <label class="country-toggle__label" for="country-letter-10">Л</label>
+                    </li>
+                    <li class="country-toggle__letter-item">
+                      <label class="country-toggle__label" for="country-letter-11">М</label>
+                    </li>
+                    <li class="country-toggle__letter-item">
+                      <label class="country-toggle__label" for="country-letter-12">Н</label>
+                    </li>
+                    <li class="country-toggle__letter-item">
+                      <label class="country-toggle__label" for="country-letter-13">О</label>
+                    </li>
+                    <li class="country-toggle__letter-item">
+                      <label class="country-toggle__label" for="country-letter-14">П</label>
+                    </li>
+                    <li class="country-toggle__letter-item">
+                      <label class="country-toggle__label" for="country-letter-15">Р</label>
+                    </li>
+                    <li class="country-toggle__letter-item">
+                      <label class="country-toggle__label" for="country-letter-16">С</label>
+                    </li>
+                    <li class="country-toggle__letter-item">
+                      <label class="country-toggle__label" for="country-letter-17">Т</label>
+                    </li>
+                    <li class="country-toggle__letter-item">
+                      <label class="country-toggle__label" for="country-letter-18">У</label>
+                    </li>
+                    <li class="country-toggle__letter-item">
+                      <label class="country-toggle__label" for="country-letter-19">Ф</label>
+                    </li>
+                    <li class="country-toggle__letter-item">
+                      <label class="country-toggle__label" for="country-letter-20">Х</label>
+                    </li>
+                    <li class="country-toggle__letter-item">
+                      <label class="country-toggle__label" for="country-letter-21">Ч</label>
+                    </li>
+                    <li class="country-toggle__letter-item">
+                      <label class="country-toggle__label" for="country-letter-22">Ш</label>
+                    </li>
+                    <li class="country-toggle__letter-item">
+                      <label class="country-toggle__label" for="country-letter-23">Э</label>
+                    </li>
+                    <li class="country-toggle__letter-item">
+                      <label class="country-toggle__label" for="country-letter-24">Ю</label>
+                    </li>
+                    <li class="country-toggle__letter-item">
+                      <label class="country-toggle__label" for="country-letter-25">Я</label>
+                    </li>
+                  </ul>
+                  <ul class="country-toggle__all-contries all-contries">
+                    <li class="all-contries__item">
+                      <ul class="country-list-by-letter">
+                        <li class="country-list-by-letter__item country-list-by-letter__item--selected">Австралия</li>
+                        <li class="country-list-by-letter__item">Австрия</li>
+                        <li class="country-list-by-letter__item">Азербайджан</li>
+                        <li class="country-list-by-letter__item">Албания</li>
+                        <li class="country-list-by-letter__item">Алжир</li>
+                        <li class="country-list-by-letter__item">Ангола</li>
+                        <li class="country-list-by-letter__item">Андорра</li>
+                        <li class="country-list-by-letter__item">Антигуа и Барбуда</li>
+                        <li class="country-list-by-letter__item">Аргентина</li>
+                        <li class="country-list-by-letter__item">Армения</li>
+                        <li class="country-list-by-letter__item">Афганистан</li>
+                      </ul>
+                    </li>
+                    <li class="all-contries__item">
+                      <ul class="country-list-by-letter">
+                        <li class="country-list-by-letter__item">Бельгия</li>
+                        <li class="country-list-by-letter__item">Бермуды</li>
+                        <li class="country-list-by-letter__item">Болгария</li>
+                        <li class="country-list-by-letter__item">Боливия</li>
+                        <li class="country-list-by-letter__item">Бразилия</li>
+                        <li class="country-list-by-letter__item">Бруней</li>
+                      </ul>
+                    </li>
+                    <li class="all-contries__item">
+                      <ul class="country-list-by-letter">
+                        <li class="country-list-by-letter__item">Ватикан</li>
+                        <li class="country-list-by-letter__item">Великобритания</li>
+                        <li class="country-list-by-letter__item">Венгрия</li>
+                        <li class="country-list-by-letter__item">Венесуэла</li>
+                        <li class="country-list-by-letter__item">Вьетнам</li>
+                      </ul>
+                    </li>
+                    <li class="all-contries__item">
+                      <ul class="country-list-by-letter">
+                        <li class="country-list-by-letter__item">Гвинея</li>
+                        <li class="country-list-by-letter__item">Германия</li>
+                        <li class="country-list-by-letter__item">Гонконг</li>
+                        <li class="country-list-by-letter__item">Греция</li>
+                        <li class="country-list-by-letter__item">Грузия</li>
+                      </ul>
+                    </li>
+                    <li class="all-contries__item">
+                      <ul class="country-list-by-letter">
+                        <li class="country-list-by-letter__item">Дания</li>
+                        <li class="country-list-by-letter__item">Доминикана</li>
+                      </ul>
+                    </li>
+                    <li class="all-contries__item">
+                      <ul class="country-list-by-letter">
+                        <li class="country-list-by-letter__item">Египет</li>
+                      </ul>
+                    </li>
+                    <li class="all-contries__item">
+                      <ul class="country-list-by-letter">
+                        <li class="country-list-by-letter__item">Замбия</li>
+                        <li class="country-list-by-letter__item">Зимбабве</li>
+                      </ul>
+                    </li>
+                    <li class="all-contries__item">
+                      <ul class="country-list-by-letter">
+                        <li class="country-list-by-letter__item">Израиль</li>
+                        <li class="country-list-by-letter__item">Индия</li>
+                        <li class="country-list-by-letter__item">Индонезия</li>
+                        <li class="country-list-by-letter__item">Иран</li>
+                        <li class="country-list-by-letter__item">Ирак</li>
+                        <li class="country-list-by-letter__item">Ирландия</li>
+                        <li class="country-list-by-letter__item">Исландия</li>
+                        <li class="country-list-by-letter__item">Испания</li>
+                        <li class="country-list-by-letter__item">Италия</li>
+                      </ul>
+                    </li>
+                    <li class="all-contries__item">
+                      <ul class="country-list-by-letter">
+                        <li class="country-list-by-letter__item">Казахстан</li>
+                        <li class="country-list-by-letter__item">Канада</li>
+                        <li class="country-list-by-letter__item">Кения</li>
+                        <li class="country-list-by-letter__item">Киргизия</li>
+                        <li class="country-list-by-letter__item">Китай</li>
+                        <li class="country-list-by-letter__item">Кокосовые острова</li>
+                        <li class="country-list-by-letter__item">Колумбия</li>
+                        <li class="country-list-by-letter__item">Испания</li>
+                        <li class="country-list-by-letter__item">Республика Конго</li>
+                      </ul>
+                    </li>
+                    <li class="all-contries__item">
+                      <ul class="country-list-by-letter">
+                        <li class="country-list-by-letter__item">Латвия</li>
+                        <li class="country-list-by-letter__item">Лесото</li>
+                        <li class="country-list-by-letter__item">Ливан</li>
+                        <li class="country-list-by-letter__item">Ливия</li>
+                        <li class="country-list-by-letter__item">Литва</li>
+                        <li class="country-list-by-letter__item">Люксембург</li>
+                      </ul>
+                    </li>
+                    <li class="all-contries__item">
+                      <ul class="country-list-by-letter">
+                        <li class="country-list-by-letter__item">Мадагаскар</li>
+                        <li class="country-list-by-letter__item">Малави</li>
+                        <li class="country-list-by-letter__item">Малайзия</li>
+                        <li class="country-list-by-letter__item">Мальдивы</li>
+                        <li class="country-list-by-letter__item">Мальта</li>
+                        <li class="country-list-by-letter__item">Марокко</li>
+                        <li class="country-list-by-letter__item">Мексика</li>
+                        <li class="country-list-by-letter__item">Монако</li>
+                        <li class="country-list-by-letter__item">Монголия</li>
+                        <li class="country-list-by-letter__item">Молдавия</li>
+                        <li class="country-list-by-letter__item">Мозамбик</li>
+                        <li class="country-list-by-letter__item">Мьянма</li>
+                      </ul>
+                    </li>
+                    <li class="all-contries__item">
+                      <ul class="country-list-by-letter">
+                        <li class="country-list-by-letter__item">Намибия</li>
+                        <li class="country-list-by-letter__item">Науру</li>
+                        <li class="country-list-by-letter__item">Непал</li>
+                        <li class="country-list-by-letter__item">Нигер</li>
+                        <li class="country-list-by-letter__item">Нигерия</li>
+                        <li class="country-list-by-letter__item">Нидерланды</li>
+                        <li class="country-list-by-letter__item">Новая Зеландия</li>
+                        <li class="country-list-by-letter__item">Норвегия</li>
+                      </ul>
+                    </li>
+                    <li class="all-contries__item">
+                      <ul class="country-list-by-letter">
+                        <li class="country-list-by-letter__item">ОАЭ</li>
+                        <li class="country-list-by-letter__item">Оман</li>
+                      </ul>
+                    </li>
+                    <li class="all-contries__item">
+                      <ul class="country-list-by-letter">
+                        <li class="country-list-by-letter__item">Пакистан</li>
+                        <li class="country-list-by-letter__item">Палау</li>
+                        <li class="country-list-by-letter__item">Панама</li>
+                        <li class="country-list-by-letter__item">Парагвай</li>
+                        <li class="country-list-by-letter__item">Перу</li>
+                        <li class="country-list-by-letter__item">Польша</li>
+                        <li class="country-list-by-letter__item">Португалия</li>
+                      </ul>
+                    </li>
+                    <li class="all-contries__item">
+                      <ul class="country-list-by-letter">
+                        <li class="country-list-by-letter__item">Республика Вевчани</li>
+                        <li class="country-list-by-letter__item">Республика Закистан</li>
+                        <li class="country-list-by-letter__item">Республика Логон</li>
+                        <li class="country-list-by-letter__item">Республика Кипр</li>
+                        <li class="country-list-by-letter__item">Россия</li>
+                        <li class="country-list-by-letter__item">Румыния</li>
+                      </ul>
+                    </li>
+                    <li class="all-contries__item">
+                      <ul class="country-list-by-letter">
+                        <li class="country-list-by-letter__item">Сальвадор</li>
+                        <li class="country-list-by-letter__item">Самоа</li>
+                        <li class="country-list-by-letter__item">Сан-Марино</li>
+                        <li class="country-list-by-letter__item">Саудовская Аравия</li>
+                        <li class="country-list-by-letter__item">Сенегал</li>
+                        <li class="country-list-by-letter__item">Сербия</li>
+                        <li class="country-list-by-letter__item">Сингапур</li>
+                        <li class="country-list-by-letter__item">Словакия</li>
+                      </ul>
+                    </li>
+                    <li class="all-contries__item">
+                      <ul class="country-list-by-letter">
+                        <li class="country-list-by-letter__item">Таджикистан</li>
+                        <li class="country-list-by-letter__item">Таиланд</li>
+                        <li class="country-list-by-letter__item">Танзания</li>
+                        <li class="country-list-by-letter__item">Тунис</li>
+                        <li class="country-list-by-letter__item">Туркмения</li>
+                        <li class="country-list-by-letter__item">Турция</li>
+                      </ul>
+                    </li>
+                    <li class="all-contries__item">
+                      <ul class="country-list-by-letter">
+                        <li class="country-list-by-letter__item">Уганда</li>
+                        <li class="country-list-by-letter__item">Узбекистан</li>
+                        <li class="country-list-by-letter__item">Украина</li>
+                        <li class="country-list-by-letter__item">Уругвай</li>
+                      </ul>
+                    </li>
+                    <li class="all-contries__item">
+                      <ul class="country-list-by-letter">
+                        <li class="country-list-by-letter__item">Филиппины</li>
+                        <li class="country-list-by-letter__item">Финляндия</li>
+                        <li class="country-list-by-letter__item">Франция</li>
+                      </ul>
+                    </li>
+                    <li class="all-contries__item">
+                      <ul class="country-list-by-letter">
+                        <li class="country-list-by-letter__item">Хиршабелле</li>
+                        <li class="country-list-by-letter__item">Хорватия</li>
+                      </ul>
+                    </li>
+                    <li class="all-contries__item">
+                      <ul class="country-list-by-letter">
+                        <li class="country-list-by-letter__item">Черногория</li>
+                        <li class="country-list-by-letter__item">Чехия</li>
+                        <li class="country-list-by-letter__item">Чили</li>
+                      </ul>
+                    </li>
+                    <li class="all-contries__item">
+                      <ul class="country-list-by-letter">
+                        <li class="country-list-by-letter__item">Швейцария</li>
+                        <li class="country-list-by-letter__item">Швеция</li>
+                        <li class="country-list-by-letter__item">Шотландия</li>
+                        <li class="country-list-by-letter__item">Шри-Ланка</li>
+                      </ul>
+                    </li>
+                    <li class="all-contries__item">
+                      <ul class="country-list-by-letter">
+                        <li class="country-list-by-letter__item">Эквадор</li>
+                        <li class="country-list-by-letter__item">Экваториальная Гвинея</li>
+                        <li class="country-list-by-letter__item">Эстония</li>
+                        <li class="country-list-by-letter__item">Эритрея</li>
+                        <li class="country-list-by-letter__item">Эсватини</li>
+                        <li class="country-list-by-letter__item">Эфиопия</li>
+                      </ul>
+                    </li>
+                    <li class="all-contries__item">
+                      <ul class="country-list-by-letter">
+                        <li class="country-list-by-letter__item">ЮАР</li>
+                        <li class="country-list-by-letter__item">Южный Судан</li>
+                      </ul>
+                    </li>
+                    <li class="all-contries__item">
+                      <ul class="country-list-by-letter">
+                        <li class="country-list-by-letter__item">Ямайка</li>
+                        <li class="country-list-by-letter__item">Япония</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="select-country__select-button">
+              <button class="select-country__button">Добавить страну</button>
+            </div>
+            <a class="add-plan__next-step" href="">Следующий шаг</a>
+          </section>
         </section>
       </section>
     </form>
