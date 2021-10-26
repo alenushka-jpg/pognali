@@ -1,1 +1,14 @@
-//комментарий
+.button {
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 10px;
+  padding-bottom: 11px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $special-blue-800;
+  background-color: $special-yellow-300;
+  border: none;
+  border-radius: 25px;
+}

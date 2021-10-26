@@ -1,1 +1,14 @@
-//комментарий
+.page-header__top {
+  position: relative;
+}
+
+.page-header__burger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  background-color: inherit;
+  border: none;
+}
