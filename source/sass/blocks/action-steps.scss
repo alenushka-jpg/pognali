@@ -1,1 +1,18 @@
-//комментарий
+.action-steps {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: $special-yellow-900;
+}
+
+.action-steps__item {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: $special-blue-800;
+}
+
+.action-steps__order {
+  color: $basic-while;
+}
+

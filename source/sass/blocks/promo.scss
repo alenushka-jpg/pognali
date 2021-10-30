@@ -1,1 +1,15 @@
-//комментарий
+.promo {
+  background-color: $special-blue-900;
+}
+
+.promo__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  color: $basic-while;
+}
+
+.promo__button {
+  line-height: 20px;
+}

@@ -1,8 +1,8 @@
-.about-directions {
-  background-color: $special-blue-00;
+.fellow-travelers {
+  background-color: $special-blue-700;
 }
 
-.about-directions__title {
+.fellow-travelers__title {
   margin: 0;
   font-weight: 700;
   font-size: 24px;
@@ -10,24 +10,23 @@
   color: $special-yellow-900;
 }
 
-.about-directions__text {
+.fellow-travelers__text {
   margin: 0;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
-  color: #444444;
+  color: $basic-while;
 }
 
-.about-directions__button {
-  padding-left: 23px;
-  padding-right: 130px;
+.fellow-travelers__button {
   padding-top: 22px;
-  padding-bottom: 22px;
+  padding-bottom: 21px;
+  padding-right: 132px;
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
-  border-radius: 10px;
-  color: $special-blue-650;
   background-color: $special-yellow-300;
+  color: $special-blue-650;
   border: none;
+  border-radius: 10px;
 }

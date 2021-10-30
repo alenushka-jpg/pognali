@@ -1,1 +1,10 @@
-//комментарий
+.hashtag-list {
+  padding: 0;
+  list-style: none;
+}
+
+.hashtag-list__item {
+  font-size: 16px;
+  line-height: 18px;
+  color: $basic-grey;
+}

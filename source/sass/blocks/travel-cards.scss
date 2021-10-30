@@ -1,1 +1,30 @@
-//комментарий
+.travel-cards__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.travel-cards__number {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: $basic-while;
+}
+
+.travel-cards__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+  color: $basic-while;
+}
+
+.travel-cards__description {
+  background-color: $basic-while;
+}
+
+.travel-cards__name {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 21px;
+  color: $special-blue-650;
+}
