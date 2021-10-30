@@ -1,1 +1,41 @@
-//комментарий
+.user-form__header {
+  background-color: $special-blue-00;
+}
+
+.user-form__background {
+  background-color: $special-blue-700;
+}
+
+.user-form__title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  color: $basic-while;
+}
+
+.user-form__button {
+  padding: 12px 54px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 18px;
+  background-color: $special-blue-60;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 20px;
+}
+
+.user-form__list-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special-blue-650;
+  text-transform: uppercase;
+}
+
+.user-form__hashtag {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: rgba($basic-grey, 0.6);
+}

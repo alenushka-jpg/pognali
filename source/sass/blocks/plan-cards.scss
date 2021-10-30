@@ -1,1 +1,42 @@
-//комментарий
+.plan-cards {
+  background-color: $special-blue-60;
+}
+
+.plan-cards__subtitile {
+  margin: 0;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  color: $special-blue-650;
+}
+
+.plan-cards__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.plan-cards__countries {
+  margin: 0;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  color: $special-blue-650;
+}
+
+.plan-cards__text {
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.plan-cards__button {
+  padding: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  color: rgba($basic-black, 0.3);
+  background-color: inherit;
+  border: none;
+}
