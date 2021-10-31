@@ -1,1 +1,12 @@
-//комментарий
+.filter__background {
+  background-color: $special-blue-30;
+}
+
+.filter__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special-blue-700;
+}

@@ -1,1 +1,44 @@
-//комментарий
+.companion-filter__form {
+  background-color: $special-yellow-300;
+  border-radius: 20px;
+}
+
+.companion-filter__title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: $special-blue-650;
+}
+
+.companion-filter__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.companion-filter__button {
+  padding: 12px 69px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: $special-blue-650;
+  background-color: $basic-while;
+  border: none;
+  border-radius: 25px;
+}
+
+.companion-filter__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.companion-filter__input {
+  padding: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 13px;
+}

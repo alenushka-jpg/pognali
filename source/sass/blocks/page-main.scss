@@ -1,0 +1,27 @@
+.page-main {
+  &--catalog {
+    background-color: $special-blue-00;
+  }
+}
+
+.page-main__header,
+.page-main__background {
+  background-color: $special-blue-700;
+}
+
+.page-main__title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  color: $basic-while;
+}
+
+.page-main__link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $basic-while;
+}

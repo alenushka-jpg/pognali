@@ -1,1 +1,17 @@
-//комментарий
+.region-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.region-list__item {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: rgba($special-blue-700, 0.3);
+
+  &--active {
+    color: $special-blue-700;
+  }
+}
