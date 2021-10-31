@@ -2,14 +2,39 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  background-color: $special-yellow-900;
 }
 
 .action-steps__item {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 24px;
+  padding-right: 21px;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
   color: $special-blue-800;
+
+  &--one {
+    background-color: $special-yellow-700;
+  }
+
+  &--two {
+    background-color: $special-yellow-400;
+  }
+
+  &--three {
+    background-color: $special-yellow-700;
+  }
+
+  &--four {
+    background-color: $special-yellow-300;
+  }
+}
+
+.action-steps__name {
+  margin-right: 65px;
 }
 
 .action-steps__order {
