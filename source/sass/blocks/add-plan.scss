@@ -1,7 +1,14 @@
+.add-plan {
+  background-color: $special-blue-80;
+}
+
 .add-plan__fieldset {
   margin: 0;
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
   border: none;
+  background-color: $basic-while;
+  border-radius: 10px;
 }
 
 .add-plan__title {
@@ -18,4 +25,17 @@
   font-size: 16px;
   line-height: 22px;
   color: $basic-grey;
+}
+
+.add-plan__button {
+  padding-left: 42px;
+  padding-right: 42px;
+  padding-top: 6px;
+  padding-bottom: 5px;
+  text-decoration: none;
+  color: $special-blue-650;
+
+  &--back {
+    background-color: inherit;
+  }
 }

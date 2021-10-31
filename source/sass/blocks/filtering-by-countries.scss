@@ -1,1 +1,10 @@
-//комментарий
+.filtering-by-countries {
+  padding: 0;
+  list-style: none;
+}
+
+.filtering-by-countries__item {
+  font-size: 16px;
+  line-height: 22px;
+  color: $basic-grey;
+}

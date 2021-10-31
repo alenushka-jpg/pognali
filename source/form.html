@@ -136,7 +136,7 @@
         </section>
         <section class="add-plan container">
           <h2 class="user-form__subtitle">Добавить план:</h2>
-          <fieldset class="add-plan__fieldset">
+          <fieldset class="add-plan__fieldset container">
             <h3 class="add-plan__title">
               <span class="add-plan__step">Шаг 1.</span>
               Даты пребывания
@@ -212,8 +212,8 @@
                     <th class="calendar__day-of-week">С</th>
                     <th class="calendar__day-of-week">Ч</th>
                     <th class="calendar__day-of-week">П</th>
-                    <th class="calendar__day-of-week">С</th>
-                    <th class="calendar__day-of-week">В</th>
+                    <th class="calendar__day-of-week calendar__day-of-week--weekends">С</th>
+                    <th class="calendar__day-of-week calendar__day-of-week--weekends">В</th>
                   </tr>
                 </thead>
                 <tbody class="calendar__table-body">
@@ -274,9 +274,9 @@
                 </tbody>
               </table>
             </div>
-            <a class="add-plan__next-step button" href="">Следующий шаг</a>
+            <a class="add-plan__button button" href="">Следующий шаг</a>
           </fieldset>
-          <fieldset class="add-plan__fieldset">
+          <fieldset class="add-plan__fieldset container">
             <h3 class="add-plan__title">
               <span class="add-plan__step">Шаг 2.</span>
               Маршрут
@@ -597,7 +597,7 @@
                       <li class="all-contries__item">
                         <ul class="filtering-by-countries">
                           <li class="filtering-by-countries__item">Руанда</li>
-                            <li class="filtering-by-countries__item">Румыния</li>
+                          <li class="filtering-by-countries__item">Румыния</li>
                           <li class="filtering-by-countries__item">Россия</li>
                         </ul>
                       </li>
@@ -693,11 +693,11 @@
                 </div>
               </div>
               <button class="select-country__button">Добавить страну</button>
-              <a class="add-plan__next-step button" href="">Следующий шаг</a>
-              <a class="add-plan__back-step button" href="">На шаг назад</a>
+              <a class="add-plan__button add-plan__button--next button" href="">Следующий шаг</a>
+              <a class="add-plan__button add-plan__button--back button" href="">На шаг назад</a>
             </div>
           </fieldset>
-          <fieldset class="add-plan__gaiety">
+          <fieldset class="add-plan__fieldset container">
             <h3 class="add-plan__title">
               <span class="add-plan__step">Шаг 3.</span>
               Развлечения
@@ -713,13 +713,11 @@
               </div>
               <div class="countries-description__country">
                 <p class="countries-description__title">Чехия</p>
-                <textarea class="countries-description__textarea" placeholder="План действий">
-                  Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
-                </textarea>
+                <textarea class="countries-description__textarea" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
               </div>
             </section>
-            <a class="add-plan__next-step button" href="">Отправить</a>
-            <a class="add-plan__back-step button" href="">На шаг назад</a>
+            <a class="add-plan__button button" href="">Отправить</a>
+            <a class="add-plan__button add-plan__button--back button" href="">На шаг назад</a>
           </fieldset>
         </section>
       </form>

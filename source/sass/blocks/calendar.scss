@@ -11,3 +11,23 @@
   line-height: 20px;
   color: $special-blue-650;
 }
+
+.calendar__day-of-week {
+  padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $basic-grey;
+
+  &--weekends {
+    color: $special-orange;
+  }
+}
+
+.calendar__table-cell {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special-blue-650;
+  background-color: $special-blue-00;
+}
