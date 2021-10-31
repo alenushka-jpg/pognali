@@ -1,1 +1,13 @@
-//комментарий
+.calendar__button {
+  padding: 0;
+  border: none;
+  background-color: inherit;
+}
+
+.calendar__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: $special-blue-650;
+}

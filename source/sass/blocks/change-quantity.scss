@@ -1,1 +1,15 @@
-//комментарий
+.change-quantity__button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: inherit;
+}
+
+.change-quantity__input {
+  font-weight: 500;
+  font-size: 14.86px;
+  line-height: 14px;
+  border: none;
+  text-transform: uppercase;
+  color: $special-blue-650;
+}

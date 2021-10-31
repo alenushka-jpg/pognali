@@ -2,23 +2,20 @@
   background-color: $special-blue-60;
 }
 
-.plan-cards__subtitile {
-  margin: 0;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 24px;
-  color: $special-blue-650;
-}
-
 .plan-cards__list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+.plan-cards__item {
+  background-color: $basic-while;
+  border-radius: 10px;
+}
+
 .plan-cards__countries {
   margin: 0;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 16px;
   color: $special-blue-650;
