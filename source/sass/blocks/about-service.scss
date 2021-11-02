@@ -1,9 +1,17 @@
 .about-service {
+  padding-top: 39px;
+  padding-bottom: 82px;
   background-color: $special-blue-700;
+  background-image: url("/img/about-mobile-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .about-service__title {
   margin: 0;
+  margin-bottom: 19px;
+  padding-left: 24px;
+  padding-right: 24px;
   font-weight: 700;
   font-size: 24px;
   line-height: 24px;
@@ -12,8 +20,14 @@
 
 .about-service__text {
   margin: 0;
+  padding-left: 24px;
+  padding-right: 24px;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
   color: $basic-while;
+
+  &:nth-of-type(1) {
+    margin-bottom: 20px;
+  }
 }

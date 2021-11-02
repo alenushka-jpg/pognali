@@ -4,6 +4,21 @@
   list-style: none;
 }
 
+.directions-list__item {
+  margin-bottom: 11px;
+}
+
+.directions-list__country {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 26px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  background-color: $basic-while;
+  border-radius: 10px;
+}
+
 .directions-list__name {
   margin: 0;
   font-weight: 700;
@@ -13,6 +28,7 @@
 }
 
 .directions-list__description {
+  display: block;
   margin: 0;
   font-weight: 500;
   font-size: 16px;
@@ -21,6 +37,7 @@
 }
 
 .directions-list__population {
+  margin: 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
