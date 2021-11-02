@@ -28,19 +28,17 @@
 }
 
 .about-directions__button {
-  display: inline-block;
-  width: 100%;
   margin-bottom: 34px;
   padding-left: 23px;
   padding-right: 23px;
   padding-top: 22px;
   padding-bottom: 22px;
-  font-weight: bold;
   font-size: 18px;
   line-height: 18px;
   text-align: start;
   border-radius: 10px;
   color: $special-blue-650;
   background-color: $special-yellow-300;
+  text-transform: none;
   border: none;
 }

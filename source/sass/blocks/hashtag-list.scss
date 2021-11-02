@@ -1,4 +1,8 @@
 .hashtag-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom:14px;
   padding: 0;
   list-style: none;
 }
