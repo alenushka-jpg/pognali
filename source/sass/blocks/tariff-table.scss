@@ -1,4 +1,19 @@
+// .tariff-table {
+//   padding-right: 58px;
+// }
+
+.tariff-table__row {
+  display: block;
+  margin-bottom: 32px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
 .tariff-table__cell {
+  display: block;
+  margin-bottom: 6px;
   font-weight: 300;
   font-size: 16px;
   line-height: 16px;

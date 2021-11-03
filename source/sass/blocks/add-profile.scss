@@ -1,13 +1,22 @@
 .add-profile {
+  padding-top: 65px;
+  padding-left: 49px;
+  padding-bottom: 38px;
   background-color: $special-blue-20;
 }
 
 .add-profile__text {
   margin: 0;
+  margin-bottom: 56px;
+  padding-right: 130px;
   font-weight: 700;
   font-size: 24px;
   line-height: 24px;
   color: $special-yellow-900;
+}
+
+.add-profile__table {
+  margin-bottom: 46px;
 }
 
 .add-profile__link {
