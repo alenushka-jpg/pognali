@@ -13,6 +13,11 @@
   }
 }
 
+.contacts-list__item {
+  display: flex;
+  // background-color: $special-yellow-700;
+}
+
 .contacts-list__link {
   display: block;
   font-weight: bold;
@@ -22,7 +27,12 @@
   text-decoration: none;
 }
 
-.contacts-list__item {
-  display: flex;
-  // background-color: $special-yellow-700;
+.contacts-list__svg-mobile {
+  display: none;
+}
+
+.contacts-list__text {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
