@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .action-steps__item {
@@ -11,13 +16,9 @@
   padding-bottom: 22px;
   padding-left: 24px;
   padding-right: 21px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 18px;
-  color: $special-blue-800;
 
   &--one {
-    background-color: $special-yellow-700;
+    background-color: $special-yellow-900;
   }
 
   &--two {
@@ -31,12 +32,37 @@
   &--four {
     background-color: $special-yellow-300;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    flex-direction: column;
+    padding-top: 31px;
+    padding-left: 33px;
+    padding-right: 33px;
+  }
 }
 
 .action-steps__name {
-  margin-right: 65px;
+  width: 150px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: $special-blue-800;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
 
 .action-steps__order {
+  font-size: 18px;
+  line-height: 18px;
   color: $basic-while;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
