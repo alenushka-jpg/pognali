@@ -99,8 +99,10 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
+    grid-template-columns: max-content max-content;
     grid-column: 3/4;
     grid-row: 1/2;
+    align-items: center;
     margin-bottom: 0;
   }
 }
