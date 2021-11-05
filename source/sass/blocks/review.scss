@@ -6,9 +6,16 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 153px;
+    row-gap: 121px;
     padding-bottom: 96px;
     background-color: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 92px;
+    padding-top: 0;
+    padding-bottom: 126px;
   }
 }
 
@@ -20,6 +27,12 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 4/5;
+    padding-left: 32px;
+    padding-right: 0;
   }
 }
 
