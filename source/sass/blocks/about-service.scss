@@ -14,16 +14,16 @@
     grid-template-columns: 1fr 1fr;
     padding-bottom: 89px;
     background-image: url("/img/about--tablet.png"),
-    url("/img/about-background--tablet.png");
-    background-position: 388px 40px, 40px 0;
+      url("/img/about-background--tablet.png");
+    background-position: right 40px, 40px 0;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 132px;
     padding-bottom: 130px;
     background-image: url("/img/about--desktop.png"),
-    url("/img/about-background--desktop.png");
-    background-position: 753px 85px, 60px 67px;
+      url("/img/about-background--desktop.png");
+    background-position: 753px bottom, 60px 67px;
   }
 }
 
@@ -60,7 +60,6 @@
   color: $basic-while;
 
   @media (min-width: $tablet-width) {
-    max-width: 408px;
     grid-column: 1/2;
     font-size: 28px;
     line-height: 33px;
@@ -74,12 +73,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 619px;
     line-height: 34px;
     margin-bottom: 38px;
 
     &--footnote {
-      max-width: 425px;
+      max-width: 465px;
       line-height: 24px;
       margin-bottom: 85px;
     }
