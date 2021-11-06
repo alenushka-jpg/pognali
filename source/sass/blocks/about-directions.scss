@@ -3,6 +3,11 @@
   padding-left: 25px;
   padding-right: 25px;
   background-color: $special-blue-00;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 288px;
+  }
 }
 
 .about-directions__title {
@@ -16,6 +21,7 @@
   color: $special-yellow-900;
 
   @media (min-width: $tablet-width) {
+    grid-column: 1/2;
     font-size: 45px;
     line-height: 45px;
   }
@@ -32,8 +38,15 @@
   color: $basic-grey;
 
   @media (min-width: $tablet-width) {
+    grid-column: 1/2;
     font-size: 28px;
     line-height: 33px;
+  }
+}
+
+.about-directions__list {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/3;
   }
 }
 
@@ -53,6 +66,7 @@
   border: none;
 
   @media (min-width: $tablet-width) {
+    grid-column: 1/3;
     font-size: 24px;
     line-height: 24px;
   }
