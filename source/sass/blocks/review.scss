@@ -1,21 +1,30 @@
 .review {
+  width: 100%;
   padding-top: 48px;
   padding-bottom: 39px;
   background-color: $special-blue-800;
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 365px 1fr;
-    row-gap: 121px;
     padding-bottom: 96px;
     background-color: transparent;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(4, 1fr);
-    row-gap: 92px;
     padding-top: 0;
     padding-bottom: 126px;
+  }
+}
+
+.review__container {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 365px 1fr;
+    row-gap: 121px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 92px;
   }
 }
 
@@ -31,7 +40,7 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 4/5;
-    padding-left: 32px;
+    padding-left: 67px;
     padding-right: 0;
   }
 }

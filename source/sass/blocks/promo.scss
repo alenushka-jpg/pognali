@@ -3,7 +3,7 @@
   grid-template-columns: 1fr;
   background-color: $special-blue-900;
   background-image: url("/img/globe-back--mobile.png");
-  background-position: center -60px;
+  background-position: 0 -60px;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
@@ -17,13 +17,17 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 110px;
+    grid-template-columns: 1fr;
+    background-color: $special-blue-790;
     background-image: url("/img/globe-back--desktop.png");
-    background-size: 100%;
+    background-size: contain;
     background-position: center -90px;
   }
 }
 
 .promo__container {
+  width: 100%;
+
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
     grid-row: 1/2;
@@ -35,7 +39,6 @@
 }
 
 .promo__title {
-  width: 240px;
   margin: 0 auto;
   padding-top: 41px;
   padding-bottom: 265px;
@@ -46,7 +49,6 @@
   color: $basic-while;
 
   @media (min-width: $tablet-width) {
-    width: 400px;
     padding-top: 35px;
     padding-bottom: 0;
     font-size: 60px;
@@ -56,6 +58,8 @@
   @media (min-width: $desktop-width) {
     margin: 0;
     padding-top: 0;
+    padding-left: 67px;
+    text-align: start;
   }
 }
 
