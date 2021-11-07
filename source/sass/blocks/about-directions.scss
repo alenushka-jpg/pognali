@@ -1,20 +1,23 @@
 .about-directions {
   padding-top: 71px;
-  padding-left: 25px;
-  padding-right: 25px;
   background-color: $special-blue-00;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 288px;
+    padding-left: 75px;
+    padding-right: 75px;
+    background-image: url("/img/flags-back.png");
+    background-repeat: no-repeat;
+    background-position: right 40px top 80px;
   }
 }
 
 .about-directions__title {
   margin: 0;
   margin-bottom: 19px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 24px;
+  padding-right: 24px;
   font-weight: 700;
   font-size: 24px;
   line-height: 24px;
@@ -22,6 +25,9 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
+    margin-bottom: 57px;
+    padding-left: 0;
+    padding-right: 0;
     font-size: 45px;
     line-height: 45px;
   }
@@ -29,18 +35,27 @@
 
 .about-directions__text {
   margin: 0;
-  padding-left: 25px;
-  padding-right: 25px;
-  margin-bottom: 60px;
+  padding-left: 24px;
+  padding-right: 24px;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
   color: $basic-grey;
 
+  &:last-of-type {
+    margin-bottom: 60px;
+  }
+
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
+    padding-left: 0;
+    padding-right: 0;
     font-size: 28px;
     line-height: 33px;
+
+    &:last-of-type {
+      margin-bottom: 104px;
+    }
   }
 }
 
