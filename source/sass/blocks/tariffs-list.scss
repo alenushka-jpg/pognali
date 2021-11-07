@@ -1,0 +1,20 @@
+.tariffs-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tariffs-list__item {
+  padding-top: 13px;
+  padding-bottom: 17px;
+}
+
+.tariff-table__name,
+.tariff-table__price {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 16px;
+  color: $basic-grey;
+}

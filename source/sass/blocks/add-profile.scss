@@ -1,13 +1,19 @@
 .add-profile {
+  background-color: $special-blue-20;
+  background-image: url("/img/rates.png");
+  background-position: top 37px right 25px;
+  background-repeat: no-repeat;
+}
+
+.add-profile__container {
   padding-top: 65px;
   padding-left: 49px;
   padding-bottom: 38px;
-  background-color: $special-blue-20;
 }
 
 .add-profile__text {
   margin: 0;
-  margin-bottom: 56px;
+  margin-bottom: 43px;
   padding-right: 130px;
   font-weight: 700;
   font-size: 24px;

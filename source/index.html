@@ -301,24 +301,26 @@
           <button class="fellow-travelers__button button" type="button">Показать все</button>
         </div>
       </section>
-      <section class="add-profile container">
-        <h2 class="visually-hidden">О тарифах</h2>
-        <p class="add-profile__text">Добавьте свой профиль</p>
-        <table class="add-profile__table tariff-table">
-          <tr class="tariff-table__row">
-            <td class="tariff-table__cell">Базовое размещение</td>
-            <td class="tariff-table__cell">Бесплатно</td>
-          </tr>
-          <tr class="tariff-table__row">
-            <td class="tariff-table__cell">Вывод на первых позициях</td>
-            <td class="tariff-table__cell">99 руб./мес</td>
-          </tr>
-          <tr class="tariff-table__row">
-            <td class="tariff-table__cell">Кастомный цвет карточки</td>
-            <td class="tariff-table__cell">59 руб./мес</td>
-          </tr>
-        </table>
-        <a class="add-profile__link" href="">Показать тарифы для бизнеса</a>
+      <section class="add-profile">
+        <div class="add-profile__container container">
+          <h2 class="visually-hidden">О тарифах</h2>
+          <p class="add-profile__text">Добавьте свой профиль</p>
+          <ol class="add-profile__tariffs tariffs-list">
+            <li class="tariffs-list__item" data-namber="1">
+              <span class="tariff-table__name">Базовое размещение</span>
+              <span class="tariff-table__price">Бесплатно</span>
+            </li>
+            <li class="tariffs-list__item" data-namber="2">
+              <span class="tariff-table__name">Вывод на первых позициях</span>
+              <span class="tariff-table__price">99 руб./мес</span>
+            </li>
+            <li class="tariffs-list__item" data-namber="3">
+              <span class="tariff-table__name">Кастомный цвет карточки</span>
+              <span class="tariff-table__price">59 руб./мес</span>
+            </li>
+          </ol>
+          <a class="add-profile__link" href="">Показать тарифы для бизнеса</a>
+        </div>
       </section>
       <section class="registration container">
         <p class="registration__title">Заинтересовались?</p>
