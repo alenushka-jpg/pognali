@@ -5,3 +5,10 @@
   margin: 0;
   list-style: none;
 }
+
+.type-of-transports__svg {
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 24px;
+  }
+}

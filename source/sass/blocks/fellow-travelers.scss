@@ -8,9 +8,19 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 430px 1fr;
+    grid-template-columns: 430px 221px;
+    padding-top: 141px;
+    padding-bottom: 87px;
     padding-left: 74px;
     padding-right: 74px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 430px 1fr;
+    column-gap: 190px;
+    padding-left: 129px;
+    padding-top: 130px;
+    padding-bottom: 134px;
   }
 }
 
@@ -31,10 +41,15 @@
     font-size: 45px;
     line-height: 45px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
+  }
 }
 
 .fellow-travelers__text {
   margin: 0;
+  margin-bottom: 25px;
   padding-left: 25px;
   padding-right: 25px;
   font-weight: 300;
@@ -42,11 +57,7 @@
   line-height: 22px;
   color: $basic-while;
 
-  &:first-of-type {
-    margin-bottom: 25px;
-  }
-
-  &:last-of-type {
+  &--footnate {
     margin-bottom: 54px;
   }
 
@@ -62,11 +73,28 @@
       line-height: 24px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 42px;
+    line-height: 33px;
+
+    &--footnate {
+      margin-bottom: 85px;
+      line-height: 23px;
+    }
+  }
 }
 
 .fellow-travelers__cards {
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
+    margin-bottom: 81px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+    grid-row: 1/5;
+    margin-bottom: 0;
   }
 }
 
@@ -86,5 +114,12 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+    width: 280px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
