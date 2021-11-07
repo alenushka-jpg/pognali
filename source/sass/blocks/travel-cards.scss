@@ -3,11 +3,18 @@
   margin-bottom: 20px;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .travel-cards__item {
   position: relative;
   width: 270px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 9px;
 }
 
