@@ -1,4 +1,5 @@
 .tariffs-list {
+  position: relative;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -7,6 +8,22 @@
 .tariffs-list__item {
   padding-top: 13px;
   padding-bottom: 17px;
+
+  &::before {
+    content: attr(data-number);
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    font-size: 16px;
+    line-height: 16px;
+    color: $basic-while;
+    background-color: $special-yellow-900;
+    border-radius: 50%;
+  }
 }
 
 .tariff-table__name,
