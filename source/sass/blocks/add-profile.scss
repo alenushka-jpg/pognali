@@ -1,14 +1,22 @@
 .add-profile {
-  background-color: $special-blue-20;
+  background-color: $special-blue-00;
   background-image: url("/img/rates.png");
   background-position: top 37px right 25px;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-position: bottom 45px right 85px;
+  }
 }
 
 .add-profile__container {
   padding-top: 65px;
   padding-left: 49px;
   padding-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 60px;
+  }
 }
 
 .add-profile__text {
@@ -19,6 +27,13 @@
   font-size: 24px;
   line-height: 24px;
   color: $special-yellow-900;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+    font-size: 45px;
+    line-height: 45px;
+    text-align: center;
+  }
 }
 
 .add-profile__table {
@@ -26,9 +41,50 @@
 }
 
 .add-profile__link {
+  position: relative;
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
   color: $special-blue-600;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 90px;
+    font-size: 20px;
+    line-height: 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 68px;
+      height: 68px;
+      background-color: $special-blue-30;
+      border-radius: 50%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 27px;
+      height: 27px;
+      background-image: url("/img/icon_businessman.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+  }
+}
+
+.add-profile__button {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    height: 68px;
+    align-items: center;
+  }
 }
