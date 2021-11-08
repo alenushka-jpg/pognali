@@ -5,6 +5,11 @@
 .registration__container {
   padding-top: 72px;
   padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
 }
 
 .registration__title {
@@ -15,22 +20,55 @@
   line-height: 24px;
   text-align: center;
   color: $special-yellow-900;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 59px;
+    font-size: 45px;
+    line-height: 45px;
+  }
 }
 
 .registration__form {
+  display: flex;
+  width: 220px;
+  margin: 0 auto;
   margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    width: 618px;
+    margin-bottom: 60px;
+  }
 }
 
 .registration__text {
-  margin: 0;
+  width: 216px;
+  margin: 0 auto;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
   text-align: center;
   color: $basic-while;
 
-  &:last-of-type {
+  &:nth-child(3) {
     margin-bottom: 29px;
+  }
+
+  &:nth-of-type(4) {
+    margin-bottom: 17px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    font-size: 28px;
+    line-height: 32px;
+
+    &:nth-child(3) {
+      margin-bottom: 65px;
+    }
+
+    &:nth-of-type(4) {
+      margin-bottom: 40px;
+    }
   }
 }
 
@@ -38,8 +76,34 @@
   color: $special-yellow-300;
 }
 
+.registration__form {
+  position: relative;
+}
+
+.registration__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 64px;
+  padding: 0;
+  font-size: 0;
+  background-color: $special-yellow-300;
+  border: none;
+  border-radius: 20px;
+
+  @media (min-width: $desktop-width) {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: $special-blue-650;
+  }
+}
+
 .registration__input {
-  width: 270px;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
   padding-top: 22px;
   padding-bottom: 22px;
   padding-left: 25px;

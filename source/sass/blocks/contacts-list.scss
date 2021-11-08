@@ -14,6 +14,9 @@
 }
 
 .contacts-list--promo {
+  width: 50px;
+  height: 50px;
+
   .contacts-list__link {
     width: 40px;
     height: 40px;
@@ -56,9 +59,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 50px;
-    height: 50px;
-
     &::before {
       width: 50px;
       height: 50px;
@@ -72,6 +72,11 @@
 }
 
 .contacts-list--registration {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  margin: 0 auto;
+
   .contacts-list__link {
     color: $special-yellow-300;
     text-transform: uppercase;
@@ -95,6 +100,30 @@
     &::after {
       left: 11px;
       top: 13px
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+
+    .contacts-list__link {
+      padding-left: 90px;
+      font-size: 28px;
+      line-height: 28px;
+
+      &::before {
+        width: 68px;
+        height: 68px;
+      }
+
+      &::after {
+        left: 25px;
+        top: 25px;
+      }
+    }
+
+    .contacts-list__item {
+      height: 68px;
     }
   }
 }
