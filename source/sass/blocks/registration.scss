@@ -10,6 +10,11 @@
     padding-left: 75px;
     padding-right: 75px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 109px;
+    padding-bottom: 104px;
+  }
 }
 
 .registration__title {
@@ -29,6 +34,7 @@
 }
 
 .registration__form {
+  position: relative;
   display: flex;
   width: 220px;
   margin: 0 auto;
@@ -37,6 +43,10 @@
   @media (min-width: $tablet-width) {
     width: 618px;
     margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 850px;
   }
 }
 
@@ -76,10 +86,6 @@
   color: $special-yellow-300;
 }
 
-.registration__form {
-  position: relative;
-}
-
 .registration__button {
   position: absolute;
   top: 0;
@@ -93,10 +99,14 @@
   border-radius: 20px;
 
   @media (min-width: $desktop-width) {
+    width: 324px;
+    padding-left: 38px;
+    padding-right: 38px;
     font-weight: 700;
     font-size: 24px;
     line-height: 24px;
     color: $special-blue-650;
+    text-align: start;
   }
 }
 

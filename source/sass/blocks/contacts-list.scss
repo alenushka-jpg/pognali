@@ -126,6 +126,16 @@
       height: 68px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    flex-direction: row;
+    justify-content: center;
+
+    .contacts-list__item:first-child{
+      margin-right: 110px;
+    }
+  }
 }
 
 .contacts-list__svg-mobile {
