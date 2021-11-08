@@ -1,10 +1,40 @@
+.address__container {
+  padding-top: 31px;
+  padding-bottom: 35px;
+}
+
 .address__street {
+  position: relative;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-bottom: 32px;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
   text-transform: uppercase;
   color: $special-blue-650;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45px;
+    height: 45px;
+    background-color: $special-blue-950;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 21px;
+    height: 21px;
+    background-image: url("/img/icon_location.svg");
+  }
 }
 
 .address__button {
