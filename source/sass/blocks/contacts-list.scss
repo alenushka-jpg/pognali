@@ -13,6 +13,13 @@
   }
 }
 
+.contacts-list--promo {
+  .contacts-list__link {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 .contacts-list__item {
   display: flex;
 }
@@ -20,8 +27,6 @@
 .contacts-list__link {
   position: relative;
   display: block;
-  width: 40px;
-  height: 40px;
   font-weight: bold;
   font-size: 16px;
   line-height: 18px;
@@ -62,6 +67,34 @@
     &::after {
       top: 15px;
       right: 16px;
+    }
+  }
+}
+
+.contacts-list--registration {
+  .contacts-list__link {
+    color: $special-yellow-300;
+    text-transform: uppercase;
+    line-height: 22px;
+  }
+
+  .contacts-list__item {
+    height: 45px;
+  }
+
+  .contacts-list__link {
+    display: flex;
+    align-items: center;
+    padding-left: 51px;
+
+    &::before {
+      left: 0;
+      background-color: $special-blue-900;
+    }
+
+    &::after {
+      left: 11px;
+      top: 13px
     }
   }
 }

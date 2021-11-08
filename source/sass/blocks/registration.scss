@@ -2,18 +2,23 @@
   background-color: $special-blue-700;
 }
 
+.registration__container {
+  padding-top: 72px;
+  padding-bottom: 30px;
+}
+
 .registration__title {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 19px;
   font-weight: 700;
   font-size: 24px;
   line-height: 24px;
+  text-align: center;
   color: $special-yellow-900;
 }
 
-.registration__fieldset {
-  margin: 0;
-  padding: 0;
-  border: none;
+.registration__form {
+  margin-bottom: 29px;
 }
 
 .registration__text {
@@ -21,7 +26,16 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
+  text-align: center;
   color: $basic-while;
+
+  &:last-of-type {
+    margin-bottom: 29px;
+  }
+}
+
+.registration__link {
+  color: $special-yellow-300;
 }
 
 .registration__input {
