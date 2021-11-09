@@ -1,10 +1,31 @@
+.address__information {
+  background-color: $special-yellow-300;
+}
+
 .address__container {
   padding-top: 31px;
   padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 70px;
+    padding-bottom: 84px;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 283px;
+    padding-right: 135px;
+  }
 }
 
 .address__street {
   position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 44px;
   padding-left: 60px;
   padding-right: 60px;
   margin-bottom: 32px;
@@ -34,6 +55,35 @@
     width: 21px;
     height: 21px;
     background-image: url("/img/icon_location.svg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 68px;
+    padding-left: 93px;
+    font-size: 28px;
+    line-height: 28px;
+
+    &::before {
+      width: 68px;
+      height: 68px;
+    }
+
+    &::after {
+      top: 20px;
+      left: 22px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 90px;
+    margin-bottom: 0;
+    padding-left: 119px;
+
+    &::before {
+      width: 90px;
+      height: 90px;
+    }
   }
 }
 
@@ -47,8 +97,17 @@
   color: $special-blue-650;
   border: 3px solid $special-blue-700;
   border-radius: 10px;
+
+  @media (min-width: $desktop-width) {
+    height: 80px;
+    width: 324px;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
 
-.address__information {
-  background-color: $special-yellow-300;
+.address__img {
+  width: 100%;
 }
