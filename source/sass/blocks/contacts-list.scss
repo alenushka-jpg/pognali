@@ -6,14 +6,11 @@
   &--header {
     margin-bottom: 53px;
   }
-
-  &--promo {
-    display: flex;
-    align-items: center;
-  }
 }
 
 .contacts-list--promo {
+  display: flex;
+  align-items: center;
   width: 50px;
   height: 50px;
 
@@ -77,12 +74,6 @@
   width: 270px;
   margin: 0 auto;
 
-  .contacts-list__link {
-    color: $special-yellow-300;
-    text-transform: uppercase;
-    line-height: 22px;
-  }
-
   .contacts-list__item {
     height: 45px;
   }
@@ -91,6 +82,9 @@
     display: flex;
     align-items: center;
     padding-left: 51px;
+    color: $special-yellow-300;
+    text-transform: uppercase;
+    line-height: 22px;
 
     &::before {
       left: 0;
@@ -99,7 +93,7 @@
 
     &::after {
       left: 11px;
-      top: 13px
+      top: 13px;
     }
   }
 
@@ -132,7 +126,7 @@
     flex-direction: row;
     justify-content: center;
 
-    .contacts-list__item:first-child{
+    .contacts-list__item:first-child {
       margin-right: 110px;
     }
   }
