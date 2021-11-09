@@ -16,6 +16,10 @@
   }
 }
 
+.page-header--form {
+  background-color: $special-blue-750;
+}
+
 .page-header__container {
   @media (min-width: $tablet-width) {
     display: grid;
