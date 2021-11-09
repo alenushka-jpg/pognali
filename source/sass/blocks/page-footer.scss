@@ -1,1 +1,26 @@
-//комментарий
+.page-footer {
+  padding-top: 37px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.page-footer__logo {
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.page-footer__logo-svg {
+  margin: 0 auto;
+}
+
+.page-footer__social {
+  margin-bottom: 37px;
+}
+
