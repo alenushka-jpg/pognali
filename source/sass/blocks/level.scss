@@ -20,6 +20,12 @@
   @media (min-width: $tablet-width) {
     width: 94px;
     height: 94px;
+
+    &::before {
+      width: 94px;
+      height: 94px;
+      background-image: url("/img/circle-tablet.svg");
+    }
   }
 
   @media (min-width: $desktop-width) {
