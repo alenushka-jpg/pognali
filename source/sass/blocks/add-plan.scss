@@ -5,16 +5,24 @@
 .add-plan__container {
   padding-top: 30px;
   padding-bottom: 43px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 53px;
+    padding-bottom: 63px;
+  }
 }
 
 .add-plan__fieldset {
-  margin-top: 0;
   margin-bottom: 10px;
   padding-top: 24px;
   padding-bottom: 23px;
   border: none;
   background-color: $basic-while;
   border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 48px;
+  }
 }
 
 .add-plan__search {
@@ -28,6 +36,12 @@
   font-size: 20px;
   line-height: 20px;
   color: $special-blue-650;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .add-plan__step {
@@ -41,6 +55,13 @@
   font-size: 16px;
   line-height: 22px;
   color: $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 73px;
+    margin-bottom: 38px;
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .add-plan__button {

@@ -39,4 +39,9 @@
   border: 1px solid $special-blue-120;
   border-radius: 4px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px
+  }
 }

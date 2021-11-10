@@ -1,3 +1,10 @@
+.search-form {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .search-form__title {
   display: flex;
   justify-content: space-between;
@@ -9,14 +16,33 @@
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: $special-blue-650;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 26px;
+    margin-bottom: 24px;
+    font-size: 20px;
+    line-height: 18px;
+  }
 }
 
 .search-form__type {
   opacity: 0.3;
 }
 
+.search-form__checkbox {
+  display: block;
+}
+
 .search-form__label {
   font-size: 15px;
   line-height: 15px;
   color: $special-blue-650;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
 }
