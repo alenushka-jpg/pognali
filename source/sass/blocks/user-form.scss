@@ -12,32 +12,33 @@
 }
 
 .user-form__container {
+  padding-top: 40px;
+  padding-bottom: 9px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 94px;
+    padding-bottom: 62px;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-top: 84px;
+    padding-bottom: 64px;
   }
 }
 
 .user-form__title {
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 40px;
-  padding-bottom: 9px;
   font-weight: 700;
   font-size: 36px;
   line-height: 36px;
   color: $basic-while;
 
   @media (min-width: $tablet-width) {
-    padding-top: 94px;
-    padding-bottom: 62px;
     font-size: 60px;
     line-height: 60px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 84px;
-    padding-bottom: 64px;
   }
 }
 
@@ -62,6 +63,8 @@
     grid-template-columns: 1fr 139px 285px;
     column-gap: 0;
     row-gap: 0;
+    padding-top: 0;
+    margin-top: -190px;
   }
 }
 
@@ -147,7 +150,8 @@
     &--transports {
       grid-column: 2/4;
       grid-row: 3/4;
-      margin-left: 40px;
+      margin-left: auto;
+      width: 384px;
     }
 
     &--hashtag {
@@ -211,7 +215,8 @@
 }
 
 .user-form__subtitle {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 29px;
   font-weight: bold;
   font-size: 24px;
   line-height: 24px;

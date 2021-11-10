@@ -1,5 +1,4 @@
 .level {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,6 +7,10 @@
   height: 100px;
   margin-left: auto;
   margin-right: auto;
+
+  &--form {
+    position: relative;
+  }
 
   &::before {
     content: "";
