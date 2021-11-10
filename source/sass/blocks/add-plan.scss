@@ -75,4 +75,12 @@
   &--back {
     background-color: inherit;
   }
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    padding-right: 75px;
+    padding-top: 29px;
+    padding-bottom: 27px;
+    text-transform: inherit;
+  }
 }
