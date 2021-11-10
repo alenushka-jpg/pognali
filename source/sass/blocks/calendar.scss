@@ -1,3 +1,19 @@
+.calendar__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 42px;
+  margin-bottom: 22px;
+  border-top: 1px solid $special-blue-70;
+  border-bottom: 1px solid $special-blue-70;
+}
+
+.calendar__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 22px;
+}
+
 .calendar__button {
   padding: 0;
   border: none;
@@ -25,9 +41,29 @@
 }
 
 .calendar__table-cell {
+  width: 32px;
+  height: 32px;
+  padding: 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
   color: $special-blue-650;
-  background-color: $special-blue-00;
+}
+
+.calendar__label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendar__table-body {
+  border: 1px solid $special-blue-70;
+}
+
+.calendar__table-row {
+  border-bottom: 1px solid $special-blue-70;
+}
+
+.calendar__table-cell {
+  border-right: 1px solid $special-blue-70;
 }

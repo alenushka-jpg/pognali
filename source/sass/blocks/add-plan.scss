@@ -2,25 +2,41 @@
   background-color: $special-blue-80;
 }
 
+.add-plan__container {
+  padding-top: 30px;
+  padding-bottom: 43px;
+}
+
 .add-plan__fieldset {
-  margin: 0;
-  padding-top: 0;
-  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-top: 24px;
+  padding-bottom: 23px;
   border: none;
   background-color: $basic-while;
   border-radius: 10px;
 }
 
+.add-plan__search {
+  margin-bottom: 24px;
+}
+
 .add-plan__title {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 16px;
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
   color: $special-blue-650;
 }
 
+.add-plan__step {
+  display: block;
+}
+
 .add-plan__text {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 20px;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
@@ -28,8 +44,8 @@
 }
 
 .add-plan__button {
-  padding-left: 42px;
-  padding-right: 42px;
+  padding-left: 35px;
+  padding-right: 35px;
   padding-top: 6px;
   padding-bottom: 5px;
   text-decoration: none;
