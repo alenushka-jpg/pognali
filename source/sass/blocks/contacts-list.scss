@@ -2,13 +2,11 @@
   padding: 0;
   margin: 0;
   list-style: none;
-
-  &--header {
-    margin-bottom: 53px;
-  }
 }
 
 .contacts-list--header {
+  margin-bottom: 53px;
+
   @media (min-width: $desktop-width) {
     .contacts-list__link {
       width: 50px;

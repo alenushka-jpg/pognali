@@ -48,6 +48,7 @@
   font-size: 14px;
   line-height: 18px;
   color: $special-blue-650;
+  border-right: 1px solid $special-blue-70;
 }
 
 .calendar__label {
@@ -62,8 +63,4 @@
 
 .calendar__table-row {
   border-bottom: 1px solid $special-blue-70;
-}
-
-.calendar__table-cell {
-  border-right: 1px solid $special-blue-70;
 }

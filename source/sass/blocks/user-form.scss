@@ -146,6 +146,7 @@
       grid-column: 1/-1;
     }
   }
+
   @media (min-width: $desktop-width) {
     &--transports {
       grid-column: 2/4;
