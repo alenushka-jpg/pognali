@@ -9,6 +9,12 @@
   padding: 0;
   margin: 0;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    &:nth-child(2) {
+      order: 1;
+    }
+  }
 }
 
 .search-form__title {
