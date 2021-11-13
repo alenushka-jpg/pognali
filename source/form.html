@@ -165,7 +165,7 @@
         <section class="add-plan">
           <div class="add-plan__container container">
             <h2 class="user-form__subtitle">Добавить план:</h2>
-            <fieldset class="add-plan__fieldset container">
+            <fieldset class="add-plan__fieldset add-plan__fieldset--step-one container">
               <h3 class="add-plan__title">
                 <span class="add-plan__step">Шаг 1.</span>
                 Даты пребывания
@@ -174,16 +174,15 @@
                 Укажите предпочтительное количество попутчиков, которых
                 вы хотели бы позвать в поездку, и ее предполагаемую длительность.
               </p>
-              <ul class="markers-list">
+              <ul class="add-plan__markers markers-list">
                 <li class="markers-list__item">Даты</li>
                 <li class="markers-list__item">маршрут</li>
                 <li class="markers-list__item">развлечения</li>
               </ul>
               <div class="add-plan__search search-form">
                 <fieldset class="search-form__fieldset">
-                  <p class="search-form__title">ищу попутчиков:
-                    <span class="search-form__type">чел.</span>
-                  </p>
+                  <p class="search-form__title">ищу попутчиков:</p>
+                  <span class="search-form__type">чел.</span>
                   <div class="search-form__quantity change-quantity">
                     <button class="change-quantity__button change-quantity__button--minus">
                       <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -200,9 +199,8 @@
                   </div>
                 </fieldset>
                 <fieldset class="search-form__fieldset">
-                  <p class="search-form__title">длительность:
-                    <span class="search-form__type">дн.</span>
-                  </p>
+                  <p class="search-form__title">длительность:</p>
+                  <span class="search-form__type">дн.</span>
                   <div class="search-form__quantity change-quantity">
                     <button class="change-quantity__button change-quantity__button--minus">
                       <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -240,13 +238,27 @@
                 <table class="calendar__table">
                   <thead class="calendar__table-thead">
                     <tr class="calendar__table-row">
-                      <th class="calendar__day-of-week">П</th>
-                      <th class="calendar__day-of-week">В</th>
-                      <th class="calendar__day-of-week">С</th>
-                      <th class="calendar__day-of-week">Ч</th>
-                      <th class="calendar__day-of-week">П</th>
-                      <th class="calendar__day-of-week calendar__day-of-week--weekends">С</th>
-                      <th class="calendar__day-of-week calendar__day-of-week--weekends">В</th>
+                      <th class="calendar__day-of-week">П
+                        <span class="calendar__second-letter">н</span>
+                      </th>
+                      <th class="calendar__day-of-week">В
+                        <span class="calendar__second-letter">т</span>
+                      </th>
+                      <th class="calendar__day-of-week">С
+                        <span class="calendar__second-letter">р</span>
+                      </th>
+                      <th class="calendar__day-of-week">Ч
+                        <span class="calendar__second-letter">т</span>
+                      </th>
+                      <th class="calendar__day-of-week">П
+                        <span class="calendar__second-letter">т</span>
+                      </th>
+                      <th class="calendar__day-of-week calendar__day-of-week--weekends">С
+                        <span class="calendar__second-letter">б</span>
+                      </th>
+                      <th class="calendar__day-of-week calendar__day-of-week--weekends">В
+                        <span class="calendar__second-letter">с</span>
+                      </th>
                     </tr>
                   </thead>
                   <tbody class="calendar__table-body">

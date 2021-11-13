@@ -1,7 +1,6 @@
 .search-form {
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
+    display: grid;
   }
 }
 
@@ -14,6 +13,11 @@
     &:nth-child(2) {
       order: 1;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -35,10 +39,30 @@
     font-size: 20px;
     line-height: 18px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-width: 220px;
+  }
 }
 
 .search-form__type {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
   opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+    margin-left: auto;
+    opacity: 1;
+  }
 }
 
 .search-form__checkbox {
@@ -56,5 +80,11 @@
     line-height: 20px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+  }
+}
+
+.search-form__quantity {
+  @media (min-width: $desktop-width) {
+    width: 180px;
   }
 }
