@@ -1,3 +1,26 @@
+.country-toggle {
+  border: 1px solid $special-blue-120;
+}
+
+.country-toggle__letter-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.country-toggle__letter-item {
+  width: 20%;
+  height: 41px;
+  border-right: 1px solid $special-blue-120;
+  border-bottom: 1px solid $special-blue-120;
+
+  &:nth-child(5n) {
+    border-right: none;
+  }
+}
+
 .country-toggle__label {
   font-weight: 500;
   font-size: 14px;
@@ -6,10 +29,30 @@
   color: $special-blue-650;
 }
 
-.country-toggle__letter-list {
+.country-toggle__letter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.country-toggle__all-contries {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.country-toggle__contries-list {
+  display: none;
+}
+
+.country-toggle__input:checked + .country-toggle__letter{
+  background-color: $special-blue-00;
+}
+
+.country-toggle__contries-list--selected {
+  display: block;
 }
 
 .country-toggle__button {
