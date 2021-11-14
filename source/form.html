@@ -531,7 +531,7 @@
               </div>
               <a class="add-plan__button button" href="">Следующий шаг</a>
             </fieldset>
-            <fieldset class="add-plan__fieldset container">
+            <fieldset class="add-plan__fieldset add-plan__fieldset--step-two container">
               <h3 class="add-plan__title">
                 <span class="add-plan__step">Шаг 2.</span>
                 Маршрут
@@ -540,7 +540,7 @@
                 Это может быть одна или сразу несколько.
               </p>
               <ul class="markers-list">
-                <li class="markers-list__item">Даты</li>
+                <li class="markers-list__item">даты</li>
                 <li class="markers-list__item">маршрут</li>
                 <li class="markers-list__item">развлечения</li>
               </ul>
@@ -548,9 +548,12 @@
                 <fieldset class="select-country__fieldset">
                   <button class="select-country__button">Босния и герцеговина</button>
                   <div class="select-country__flag">
-                    <img src="./img/bosnia-and-herzegovina.png" width="35" height="24" alt="">
+                    <picture class="select-country__picture">
+                      <source media="(min-width: 768px)" srcset="./img/bosnia-and-herzegovina-tablet.png">
+                      <img class="select-country__img" src="./img/bosnia-and-herzegovina.png" width="35" height="24" alt="">
+                    </picture>
                     <button class="select-country__close">
-                      <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg class="select-country__close-svg" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M7.875 1.125L1.125 7.875" stroke="#AFB0B5" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M1.125 1.125L7.875 7.875" stroke="#AFB0B5" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
@@ -560,9 +563,12 @@
                 <fieldset class="select-country__fieldset">
                   <button class="select-country__button">Чехия</button>
                   <div class="select-country__flag">
-                    <img src="./img/czech.png"  width="35" height="24" alt="">
+                    <picture class="select-country__picture">
+                      <source media="(min-width: 768px)" srcset="./img/flag-czech-tablet.png">
+                      <img class="select-country__img" src="./img/flag-czech.png" width="35" height="24" alt="">
+                    </picture>
                     <button class="select-country__close">
-                      <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg class="select-country__close-svg" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M7.875 1.125L1.125 7.875" stroke="#AFB0B5" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M1.125 1.125L7.875 7.875" stroke="#AFB0B5" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
@@ -573,7 +579,7 @@
                   <fieldset class="select-country__select-button">
                     <button class="select-country__button select-country__button--open">выберите страну</button>
                     <button class="select-country__close">
-                      <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg class="select-country__close-svg" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M7.875 1.125L1.125 7.875" stroke="#AFB0B5" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M1.125 1.125L7.875 7.875" stroke="#AFB0B5" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>

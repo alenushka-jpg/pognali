@@ -9,6 +9,8 @@
   @media (min-width: $tablet-width) {
     padding-top: 53px;
     padding-bottom: 63px;
+    padding-left: 75px;
+    padding-right: 75px;
   }
 }
 
@@ -53,6 +55,12 @@
     .add-plan__calendar {
       grid-column: 1/-1;
     }
+  }
+}
+
+.add-plan__fieldset--step-two {
+  .add-plan__text {
+    margin-bottom: 33px;
   }
 }
 
