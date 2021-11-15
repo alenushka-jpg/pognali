@@ -12,6 +12,11 @@
     padding-left: 75px;
     padding-right: 75px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
 
 .add-plan__fieldset {
@@ -61,6 +66,26 @@
 .add-plan__fieldset--step-two {
   .add-plan__text {
     margin-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 409px 219px;
+    column-gap: 365px;
+
+    .add-plan__title,
+    .add-plan__text {
+      grid-column: 1/2;
+    }
+
+    .add-plan__markers {
+      grid-column: 2/3;
+      grid-row: 1/3;
+    }
+
+    .add-plan__select {
+      grid-column: 1/-1;
+    }
   }
 }
 
@@ -124,8 +149,14 @@
   }
 }
 
+.add-plan__step-buttons {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .add-plan__button {
-  display: block;
   padding-left: 35px;
   padding-right: 35px;
   padding-top: 6px;
@@ -143,9 +174,17 @@
     padding-top: 29px;
     padding-bottom: 27px;
     text-transform: inherit;
+
+    &--back {
+      padding-right: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 286px;
+
+    &--back {
+      text-align: end;
+    }
   }
 }

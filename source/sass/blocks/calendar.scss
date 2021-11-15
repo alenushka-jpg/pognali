@@ -90,8 +90,13 @@
   border-right: 1px solid $special-blue-70;
 
   @media (min-width: $tablet-width) {
-    width: 78.02px;
+    width: 78px;
     height: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 142px;
+    height: 72px;
   }
 }
 

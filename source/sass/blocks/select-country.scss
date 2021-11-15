@@ -26,6 +26,12 @@
       width: 369px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    .select-country__button {
+      width: 730px;
+    }
+  }
 }
 
 .select-country__button {
@@ -58,6 +64,10 @@
     line-height: 20px;
     letter-spacing: 0.01em;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 730px;
+  }
 }
 
 .select-country__toggle {
@@ -70,6 +80,10 @@
 
   @media (min-width: $tablet-width) {
     width: 369px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 730px;
   }
 }
 
@@ -94,6 +108,11 @@
     height: 47px;
     margin-left: 52px;
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 180px;
+    justify-content: space-between;
   }
 }
 
