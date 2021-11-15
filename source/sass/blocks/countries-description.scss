@@ -1,5 +1,10 @@
+.countries-description__country {
+  margin-bottom: 27px;
+}
+
 .countries-description__title {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 18px;
   font-weight: 500;
   font-size: 18px;
   line-height: 18px;
@@ -7,11 +12,18 @@
 }
 
 .countries-description__textarea {
+  display: block;
   width: 220px;
   height: 220px;
-  padding: 0;
+  padding: 10px 14px;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
   color: rgba($basic-grey, 0.3);
+  border: 1px solid $special-blue-120;
+  border-radius: 4px;
+
+  &:nth-child(2) {
+    color: rgba($basic-grey, 1);
+  }
 }
