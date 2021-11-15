@@ -14,12 +14,24 @@
   font-size: 18px;
   line-height: 18px;
   color: $special-blue-650;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.countries-description__img {
+  @media (min-width: $tablet-width) {
+    width: 70px;
+    height: 47px;
+  }
 }
 
 .countries-description__textarea {
   grid-column: 1/-1;
   display: block;
-  width: 220px;
+  width: 100%;
   height: 220px;
   padding: 10px 14px;
   font-weight: normal;
@@ -31,5 +43,11 @@
 
   &:nth-child(2) {
     color: rgba($basic-grey, 1);
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 18px 19px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
