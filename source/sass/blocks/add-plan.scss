@@ -33,6 +33,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 419px 219px;
     padding-left: 160px;
     padding-top: 100px;
     padding-right: 160px;
@@ -69,29 +71,34 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 409px 219px;
+    grid-template-columns: 419px 219px;
     column-gap: 365px;
-
-    .add-plan__title,
-    .add-plan__text {
-      grid-column: 1/2;
-    }
-
-    .add-plan__markers {
-      grid-column: 2/3;
-      grid-row: 1/3;
-    }
-
-    .add-plan__select {
-      grid-column: 1/-1;
-    }
   }
 }
 
 .add-plan__fieldset--step-three {
-  .add-plan__text {
-    padding-right: 20px;
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 490px 219px;
+    column-gap: 295px;
+  }
+}
+
+.add-plan__select {
+  @media (min-width: $desktop-width) {
+    grid-column: 1/-1;
+  }
+}
+
+.add-plan__markers {
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+}
+
+.countries-description {
+  @media (min-width: $desktop-width) {
+    grid-column: 1/-1;
   }
 }
 
@@ -122,6 +129,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    grid-column: 1/2;
     margin-bottom: 33px;
   }
 }
@@ -150,8 +158,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    grid-column: 1/2;
     margin-bottom: 55px;
-    padding-right: 70px;
+    padding-right: 0;
   }
 }
 
@@ -159,6 +168,10 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/3;
   }
 }
 

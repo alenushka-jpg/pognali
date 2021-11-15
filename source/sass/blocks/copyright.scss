@@ -7,4 +7,10 @@
   line-height: 16px;
   text-decoration: none;
   color: $basic-grey;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
