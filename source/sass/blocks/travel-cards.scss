@@ -11,6 +11,14 @@
   }
 }
 
+.travel-cards--catalog {
+  @media (min-width: $tablet-width) {
+    .travel-cards__list {
+      flex-wrap: wrap;
+    }
+  }
+}
+
 .travel-cards__item {
   position: relative;
   width: 270px;

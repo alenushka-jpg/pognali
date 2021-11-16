@@ -2,22 +2,12 @@
   margin-bottom: -1px;
   padding-top: 12px;
   padding-bottom: 12px;
-  background-color: $special-blue-900;
-
+  background-color: $special-blue-750;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
     padding-bottom: 0;
-    background-color: $special-blue-750;
   }
-
-  @media (min-width: $desktop-width) {
-    background-color: $special-blue-790;
-  }
-}
-
-.page-header--form {
-  background-color: $special-blue-750;
 }
 
 .page-header__container {
