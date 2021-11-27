@@ -1,5 +1,9 @@
 .filter {
   background-color: $special-blue-30;
+
+  .filter__toggle {
+    display: none;
+  }
 }
 
 .filter--open {
@@ -10,20 +14,45 @@
   .filter__toggle {
     display: block;
   }
+
+  .filter__title {
+    margin-bottom: 34px;
+  }
+
+  @media (min-width: $tablet-width) {
+    .filter__region {
+      display: flex;
+    }
+
+    .filter__toggle {
+      display: grid;
+      column-gap: 88px;
+      row-gap: 76px;
+    }
+
+    .filter__text--open {
+      display: none;
+    }
+
+    .filter__text--close {
+      display: block;
+    }
+  }
 }
 
 .filter__container {
   position: relative;
   display: grid;
   align-items: center;
-  padding-left: 25px;
-  padding-right: 25px;
   padding-top: 20px;
   padding-bottom: 17px;
 
-  // @media (min-width: $tablet-width) {
-  //   flex-direction: column;
-  // }
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 2fr 175px;
+    column-gap: 63px;
+    row-gap: 63px;
+    padding: 54px 72px 53px;
+  }
 }
 
 .filter__title {
@@ -31,7 +60,7 @@
   padding-left: 25px;
   padding-right: 25px;
   margin-top: 0;
-  margin-bottom: 34px;
+  margin-bottom: 0;
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
@@ -48,6 +77,16 @@
     background-image: url("/img/icon_filter.svg");
     background-size: 15px 10px;
   }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.filter__interactive-button {
+  @media (min-width: $tablet-width) {
+    grid-column: 2/3;
+  }
 }
 
 .filter__region {
@@ -55,6 +94,15 @@
   padding-left: 25px;
   padding-right: 25px;
   margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 1/2;
+    grid-row: 1/-1;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .filter__button {
@@ -78,6 +126,26 @@
     background-size: 16px;
 
     .filter__region {
+      display: block;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 68px;
+    right: 80px;
+  }
+}
+
+.filter__text {
+  display: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $special-blue-700;
+
+  @media (min-width: $tablet-width) {
+    &--open {
       display: block;
     }
   }

@@ -12,6 +12,34 @@
     border-left: 1px solid $special-blue-120;
     border-right: 1px solid $special-blue-120;
   }
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+    grid-template-columns: 1fr 175px;
+
+    .country-toggle__letter-list {
+      margin-right: 0;
+      margin-left: 0;
+      border: none;
+    }
+
+    .country-toggle__letter-item {
+      display: flex;
+      height: auto;
+      border: none;
+    }
+
+    .country-toggle__input:checked + .country-toggle__letter {
+      background-color: inherit;
+      color: rgba($special-blue-650, 1);
+    }
+
+    .country-toggle__label {
+      font-size: 60px;
+      line-height: 60px;
+      color: rgba($special-blue-650, 0.3);
+    }
+  }
 }
 
 .country-toggle__letter-list {
@@ -54,6 +82,10 @@
   margin: 0 25px;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .country-toggle__contries-list {
@@ -81,4 +113,11 @@
   border: 0;
   background-color: $special-blue-90;
   border-radius: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+    padding: 40px 83px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

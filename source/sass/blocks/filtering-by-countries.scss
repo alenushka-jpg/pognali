@@ -6,10 +6,21 @@
   &--selected {
     display: block;
   }
+
+  @media (min-width: $tablet-width) {
+    &--filter {
+      padding: 0;
+    }
+  }
 }
 
 .filtering-by-countries__item {
   font-size: 16px;
   line-height: 22px;
   color: $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
