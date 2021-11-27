@@ -1,11 +1,24 @@
-.country-toggle {
+.country-toggle--route {
   border: 1px solid $special-blue-120;
+  background-color: $basic-while;
+}
+
+.country-toggle--filter {
+  .country-toggle__letter-list {
+    width: auto;
+    margin-right: 25px;
+    margin-left: 25px;
+    border-top: 1px solid $special-blue-120;
+    border-left: 1px solid $special-blue-120;
+    border-right: 1px solid $special-blue-120;
+  }
 }
 
 .country-toggle__letter-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   padding: 0;
   list-style: none;
 }
@@ -38,7 +51,7 @@
 }
 
 .country-toggle__all-contries {
-  margin: 0;
+  margin: 0 25px;
   padding: 0;
   list-style: none;
 }
@@ -56,6 +69,8 @@
 }
 
 .country-toggle__button {
+  display: inline-block;
+  width: 100%;
   padding: 10px 83px;
   font-weight: 700;
   font-size: 16px;

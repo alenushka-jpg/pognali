@@ -1,6 +1,11 @@
 .filtering-by-countries {
+  display: none;
   padding: 20px;
   list-style: none;
+
+  &--selected {
+    display: block;
+  }
 }
 
 .filtering-by-countries__item {

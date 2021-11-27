@@ -1,12 +1,84 @@
-.filter__background {
+.filter {
   background-color: $special-blue-30;
 }
 
+.filter--open {
+  .filter__region {
+    display: block;
+  }
+
+  .filter__toggle {
+    display: block;
+  }
+}
+
+.filter__container {
+  position: relative;
+  display: grid;
+  align-items: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 20px;
+  padding-bottom: 17px;
+
+  // @media (min-width: $tablet-width) {
+  //   flex-direction: column;
+  // }
+}
+
 .filter__title {
-  margin: 0;
+  position: relative;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 0;
+  margin-bottom: 34px;
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: $special-blue-700;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0px;
+    width: 15px;
+    height: 10px;
+    background-image: url("/img/icon_filter.svg");
+    background-size: 15px 10px;
+  }
+}
+
+.filter__region {
+  display: none;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 24px;
+}
+
+.filter__button {
+  position: absolute;
+  top: 25px;
+  right: 35px;
+  padding: 0;
+  width: 17px;
+  height: 3px;
+  background-image: url("/img/dots.svg");
+  background-size: 17px 3px;
+  border: 0;
+  background-color: inherit;
+
+  &--close {
+    top: 20px;
+    right: 28px;
+    width: 16px;
+    height: 16px;
+    background-image: url("/img/filter-close.svg");
+    background-size: 16px;
+
+    .filter__region {
+      display: block;
+    }
+  }
 }
