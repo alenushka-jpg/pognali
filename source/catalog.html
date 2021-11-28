@@ -94,26 +94,28 @@
       <section class="filter filter--open">
         <h2 class="visually-hidden">Фильтрация по странам</h2>
         <div class="filter__container container">
-          <h2 class="filter__title">Фильтрация по странам:</h2>
-          <div class="filter__interactive-button">
-            <span class="filter__text filter__text--open">показать все</span>
-            <span class="filter__text filter__text--close">свернуть</span>
-            <button class="filter__button" type="button"></button>
+          <div class="filter__header">
+            <h2 class="filter__title">Фильтрация по странам:</h2>
+            <div class="filter__interactive-button">
+              <span class="filter__text filter__text--open">показать все</span>
+              <span class="filter__text filter__text--close">свернуть</span>
+              <button class="filter__button filter__button--close" type="button"></button>
+            </div>
+            <ul class="filter__region region-list">
+              <li class="region-list__item">
+                <a class="region-list__link region-list__link--active">Европа</a>
+              </li>
+              <li class="region-list__item">
+                <a class="region-list__link" href="#">Азия</a>
+              </li>
+              <li class="region-list__item">
+                <a class="region-list__link" href="#">Америка</a>
+              </li>
+              <li class="region-list__item">
+                <a class="region-list__link" href="#">Острова</a>
+              </li>
+            </ul>
           </div>
-          <ul class="filter__region region-list">
-            <li class="region-list__item">
-              <a class="region-list__link region-list__link--active">Европа</a>
-            </li>
-            <li class="region-list__item">
-              <a class="region-list__link" href="#">Азия</a>
-            </li>
-            <li class="region-list__item">
-              <a class="region-list__link" href="#">Америка</a>
-            </li>
-            <li class="region-list__item">
-              <a class="region-list__link" href="#">Острова</a>
-            </li>
-          </ul>
           <div class="filter__toggle country-toggle country-toggle--filter">
             <ul class="country-toggle__letter-list">
               <li class="country-toggle__letter-item">
@@ -267,9 +269,12 @@
                 </label>
               </li>
             </ul>
-            <ul class="country-toggle__all-contries all-contries">
-                <li class="all-contries__item">
+            <ul class="country-toggle__all-contries">
+                <li class="country-toggle__item">
                   <ul class="filtering-by-countries filtering-by-countries--filter filtering-by-countries--selected">
+                    <li class="filtering-by-countries__result">
+                      <a class="filtering-by-countries__link" href="#">А</a>
+                    </li>
                     <li class="filtering-by-countries__item">Австралия</li>
                     <li class="filtering-by-countries__item">Австрия</li>
                     <li class="filtering-by-countries__item">Азербайджан</li>
@@ -283,8 +288,11 @@
                     <li class="filtering-by-countries__item">Афганистан</li>
                   </ul>
                 </li>
-                <li class="all-contries__item">
+                <li class="country-toggle__item">
                   <ul class="filtering-by-countries filtering-by-countries--filter">
+                    <li class="filtering-by-countries__result">
+                      <a class="filtering-by-countries__link" href="#">Б</a>
+                    </li>
                     <li class="filtering-by-countries__item">Багамские Острова</li>
                     <li class="filtering-by-countries__item">Бангладеш</li>
                     <li class="filtering-by-countries__item">Барбадос</li>
@@ -305,8 +313,11 @@
                     <li class="filtering-by-countries__item">Бутан</li>
                   </ul>
                 </li>
-                <li class="all-contries__item">
+                <li class="country-toggle__item">
                   <ul class="filtering-by-countries filtering-by-countries--filter">
+                    <li class="filtering-by-countries__result">
+                      <a class="filtering-by-countries__link" href="#">В</a>
+                    </li>
                     <li class="filtering-by-countries__item">Вануату</li>
                     <li class="filtering-by-countries__item">Великобритания</li>
                     <li class="filtering-by-countries__item">Венгрия</li>
@@ -315,8 +326,11 @@
                     <li class="filtering-by-countries__item">Вьетнам</li>
                   </ul>
                 </li>
-                <li class="all-contries__item">
+                <li class="country-toggle__item">
                   <ul class="filtering-by-countries filtering-by-countries--filter">
+                    <li class="filtering-by-countries__result">
+                      <a class="filtering-by-countries__link" href="#">Г</a>
+                    </li>
                     <li class="filtering-by-countries__item">Габон</li>
                     <li class="filtering-by-countries__item">Гаити</li>
                     <li class="filtering-by-countries__item">Гайана</li>
@@ -331,27 +345,39 @@
                     <li class="filtering-by-countries__item">Грузия</li>
                   </ul>
                 </li>
-                <li class="all-contries__item">
+                <li class="country-toggle__item">
                   <ul class="filtering-by-countries filtering-by-countries--filter">
+                    <li class="filtering-by-countries__result">
+                      <a class="filtering-by-countries__link" href="#">Д</a>
+                    </li>
                     <li class="filtering-by-countries__item">Дания</li>
                     <li class="filtering-by-countries__item">Джибути</li>
                     <li class="filtering-by-countries__item">Доминика</li>
                     <li class="filtering-by-countries__item">Доминикана</li>
                   </ul>
                 </li>
-                <li class="all-contries__item">
+                <li class="country-toggle__item">
                   <ul class="filtering-by-countries filtering-by-countries--filter">
+                    <li class="filtering-by-countries__result">
+                      <a class="filtering-by-countries__link" href="#">Е</a>
+                    </li>
                     <li class="filtering-by-countries__item">Египет</li>
                   </ul>
                 </li>
-                <li class="all-contries__item">
+                <li class="country-toggle__item">
                   <ul class="filtering-by-countries filtering-by-countries--filter">
+                    <li class="filtering-by-countries__result">
+                      <a class="filtering-by-countries__link" href="#">З</a>
+                    </li>
                     <li class="filtering-by-countries__item">Замбия</li>
                     <li class="filtering-by-countries__item">Зимбабве</li>
                   </ul>
                 </li>
-                <li class="all-contries__item">
+                <li class="country-toggle__item">
                   <ul class="filtering-by-countries filtering-by-countries--filter">
+                    <li class="filtering-by-countries__result">
+                      <a class="filtering-by-countries__link" href="#">И</a>
+                    </li>
                     <li class="filtering-by-countries__item">Израиль</li>
                     <li class="filtering-by-countries__item">Индия</li>
                     <li class="filtering-by-countries__item">Индонезия</li>
@@ -363,8 +389,11 @@
                     <li class="filtering-by-countries__item">Италия</li>
                   </ul>
                 </li>
-                <li class="all-contries__item">
+                <li class="country-toggle__item">
                   <ul class="filtering-by-countries filtering-by-countries--filter">
+                    <li class="filtering-by-countries__result">
+                      <a class="filtering-by-countries__link" href="#">К</a>
+                    </li>
                     <li class="filtering-by-countries__item">Кабо-Верде</li>
                     <li class="filtering-by-countries__item">Казахстан</li>
                     <li class="filtering-by-countries__item">Камбоджа</li>
@@ -379,8 +408,11 @@
                     <li class="filtering-by-countries__item">Колумбия</li>
                   </ul>
                 </li>
-                <li class="all-contries__item">
+                <li class="country-toggle__item">
                   <ul class="filtering-by-countries filtering-by-countries--filter">
+                    <li class="filtering-by-countries__result">
+                      <a class="filtering-by-countries__link" href="#">Л</a>
+                    </li>
                     <li class="filtering-by-countries__item">Лаос</li>
                     <li class="filtering-by-countries__item">Латвия</li>
                     <li class="filtering-by-countries__item">Лесото</li>
@@ -392,8 +424,11 @@
                     <li class="filtering-by-countries__item">Люксембург</li>
                   </ul>
                 </li>
-                <li class="all-contries__item">
+                <li class="country-toggle__item">
                   <ul class="filtering-by-countries filtering-by-countries--filter">
+                    <li class="filtering-by-countries__result">
+                      <a class="filtering-by-countries__link" href="#">М</a>
+                    </li>
                     <li class="filtering-by-countries__item">Маврикий</li>
                     <li class="filtering-by-countries__item">Мавритания</li>
                     <li class="filtering-by-countries__item">Мадагаскар</li>
@@ -403,8 +438,11 @@
                     <li class="filtering-by-countries__item">Марокко</li>
                   </ul>
                 </li>
-                <li class="all-contries__item">
+                <li class="country-toggle__item">
                   <ul class="filtering-by-countries filtering-by-countries--filter">
+                    <li class="filtering-by-countries__result">
+                      <a class="filtering-by-countries__link" href="#">Н</a>
+                    </li>
                     <li class="filtering-by-countries__item">Намибия</li>
                     <li class="filtering-by-countries__item">Науру</li>
                     <li class="filtering-by-countries__item">Непал</li>
@@ -416,14 +454,20 @@
                     <li class="filtering-by-countries__item">Норвегия</li>
                   </ul>
                 </li>
-                <li class="all-contries__item">
+                <li class="country-toggle__item">
                   <ul class="filtering-by-countries filtering-by-countries--filter">
+                    <li class="filtering-by-countries__result">
+                      <a class="filtering-by-countries__link" href="#">О</a>
+                    </li>
                     <li class="filtering-by-countries__item">ОАЭ</li>
                     <li class="filtering-by-countries__item">Оман</li>
                   </ul>
                 </li>
-                <li class="all-contries__item">
+                <li class="country-toggle__item">
                   <ul class="filtering-by-countries filtering-by-countries--filter">
+                    <li class="filtering-by-countries__result">
+                      <a class="filtering-by-countries__link" href="#">П</a>
+                    </li>
                     <li class="filtering-by-countries__item">Пакистан</li>
                     <li class="filtering-by-countries__item">Палау</li>
                     <li class="filtering-by-countries__item">Панама</li>
@@ -433,15 +477,21 @@
                     <li class="filtering-by-countries__item">Португалия</li>
                   </ul>
                 </li>
-                <li class="all-contries__item">
+                <li class="country-toggle__item">
                   <ul class="filtering-by-countries filtering-by-countries--filter">
+                    <li class="filtering-by-countries__result">
+                      <a class="filtering-by-countries__link" href="#">Р</a>
+                    </li>
                     <li class="filtering-by-countries__item">Руанда</li>
                       <li class="filtering-by-countries__item">Румыния</li>
                     <li class="filtering-by-countries__item">Россия</li>
                   </ul>
                 </li>
-                <li class="all-contries__item">
+                <li class="country-toggle__item">
                   <ul class="filtering-by-countries filtering-by-countries--filter">
+                    <li class="filtering-by-countries__result">
+                      <a class="filtering-by-countries__link" href="#">С</a>
+                    </li>
                     <li class="filtering-by-countries__item">Сальвадор</li>
                     <li class="filtering-by-countries__item">Самоа</li>
                     <li class="filtering-by-countries__item">Сан-Марино</li>
@@ -456,8 +506,11 @@
                     <li class="filtering-by-countries__item">США</li>
                   </ul>
                 </li>
-                <li class="all-contries__item">
+                <li class="country-toggle__item">
                   <ul class="filtering-by-countries filtering-by-countries--filter">
+                    <li class="filtering-by-countries__result">
+                      <a class="filtering-by-countries__link" href="#">Т</a>
+                    </li>
                     <li class="filtering-by-countries__item">Таджикистан</li>
                     <li class="filtering-by-countries__item">Таиланд</li>
                     <li class="filtering-by-countries__item">Танзания</li>
@@ -470,44 +523,62 @@
                     <li class="filtering-by-countries__item">Турция</li>
                   </ul>
                 </li>
-                <li class="all-contries__item">
+                <li class="country-toggle__item">
                   <ul class="filtering-by-countries filtering-by-countries--filter">
+                    <li class="filtering-by-countries__result">
+                      <a class="filtering-by-countries__link" href="#">У</a>
+                    </li>
                     <li class="filtering-by-countries__item">Уганда</li>
                     <li class="filtering-by-countries__item">Узбекистан</li>
                     <li class="filtering-by-countries__item">Украина</li>
                     <li class="filtering-by-countries__item">Уругвай</li>
                   </ul>
                 </li>
-                <li class="all-contries__item">
+                <li class="country-toggle__item">
                   <ul class="filtering-by-countries filtering-by-countries--filter">
+                    <li class="filtering-by-countries__result">
+                      <a class="filtering-by-countries__link" href="#">Ф</a>
+                    </li>
                     <li class="filtering-by-countries__item">Фиджи</li>
                     <li class="filtering-by-countries__item">Филиппины</li>
                     <li class="filtering-by-countries__item">Финляндия</li>
                     <li class="filtering-by-countries__item">Франция</li>
                   </ul>
                 </li>
-                <li class="all-contries__item">
+                <li class="country-toggle__item">
                   <ul class="filtering-by-countries filtering-by-countries--filter">
+                    <li class="filtering-by-countries__result">
+                      <a class="filtering-by-countries__link" href="#">Х</a>
+                    </li>
                     <li class="filtering-by-countries__item">Хорватия</li>
                   </ul>
                 </li>
-                <li class="all-contries__item">
+                <li class="country-toggle__item">
                   <ul class="filtering-by-countries filtering-by-countries--filter">
+                    <li class="filtering-by-countries__result">
+                      <a class="filtering-by-countries__link" href="#">Ч</a>
+                    </li>
                     <li class="filtering-by-countries__item">Чад</li>
                     <li class="filtering-by-countries__item">Черногория</li>
                     <li class="filtering-by-countries__item">Чехия</li>
                     <li class="filtering-by-countries__item">Чили</li>
                   </ul>
                 </li>
-                <li class="all-contries__item">
+                <li class="country-toggle__item">
                   <ul class="filtering-by-countries filtering-by-countries--filter">
+                    <li class="filtering-by-countries__result">
+                      <a class="filtering-by-countries__link" href="#">Ш</a>
+                    </li>
                     <li class="filtering-by-countries__item">Швейцария</li>
                     <li class="filtering-by-countries__item">Швеция</li>
                     <li class="filtering-by-countries__item">Шри-Ланка</li>
                   </ul>
                 </li>
-                <li class="all-contries__item">
+                <li class="country-toggle__item">
                   <ul class="filtering-by-countries filtering-by-countries--filter">
+                    <li class="filtering-by-countries__result">
+                      <a class="filtering-by-countries__link" href="#">Э</a>
+                    </li>
                     <li class="filtering-by-countries__item">Эквадор</li>
                     <li class="filtering-by-countries__item">Эритрея</li>
                     <li class="filtering-by-countries__item">Эсватини</li>
@@ -515,14 +586,20 @@
                     <li class="filtering-by-countries__item">Эфиопия</li>
                   </ul>
                 </li>
-                <li class="all-contries__item">
+                <li class="country-toggle__item">
                   <ul class="filtering-by-countries filtering-by-countries--filter">
+                    <li class="filtering-by-countries__result">
+                      <a class="filtering-by-countries__link" href="#">Ю</a>
+                    </li>
                     <li class="filtering-by-countries__item">ЮАР</li>
                     <li class="filtering-by-countries__item">Южный Судан</li>
                   </ul>
                 </li>
-                <li class="all-contries__item">
+                <li class="country-toggle__item">
                   <ul class="filtering-by-countries filtering-by-countries--filter">
+                    <li class="filtering-by-countries__result">
+                      <a class="filtering-by-countries__link" href="#">Я</a>
+                    </li>
                     <li class="filtering-by-countries__item">Ямайка</li>
                     <li class="filtering-by-countries__item">Япония</li>
                   </ul>

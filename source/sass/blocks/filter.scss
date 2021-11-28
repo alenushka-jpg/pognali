@@ -7,10 +7,7 @@
 }
 
 .filter--open {
-  .filter__region {
-    display: block;
-  }
-
+  .filter__region,
   .filter__toggle {
     display: block;
   }
@@ -38,10 +35,19 @@
       display: block;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    .filter__title {
+      margin-bottom: 0;
+    }
+
+    .filter__toggle {
+      grid-template-columns: 1fr;
+    }
+  }
 }
 
 .filter__container {
-  position: relative;
   display: grid;
   align-items: center;
   padding-top: 20px;
@@ -52,6 +58,29 @@
     column-gap: 63px;
     row-gap: 63px;
     padding: 54px 72px 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: max-content max-content auto;
+    column-gap: 0;
+    row-gap: 0;
+  }
+}
+
+.filter__header {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 80px;
+    grid-column: 1/-1;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: start;
+    column-gap: 0;
   }
 }
 
@@ -74,18 +103,36 @@
     left: 0;
     width: 15px;
     height: 10px;
-    background-image: url("/img/icon_filter.svg");
+    background-image: url("../img/icon_filter.svg");
     background-size: 15px 10px;
   }
 
   @media (min-width: $tablet-width) {
     display: none;
   }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    padding-left: 64px;
+    padding-right: 30px;
+    font-size: 20px;
+    line-height: 20px;
+
+    &::after {
+      left: 25px;
+    }
+  }
 }
 
 .filter__interactive-button {
   @media (min-width: $tablet-width) {
-    grid-column: 2/3;
+    position: relative;
+    width: 175px;
+    order: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
   }
 }
 
@@ -97,9 +144,8 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-between;
-    grid-column: 1/2;
-    grid-row: 1/-1;
+    flex-wrap: wrap;
+    column-gap: 28px;
     margin: 0;
     padding: 0;
   }
@@ -107,33 +153,33 @@
 
 .filter__button {
   position: absolute;
-  top: 25px;
-  right: 35px;
+  top: 0;
+  right: 0;
   padding: 0;
-  width: 17px;
-  height: 3px;
-  background-image: url("/img/dots.svg");
-  background-size: 17px 3px;
   border: 0;
   background-color: inherit;
 
+  &--open {
+    width: 17px;
+    height: 3px;
+    background-image: url("../img/dots.svg");
+    background-size: 17px 3px;
+  }
+
   &--close {
-    top: 20px;
-    right: 28px;
     width: 16px;
     height: 16px;
-    background-image: url("/img/filter-close.svg");
+    background-image: url("../img/filter-close.svg");
     background-size: 16px;
-
-    .filter__region {
-      display: block;
-    }
   }
 
-  @media (min-width: $tablet-width) {
-    top: 68px;
-    right: 80px;
-  }
+  // @media (min-width: $tablet-width) {
+
+  // }
+
+  // @media (min-width: $desktop-width) {
+
+  // }
 }
 
 .filter__text {

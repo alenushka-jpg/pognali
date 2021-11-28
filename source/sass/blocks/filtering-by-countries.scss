@@ -12,6 +12,10 @@
       padding: 0;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
 
 .filtering-by-countries__item {
@@ -22,5 +26,19 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.filtering-by-countries__link {
+  display: none;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: $special-blue-700;
+  text-decoration: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }

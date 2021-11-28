@@ -40,6 +40,12 @@
       color: rgba($special-blue-650, 0.3);
     }
   }
+
+  @media (min-width: $desktop-width) {
+    .country-toggle__letter-list {
+      display: none;
+    }
+  }
 }
 
 .country-toggle__letter-list {
@@ -85,6 +91,13 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(5, 250px);
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 
