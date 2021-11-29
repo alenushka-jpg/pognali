@@ -6,6 +6,10 @@
   padding: 25px 25px 22px;
   background-color: $special-yellow-200;
   border-radius: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 37px 35px 37px;
+  }
 }
 
 .companion-filter__title {
@@ -16,6 +20,12 @@
   line-height: 22px;
   letter-spacing: 0.02em;
   color: $special-blue-650;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 38px;
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 
 .companion-filter__fieldset {
@@ -25,6 +35,11 @@
 
   .companion-filter__list {
     display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -36,6 +51,12 @@
 
   .companion-filter__list--transport {
     flex-direction: row;
+  }
+
+  @media (min-width: $tablet-width) {
+    .companion-filter__list {
+      flex-direction: row;
+    }
   }
 }
 
@@ -55,6 +76,15 @@
   text-align: start;
   background-color: inherit;
   border-top: 1px solid $special-yellow-300;
+
+  @media (min-width: $tablet-width) {
+    padding: 7px 0;
+    width: 127px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    border-top: none;
+  }
 }
 
 .companion-filter__button {
@@ -64,6 +94,12 @@
   background-color: $basic-while;
   border-radius: 25px;
   text-align: center;
+
+
+  @media (min-width: $tablet-width) {
+    padding: 16px 14px 17px;
+    margin-top: 36px;
+  }
 }
 
 .companion-filter__label {
@@ -74,6 +110,25 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    column-gap: 20px;
+  }
+}
+
+.companion-filter__list--transport {
+  @media (min-width: $tablet-width) {
+    .companion-filter__item {
+      width: auto;
+    }
+  }
+}
+
+.companion-filter__item {
+  @media (min-width: $tablet-width) {
+    width: 150px;
+  }
 }
 
 .companion-filter__input {
@@ -84,4 +139,8 @@
   font-size: 14px;
   line-height: 13px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 74px;
+  }
 }
