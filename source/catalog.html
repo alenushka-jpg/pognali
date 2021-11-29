@@ -91,7 +91,7 @@
           </div>
         </div>
       </div>
-      <section class="filter filter--open">
+      <section class="filter">
         <h2 class="visually-hidden">Фильтрация по странам</h2>
         <div class="filter__container container">
           <div class="filter__header">
@@ -613,8 +613,8 @@
         <form class="companion-filter__form" method="GET">
           <h2 class="companion-filter__title">Подберите идеального попутчика</h2>
           <div class="companion-filter__group">
-            <fieldset class="companion-filter__fieldset">
-              <button class="companion-filter__button" type="button">Хобби</button>
+            <fieldset class="companion-filter__fieldset companion-filter__fieldset--open">
+              <button class="companion-filter__toggle" type="button">Хобби</button>
               <ul class="companion-filter__list">
                 <li class="companion-filter__item">
                   <label class="checkbox">
@@ -638,8 +638,8 @@
             </fieldset>
           </div>
           <div class="companion-filter__group">
-            <fieldset class="companion-filter__fieldset">
-              <button class="companion-filter__button" type="button">Музыка</button>
+            <fieldset class="companion-filter__fieldset companion-filter__fieldset--open">
+              <button class="companion-filter__toggle" type="button">Музыка</button>
               <ul class="companion-filter__list">
                 <li class="companion-filter__item">
                   <label class="checkbox">
@@ -663,8 +663,8 @@
             </fieldset>
           </div>
           <div class="companion-filter__group">
-            <fieldset class="companion-filter__fieldset">
-              <button class="companion-filter__button" type="button">Еда</button>
+            <fieldset class="companion-filter__fieldset companion-filter__fieldset--open">
+              <button class="companion-filter__toggle" type="button">Еда</button>
               <ul class="companion-filter__list">
                 <li class="companion-filter__item">
                   <label class="checkbox">
@@ -688,32 +688,32 @@
             </fieldset>
           </div>
           <div class="companion-filter__group">
-            <fieldset class="companion-filter__fieldset">
-              <button class="companion-filter__button" type="button">Транспорт</button>
-              <ul class="companion-filter__list type-of-transports">
+            <fieldset class="companion-filter__fieldset companion-filter__fieldset--open">
+              <button class="companion-filter__toggle" type="button">Транспорт</button>
+              <ul class="companion-filter__list companion-filter__list--transport type-of-transports">
                 <li class="companion-filter__item">
-                  <label class="checkbox">
+                  <label class="checkbox checkbox--transport">
                     <input class="checkbox__input" name="transport" type="checkbox">
                     <span class="checkbox__label">Авиаперелет</span>
                     <img class="type-of-transports__image" src="./img/icon_plane.svg" width="17" height="16" alt="">
                   </label>
                 </li>
                 <li class="companion-filter__item">
-                  <label class="checkbox">
+                  <label class="checkbox checkbox--transport">
                     <input class="checkbox__input" name="transport" type="checkbox">
                     <span class="checkbox__label">Автотранспорт</span>
                     <img class="type-of-transports__image" src="./img/icon_bus.svg" width="17" height="16" alt="">
                   </label>
                 </li>
                 <li class="companion-filter__item">
-                  <label class="checkbox">
+                  <label class="checkbox checkbox--transport">
                     <input class="checkbox__input" name="transport" type="checkbox">
                     <span class="checkbox__label">Велосипед</span>
                     <img class="type-of-transports__image" src="./img/icon_bicycle.svg" width="17" height="16" alt="">
                   </label>
                 </li>
                 <li class="companion-filter__item">
-                  <label class="checkbox">
+                  <label class="checkbox checkbox--transport">
                     <input class="checkbox__input" name="transport" type="checkbox">
                     <span class="checkbox__label">Пешком</span>
                     <img class="type-of-transports__image" src="./img/icon_run.svg" width="17" height="16" alt="">
@@ -723,8 +723,8 @@
             </fieldset>
           </div>
           <div class="companion-filter__group">
-            <fieldset class="companion-filter__fieldset">
-              <button class="companion-filter__button" type="button">Левел</button>
+            <fieldset class="companion-filter__fieldset companion-filter__fieldset--open">
+              <button class="companion-filter__toggle" type="button">Левел</button>
               <div class="companion-filter__label">
                 <input class="companion-filter__input" type="text" value="30" name="lavel">
                 <input class="companion-filter__input" type="text" value="100" name="lavel">

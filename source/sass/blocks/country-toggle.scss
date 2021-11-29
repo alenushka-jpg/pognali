@@ -96,6 +96,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(5, 250px);
+    row-gap: 40px;
     padding-left: 25px;
     padding-right: 25px;
   }

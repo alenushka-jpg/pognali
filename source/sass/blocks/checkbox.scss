@@ -1,6 +1,11 @@
 .checkbox__label {
-  font-weight: normal;
   font-size: 15px;
   line-height: 20px;
   color: $basic-black;
+}
+
+.checkbox--transport {
+  .checkbox__label {
+    display: none;
+  }
 }
