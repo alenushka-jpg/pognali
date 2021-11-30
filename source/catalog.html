@@ -612,329 +612,368 @@
       <section class="companion-filter container">
         <form class="companion-filter__form" method="GET">
           <h2 class="companion-filter__title">Подберите идеального попутчика</h2>
-          <div class="companion-filter__group">
-            <fieldset class="companion-filter__fieldset companion-filter__fieldset--open">
-              <button class="companion-filter__toggle" type="button">Хобби</button>
-              <ul class="companion-filter__list">
-                <li class="companion-filter__item">
-                  <label class="checkbox">
-                    <input class="checkbox__input" name="hobby" type="checkbox">
-                    <span class="checkbox__label">Спортзал</span>
-                  </label>
-                </li>
-                <li class="companion-filter__item">
-                  <label class="checkbox">
-                    <input class="checkbox__input" name="hobby" type="checkbox">
-                    <span class="checkbox__label">Кальян</span>
-                  </label>
-                </li>
-                <li class="companion-filter__item">
-                  <label class="checkbox">
-                    <input class="checkbox__input" name="hobby" type="checkbox">
-                    <span class="checkbox__label">Диван</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-          </div>
-          <div class="companion-filter__group">
-            <fieldset class="companion-filter__fieldset companion-filter__fieldset--open">
-              <button class="companion-filter__toggle" type="button">Музыка</button>
-              <ul class="companion-filter__list">
-                <li class="companion-filter__item">
-                  <label class="checkbox">
-                    <input class="checkbox__input" name="music" type="checkbox">
-                    <span class="checkbox__label">Тяжелый рок</span>
-                  </label>
-                </li>
-                <li class="companion-filter__item">
-                  <label class="checkbox">
-                    <input class="checkbox__input" name="music" type="checkbox">
-                    <span class="checkbox__label">Русский рэп</span>
-                  </label>
-                </li>
-                <li class="companion-filter__item">
-                  <label class="checkbox">
-                    <input class="checkbox__input" name="music" type="checkbox">
-                    <span class="checkbox__label">Евроденс</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-          </div>
-          <div class="companion-filter__group">
-            <fieldset class="companion-filter__fieldset companion-filter__fieldset--open">
-              <button class="companion-filter__toggle" type="button">Еда</button>
-              <ul class="companion-filter__list">
-                <li class="companion-filter__item">
-                  <label class="checkbox">
-                    <input class="checkbox__input" name="food" type="checkbox">
-                    <span class="checkbox__label">Мясоед</span>
-                  </label>
-                </li>
-                <li class="companion-filter__item">
-                  <label class="checkbox">
-                    <input class="checkbox__input" name="food" type="checkbox">
-                    <span class="checkbox__label">Сидит на ПП</span>
-                  </label>
-                </li>
-                <li class="companion-filter__item">
-                  <label class="checkbox">
-                    <input class="checkbox__input" name="food" type="checkbox">
-                    <span class="checkbox__label">Веган-сыроед</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-          </div>
-          <div class="companion-filter__group">
-            <fieldset class="companion-filter__fieldset companion-filter__fieldset--open">
-              <button class="companion-filter__toggle" type="button">Транспорт</button>
-              <ul class="companion-filter__list companion-filter__list--transport type-of-transports">
-                <li class="companion-filter__item">
-                  <label class="checkbox checkbox--transport">
-                    <input class="checkbox__input" name="transport" type="checkbox">
-                    <span class="checkbox__label">Авиаперелет</span>
-                    <img class="type-of-transports__image" src="./img/icon_plane.svg" width="17" height="16" alt="">
-                  </label>
-                </li>
-                <li class="companion-filter__item">
-                  <label class="checkbox checkbox--transport">
-                    <input class="checkbox__input" name="transport" type="checkbox">
-                    <span class="checkbox__label">Автотранспорт</span>
-                    <img class="type-of-transports__image" src="./img/icon_bus.svg" width="17" height="16" alt="">
-                  </label>
-                </li>
-                <li class="companion-filter__item">
-                  <label class="checkbox checkbox--transport">
-                    <input class="checkbox__input" name="transport" type="checkbox">
-                    <span class="checkbox__label">Велосипед</span>
-                    <img class="type-of-transports__image" src="./img/icon_bicycle.svg" width="17" height="16" alt="">
-                  </label>
-                </li>
-                <li class="companion-filter__item">
-                  <label class="checkbox checkbox--transport">
-                    <input class="checkbox__input" name="transport" type="checkbox">
-                    <span class="checkbox__label">Пешком</span>
-                    <img class="type-of-transports__image" src="./img/icon_run.svg" width="17" height="16" alt="">
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-          </div>
-          <div class="companion-filter__group">
-            <fieldset class="companion-filter__fieldset companion-filter__fieldset--open">
-              <button class="companion-filter__toggle" type="button">Левел</button>
-              <div class="companion-filter__label">
-                <input class="companion-filter__input" type="text" value="30" name="lavel">
-                <input class="companion-filter__input" type="text" value="100" name="lavel">
-              </div>
-              <div class="range-controls">
-                <div class="range-controls__scale"></div>
-                <button class="range-controls___toggle" type="button"></button>
-                <button class="range-controls___toggle" type="button"></button>
-              </div>
-            </fieldset>
-          </div>
+          <fieldset class="companion-filter__fieldset companion-filter__fieldset--open">
+            <button class="companion-filter__toggle" type="button">Хобби</button>
+            <ul class="companion-filter__list">
+              <li class="companion-filter__item">
+                <label class="checkbox">
+                  <input class="checkbox__input" name="hobby" type="checkbox">
+                  <span class="checkbox__label">Спортзал</span>
+                </label>
+              </li>
+              <li class="companion-filter__item">
+                <label class="checkbox">
+                  <input class="checkbox__input" name="hobby" type="checkbox">
+                  <span class="checkbox__label">Кальян</span>
+                </label>
+              </li>
+              <li class="companion-filter__item">
+                <label class="checkbox">
+                  <input class="checkbox__input" name="hobby" type="checkbox">
+                  <span class="checkbox__label">Диван</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="companion-filter__fieldset companion-filter__fieldset--open">
+            <button class="companion-filter__toggle" type="button">Музыка</button>
+            <ul class="companion-filter__list">
+              <li class="companion-filter__item">
+                <label class="checkbox">
+                  <input class="checkbox__input" name="music" type="checkbox">
+                  <span class="checkbox__label">Тяжелый рок</span>
+                </label>
+              </li>
+              <li class="companion-filter__item">
+                <label class="checkbox">
+                  <input class="checkbox__input" name="music" type="checkbox">
+                  <span class="checkbox__label">Русский рэп</span>
+                </label>
+              </li>
+              <li class="companion-filter__item">
+                <label class="checkbox">
+                  <input class="checkbox__input" name="music" type="checkbox">
+                  <span class="checkbox__label">Евроденс</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="companion-filter__fieldset companion-filter__fieldset--open">
+            <button class="companion-filter__toggle" type="button">Еда</button>
+            <ul class="companion-filter__list">
+              <li class="companion-filter__item">
+                <label class="checkbox">
+                  <input class="checkbox__input" name="food" type="checkbox">
+                  <span class="checkbox__label">Мясоед</span>
+                </label>
+              </li>
+              <li class="companion-filter__item">
+                <label class="checkbox">
+                  <input class="checkbox__input" name="food" type="checkbox">
+                  <span class="checkbox__label">Сидит на ПП</span>
+                </label>
+              </li>
+              <li class="companion-filter__item">
+                <label class="checkbox">
+                  <input class="checkbox__input" name="food" type="checkbox">
+                  <span class="checkbox__label">Веган-сыроед</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="companion-filter__fieldset companion-filter__fieldset--open">
+            <button class="companion-filter__toggle" type="button">Транспорт</button>
+            <ul class="companion-filter__list companion-filter__list--transport type-of-transports">
+              <li class="companion-filter__item">
+                <label class="checkbox checkbox--transport">
+                  <input class="checkbox__input" name="transport" type="checkbox">
+                  <span class="checkbox__label">Авиаперелет</span>
+                  <img class="type-of-transports__image" src="./img/icon_plane.svg" width="17" height="16" alt="">
+                </label>
+              </li>
+              <li class="companion-filter__item">
+                <label class="checkbox checkbox--transport">
+                  <input class="checkbox__input" name="transport" type="checkbox">
+                  <span class="checkbox__label">Автотранспорт</span>
+                  <img class="type-of-transports__image" src="./img/icon_bus.svg" width="17" height="16" alt="">
+                </label>
+              </li>
+              <li class="companion-filter__item">
+                <label class="checkbox checkbox--transport">
+                  <input class="checkbox__input" name="transport" type="checkbox">
+                  <span class="checkbox__label">Велосипед</span>
+                  <img class="type-of-transports__image" src="./img/icon_bicycle.svg" width="17" height="16" alt="">
+                </label>
+              </li>
+              <li class="companion-filter__item">
+                <label class="checkbox checkbox--transport">
+                  <input class="checkbox__input" name="transport" type="checkbox">
+                  <span class="checkbox__label">Пешком</span>
+                  <img class="type-of-transports__image" src="./img/icon_run.svg" width="17" height="16" alt="">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="companion-filter__fieldset companion-filter__fieldset--open">
+            <button class="companion-filter__toggle" type="button">Левел</button>
+            <div class="companion-filter__label">
+              <input class="companion-filter__input" type="text" value="30" name="lavel">
+              <input class="companion-filter__input" type="text" value="100" name="lavel">
+            </div>
+            <div class="range-controls">
+              <div class="range-controls__scale"></div>
+              <button class="range-controls___toggle" type="button"></button>
+              <button class="range-controls___toggle" type="button"></button>
+            </div>
+          </fieldset>
           <button class="companion-filter__button" type="button">показать</button>
         </form>
       </section>
-      <section class="travel-cards travel-cards--catalog container">
-        <ul class="travel-cards__list">
-          <li class="travel-cards__item">
-            <div class="travel-cards__description">
-              <img class="travel-cards__photo" src="img/first-user--catalog.png" alt="">
-              <span class="travel-cards__name">Таня Фирсова</span>
-              <div class="travel-cards__like">
-                <button class="travel-cards__like-button">
-                  <span class="visually-hidden">Поставить лайк</span>
-                </button>
-                <p class="travel-cards__like-number">1,5 М</p>
-              </div>
-              <ul class="travel-cards__hashtag hashtag-list">
-                <li class="hashtag-list__item">#ЗОЖ</li>
-                <li class="hashtag-list__item">#ПП</li>
-                <li class="hashtag-list__item">#Фитнес</li>
-                <li class="hashtag-list__item">#пляж</li>
-                <li class="hashtag-list__item">#авокадо</li>
-                <li class="hashtag-list__item">#смузи</li>
-              </ul>
-              <div class="travel-cards__plans">
-                <span class="travel-cards__subtitle">хочет посетить:</span>
-                <div class="travel-cards__flags">
+      <section class="filter-profiles container">
+        <ul class="filter-profiles__list">
+          <li class="filter-profiles__item">
+            <div class="filter-profiles__picture">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/avatar-firsova-285.jpg">
+                <source media="(min-width: 1440px)" srcset="img/avatar-firsova-190.jpg">
+                <img class="filter-profiles__photo" src="img/avatar-firsova-70.jpg" alt="">
+              </picture>
+            </div>
+            <span class="filter-profiles__name">Таня Фирсова</span>
+            <div class="filter-profiles__like">
+              <button class="filter-profiles__like-button">
+                <span class="visually-hidden">Поставить лайк</span>
+                <img src="img/icon__like.svg" width="20" height="20" alt="">
+              </button>
+              <p class="filter-profiles__like-number">1,5 М</p>
+            </div>
+            <ul class="filter-profiles__hashtag hashtag-list hashtag-list--filter">
+              <li class="hashtag-list__item">#ЗОЖ</li>
+              <li class="hashtag-list__item">#ПП</li>
+              <li class="hashtag-list__item">#Фитнес</li>
+              <li class="hashtag-list__item">#пляж</li>
+              <li class="hashtag-list__item">#авокадо</li>
+              <li class="hashtag-list__item">#смузи</li>
+            </ul>
+            <div class="filter-profiles__plans">
+              <span class="filter-profiles__subtitle">хочет посетить:</span>
+              <ul class="filter-profiles__flags-list">
+                <li class="filter-profiles__flag-item">
                   <img src="img/flag-sri-lanka.png" alt="">
+                  <span class="filter-profiles__country">Шри-ланка</span>
+                </li>
+                <li class="filter-profiles__flag-item">
                   <img src="img/flag-thailand.png" alt="">
+                  <span class="filter-profiles__country">Таиланд</span>
+                </li>
+                <li class="filter-profiles__flag-item">
                   <img src="img/flag-seychelles.png" alt="">
-                </div>
-              </div>
-              <div class="travel-cards__transports">
-                <span class="travel-cards__subtitle">транспорт:</span>
-                <ul class="type-of-transports">
-                  <li class="type-of-transports__item">
-                    <img src="./img/icon_plane.svg" width="17px" height="16px" alt="">
-                  </li>
-                  <li class="type-of-transports__item">
-                    <img src="./img/icon_bus.svg" width="17px" height="16px" alt="">
-                  </li>
-                  <li class="type-of-transports__item">
-                    <img src="./img/icon_bicycle.svg" width="17px" height="16px" alt="">
-                  </li>
-                  <li class="type-of-transports__item">
-                    <img src="./img/icon_run.svg" width="17px" height="16px" alt="">
-                  </li>
-                </ul>
-              </div>
-              <div class="travel-cards__level level level--catalog">
-                <span class="level__subtitle">левел:</span>
-                <span class="level__number">90</span>
-              </div>
-            </div>
-            <button class="travel-cards__button button">Позвать!</button>
-          </li>
-          <li class="travel-cards__item">
-            <div class="travel-cards__description">
-              <img class="travel-cards__photo" src="img/second-user--catalog.png" alt="">
-              <span class="travel-cards__name">Петя Демин</span>
-              <div class="travel-cards__like">
-                <button class="travel-cards__like-button">
-                  <span class="visually-hidden">Поставить лайк</span>
-                </button>
-                <p class="travel-cards__like-number">1500</p>
-              </div>
-              <ul class="travel-cards__hashtag hashtag-list">
-                <li class="hashtag-list__item">#бургер</li>
-                <li class="hashtag-list__item">#бар</li>
-                <li class="hashtag-list__item">#футбол</li>
-                <li class="hashtag-list__item">#концерт</li>
-                <li class="hashtag-list__item">#крафт</li>
+                  <span class="filter-profiles__country">Сейшелы</span>
+                </li>
               </ul>
-              <div class="travel-cards__plans">
-                <span class="travel-cards__subtitle">хочет посетить:</span>
-                <div class="travel-cards__flags">
+            </div>
+            <div class="filter-profiles__transports">
+              <span class="filter-profiles__subtitle">транспорт:</span>
+              <ul class="type-of-transports type-of-transports--profile">
+                <li class="type-of-transports__item">
+                  <img src="./img/icon_plane.svg" width="17px" height="16px" alt="">
+                </li>
+                <li class="type-of-transports__item">
+                  <img src="./img/icon_bus.svg" width="17px" height="16px" alt="">
+                </li>
+                <li class="type-of-transports__item">
+                  <img src="./img/icon_bicycle.svg" width="17px" height="16px" alt="">
+                </li>
+                <li class="type-of-transports__item">
+                  <img src="./img/icon_run.svg" width="17px" height="16px" alt="">
+                </li>
+              </ul>
+            </div>
+            <div class="filter-profiles__level level">
+              <span class="level__subtitle">левел:</span>
+              <span class="level__number">90</span>
+            </div>
+            <button class="filter-profiles__button button">Позвать!</button>
+          </li>
+          <li class="filter-profiles__item">
+            <div class="filter-profiles__picture">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/avatar-demin-285.jpg">
+                <source media="(min-width: 1440px)" srcset="img/avatar-demin-190.jpg">
+                <img class="filter-profiles__photo" src="img/avatar-demin-70.jpg" alt="">
+              </picture>
+            </div>
+            <span class="filter-profiles__name">Петя Демин</span>
+            <div class="filter-profiles__like">
+              <button class="filter-profiles__like-button">
+                <span class="visually-hidden">Поставить лайк</span>
+                <img src="img/icon__like.svg" width="20" height="20" alt="">
+              </button>
+              <p class="filter-profiles__like-number">1500</p>
+            </div>
+            <ul class="filter-profiles__hashtag hashtag-list hashtag-list--filter">
+              <li class="hashtag-list__item">#бургер</li>
+              <li class="hashtag-list__item">#бар</li>
+              <li class="hashtag-list__item">#футбол</li>
+              <li class="hashtag-list__item">#концерт</li>
+              <li class="hashtag-list__item">#крафт</li>
+            </ul>
+            <div class="filter-profiles__plans">
+              <span class="filter-profiles__subtitle">хочет посетить:</span>
+              <ul class="filter-profiles__flags-list">
+                <li class="filter-profiles__flag-item">
                   <img src="img/flag-belgium.png" alt="">
+                  <span class="filter-profiles__country">Бельгия</span>
+                </li>
+                <li class="filter-profiles__flag-item">
                   <img src="img/flag-czech.png" alt="">
-                </div>
-              </div>
-              <div class="travel-cards__transports">
-                <span class="travel-cards__subtitle">транспорт:</span>
-                <ul class="type-of-transports">
-                  <li class="type-of-transports__item">
-                    <img src="./img/icon_plane.svg" width="17px" height="16px" alt="">
-                  </li>
-                  <li class="type-of-transports__item">
-                    <img src="./img/icon_bus.svg" width="17px" height="16px" alt="">
-                  </li>
-                  <li class="type-of-transports__item">
-                    <img src="./img/icon_bicycle.svg" width="17px" height="16px" alt="">
-                  </li>
-                  <li class="type-of-transports__item">
-                    <img src="./img/icon_run.svg" width="17px" height="16px" alt="">
-                  </li>
-                </ul>
-              </div>
-              <div class="travel-cards__level level level--catalog">
-                <span class="level__subtitle">левел:</span>
-                <span class="level__number">80</span>
-              </div>
-            </div>
-            <button class="travel-cards__button button">Позвать!</button>
-          </li>
-          <li class="travel-cards__item">
-            <div class="travel-cards__description">
-              <img class="travel-cards__photo" src="img/third-user--catalog.png" alt="">
-              <span class="travel-cards__name">Марк Смолов</span>
-              <div class="travel-cards__like">
-                <button class="travel-cards__like-button">
-                  <span class="visually-hidden">Поставить лайк</span>
-                </button>
-                <p class="travel-cards__like-number">170</p>
-              </div>
-              <ul class="travel-cards__hashtag hashtag-list">
-                <li class="hashtag-list__item">#рэп</li>
-                <li class="hashtag-list__item">#тату</li>
-                <li class="hashtag-list__item">#хайпбист</li>
-                <li class="hashtag-list__item">#кроссовки</li>
-                <li class="hashtag-list__item">#суприм</li>
+                  <span class="filter-profiles__country">Чехия</span>
+                </li>
               </ul>
-              <div class="travel-cards__plans">
-                <span class="travel-cards__subtitle">хочет посетить:</span>
-                <div class="travel-cards__flags">
-                  <img src="img/flag-usa.png" alt="">
-                  <img src="img/flag-australia.png" alt="">
-                  <img src="img/flag-dominicana.png" alt="">
-                </div>
-              </div>
-              <div class="travel-cards__transports">
-                <span class="travel-cards__subtitle">транспорт:</span>
-                <ul class="type-of-transports">
-                  <li class="type-of-transports__item">
-                    <img src="./img/icon_plane.svg" width="17px" height="16px" alt="">
-                  </li>
-                  <li class="type-of-transports__item">
-                    <img src="./img/icon_bus.svg" width="17px" height="16px" alt="">
-                  </li>
-                  <li class="type-of-transports__item">
-                    <img src="./img/icon_bicycle.svg" width="17px" height="16px" alt="">
-                  </li>
-                  <li class="type-of-transports__item">
-                    <img src="./img/icon_run.svg" width="17px" height="16px" alt="">
-                  </li>
-                </ul>
-              </div>
-              <div class="travel-cards__level level level--catalog">
-                <span class="level__subtitle">левел:</span>
-                <span class="level__number">25</span>
-              </div>
             </div>
-            <button class="travel-cards__button button">Позвать!</button>
-          </li>
-          <li class="travel-cards__item">
-            <div class="travel-cards__description">
-              <img class="travel-cards__photo" src="img/fourth-user--catalog.png" alt="">
-              <span class="travel-cards__name">Лариса Роговая</span>
-              <div class="travel-cards__like">
-                <button class="travel-cards__like-button">
-                  <span class="visually-hidden">Поставить лайк</span>
-                </button>
-                <p class="travel-cards__like-number">23</p>
-              </div>
-              <ul class="travel-cards__hashtag hashtag-list">
-                <li class="hashtag-list__item">#образование</li>
-                <li class="hashtag-list__item">#карьера</li>
-                <li class="hashtag-list__item">#учеба</li>
-                <li class="hashtag-list__item">#линкедин</li>
+            <div class="filter-profiles__transports">
+              <span class="filter-profiles__subtitle">транспорт:</span>
+              <ul class="type-of-transports type-of-transports--profile">
+                <li class="type-of-transports__item">
+                  <img src="./img/icon_plane.svg" width="17px" height="16px" alt="">
+                </li>
+                <li class="type-of-transports__item">
+                  <img src="./img/icon_bus.svg" width="17px" height="16px" alt="">
+                </li>
+                <li class="type-of-transports__item">
+                  <img src="./img/icon_bicycle.svg" width="17px" height="16px" alt="">
+                </li>
+                <li class="type-of-transports__item">
+                  <img src="./img/icon_run.svg" width="17px" height="16px" alt="">
+                </li>
               </ul>
-              <div class="travel-cards__plans">
-                <span class="travel-cards__subtitle">хочет посетить:</span>
-                <div class="travel-cards__flags">
-                  <img src="img/flag-usa.png" alt="">
-                  <img src="img/flag-australia.png" alt="">
-                  <img src="img/flag-dominicana.png" alt="">
-                </div>
-              </div>
-              <div class="travel-cards__transports">
-                <span class="travel-cards__subtitle">транспорт:</span>
-                <ul class="type-of-transports">
-                  <li class="type-of-transports__item">
-                    <img src="./img/icon_plane.svg" width="17px" height="16px" alt="">
-                  </li>
-                  <li class="type-of-transports__item">
-                    <img src="./img/icon_bus.svg" width="17px" height="16px" alt="">
-                  </li>
-                  <li class="type-of-transports__item">
-                    <img src="./img/icon_bicycle.svg" width="17px" height="16px" alt="">
-                  </li>
-                  <li class="type-of-transports__item">
-                    <img src="./img/icon_run.svg" width="17px" height="16px" alt="">
-                  </li>
-                </ul>
-              </div>
-              <div class="travel-cards__level level level--catalog">
-                <span class="level__subtitle">левел:</span>
-                <span class="level__number">50</span>
-              </div>
             </div>
-            <button class="travel-cards__button button">Позвать!</button>
+            <div class="filter-profiles__level level">
+              <span class="level__subtitle">левел:</span>
+              <span class="level__number">80</span>
+            </div>
+            <button class="filter-profiles__button button">Позвать!</button>
+          </li>
+          <li class="filter-profiles__item">
+            <div class="filter-profiles__picture">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/avatar-smolov-285.jpg">
+                <source media="(min-width: 1440px)" srcset="img/avatar-smolov-190.jpg">
+                <img class="filter-profiles__photo" src="img/avatar-smolov-70.jpg" alt="">
+              </picture>
+            </div>
+            <span class="filter-profiles__name">Марк Смолов</span>
+            <div class="filter-profiles__like">
+              <button class="filter-profiles__like-button">
+                <span class="visually-hidden">Поставить лайк</span>
+                <img src="img/icon__like.svg" width="20" height="20" alt="">
+              </button>
+              <p class="filter-profiles__like-number">170</p>
+            </div>
+            <ul class="filter-profiles__hashtag hashtag-list hashtag-list--filter">
+              <li class="hashtag-list__item">#рэп</li>
+              <li class="hashtag-list__item">#тату</li>
+              <li class="hashtag-list__item">#хайпбист</li>
+              <li class="hashtag-list__item">#кроссовки</li>
+              <li class="hashtag-list__item">#суприм</li>
+            </ul>
+            <div class="filter-profiles__plans">
+              <span class="filter-profiles__subtitle">хочет посетить:</span>
+              <ul class="filter-profiles__flags-list">
+                <li class="filter-profiles__flag-item">
+                  <img src="img/flag-usa.png" alt="">
+                  <span class="filter-profiles__country">сша</span>
+                </li>
+                <li class="filter-profiles__flag-item">
+                  <img src="img/flag-australia.png" alt="">
+                  <span class="filter-profiles__country">австралия</span>
+                </li>
+                <li class="filter-profiles__flag-item">
+                  <img src="img/flag-dominicana.png" alt="">
+                  <span class="filter-profiles__country">доминика</span>
+                </li>
+              </ul>
+            </div>
+            <div class="filter-profiles__transports">
+              <span class="filter-profiles__subtitle">транспорт:</span>
+              <ul class="type-of-transports type-of-transports--profile">
+                <li class="type-of-transports__item">
+                  <img src="./img/icon_plane.svg" width="17px" height="16px" alt="">
+                </li>
+                <li class="type-of-transports__item">
+                  <img src="./img/icon_bus.svg" width="17px" height="16px" alt="">
+                </li>
+                <li class="type-of-transports__item">
+                  <img src="./img/icon_bicycle.svg" width="17px" height="16px" alt="">
+                </li>
+                <li class="type-of-transports__item">
+                  <img src="./img/icon_run.svg" width="17px" height="16px" alt="">
+                </li>
+              </ul>
+            </div>
+            <div class="filter-profiles__level level">
+              <span class="level__subtitle">левел:</span>
+              <span class="level__number">25</span>
+            </div>
+            <button class="filter-profiles__button button">Позвать!</button>
+          </li>
+          <li class="filter-profiles__item">
+            <div class="filter-profiles__picture">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/avatar-rogovaya-285.jpg">
+                <source media="(min-width: 1440px)" srcset="img/avatar-rogovaya-190.jpg">
+                <img class="filter-profiles__photo" src="img/avatar-rogovaya-70.jpg" alt="">
+              </picture>
+            </div>
+            <span class="filter-profiles__name">Лариса Роговая</span>
+            <div class="filter-profiles__like">
+              <button class="filter-profiles__like-button">
+                <span class="visually-hidden">Поставить лайк</span>
+                <img src="img/icon__like.svg" width="20" height="20" alt="">
+              </button>
+              <p class="filter-profiles__like-number">23</p>
+            </div>
+            <ul class="filter-profiles__hashtag hashtag-list hashtag-list--filter">
+              <li class="hashtag-list__item">#образование</li>
+              <li class="hashtag-list__item">#карьера</li>
+              <li class="hashtag-list__item">#учеба</li>
+              <li class="hashtag-list__item">#линкедин</li>
+            </ul>
+            <div class="filter-profiles__plans">
+              <span class="filter-profiles__subtitle">хочет посетить:</span>
+              <ul class="filter-profiles__flags-list">
+                <li class="filter-profiles__flag-item">
+                  <img src="img/flag-usa.png" alt="">
+                  <span class="filter-profiles__country">Великобритания</span>
+                </li>
+                <li class="filter-profiles__flag-item">
+                  <img src="img/flag-australia.png" alt="">
+                  <span class="filter-profiles__country">Германия</span>
+                </li>
+              </ul>
+            </div>
+            <div class="filter-profiles__transports">
+              <span class="filter-profiles__subtitle">транспорт:</span>
+              <ul class="type-of-transports type-of-transports--profile">
+                <li class="type-of-transports__item">
+                  <img src="./img/icon_plane.svg" width="17px" height="16px" alt="">
+                </li>
+                <li class="type-of-transports__item">
+                  <img src="./img/icon_bus.svg" width="17px" height="16px" alt="">
+                </li>
+                <li class="type-of-transports__item">
+                  <img src="./img/icon_bicycle.svg" width="17px" height="16px" alt="">
+                </li>
+                <li class="type-of-transports__item">
+                  <img src="./img/icon_run.svg" width="17px" height="16px" alt="">
+                </li>
+              </ul>
+            </div>
+            <div class="filter-profiles__level level">
+              <span class="level__subtitle">левел:</span>
+              <span class="level__number">50</span>
+            </div>
+            <button class="filter-profiles__button button">Позвать!</button>
           </li>
         </ul>
         <div class="catalog-pagination">
@@ -958,7 +997,7 @@
     </main>
     <footer class="page-footer container">
       <a class="page-footer__logo logo" href="" >
-        <img src="img/logo-dark--mobile.png" alt="">
+        <!-- <img src="img/logo-dark--mobile.png" alt=""> -->
       </a>
       <ul class="page-footer__social social-list">
         <li class="social-list__item">

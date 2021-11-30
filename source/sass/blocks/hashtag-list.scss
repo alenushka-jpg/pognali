@@ -11,6 +11,14 @@
   }
 }
 
+.hashtag-list--filter {
+  @media (min-width: $desktop-width) {
+    .hashtag-list__item {
+      color: $basic-black;
+    }
+  }
+}
+
 .hashtag-list__item {
   font-size: 16px;
   line-height: 18px;

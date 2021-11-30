@@ -4,6 +4,10 @@
   list-style: none;
 }
 
+.type-of-transports--profile {
+  display: flex;
+}
+
 .type-of-transports__svg {
   @media (min-width: $tablet-width) {
     width: 24px;
