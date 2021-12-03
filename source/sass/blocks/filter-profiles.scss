@@ -131,6 +131,7 @@
   color: $special-blue-650;
 
   @media (min-width: $desktop-width) {
+    margin-left: 18px;
     font-weight: 500;
     font-size: 20px;
     line-height: 20px;
@@ -143,19 +144,23 @@
     align-items: center;
     grid-column: 3/4;
     grid-row: 3/4;
+    margin-bottom: 48px;
   }
 }
 
 .filter-profiles__level {
-  grid-column: 3/4;
-  grid-row: 3/4;
+  @media (min-width: $desktop-width) {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    margin-bottom: 42px;
+  }
+
 }
 
 .filter-profiles__button {
-  grid-column: 2/3;
-  grid-row: 3/4;
-
   @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+    grid-row: 3/4;
     width: 150px;
     padding-left: 0;
     padding-right: 0;
