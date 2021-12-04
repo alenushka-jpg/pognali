@@ -6,6 +6,18 @@
 
 .type-of-transports--profile {
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+
+    .type-of-transports__item img {
+      margin-left: auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
 }
 
 .type-of-transports__svg {

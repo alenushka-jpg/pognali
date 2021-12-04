@@ -12,7 +12,7 @@
 }
 
 .hashtag-list--filter {
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     .hashtag-list__item {
       color: $basic-black;
     }
