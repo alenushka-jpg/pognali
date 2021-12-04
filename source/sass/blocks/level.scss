@@ -82,6 +82,28 @@
 }
 
 .level--cards {
+  justify-content: space-around;
+
+  .level__subtitle {
+    display: none;
+  }
+
+  .level__text {
+    font-size: 15px;
+    line-height: 16px;
+    color: $basic-grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    .level__subtitle {
+      display: block;
+    }
+
+    .level__text {
+      display: none;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     margin-right: auto;
   }
