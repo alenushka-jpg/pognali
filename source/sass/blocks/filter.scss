@@ -4,6 +4,10 @@
   .filter__toggle {
     display: none;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 48px;
+  }
 }
 
 .filter--open {
