@@ -1,3 +1,13 @@
+.catalog-pagination {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 77px;
+  }
+}
+
 .catalog-pagination__button {
   display: block;
   padding: 0;
@@ -9,19 +19,22 @@
   border: none;
   background-color: inherit;
 
-  @media (min-width: $desktop-width) {
-    margin: 0 auto 73px;
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    margin: 0 auto 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 73px;
   }
 }
 
 .catalog-pagination__switchers {
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     padding: 25px 40px 25px 30px;
-    margin-bottom: 77px;
     background-color: $basic-while;
     border-radius: 20px;
   }
@@ -32,13 +45,13 @@
   margin: 0;
   list-style: none;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
   }
 }
 
 .catalog-pagination__item {
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
     justify-content: center;
