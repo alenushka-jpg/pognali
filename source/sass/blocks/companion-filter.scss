@@ -42,6 +42,10 @@
     display: flex;
     align-items: center;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
 }
 
 .companion-filter__fieldset--open {
@@ -57,6 +61,12 @@
   @media (min-width: $tablet-width) {
     .companion-filter__list {
       flex-direction: row;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .companion-filter__list {
+      flex-direction: column;
     }
   }
 }

@@ -1,11 +1,32 @@
 .page-main--catalog {
   background-color: $special-blue-00;
 
-  .page-main__container {
-    @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
+    .page-main__container {
       display: grid;
       grid-template-columns: 1fr 1fr;
       align-items: center;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1009px 345px;
+    column-gap: 85px;
+
+    .page-main__header,
+    .page-main__filter {
+      grid-column: 1/-1;
+    }
+
+    .page-main__filter-profiles {
+      grid-column: 1/2;
+      grid-row: 3/4;
+    }
+
+    .page-main__companion-filter {
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 }
