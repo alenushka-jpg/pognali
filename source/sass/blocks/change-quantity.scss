@@ -1,15 +1,47 @@
+.change-quantity {
+  position: relative;
+  margin-bottom: 20px;
+}
+
 .change-quantity__button {
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 100%;
   margin: 0;
   padding: 0;
   border: none;
   background-color: inherit;
+
+  &--minus {
+    left: 0;
+  }
+
+  &--plus {
+    right: 0;
+  }
 }
 
 .change-quantity__input {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 16px;
+  padding-bottom: 13px;
   font-weight: 500;
   font-size: 14.86px;
   line-height: 14px;
-  border: none;
-  text-transform: uppercase;
+  text-align: center;
   color: $special-blue-650;
+  border: 1px solid $special-blue-120;
+  border-radius: 4px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

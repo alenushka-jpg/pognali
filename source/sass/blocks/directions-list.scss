@@ -4,25 +4,89 @@
   list-style: none;
 }
 
+.directions-list__item {
+  margin-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+  }
+}
+
+.directions-list__picture {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    order: 5;
+    justify-self: end;
+  }
+}
+
+.directions-list__img {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 559px;
+    height: 140px;
+  }
+}
+
+.directions-list__country {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 26px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  background-color: $basic-while;
+  border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border-radius: 21px;
+  }
+}
+
 .directions-list__name {
   margin: 0;
   font-weight: 700;
   font-size: 21px;
   line-height: 21px;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 17px;
+    max-width: 350px;
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
 
 .directions-list__description {
+  display: block;
   margin: 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
   color: rgba($basic-grey, 0.3);
+
+  @media (min-width: $tablet-width) {
+    margin-top: 5px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .directions-list__population {
+  margin: 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   color: rgba($special-blue-800, 0.3);
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }

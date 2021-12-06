@@ -1,7 +1,15 @@
 .markers-list {
+  display: none;
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 55px;
+  }
 }
 
 .markers-list__item {

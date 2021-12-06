@@ -1,10 +1,31 @@
 .hashtag-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 14px;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
+}
+
+.hashtag-list--filter {
+  @media (min-width: $tablet-width) {
+    .hashtag-list__item {
+      color: $basic-black;
+    }
+  }
 }
 
 .hashtag-list__item {
-  font-size: 16px;
+  font-size: 15px;
   line-height: 18px;
   color: $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 23px;
+  }
 }

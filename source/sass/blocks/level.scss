@@ -1,20 +1,65 @@
+.level {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  // width: 100px;
+  // height: 100px;
+  margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    // width: 94px;
+    // height: 94px;
+
+    &::before {
+      width: 94px;
+      height: 94px;
+      background-image: url("/img/circle-tablet.svg");
+    }
+  }
+
+  // @media (min-width: $desktop-width) {
+  //   width: 95px;
+  //   height: 95px;
+  // }
+}
+
 .level--index {
   .level__number {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 24px;
     color: $basic-while;
   }
 
   .level__text {
-    margin: 0;
-    font-size: 14px;
-    line-height: 14px;
     color: $basic-while;
   }
 }
 
-.level--form {
+.level__number {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: $special-blue-650;
+}
+
+.level__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+  color: rgba($basic-black, 0.4);
+}
+
+.level--profile {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100px;
+    width: 100px;
+    background-image: url("../img/circle.svg");
+  }
+
   .level__number {
     font-weight: 700;
     font-size: 38px;
@@ -27,18 +72,39 @@
     line-height: 18px;
     color: $basic-grey;
   }
+
+  @media (min-width: $desktop-width) {
+    .level__number,
+    .level__text {
+      color: $basic-while;
+    }
+  }
 }
 
-.level--catalog {
+.level--cards {
+  justify-content: space-around;
+
   .level__subtitle {
+    display: none;
+  }
+
+  .level__text {
     font-size: 15px;
     line-height: 16px;
     color: $basic-grey;
   }
 
-  .level__number {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 24px;
+  @media (min-width: $tablet-width) {
+    .level__subtitle {
+      display: block;
+    }
+
+    .level__text {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: auto;
   }
 }

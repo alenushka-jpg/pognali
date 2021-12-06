@@ -1,18 +1,86 @@
 .travel-cards__list {
   margin: 0;
+  margin-bottom: 20px;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
 }
 
+.travel-cards--catalog {
+  @media (min-width: $tablet-width) {
+    .travel-cards__list {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.travel-cards__item {
+  position: relative;
+  width: 270px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 9px;
+
+  @media (min-width: $tablet-width) {
+    width: 285px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.travel-cards__photo {
+  @media (min-width: $tablet-width) {
+    width: 285px;
+    height: 286px;
+  }
+}
+
+// .travel-cards__level {
+//   position: absolute;
+//   top: 17px;
+//   left: 17px;
+// }
+
 .travel-cards__description {
+  padding-left: 46px;
+  padding-right: 36px;
+  padding-bottom: 20px;
+  text-align: center;
   background-color: $basic-while;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 27px;
+  }
+}
+
+.travel-cards__flags {
+  display: flex;
+  justify-content: center;
+  margin-top: -12px;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 19px;
+  }
 }
 
 .travel-cards__name {
+  display: block;
   font-weight: 700;
   font-size: 21px;
   line-height: 21px;
   color: $special-blue-650;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+    font-size: 24px;
+    line-height: 22px;
+  }
 }
 
 .travel-cards__like-number {

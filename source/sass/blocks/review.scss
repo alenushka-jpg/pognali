@@ -1,12 +1,79 @@
+.review {
+  width: 100%;
+  padding-top: 48px;
+  padding-bottom: 39px;
+  background-color: $special-blue-800;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 96px;
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    padding-bottom: 126px;
+  }
+}
+
+.review__container {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 365px 1fr;
+    row-gap: 121px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 92px;
+  }
+}
+
 .review__blockquote {
   margin: 0;
+  padding-left: 25px;
+  padding-right: 75px;
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 4/5;
+    padding-left: 67px;
+    padding-right: 0;
+  }
+}
+
+.review__steps {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+  }
 }
 
 .review__text {
-  margin: 0;
-  font-style: normal;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 18px;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
   color: $basic-while;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
+
+.review__author {
+  font-size: 16px;
+  line-height: 22px;
+  color: $basic-while;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 25px;
+  }
 }

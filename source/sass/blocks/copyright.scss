@@ -1,6 +1,16 @@
 .copyright__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 13px;
   font-size: 16px;
   line-height: 16px;
   text-decoration: none;
   color: $basic-grey;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

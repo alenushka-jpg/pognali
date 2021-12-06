@@ -2,16 +2,80 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  background-color: $special-yellow-900;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+  }
 }
 
 .action-steps__item {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 24px;
+  padding-right: 21px;
+
+  &--one {
+    background-color: $special-yellow-900;
+  }
+
+  &--two {
+    background-color: $special-yellow-800;
+  }
+
+  &--three {
+    background-color: $special-yellow-700;
+  }
+
+  &--four {
+    background-color: $special-yellow-300;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    flex-direction: column;
+    padding-top: 31px;
+    padding-left: 33px;
+    padding-right: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.action-steps__name {
+  width: 150px;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
   color: $special-blue-800;
+
+  @media (min-width: $tablet-width) {
+    width: 185px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .action-steps__order {
+  font-size: 18px;
+  line-height: 18px;
   color: $basic-while;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 30px;
+  }
 }

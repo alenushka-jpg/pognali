@@ -2,40 +2,209 @@
   background-color: $special-blue-80;
 }
 
+.add-plan__container {
+  padding-top: 30px;
+  padding-bottom: 43px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 53px;
+    padding-bottom: 63px;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
 .add-plan__fieldset {
-  margin: 0;
-  padding-top: 0;
-  padding-bottom: 0;
+  margin-bottom: 10px;
+  padding-top: 24px;
+  padding-bottom: 23px;
   border: none;
   background-color: $basic-while;
   border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 48px;
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 419px 219px;
+    padding-left: 160px;
+    padding-top: 100px;
+    padding-right: 160px;
+    padding-bottom: 106px;
+  }
+}
+
+.add-plan__fieldset--step-one {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 170px;
+
+    .add-plan__title,
+    .add-plan__text {
+      grid-column: 1/2;
+    }
+
+    .add-plan__markers {
+      grid-column: 2/3;
+      grid-row: 1/3;
+    }
+
+    .add-plan__search,
+    .add-plan__calendar {
+      grid-column: 1/-1;
+    }
+  }
+}
+
+.add-plan__fieldset--step-two {
+  .add-plan__text {
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 419px 219px;
+    column-gap: 365px;
+  }
+}
+
+.add-plan__fieldset--step-three {
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 490px 219px;
+    column-gap: 295px;
+  }
+}
+
+.add-plan__select {
+  @media (min-width: $desktop-width) {
+    grid-column: 1/-1;
+  }
+}
+
+.add-plan__markers {
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+}
+
+.countries-description {
+  @media (min-width: $desktop-width) {
+    grid-column: 1/-1;
+  }
+}
+
+.add-plan__search {
+  margin-bottom: 24px;
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    column-gap: 282px;
+    padding-top: 30px;
+    margin-bottom: 33px;
+  }
 }
 
 .add-plan__title {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 16px;
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
   color: $special-blue-650;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+    margin-bottom: 33px;
+  }
+}
+
+.add-plan__step {
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
 }
 
 .add-plan__text {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 20px;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
   color: $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 73px;
+    margin-bottom: 38px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+    margin-bottom: 55px;
+    padding-right: 0;
+  }
+}
+
+.add-plan__step-buttons {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/3;
+  }
 }
 
 .add-plan__button {
-  padding-left: 42px;
-  padding-right: 42px;
+  padding-left: 35px;
+  padding-right: 35px;
   padding-top: 6px;
   padding-bottom: 5px;
   text-decoration: none;
+  text-align: center;
   color: $special-blue-650;
 
   &--back {
     background-color: inherit;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    padding-right: 75px;
+    padding-top: 29px;
+    padding-bottom: 27px;
+    text-transform: inherit;
+
+    &--back {
+      padding-right: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 286px;
+
+    &--back {
+      text-align: end;
+    }
   }
 }

@@ -1,5 +1,6 @@
 .button {
   display: inline-block;
+  width: 100%;
   padding-left: 70px;
   padding-right: 70px;
   padding-top: 10px;
@@ -12,4 +13,10 @@
   background-color: $special-yellow-300;
   border: none;
   border-radius: 25px;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }

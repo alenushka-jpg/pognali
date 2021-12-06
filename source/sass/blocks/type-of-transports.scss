@@ -3,3 +3,30 @@
   margin: 0;
   list-style: none;
 }
+
+.type-of-transports--profile {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    .type-of-transports__item img {
+      margin-left: auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.type-of-transports__svg {
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 24px;
+  }
+}

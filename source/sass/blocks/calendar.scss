@@ -1,3 +1,36 @@
+.calendar__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 42px;
+  margin-bottom: 22px;
+  border-top: 1px solid $special-blue-70;
+  border-bottom: 1px solid $special-blue-70;
+
+  @media (min-width: $tablet-width) {
+    height: 86px;
+    margin-bottom: 39px;
+  }
+}
+
+.calendar__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 57px;
+  }
+}
+
+.calendar__table-row {
+  border-bottom: 1px solid $special-blue-70;
+}
+
 .calendar__button {
   padding: 0;
   border: none;
@@ -10,10 +43,16 @@
   font-size: 20px;
   line-height: 20px;
   color: $special-blue-650;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .calendar__day-of-week {
   padding: 0;
+  padding-bottom: 10px;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -22,12 +61,87 @@
   &--weekends {
     color: $special-orange;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: -2.2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 14px;
+    padding-right: 14px;
+    text-align: start;
+  }
+}
+
+.calendar__second-letter {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
 }
 
 .calendar__table-cell {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border-right: 1px solid $special-blue-70;
+
+  @media (min-width: $tablet-width) {
+    width: 78px;
+    height: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 142px;
+    height: 72px;
+  }
+}
+
+.calendar__input:disabled + .calendar__number {
+  color: rgba($basic-grey, 0.3);
+  background-color: transparent;
+}
+
+input:checked + .calendar__number {
+  color: $basic-while;
+  background-color: $special-blue-650;
+}
+
+.calendar__number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
   color: $special-blue-650;
   background-color: $special-blue-00;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: start;
+    justify-content: start;
+    padding: 16px 14px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+.calendar__label {
+  width: 100%;
+  height: 100%;
+}
+
+.calendar__table-body {
+  border: 1px solid $special-blue-70;
 }

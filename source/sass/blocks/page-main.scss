@@ -1,6 +1,29 @@
-.page-main {
-  &--catalog {
-    background-color: $special-blue-00;
+.page-main--catalog {
+  background-color: $special-blue-00;
+
+  @media (min-width: $tablet-width) {
+    .page-main__container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
+  }
+}
+
+.page-main__container {
+  padding-top: 43px;
+  padding-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 94px;
+    padding-bottom: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 84px;
+    padding-bottom: 64px;
   }
 }
 
@@ -10,18 +33,76 @@
 }
 
 .page-main__title {
-  margin: 0;
-  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 700;
   font-size: 36px;
   line-height: 36px;
   color: $basic-while;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+  }
 }
 
 .page-main__link {
+  display: none;
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
   text-decoration: none;
   text-transform: uppercase;
   color: $basic-while;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    grid-column: 2/3;
+    padding-right: 61px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 63px;
+  }
+}
+
+.page-main__body {
+  padding-left: 0;
+  padding-right: 0;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 950px 344px;
+    column-gap: 86px;
+  }
+}
+
+.page-main__companion-filter {
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: auto;
+    margin-left: 0;
+  }
+}
+
+.page-main__filter-profiles {
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: 0;
+  }
 }

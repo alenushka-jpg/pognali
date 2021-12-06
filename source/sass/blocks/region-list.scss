@@ -1,17 +1,43 @@
 .region-list {
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    width: 370px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 380px;
+  }
 }
 
 .region-list__item {
-  font-weight: bold;
+  display: flex;
+  margin-bottom: 13px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.region-list__link {
+  font-weight: 700;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: rgba($special-blue-700, 0.3);
+  text-decoration: none;
 
   &--active {
     color: $special-blue-700;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
   }
 }
