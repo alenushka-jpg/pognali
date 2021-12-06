@@ -30,6 +30,34 @@
   top: 0;
   width: 100%;
   background-color: $basic-while;
+  z-index: 1;
+
+  .page-header__list,
+  .page-header__button,
+  .page-header__contacts,
+  .page-header__svg--dark {
+    display: block;
+  }
+
+  .social-list--header {
+    display: flex;
+  }
+
+  .page-header__svg--light {
+    display: none;
+  }
+
+  .page-header__open {
+    display: none;
+  }
+
+  // @media (min-width: $tablet-width) {
+  //   .page-header__list,
+  //   .page-header__button,
+  //   .page-header__contacts {
+  //     display: none;
+  //   }
+  // }
 }
 
 .page-header__top {
@@ -76,7 +104,6 @@
 
 .page-header__button {
   display: none;
-  width: 190px;
   margin-bottom: 66px;
 
   @media (min-width: $tablet-width) {
