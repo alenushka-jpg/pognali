@@ -1,16 +1,16 @@
 .page-header {
   margin-bottom: -1px;
-  padding-top: 12px;
-  padding-bottom: 12px;
   background-color: $special-blue-750;
 
-  @media (min-width: $tablet-width) {
-    padding-top: 0;
-    padding-bottom: 0;
+  &--index {
+    background-color: $special-blue-900;
   }
 }
 
 .page-header__container {
+  padding-top: 12px;
+  padding-bottom: 12px;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -111,5 +111,10 @@
 }
 
 .page-header__social {
+  display: none;
+}
+
+
+.page-header__svg--dark {
   display: none;
 }
