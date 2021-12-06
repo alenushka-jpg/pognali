@@ -1,7 +1,6 @@
 .social-list {
   display: flex;
   justify-content: center;
-  margin: 0;
   padding: 0;
   list-style: none;
 
@@ -11,5 +10,9 @@
     margin-right: auto;
     margin-left: auto;
     justify-content: space-between;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 80px;
   }
 }

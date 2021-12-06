@@ -5,8 +5,6 @@
 }
 
 .contacts-list--header {
-  margin-bottom: 53px;
-
   @media (min-width: $desktop-width) {
     .contacts-list__link {
       width: 50px;
@@ -32,10 +30,6 @@
 .contacts-list__link {
   position: relative;
   display: block;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 18px;
-  color: $special-blue-700;
   text-decoration: none;
 }
 
@@ -169,6 +163,16 @@
 // }
 
 .contacts-list__text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special-blue-700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
   @media (min-width: $desktop-width) {
     display: none;
   }
