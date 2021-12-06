@@ -5,6 +5,10 @@
   &--index {
     background-color: $special-blue-900;
   }
+
+  @media (min-width: $tablet-width) {
+    background-color: $special-blue-750;
+  }
 }
 
 .page-header__container {
@@ -51,6 +55,10 @@
     display: none;
   }
 
+  .page-header__close {
+    display: block;
+  }
+
   // @media (min-width: $tablet-width) {
   //   .page-header__list,
   //   .page-header__button,
@@ -89,6 +97,10 @@
   @media (min-width: $desktop-width) {
     display: none;
   }
+}
+
+.page-header__close {
+  display: none;
 }
 
 .page-header__list {
