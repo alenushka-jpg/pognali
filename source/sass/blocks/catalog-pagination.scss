@@ -1,4 +1,6 @@
 .catalog-pagination {
+  padding-bottom: 46px;
+
   @media (min-width: $tablet-width) {
     padding-bottom: 66px;
   }
@@ -11,6 +13,7 @@
 .catalog-pagination__button {
   display: block;
   padding: 0;
+  margin: 0 auto 18px;
   font-weight: 700;
   font-size: 17px;
   line-height: 30px;
@@ -22,7 +25,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
-    margin: 0 auto 52px;
+    margin-bottom: 52px;
   }
 
   @media (min-width: $desktop-width) {
@@ -31,16 +34,19 @@
 }
 
 .catalog-pagination__switchers {
+  padding: 23px 63px 22px 63px;
+  background-color: $basic-while;
+  border-radius: 20px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     padding: 25px 40px 25px 30px;
-    background-color: $basic-while;
-    border-radius: 20px;
   }
 }
 
 .catalog-pagination__list {
+  display: none;
   padding: 0;
   margin: 0;
   list-style: none;

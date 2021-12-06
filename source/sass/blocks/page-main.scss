@@ -76,6 +76,9 @@
 }
 
 .page-main__body {
+  padding-left: 0;
+  padding-right: 0;
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 950px 344px;
