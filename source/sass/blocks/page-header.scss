@@ -41,14 +41,17 @@
   background-color: $basic-while;
   z-index: 1;
 
-  .page-header__list,
-  .page-header__button,
-  .page-header__contacts,
-  .page-header__svg--dark {
+  .page-header__information,
+  .page-header__svg--dark,
+  .page-header__close {
     display: block;
   }
 
-  .social-list--header {
+  .page-header__close {
+    margin: 0 auto;
+  }
+
+  .page-header__social {
     display: flex;
   }
 
@@ -60,27 +63,27 @@
     display: none;
   }
 
-  .page-header__close {
-    display: block;
-  }
+  // .page-header__close {
+  //   display: block;
+  // }
 
-  @media (min-width: $tablet-width) {
-    .page-header__svg--dark,
-    .page-header__svg-t--light {
-      display: none;
-    }
+  // @media (min-width: $tablet-width) {
+  //   .page-header__svg--dark,
+  //   .page-header__svg-t--light {
+  //     display: none;
+  //   }
 
-    .page-header__button {
-      grid-column: 3/4;
-      grid-row: 1/2;
-    }
+  //   .page-header__button {
+  //     grid-column: 3/4;
+  //     grid-row: 1/2;
+  //   }
 
-    .page-header__list,
-    .page-header__contacts,
-    .page-header__social {
-      grid-column: 1/-1;
-    }
-  }
+  //   .page-header__list,
+  //   .page-header__contacts,
+  //   .page-header__social {
+  //     grid-column: 1/-1;
+  //   }
+  // }
 }
 
 .page-header__top {
@@ -94,6 +97,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr;
     grid-column: 1/2;
   }
 }
@@ -119,7 +123,6 @@
 }
 
 .page-header__list {
-  display: none;
   padding-top: 76px;
   margin-top: 0;
   margin-bottom: 51px;
@@ -138,8 +141,8 @@
 }
 
 .page-header__button {
-  display: none;
   margin-bottom: 66px;
+  font-family: "Blogger sans", "Arial", sans-serif;
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -156,11 +159,11 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 4/5;
+    background-color: $special-yellow-200;
   }
 }
 
 .page-header__contacts {
-  display: none;
   margin-bottom: 53px;
 
   @media (min-width: $tablet-width) {
@@ -179,10 +182,6 @@
     padding-right: 0;
     margin-bottom: 0;
   }
-}
-
-.page-header__social {
-  display: none;
 }
 
 .page-header__svg {
