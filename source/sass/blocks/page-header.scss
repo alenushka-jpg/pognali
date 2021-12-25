@@ -9,6 +9,10 @@
   @media (min-width: $tablet-width) {
     background-color: $special-blue-750;
   }
+
+  @media (min-width: $desktop-width) {
+    background-color: $special-blue-790;
+  }
 }
 
 .page-header__container {
@@ -26,6 +30,7 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 2fr max-content max-content;
     padding-top: 46px;
+    padding-bottom: 11px;
   }
 }
 
@@ -61,7 +66,7 @@
 
   @media (min-width: $tablet-width) {
     .page-header__svg--dark,
-    .page-header__logo-tablet--light {
+    .page-header__svg-t--light {
       display: none;
     }
 
@@ -180,16 +185,26 @@
   display: none;
 }
 
-.page-header__logo-svg {
+.page-header__svg {
   &--dark {
     display: none;
   }
+
+  @media (min-width: $tablet-width) {
+    &--light {
+      display: none;
+    }
+  }
 }
 
-.page-header__logo-tablet {
+.page-header__svg-t {
   display: none;
 
   @media (min-width: $tablet-width) {
     display: block;
+
+    &--dark {
+      display: none;
+    }
   }
 }
