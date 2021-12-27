@@ -91,10 +91,18 @@
   grid-template-columns: 1fr max-content;
   align-items: center;
 
+  .page-header__button {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr 1fr;
     grid-column: 1/-1;
     grid-row: 1/2;
+
+    .page-header__button {
+      display: block;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -102,15 +110,16 @@
     grid-column: 1/2;
     margin-right: 40px;
 
-    button {
+    .page-header__button {
       display: none;
     }
   }
 }
 
 .page-header__information {
+  display: none;
+
   @media (min-width: $tablet-width) {
-    display: grid;
     grid-row: 2/5;
     grid-column: 1/-1;
   }
@@ -145,6 +154,11 @@
 
 .page-header__close {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    width: 22px;
+    height: 22px;
+  }
 }
 
 .page-header__list {

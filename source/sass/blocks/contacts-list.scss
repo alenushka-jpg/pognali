@@ -5,21 +5,65 @@
 }
 
 .contacts-list--header {
-  @media (min-width: $desktop-width) {
-    .contacts-list__link {
-      width: 50px;
-      height: 50px;
+  .contacts-list__link {
+    display: flex;
+    align-items: center;
+    padding: 14px 30px 13px 60px;
+
+    &::before {
+      width: 45px;
+      height: 45px;
+      background-color: $special-blue-950;
     }
   }
-}
 
-.contacts-list--promo {
-  display: flex;
-  align-items: center;
+  .contacts-list__svg {
+    top: 16px;
+    left: 13px;
+    fill: $special-yellow-200;
 
-  .contacts-list__link {
-    width: 40px;
-    height: 40px;
+    &--phone,
+    &--mail {
+      display: block;
+    }
+
+    &--mobile,
+    &--email {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .contacts-list__link {
+      padding: 0;
+      width: 50px;
+      height: 50px;
+
+      .contacts-list__svg {
+        fill: $special-blue-900;
+      }
+
+      &::before {
+        width: 50px;
+        height: 50px;
+      }
+
+      &--phone {
+        &::before {
+          background-color: $special-yellow-900;
+        }
+      }
+
+      &--email {
+        &::before {
+          background-color: $special-yellow-700;
+        }
+      }
+    }
+
+    .contacts-list__svg {
+      left: 16px;
+    }
   }
 }
 
@@ -31,82 +75,36 @@
   position: relative;
   display: block;
   text-decoration: none;
-}
 
-.contacts-list--header {
-  .contacts-list__link {
-    display: flex;
-    align-items: center;
-    padding: 14px 30px 13px 60px;
-
-    &::before {
-      position: absolute;
-      left: 0;
-      content: "";
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
-      background-color: $special-blue-950;
-    }
-  }
-
-  .contacts-list__svg-mobile {
+  &::before {
     position: absolute;
-    left: 13px;
+    left: 0;
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
   }
 
-  @media (min-width: $desktop-width) {
-    .contacts-list__link {
-      padding: 0;
-
-      &::before {
-        width: 50px;
-        height: 50px;
-        background-color: $special-yellow-900;
-      }
+  &--phone {
+    &::before {
+      background-color: $special-yellow-900;
     }
+  }
 
-    .contacts-list__svg-mobile {
-      left: 16px;
+  &--email {
+    &::before {
+      background-color: $special-yellow-700;
     }
   }
 }
 
 .contacts-list--promo {
+  display: flex;
+  align-items: center;
+
   .contacts-list__link {
-    &::before {
-      position: absolute;
-      content: "";
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background-color: $special-yellow-900;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 11px;
-      right: 13px;
-      width: 18px;
-      height: 18px;
-      background-image: url("/img/email--header.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &::before {
-      width: 50px;
-      height: 50px;
-    }
-
-    &::after {
-      top: 15px;
-      right: 16px;
-    }
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -129,13 +127,7 @@
     line-height: 22px;
 
     &::before {
-      left: 0;
       background-color: $special-blue-900;
-    }
-
-    &::after {
-      left: 11px;
-      top: 13px;
     }
   }
 
@@ -150,11 +142,6 @@
       &::before {
         width: 68px;
         height: 68px;
-      }
-
-      &::after {
-        left: 25px;
-        top: 25px;
       }
     }
 
@@ -174,9 +161,33 @@
   }
 }
 
-// .contacts-list__svg-mobile {
-//   display: none;
-// }
+.contacts-list__svg {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  fill: $special-blue-800;
+
+  &--phone,
+  &--mail {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    fill: $special-blue-900;
+
+    &--mobile {
+      top: 16px;
+      width: 18px;
+      height: 18px;
+    }
+
+    &--email {
+      top: 18px;
+      width: 17px;
+      height: 16px;
+    }
+  }
+}
 
 .contacts-list__text {
   font-weight: 700;

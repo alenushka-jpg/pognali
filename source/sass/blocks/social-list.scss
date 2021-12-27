@@ -5,14 +5,34 @@
   list-style: none;
 
   &--header {
+    justify-content: space-between;
+    align-items: center;
     display: none;
     width: 105px;
     margin-right: auto;
     margin-left: auto;
-    justify-content: space-between;
   }
 
   @media (min-width: $tablet-width) {
     margin-left: 80px;
+  }
+}
+
+.social-list__svg {
+  @media (min-width: $tablet-width) {
+    &--facebook {
+      width: 14px;
+      height: 28px;
+    }
+
+    &--vkontacte {
+      width: 31px;
+      height: 16px;
+    }
+
+    &--instagram {
+      width: 24px;
+      height: 24px;
+    }
   }
 }
