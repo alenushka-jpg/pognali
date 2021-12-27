@@ -66,6 +66,7 @@
 .promo__contacts-information {
   display: flex;
   justify-content: space-between;
+  margin-bottom: -20px;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -83,9 +84,7 @@
 }
 
 .promo__button {
-  padding-top: 7px;
-  padding-bottom: 6px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 7px 30px 6px;
   line-height: 20px;
+  z-index: 1;
 }
