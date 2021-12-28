@@ -4,8 +4,8 @@
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: $desktop-width) {
@@ -40,11 +40,38 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 50%;
+    margin-top: 0;
     flex-direction: column;
     padding-top: 31px;
     padding-left: 33px;
     padding-right: 33px;
+
+    &--one {
+      border-top-left-radius: 18px;
+      border-top-right-radius: 0;
+    }
+
+    &--two,
+    &--four {
+      margin-left: -20px;
+    }
+
+    &--two {
+      border-top-left-radius: 18px;
+      border-top-right-radius: 18px;
+    }
+
+    &--three {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 18px;
+    }
+
+    &--four {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 18px;
+      border-bottom-left-radius: 18px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -53,6 +80,7 @@
 }
 
 .action-steps__name {
+  display: block;
   width: 150px;
   font-weight: 700;
   font-size: 18px;
@@ -60,7 +88,7 @@
   color: $special-blue-800;
 
   @media (min-width: $tablet-width) {
-    width: 185px;
+    min-width: 211px;
     margin-bottom: 10px;
     font-size: 24px;
     line-height: 24px;

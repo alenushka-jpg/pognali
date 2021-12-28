@@ -18,7 +18,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 365px 1fr;
-    row-gap: 121px;
+    row-gap: 165px;
   }
 
   @media (min-width: $desktop-width) {
@@ -35,6 +35,7 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
+    width: 367px;
   }
 
   @media (min-width: $desktop-width) {
@@ -45,8 +46,11 @@
 }
 
 .review__steps {
+  background: linear-gradient($special-blue-800 22%, $special-blue-700 22%);
+
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
+    background: linear-gradient(45deg, #1F2847 50%, #2C314F 50%);
   }
 }
 
