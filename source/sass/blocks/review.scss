@@ -10,6 +10,8 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 92px;
+    padding-left: 63px;
+    padding-right: 57px;
     padding-bottom: 126px;
   }
 }
@@ -41,16 +43,24 @@
   @media (min-width: $desktop-width) {
     grid-column: 4/5;
     padding-left: 67px;
-    padding-right: 0;
+    padding-right: 20px;
   }
 }
 
 .review__steps {
-  background: linear-gradient($special-blue-800 22%, $special-blue-700 22%);
+  padding: 0 25px 39px;
+  background-color: $special-blue-700;
+  background-image: linear-gradient($special-blue-800 22%, $special-blue-700 22%);
 
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
-    background: linear-gradient(45deg, #1F2847 50%, #2C314F 50%);
+    background-image: linear-gradient(45deg, #1F2847 50%, #2C314F 50%);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 39px;
+    background-image: none;
+    background-color: inherit;
   }
 }
 
@@ -82,10 +92,4 @@
     font-size: 21px;
     line-height: 25px;
   }
-}
-
-.review__steps {
-  padding: 0 25px;
-  padding-bottom: 39px;
-  background-color: $special-blue-700;
 }
