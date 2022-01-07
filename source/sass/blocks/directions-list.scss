@@ -32,21 +32,19 @@
 }
 
 .directions-list__country {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  padding-top: 26px;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 24px;
+  margin-top: -11px;
+  padding: 26px 24px 24px;
   background-color: $basic-while;
   border-radius: 10px;
+  z-index: 1;
+}
 
-  @media (min-width: $tablet-width) {
-    flex-direction: column;
-    grid-column: 1/2;
-    grid-row: 1/2;
-    border-radius: 21px;
-  }
+.directions-list__icon {
+  position: absolute;
+  top: -13px;
 }
 
 .directions-list__name {
@@ -80,11 +78,22 @@
 }
 
 .directions-list__population {
+  position: relative;
+  padding-left: 19px;
   margin: 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   color: rgba($special-blue-800, 0.3);
+
+  &::after {
+    position: absolute;
+    left: 0;
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-image: url("../img/svg/icon_user.svg");
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

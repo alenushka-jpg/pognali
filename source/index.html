@@ -184,18 +184,23 @@
       </section>
       <section class="about-directions">
         <div class="about-directions__container container">
-          <h2 class="about-directions__title">Направления</h2>
-        <p class="about-directions__text">Мы не продаем туры <br> и ничего не рекламируем.</p>
-        <p class="about-directions__text">Люди сами пишут о странах, куда хотели бы отправиться
-          и чем можно там заняться.
-        </p>
-        <ul class="about-directions__list directions-list">
+          <div class="about-directions__header">
+            <h2 class="about-directions__title">Направления</h2>
+            <p class="about-directions__text">Мы не продаем туры <br> и ничего не рекламируем.</p>
+            <p class="about-directions__text">Люди сами пишут о странах, куда хотели бы отправиться
+              и чем можно там заняться.
+            </p>
+          </div>
+          <ul class="about-directions__list directions-list">
           <li class="directions-list__item">
             <picture class="directions-list__picture">
               <source media="(min-width: 768px)" srcset="img/thailand-tablet.png">
               <img class="directions-list__img" width="270" height="110" src="img/thailand-mobile.png" alt="">
             </picture>
             <div class="directions-list__country">
+              <picture class="directions-list__icon">
+                <img class="directions-list__icon-flag" width="35" height="24" src="img/flag-thailand.png" alt="">
+              </picture>
               <p class="directions-list__name">Таиланд
                 <span class="directions-list__description">Джунгли зовут!</span>
               </p>
@@ -211,6 +216,9 @@
               <img class="directions-list__img" width="270" height="110" src="img/france-mobile.png" alt="">
             </picture>
             <div class="directions-list__country">
+              <picture class="directions-list__icon">
+                <img class="directions-list__icon-flag" width="35" height="24" src="img/flag-france.png" alt="">
+              </picture>
               <p class="directions-list__name">Франция
                 <span class="directions-list__description">Трэ бьен, манифик!</span>
               </p>
@@ -226,6 +234,9 @@
               <img class="directions-list__img" width="270" height="110" src="img/czech-mobile.png" alt="">
             </picture>
             <div class="directions-list__country">
+              <picture class="directions-list__icon">
+                <img class="directions-list__icon-flag" width="35" height="24" src="img/flag-czech.png" alt="">
+              </picture>
               <p class="directions-list__name">Чехия
                 <span class="directions-list__description">Закоулки старой Европы</span>
               </p>
@@ -235,8 +246,8 @@
               </p>
             </div>
           </li>
-        </ul>
-        <button class="about-directions__button button" type="button">Показать все</button>
+          </ul>
+          <button class="about-directions__button button" type="button">Показать все</button>
         </div>
       </section>
       <section class="fellow-travelers">
