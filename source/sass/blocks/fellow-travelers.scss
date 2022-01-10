@@ -1,5 +1,10 @@
 .fellow-travelers {
   background-color: $special-blue-700;
+  background-image: url("/img/square.png"),
+    url("/img/smolov-back.png"),
+    url("/img/rogovaya-back.png");
+  background-repeat: no-repeat;
+  background-position: 0 34px, 152px 34px, 0px 305px;
 }
 
 .fellow-travelers__container {
