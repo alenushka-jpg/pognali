@@ -21,10 +21,7 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 350px;
     column-gap: 169px;
-    padding-top: 161px;
-    padding-bottom: 149px;
-    padding-left: 131px;
-    padding-right: 230px;
+    padding: 161px 230px 149px 131px;
   }
 }
 
@@ -95,11 +92,9 @@
 }
 
 .about-directions__button {
+  position: relative;
   margin-bottom: 34px;
-  padding-left: 23px;
-  padding-right: 23px;
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding: 22px 23px;
   font-size: 18px;
   line-height: 18px;
   text-align: start;
@@ -120,4 +115,10 @@
     grid-row: 4/5;
     width: 275px;
   }
+}
+
+.about-directions__button-arrow {
+  position: absolute;
+  right: 32px;
+  top: 25px;
 }

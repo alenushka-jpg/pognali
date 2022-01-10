@@ -86,6 +86,7 @@
 }
 
 .about-service__button {
+  position: relative;
   display: none;
   padding: 28px 35px 28px 32px;
   width: 276px;
@@ -97,5 +98,13 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+  }
+}
+
+.about-service__button-arrow {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    right: 35px;
+    top: 32px;
   }
 }
