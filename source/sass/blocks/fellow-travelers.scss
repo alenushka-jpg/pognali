@@ -28,6 +28,7 @@
     padding-left: 129px;
     padding-top: 130px;
     padding-bottom: 134px;
+    background-position: 58px 77px, 531px 136px, 205px 367px;
   }
 }
 
@@ -115,7 +116,7 @@
   color: $special-blue-650;
   text-transform: none;
   border: none;
-  border-radius: 10px;
+  border-radius: 20px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
@@ -124,8 +125,10 @@
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
     width: 280px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    font-size: 24px;
+    line-height: 24px;
   }
 }
 
@@ -133,4 +136,9 @@
   position: absolute;
   right: 22px;
   top: 24px;
+
+  @media (min-width: $desktop-width) {
+    right: 27px;
+    top: 32px;
+  }
 }

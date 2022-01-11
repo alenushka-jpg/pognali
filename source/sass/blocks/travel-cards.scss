@@ -64,7 +64,7 @@
   border-bottom-right-radius: 10px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 27px;
+    padding-bottom: 22px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
   }
@@ -74,7 +74,7 @@
   display: flex;
   justify-content: space-around;
   margin-top: -12px;
-  margin-bottom: 14px;
+  margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 19px;
@@ -109,7 +109,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 23px;
+    margin-bottom: 15px;
     font-size: 24px;
     line-height: 22px;
   }
