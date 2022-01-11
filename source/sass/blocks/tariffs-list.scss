@@ -24,15 +24,6 @@
     }
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    height: 1px;
-    width: 200px;
-    background-color: $special-blue-40;
-  }
-
   @media (min-width: $desktop-width) {
     padding-right: 146px;
 
@@ -45,7 +36,7 @@
 
 .tariffs-list__item {
   position: relative;
-  padding-top: 13px;
+  padding-right: 34px;
   padding-bottom: 17px;
 
   &::before {
@@ -63,15 +54,6 @@
     color: $basic-while;
     background-color: $special-yellow-900;
     border-radius: 50%;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    height: 1px;
-    width: 200px;
-    background-color: $special-blue-40;
   }
 
   @media (min-width: $tablet-width) {
@@ -108,7 +90,9 @@
 }
 
 .tariff-table__name {
+  padding-top: 13px;
   margin-bottom: 6px;
+  border-top: 1px solid $special-blue-50;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
