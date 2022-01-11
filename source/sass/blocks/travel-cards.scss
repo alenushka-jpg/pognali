@@ -22,8 +22,6 @@
 .travel-cards__item {
   position: relative;
   width: 270px;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 9px;
 
   @media (min-width: $tablet-width) {
@@ -33,7 +31,16 @@
   }
 }
 
+.travel-cards__level {
+  position: absolute;
+  top: 25px;
+  left: 30px;
+}
+
 .travel-cards__photo {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+
   @media (min-width: $tablet-width) {
     width: 285px;
     height: 286px;
@@ -52,6 +59,8 @@
   padding-bottom: 20px;
   text-align: center;
   background-color: $basic-while;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 27px;
@@ -61,6 +70,7 @@
 .travel-cards__flags {
   display: flex;
   justify-content: center;
+  justify-content: space-around;
   margin-top: -12px;
   margin-bottom: 14px;
 
@@ -70,11 +80,31 @@
 }
 
 .travel-cards__name {
-  display: block;
+  position: relative;
+  display: inline-block;
+  padding-left: 15px;
+  margin-bottom: 15px;
   font-weight: 700;
   font-size: 21px;
   line-height: 21px;
   color: $special-blue-650;
+
+  &::after {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: $special-red-400;
+    border-radius: 50%;
+  }
+
+  &--second {
+    &::after {
+      background-color: $special-green;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 23px;

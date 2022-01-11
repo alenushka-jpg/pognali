@@ -104,10 +104,8 @@
 }
 
 .fellow-travelers__button {
-  padding-top: 22px;
-  padding-left: 23px;
-  padding-right: 23px;
-  padding-bottom: 21px;
+  position: relative;
+  padding: 22px 23px 21px;
   font-size: 18px;
   line-height: 18px;
   text-align: start;
@@ -127,4 +125,10 @@
     padding-top: 30px;
     padding-bottom: 30px;
   }
+}
+
+.fellow-travelers__button-arrow {
+  position: absolute;
+  right: 22px;
+  top: 24px;
 }
