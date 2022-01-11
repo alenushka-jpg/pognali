@@ -24,6 +24,15 @@
     }
   }
 
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    width: 200px;
+    background-color: $special-blue-40;
+  }
+
   @media (min-width: $desktop-width) {
     padding-right: 146px;
 
@@ -43,6 +52,7 @@
     content: attr(data-number);
     position: absolute;
     right: 0;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,6 +63,15 @@
     color: $basic-while;
     background-color: $special-yellow-900;
     border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 1px;
+    width: 200px;
+    background-color: $special-blue-40;
   }
 
   @media (min-width: $tablet-width) {
