@@ -1,23 +1,25 @@
 .fellow-travelers {
+  position: relative;
   background-color: $special-blue-700;
-  background-image: url("../img/square.png"),
-    url("../img/smolov-back.png"),
-    url("../img/rogovaya-back.png");
-  background-repeat: no-repeat;
-  background-position: 0 34px, 152px 34px, 0 305px;
 }
 
 .fellow-travelers__container {
   padding-top: 68px;
   padding-bottom: 31px;
+  background-image: url("../img/square.png"),
+    url("../img/smolov-back.png"),
+    url("../img/rogovaya-back.png");
+  background-repeat: no-repeat;
+  background-position: 0 34px, 152px 34px, 0 305px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 430px 221px;
-    padding-top: 141px;
-    padding-bottom: 87px;
-    padding-left: 74px;
-    padding-right: 74px;
+    padding: 141px 74px 87px;
+    background-image: url("../img/square-tablet.png"),
+      url("../img/smolov-back-tablet.png"),
+      url("../img/rogovaya-back-tablet.png");
+    background-position: 29px 77px, 32px 393px, 410px 81px;
   }
 
   @media (min-width: $desktop-width) {

@@ -26,8 +26,7 @@
 
   @media (min-width: $tablet-width) {
     width: 285px;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0;
   }
 }
 
@@ -42,6 +41,8 @@
   border-top-right-radius: 12px;
 
   @media (min-width: $tablet-width) {
+    border-top-left-radius: 21px;
+    border-top-right-radius: 21px;
     width: 285px;
     height: 286px;
   }
@@ -64,6 +65,8 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 27px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
 }
 
