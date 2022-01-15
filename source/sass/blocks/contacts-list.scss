@@ -23,13 +23,25 @@
     fill: $special-yellow-200;
 
     &--phone,
-    &--mail {
+    &--email {
       display: block;
     }
 
     &--mobile,
-    &--email {
+    &--mail {
       display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    .contacts-list__link {
+      padding: 20px 30px 19px 91px;
+
+      &::before {
+        width: 68px;
+        height: 68px;
+        background-color: $special-blue-950;
+      }
     }
   }
 
@@ -133,6 +145,7 @@
   }
 
   .contacts-list__svg {
+    display: block;
     top: 16px;
     left: 11px;
     fill: $special-yellow-200;
@@ -150,6 +163,11 @@
         width: 68px;
         height: 68px;
       }
+    }
+
+    .contacts-list__svg {
+      top: 18px;
+      left: 18px;
     }
 
     .contacts-list__item {
@@ -177,6 +195,21 @@
   &--phone,
   &--mail {
     display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 18px;
+    left: 18px;
+
+    &--phone {
+      width: 27px;
+      height: 26px;
+    }
+
+    &--email {
+      width: 30px;
+      height: 34px;
+    }
   }
 
   @media (min-width: $desktop-width) {
