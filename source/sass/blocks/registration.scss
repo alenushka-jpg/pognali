@@ -38,7 +38,7 @@
 .registration__form {
   position: relative;
   display: flex;
-  width: 220px;
+  width: 270px;
   margin: 0 auto;
   margin-bottom: 29px;
 
@@ -93,12 +93,12 @@
   top: 0;
   right: 0;
   width: 60px;
-  height: 64px;
+  height: 100%;
   padding: 0;
   font-size: 0;
   background-color: $special-yellow-300;
   border: none;
-  border-radius: 20px;
+  border-radius: 15px;
 
   @media (min-width: $tablet-width) {
     width: 80px;
@@ -121,16 +121,18 @@
   display: block;
   width: 100%;
   margin: 0 auto;
-  padding-top: 22px;
-  padding-bottom: 22px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding: 22px 25px;
+  font-family: $main-font;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
+  color: $basic-grey;
   border: none;
-  border-radius: 20px;
+  border-radius: 15px;
 
+  &::placeholder {
+    color: rgba($basic-grey, 0.3) ;
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 30px;

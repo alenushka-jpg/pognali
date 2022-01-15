@@ -122,13 +122,20 @@
     display: flex;
     align-items: center;
     padding-left: 51px;
+    line-height: 22px;
+    font-weight: 700;
     color: $special-yellow-300;
     text-transform: uppercase;
-    line-height: 22px;
 
     &::before {
       background-color: $special-blue-900;
     }
+  }
+
+  .contacts-list__svg {
+    top: 16px;
+    left: 11px;
+    fill: $special-yellow-200;
   }
 
   @media (min-width: $tablet-width) {
