@@ -47,17 +47,6 @@
     border-radius: 50%;
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 12px;
-    left: 12px;
-    width: 21px;
-    height: 21px;
-    background-image: url("/img/svg/icon_location.svg");
-    background-repeat: no-repeat;
-  }
-
   @media (min-width: $tablet-width) {
     min-height: 68px;
     padding-left: 93px;
@@ -67,11 +56,6 @@
     &::before {
       width: 68px;
       height: 68px;
-    }
-
-    &::after {
-      top: 20px;
-      left: 22px;
     }
   }
 
@@ -87,7 +71,24 @@
   }
 }
 
+.address__street-svg {
+  position: absolute;
+  left: 11px;
+
+  @media (min-width: $tablet-width) {
+    left: 17px;
+    width: 32px;
+    height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 42px;
+    height: 42px;
+  }
+}
+
 .address__button {
+  position: relative;
   display: block;
   padding: 22px;
   font-weight: 700;
@@ -106,6 +107,11 @@
     font-size: 24px;
     line-height: 24px;
   }
+}
+
+.address__button-arrow {
+  position: absolute;
+  right: 30px;
 }
 
 .address__img {
