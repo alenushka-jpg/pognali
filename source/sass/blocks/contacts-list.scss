@@ -183,6 +183,30 @@
     .contacts-list__item:first-child {
       margin-right: 110px;
     }
+
+    .contacts-list__link {
+      padding-left: 126px;
+
+      &::before {
+        width: 90px;
+        height: 90px;
+      }
+    }
+
+    .contacts-list__svg {
+      top: 21px;
+      left: 26px;
+
+      &--phone {
+        width: 36px;
+        height: 34px;
+      }
+
+      &--email {
+        width: 36px;
+        height: 25px;
+      }
+    }
   }
 }
 
@@ -221,7 +245,7 @@
       height: 18px;
     }
 
-    &--email {
+    &--mail {
       top: 18px;
       width: 17px;
       height: 16px;

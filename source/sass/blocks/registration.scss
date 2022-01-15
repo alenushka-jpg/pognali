@@ -100,6 +100,15 @@
   }
 }
 
+.registration__button-arrow {
+  position: absolute;
+
+  @media (min-width: $desktop-width) {
+    right: 34px;
+    top: 35px;
+  }
+}
+
 .registration__input {
   display: block;
   width: 100%;
