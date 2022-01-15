@@ -65,8 +65,8 @@
   }
 }
 
-.tariff-list__name,
-.tariff-list__price {
+.tariffs-list__name,
+.tariffs-list__price {
   display: block;
   font-weight: 300;
   font-size: 16px;
@@ -79,7 +79,7 @@
   }
 }
 
-.tariff-list__name {
+.tariffs-list__name {
   margin-top: 0;
   margin-bottom: 6px;
 
@@ -88,7 +88,7 @@
   }
 }
 
-.tariff-list__number {
+.tariffs-list__number {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -110,18 +110,18 @@
 }
 
 .tariffs-list__item:nth-child(2n-1) {
-  .tariff-list__number {
+  .tariffs-list__number {
     background-color: $special-yellow-900;
   }
 }
 .tariffs-list__item:nth-child(3n-1) {
-  .tariff-list__number {
+  .tariffs-list__number {
     background-color: $special-yellow-700;
   }
 }
 
 .tariffs-list__item:nth-child(4n-1) {
-  .tariff-list__number {
+  .tariffs-list__number {
     background-color: $special-yellow-200;
   }
 }

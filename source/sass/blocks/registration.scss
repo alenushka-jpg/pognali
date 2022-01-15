@@ -38,8 +38,6 @@
 .registration__form {
   position: relative;
   display: flex;
-  width: 270px;
-  margin: 0 auto;
   margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
@@ -53,35 +51,23 @@
 }
 
 .registration__text {
-  width: 216px;
-  margin: 0 auto;
+  padding: 0 28px;
+  margin-top: 0;
+  margin-bottom: 29px;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
   text-align: center;
   color: $basic-while;
 
-  &:nth-child(3) {
-    margin-bottom: 29px;
-  }
-
-  &:nth-of-type(4) {
-    margin-bottom: 17px;
-  }
-
   @media (min-width: $tablet-width) {
-    width: auto;
     font-size: 28px;
     line-height: 32px;
-
-    &:nth-child(3) {
-      margin-bottom: 65px;
-    }
-
-    &:nth-of-type(4) {
-      margin-bottom: 40px;
-    }
   }
+}
+
+.registration__span {
+  display: block;
 }
 
 .registration__link {
