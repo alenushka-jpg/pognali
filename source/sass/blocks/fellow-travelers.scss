@@ -5,6 +5,12 @@
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   z-index: 70;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
 }
 
 .fellow-travelers__container {
@@ -19,11 +25,11 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 430px 221px;
-    padding: 141px 74px 87px;
+    padding: 201px 74px 87px;
     background-image: url("../img/square-tablet.png"),
       url("../img/smolov-back-tablet.png"),
       url("../img/rogovaya-back-tablet.png");
-    background-position: 29px 77px, 32px 393px, 410px 81px;
+    background-position: 29px 145px, 32px 430px, 410px 145px;
   }
 
   @media (min-width: $desktop-width) {

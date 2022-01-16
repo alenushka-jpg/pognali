@@ -1,20 +1,23 @@
 .about-directions {
   position: relative;
-  background-color: $special-blue-10;
   margin-top: -30px;
+  background-color: $special-blue-10;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   z-index: 80;
 
   @media (min-width: $tablet-width) {
+    margin-top: -60px;
     background-image: url("/img/flags-back.png");
     background-repeat: no-repeat;
     background-position: right 40px top 80px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
   }
 }
 
 .about-directions__container {
-  padding-top: 101px;
+  padding-top: 133px;
 
   @media (min-width: $tablet-width) {
     display: grid;

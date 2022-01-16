@@ -4,6 +4,11 @@
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   z-index: 90;
+
+  @media (min-width: $tablet-width) {
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
 }
 
 .about-service__container {
