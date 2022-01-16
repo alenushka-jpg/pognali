@@ -18,16 +18,34 @@
 
 .page-footer__logo {
   margin-bottom: 40px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }
 }
 
-.page-footer__logo-svg {
-  margin: 0 auto;
+.page-footer__svg {
+  &--t-dark {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--dark {
+      display: none;
+    }
+
+    &--t-dark {
+      display: block;
+    }
+  }
 }
+
 
 .page-footer__social {
   margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
