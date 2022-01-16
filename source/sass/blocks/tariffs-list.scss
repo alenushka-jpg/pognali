@@ -40,12 +40,6 @@
   grid-template-columns: 1fr max-content;
   column-gap: 13px;
 
-  &:nth-child(4n-1) {
-    .tariffs-list__description {
-      border-bottom: 1px solid $special-blue-50;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     grid-template-columns: max-content 1fr;
     column-gap: 22px;
@@ -114,6 +108,7 @@
     background-color: $special-yellow-900;
   }
 }
+
 .tariffs-list__item:nth-child(3n-1) {
   .tariffs-list__number {
     background-color: $special-yellow-700;
@@ -123,5 +118,9 @@
 .tariffs-list__item:nth-child(4n-1) {
   .tariffs-list__number {
     background-color: $special-yellow-200;
+  }
+
+  .tariffs-list__description {
+    border-bottom: 1px solid $special-blue-50;
   }
 }

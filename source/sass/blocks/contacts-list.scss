@@ -55,15 +55,15 @@
         fill: $special-blue-900;
 
 
-      &--phone,
-      &--email {
-        display: none;
-      }
+        &--phone,
+        &--email {
+          display: none;
+        }
 
-      &--mobile,
-      &--mail {
-        display: block;
-      }
+        &--mobile,
+        &--mail {
+          display: block;
+        }
       }
 
       &::before {
