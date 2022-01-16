@@ -1,9 +1,14 @@
 .registration {
+  position: relative;
+  margin-top: -30px;
   background-color: $special-blue-700;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  z-index: 50;
 }
 
 .registration__container {
-  padding-top: 72px;
+  padding-top: 105px;
   padding-bottom: 30px;
 
   @media (min-width: $tablet-width) {

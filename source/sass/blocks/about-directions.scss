@@ -1,5 +1,10 @@
 .about-directions {
+  position: relative;
   background-color: $special-blue-10;
+  margin-top: -30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  z-index: 80;
 
   @media (min-width: $tablet-width) {
     background-image: url("/img/flags-back.png");
@@ -9,7 +14,7 @@
 }
 
 .about-directions__container {
-  padding-top: 71px;
+  padding-top: 101px;
 
   @media (min-width: $tablet-width) {
     display: grid;
