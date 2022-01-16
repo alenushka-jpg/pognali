@@ -7,10 +7,7 @@
   padding-bottom: 43px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 53px;
-    padding-bottom: 63px;
-    padding-left: 75px;
-    padding-right: 75px;
+    padding: 53px 75px 63px;
   }
 
   @media (min-width: $desktop-width) {
@@ -35,10 +32,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 419px 219px;
-    padding-left: 160px;
-    padding-top: 100px;
-    padding-right: 160px;
-    padding-bottom: 106px;
+    padding: 100px 160px 106px 160px;
   }
 }
 
@@ -176,9 +170,7 @@
 }
 
 .add-plan__button {
-  padding-left: 35px;
-  padding-right: 35px;
-  padding-top: 6px;
+  padding: 6px 35px 5px;
   padding-bottom: 5px;
   text-decoration: none;
   text-align: center;

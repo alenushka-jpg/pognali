@@ -9,6 +9,12 @@
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -56px;
+    border-bottom-left-radius: 56px;
+    border-bottom-right-radius: 56px;
+  }
 }
 
 .about-service__container {

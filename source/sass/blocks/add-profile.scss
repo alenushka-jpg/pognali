@@ -11,6 +11,12 @@
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -56px;
+    border-bottom-left-radius: 56px;
+    border-bottom-right-radius: 56px;
+  }
 }
 
 .add-profile__container {
@@ -43,7 +49,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 107px 246px 165px 130px;
+    padding: 175px 246px 165px 130px;
 
     &::before {
       right: 133px;

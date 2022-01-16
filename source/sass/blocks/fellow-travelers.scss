@@ -11,6 +11,12 @@
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -56px;
+    border-bottom-left-radius: 56px;
+    border-bottom-right-radius: 56px;
+  }
 }
 
 .fellow-travelers__container {
@@ -35,10 +41,8 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: 430px 1fr;
     column-gap: 190px;
-    padding-left: 129px;
-    padding-top: 130px;
-    padding-bottom: 134px;
-    background-position: 58px 77px, 531px 136px, 205px 367px;
+    padding: 231px 74px 134px 129px;
+    background-position: 58px 160px, 531px 230px, 205px 455px;
   }
 }
 

@@ -11,6 +11,12 @@
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -56px;
+    border-bottom-left-radius: 56px;
+    border-bottom-right-radius: 56px;
+  }
 }
 
 .registration__container {
@@ -22,7 +28,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 109px 133px 104px 133px;
+    padding: 168px 133px 104px 133px;
   }
 }
 

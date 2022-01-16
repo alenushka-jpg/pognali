@@ -14,6 +14,12 @@
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -56px;
+    border-bottom-left-radius: 56px;
+    border-bottom-right-radius: 56px;
+  }
 }
 
 .address__container {
@@ -130,6 +136,11 @@
 
   @media (min-width: $tablet-width) {
     margin-top: -60px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    margin-top: -56px;
   }
 }
 
