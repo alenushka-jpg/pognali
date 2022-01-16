@@ -53,6 +53,17 @@
 
       .contacts-list__svg {
         fill: $special-blue-900;
+
+
+      &--phone,
+      &--email {
+        display: none;
+      }
+
+      &--mobile,
+      &--mail {
+        display: block;
+      }
       }
 
       &::before {
@@ -258,6 +269,7 @@
   font-size: 16px;
   line-height: 18px;
   color: $special-blue-700;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 28px;
