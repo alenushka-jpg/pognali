@@ -32,6 +32,11 @@
   background-color: $special-blue-700;
 }
 
+.page-main__background {
+  position: relative;
+  z-index: 5;
+}
+
 .page-main__title {
   margin-top: 0;
   margin-bottom: 0;

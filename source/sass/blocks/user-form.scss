@@ -1,9 +1,17 @@
+.user-form {
+  background-color: $special-yellow-200;
+}
+
 .user-form__header {
   background-color: $special-blue-10;
 }
 
 .user-form__background {
+  margin-bottom: 4px;
   background-color: $special-blue-750;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+
 
   @media (min-width: $desktop-width) {
     font-size: 60px;
@@ -17,15 +25,13 @@
   row-gap: 18px;
   padding-top: 20px;
   padding-bottom: 34px;
+  background-color: $special-blue-10;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: max-content 1fr max-content;
     column-gap: 60px;
     row-gap: 40px;
-    padding-top: 66px;
-    padding-bottom: 58px;
-    padding-left: 75px;
-    padding-right: 75px;
+    padding: 66px 75px 58px;
   }
 
   @media (min-width: $desktop-width) {
@@ -34,6 +40,8 @@
     row-gap: 0;
     padding-top: 0;
     margin-top: -190px;
+    background-color: inherit;
+    z-index: -1;
   }
 }
 
@@ -44,11 +52,13 @@
     grid-column: 2/3;
     align-self: center;
     justify-self: start;
+    z-index: 10;
   }
 }
 
 .user-form__photo {
   grid-column: 2/3;
+  z-index: 10;
 
   @media (min-width: $tablet-width) {
     grid-column: 3/4;
