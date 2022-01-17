@@ -1,7 +1,5 @@
 .page-footer {
   position: relative;
-  padding-top: 37px;
-  padding-bottom: 17px;
   margin-top: -37px;
   background-color: $basic-while;
   border-top-left-radius: 30px;
@@ -9,22 +7,33 @@
   z-index: 20;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 46px;
-    padding-bottom: 32px;
     margin-top: -60px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 47px;
-    padding-bottom: 43px;
     margin-top: -56px;
     border-bottom-left-radius: 56px;
     border-bottom-right-radius: 56px;
+  }
+}
+
+.page-footer__container {
+  padding-top: 37px;
+  padding-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 46px;
+    padding-bottom: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 47px;
+    padding-bottom: 43px;
   }
 }
 
