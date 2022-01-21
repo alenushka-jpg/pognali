@@ -13,10 +13,14 @@
 .page-main__container {
   padding-top: 43px;
   padding-bottom: 11px;
+  background-color: $special-blue-700;
+  border-bottom-left-radius: 22px;
+  border-bottom-right-radius: 22px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 94px;
-    padding-bottom: 62px;
+    padding: 94px 75px 62px;
+    background-color: inherit;
+    border-radius: inherit;
   }
 
   @media (min-width: $desktop-width) {
@@ -27,17 +31,31 @@
   }
 }
 
-.page-main__header,
-.page-main__background {
+.page-main__header {
   background-color: $special-blue-700;
 }
 
 .page-main__background {
   position: relative;
+  padding-bottom: 4px;
   z-index: 5;
+  background-color: $special-yellow-200;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+    background-color: $special-blue-700;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom-left-radius: 56px;
+    border-bottom-right-radius: 56px;
+  }
 }
 
 .page-main__title {
+  position: relative;
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 700;
@@ -45,9 +63,27 @@
   line-height: 36px;
   color: $basic-while;
 
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    left: 0;
+    width: 214px;
+    height: 5px;
+    background-color: $special-yellow-900;
+    border-radius: 4px;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+
+    &::after {
+      bottom: -4px;
+      bottom: -65px;
+      width: 358px;
+      height: 8px;
+    }
   }
 
   @media (min-width: $desktop-width) {
