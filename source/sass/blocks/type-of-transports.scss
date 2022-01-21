@@ -27,6 +27,29 @@
   }
 }
 
+.type-of-transports--user-profile {
+  width: 128px;
+
+  .type-of-transports__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: $basic-while;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 172px;
+
+    .type-of-transports__item {
+      width: 44px;
+      height: 44px;
+    }
+  }
+}
+
 .type-of-transports__svg {
   @media (min-width: $tablet-width) {
     width: 24px;

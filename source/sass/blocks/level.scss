@@ -29,8 +29,6 @@
     height: 1px;
     background-color: rgba($basic-while, 0.3);
   }
-
-  // color: $special-blue-650;
 }
 
 .level__text {
@@ -52,7 +50,8 @@
     top: 0;
     height: 100px;
     width: 100px;
-    background-image: url("../img/circle.svg");
+    background-image: url("../img/svg/circle-100.svg");
+    background-repeat: no-repeat;
   }
 
   .level__number {
@@ -69,6 +68,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    &::before {
+      top: -18px;
+    }
+
     .level__number,
     .level__text {
       color: $basic-while;
