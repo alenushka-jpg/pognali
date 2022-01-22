@@ -37,6 +37,13 @@
   background-color: inherit;
 }
 
+.calendar__button svg {
+  @media (min-width: $tablet-width) {
+    width: 29px;
+    height: 36px;
+  }
+}
+
 .calendar__title {
   margin: 0;
   font-weight: 700;

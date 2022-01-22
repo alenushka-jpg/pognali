@@ -216,12 +216,26 @@
 }
 
 .user-form__subtitle {
+  position: relative;
   margin-top: 0;
   margin-bottom: 29px;
   font-weight: bold;
   font-size: 24px;
   line-height: 24px;
   color: $special-blue-650;
+
+  &--pogination {
+    &::after {
+      content: "";
+      position: absolute;
+      right: 5px;
+      bottom: 10px;
+      width: 47px;
+      height: 5px;
+      background-image: url("../img/svg/pogination.svg");
+      background-repeat: no-repeat;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 56px;

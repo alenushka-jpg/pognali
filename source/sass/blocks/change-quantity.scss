@@ -23,13 +23,21 @@
   &--plus {
     right: 0;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 70px;
+  }
+}
+
+.change-quantity__button svg {
+  @media (min-width: $tablet-width) {
+    width: 20px;
+  }
 }
 
 .change-quantity__input {
   width: 100%;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 16px;
+  padding: 16px 0 13px;
   padding-bottom: 13px;
   font-weight: 500;
   font-size: 14.86px;
@@ -41,6 +49,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    padding: 23px 0 22px;
     font-size: 20px;
     line-height: 20px;
   }
