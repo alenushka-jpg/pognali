@@ -1,4 +1,5 @@
 .select-country__fieldset {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -7,6 +8,17 @@
   margin-right: 0;
   margin-bottom: 22px;
   border: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -16px;
+    right: 49px;
+    width: 8px;
+    height: 11px;
+    background-image: url("../img/svg/arrow-down.svg");
+    background-repeat: no-repeat;
+  }
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -35,15 +47,14 @@
 }
 
 .select-country__button {
-  padding-top: 11px;
-  padding-bottom: 11px;
-  padding-left: 11px;
-  padding-right: 15px;
+  position: relative;
+  padding: 11px 15px 11px 11px;
   width: 168px;
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.09em;
+  font-family: $main-font;
   text-transform: uppercase;
   text-align: start;
   color: $special-blue-650;
@@ -51,7 +62,32 @@
   border: 1px solid $special-blue-120;
   border-radius: 4px;
   white-space: nowrap;
-  overflow: hidden;
+
+  &--selected {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    &::before {
+      width: 52px;
+      height: 36px;
+      background-image: linear-gradient(to left, $basic-while 68%, rgba(255,255,255, 0.3) 90%);
+    }
+
+    &::after {
+      top: 14px;
+      right: -5px;
+      width: 8px;
+      height: 8px;
+      background-color: $special-blue-650;
+      border-radius: 50%;
+      z-index: 5;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     width: 369px;
@@ -70,6 +106,17 @@
   }
 }
 
+.select-country__button span {
+  display: flex;
+  overflow: hidden;
+}
+
+.select-country__button-open {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+}
+
 .select-country__toggle {
   display: none;
 }
@@ -77,6 +124,7 @@
 .select-country__button--add {
   width: 100%;
   margin-bottom: 25px;
+  background-color: $special-blue-10;
 
   @media (min-width: $tablet-width) {
     width: 369px;
@@ -85,6 +133,12 @@
   @media (min-width: $desktop-width) {
     width: 730px;
   }
+}
+
+.select-country__button-plus {
+  position: absolute;
+  top: 13px;
+  right: 15px
 }
 
 .select-country__picture {
@@ -160,5 +214,21 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+}
+
+.select-country__button--open,
+.select-country__button--add {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 49px;
+    top: 14px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid $special-blue-120;
   }
 }
