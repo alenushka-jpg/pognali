@@ -1,3 +1,23 @@
+.select-country {
+  padding-top: 42px;
+  border-top: 1px solid $special-blue-50;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 137px;
+      width: 1px;
+      height: 407px;
+      background-color: #d6d9e6;
+      background-image: linear-gradient(to top, #fff, transparent);
+    }
+  }
+}
+
 .select-country__fieldset {
   position: relative;
   display: flex;
@@ -22,6 +42,12 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
+
+    &::before {
+      width: auto;
+      height: auto;
+      background-image: none;
+    }
   }
 }
 
@@ -91,14 +117,24 @@
 
   @media (min-width: $tablet-width) {
     width: 369px;
-    padding-top: 27px;
-    padding-bottom: 23px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 25px 25px 23px;
     font-weight: 500;
     font-size: 20px;
     line-height: 20px;
     letter-spacing: 0.01em;
+
+    &::before {
+      width: auto;
+      height: auto;
+      background-image: none;
+    }
+
+    &::after {
+      top: 25px;
+      right: -39px;
+      width: 14px;
+      height: 14px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -111,10 +147,18 @@
   overflow: hidden;
 }
 
-.select-country__button-open {
+.select-country__button svg {
   position: absolute;
+  opacity: 0.3;
   top: 10px;
   right: 14px;
+
+  @media (min-width: $tablet-width) {
+    top: 23px;
+    right: 27px;
+    width: 20px;
+    height: 17px;
+  }
 }
 
 .select-country__toggle {
@@ -160,7 +204,6 @@
   @media (min-width: $tablet-width) {
     width: 113px;
     height: 47px;
-    margin-left: 52px;
     border: none;
   }
 
@@ -231,4 +274,17 @@
     border-radius: 50%;
     border: 1px solid $special-blue-120;
   }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      right: -40px;
+      top: 25px;
+      width: 14px;
+      height: 14px;
+    }
+  }
+}
+
+.select-country__button--add svg {
+  opacity: 1;
 }
