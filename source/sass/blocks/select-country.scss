@@ -12,8 +12,15 @@
       right: 137px;
       width: 1px;
       height: 407px;
-      background-color: #d6d9e6;
+      background-color: $special-blue-70;
       background-image: linear-gradient(to top, #fff, transparent);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      right: 240px;
+      height: 540px;
     }
   }
 }
@@ -40,14 +47,34 @@
     background-repeat: no-repeat;
   }
 
+  &:last-of-type {
+    margin-bottom: 25px;
+
+    &::before {
+      background-image: none;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     position: relative;
+    display: grid;
+    grid-template-columns: 1fr 139px;
+    column-gap: 27px;
 
     &::before {
       width: auto;
       height: auto;
       background-image: none;
     }
+
+    &:last-of-type {
+      margin-bottom: 50px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 222px;
+    margin-bottom: 15px;
   }
 }
 
@@ -59,11 +86,6 @@
     width: 100%;
   }
 
-  @media (min-width: $tablet-width) {
-    .select-country__button {
-      width: 369px;
-    }
-  }
 
   @media (min-width: $desktop-width) {
     .select-country__button {
@@ -116,7 +138,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 369px;
+    width: 100%;
     padding: 25px 25px 23px;
     font-weight: 500;
     font-size: 20px;
@@ -131,7 +153,7 @@
 
     &::after {
       top: 25px;
-      right: -39px;
+      right: -36px;
       width: 14px;
       height: 14px;
     }
@@ -139,6 +161,10 @@
 
   @media (min-width: $desktop-width) {
     width: 730px;
+
+    &::after {
+      right: -40px;
+    }
   }
 }
 
@@ -167,12 +193,7 @@
 
 .select-country__button--add {
   width: 100%;
-  margin-bottom: 25px;
   background-color: $special-blue-10;
-
-  @media (min-width: $tablet-width) {
-    width: 369px;
-  }
 
   @media (min-width: $desktop-width) {
     width: 730px;
@@ -187,7 +208,7 @@
 
 .select-country__picture {
   @media (min-width: $tablet-width) {
-    margin-right: 22px;
+    margin-right: 40px;
   }
 }
 
@@ -203,6 +224,7 @@
 
   @media (min-width: $tablet-width) {
     width: 113px;
+    margin-left: auto;
     height: 47px;
     border: none;
   }
@@ -232,7 +254,8 @@
   background-color: $special-blue-10;
 
   @media (min-width: $tablet-width) {
-    position: static;
+    top: 15px;
+    right: 0;
     border-radius: 0;
     background-color: inherit;
   }
@@ -242,21 +265,6 @@
   @media (min-width: $tablet-width) {
     width: 22px;
     height: 24px;
-  }
-}
-
-.select-country__select-button {
-  position: relative;
-  width: 100%;
-  padding: 0;
-  margin-left: 0;
-  margin-right: 0;
-  border: none;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
   }
 }
 
@@ -273,16 +281,25 @@
     height: 8px;
     border-radius: 50%;
     border: 1px solid $special-blue-120;
+    background-color: $basic-while;
+    z-index: 5;
   }
 
   @media (min-width: $tablet-width) {
     &::before {
-      right: -40px;
+      right: -36px;
       top: 25px;
       width: 14px;
       height: 14px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      right: -40px
+    }
+  }
+
 }
 
 .select-country__button--add svg {
