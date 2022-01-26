@@ -84,7 +84,8 @@
   }
 }
 
-.add-plan__select {
+.add-plan__select,
+.add-plan__countries{
   @media (min-width: $desktop-width) {
     grid-column: 1/-1;
   }
