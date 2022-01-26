@@ -204,7 +204,7 @@
                 вы хотели бы позвать в поездку, и ее предполагаемую длительность.
               </p>
               <ul class="add-plan__markers markers-list">
-                <li class="markers-list__item">Даты</li>
+                <li class="markers-list__item markers-list__item--active">даты</li>
                 <li class="markers-list__item">маршрут</li>
                 <li class="markers-list__item">развлечения</li>
               </ul>
@@ -572,7 +572,7 @@
               </p>
               <ul class="add-plan__markers markers-list">
                 <li class="markers-list__item">даты</li>
-                <li class="markers-list__item">маршрут</li>
+                <li class="markers-list__item markers-list__item--active">маршрут</li>
                 <li class="markers-list__item">развлечения</li>
               </ul>
               <div class="add-plan__select select-country">
@@ -1050,8 +1050,16 @@
                   </button>
                 </fieldset>
                 <div class="add-plan__step-buttons">
-                  <a class="add-plan__button add-plan__button--next button" href="">Следующий шаг</a>
-                  <a class="add-plan__button add-plan__button--back button" href="">На шаг назад</a>
+                  <a class="add-plan__button add-plan__button--next button" href="">Следующий шаг
+                    <svg class="add-plan__button-arrow" width="14" height="13">
+                      <use xlink:href="./img/sprite.svg#button-arrow"></use>
+                    </svg>
+                  </a>
+                  <a class="add-plan__button add-plan__button--back button" href="">
+                    <svg class="add-plan__button-back" width="14" height="13">
+                      <use xlink:href="./img/sprite.svg#button-back"></use>
+                    </svg>
+                    На шаг назад</a>
                 </div>
               </div>
             </fieldset>
@@ -1067,7 +1075,7 @@
               <ul class="add-plan__markers markers-list">
                 <li class="markers-list__item">даты</li>
                 <li class="markers-list__item">маршрут</li>
-                <li class="markers-list__item">развлечения</li>
+                <li class="markers-list__item markers-list__item--active">развлечения</li>
               </ul>
               <section class="countries-description">
                 <div class="countries-description__country">

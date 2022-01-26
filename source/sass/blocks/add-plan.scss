@@ -30,12 +30,16 @@
   @media (min-width: $tablet-width) {
     padding-top: 48px;
     padding-bottom: 50px;
+    margin-bottom: 39px;
+    border-radius: 30px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 419px 219px;
     padding: 100px 160px 106px 160px;
+    margin-bottom: 43px;
+    border-radius: 60px;
   }
 }
 
@@ -101,6 +105,10 @@
 
 .add-plan__search {
   margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    border-top: 1px solid $special-blue-50;
+  }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 2fr 1fr;
@@ -205,9 +213,9 @@
   }
 }
 
-.add-plan__button-arrow {
+.add-plan__button-arrow,
+.add-plan__button-back {
   position: absolute;
-  right: 20px;
   top: 33px;
   display: none;
 
@@ -215,3 +223,12 @@
     display: inline;
   }
 }
+
+.add-plan__button-arrow {
+  right: 20px;
+}
+
+.add-plan__button-back {
+  left: 98px;
+}
+

@@ -13,9 +13,30 @@
 }
 
 .markers-list__item {
+  position: relative;
+  padding-left: 42px;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.11em;
   text-transform: uppercase;
   color: rgba($basic-black, 0.6);
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 6px;
+    height: 6px;
+    background-color: rgba($special-blue-650, 0.3);
+    border-radius: 50%;
+  }
+
+  &--active {
+    color: rgba($basic-black, 1);
+
+    &::before {
+      background-color: rgba($special-blue-650, 1);
+    }
+  }
 }
