@@ -97,12 +97,6 @@
   }
 }
 
-.countries-description {
-  @media (min-width: $desktop-width) {
-    grid-column: 1/-1;
-  }
-}
-
 .add-plan__search {
   margin-bottom: 24px;
 
@@ -183,7 +177,6 @@
 .add-plan__button {
   position: relative;
   padding: 6px 35px 5px;
-  padding-bottom: 5px;
   text-decoration: none;
   text-align: center;
   color: $special-blue-650;
@@ -193,20 +186,18 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: auto;
-    padding-right: 75px;
-    padding-top: 29px;
-    padding-bottom: 27px;
+    width: 286px;
+    padding: 29px 75px 27px 35px;
+    text-align: start;
     text-transform: inherit;
 
     &--back {
       padding-right: 0;
+      text-align: end;
     }
   }
 
   @media (min-width: $desktop-width) {
-    width: 286px;
-
     &--back {
       text-align: end;
     }
