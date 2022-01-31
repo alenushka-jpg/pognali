@@ -14,6 +14,9 @@
   }
 
   @media (min-width: $tablet-width) {
+    display: grid;
+    column-gap: 79px;
+    row-gap: 80px;
     grid-column: 1/-1;
     grid-template-columns: 1fr 175px;
 
@@ -67,6 +70,10 @@
   &:nth-child(5n) {
     border-right: none;
   }
+
+  @media (min-width: $tablet-width) {
+    background-color: inherit;
+  }
 }
 
 .country-toggle__label {
@@ -113,8 +120,7 @@
 
 .country-toggle--filter {
   .country-toggle__input:checked + .country-toggle__letter {
-    background-color: $special-blue-650;
-    color: $basic-while;
+    color: $special-blue-650;
   }
 }
 

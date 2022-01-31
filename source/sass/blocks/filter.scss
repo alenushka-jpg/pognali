@@ -135,7 +135,7 @@
   top: 0;
   right: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 24px;
   height: 17px;
@@ -158,9 +158,14 @@
   &--open {
     display: block;
   }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .filter__region {
+  display: none;
   padding: 33px 25px 0;
   margin-bottom: 24px;
 
@@ -171,6 +176,10 @@
     margin: 0;
     padding: 0;
   }
+}
+
+.filter__toggle {
+  display: none;
 }
 
 .filter__button {
@@ -188,6 +197,13 @@
     height: 16px;
     background-image: url("../img/svg/filter-close.svg");
     background-size: 16px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 6px;
+    background-image: url("../img/svg/dots.svg");
+    background-size: 30px 6px;
   }
 }
 
