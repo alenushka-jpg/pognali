@@ -1,9 +1,7 @@
 .filter {
   background-color: $special-blue-30;
-
-  .filter__toggle {
-    display: none;
-  }
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 
   @media (min-width: $desktop-width) {
     margin-bottom: 48px;
@@ -111,7 +109,7 @@
     left: 0;
     width: 15px;
     height: 10px;
-    background-image: url("../img/icon_filter.svg");
+    background-image: url("../img/svg/icon_filter.svg");
     background-size: 15px 10px;
   }
 
@@ -133,6 +131,16 @@
 }
 
 .filter__interactive-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 17px;
+
+
   @media (min-width: $tablet-width) {
     position: relative;
     width: 175px;
@@ -144,10 +152,16 @@
   }
 }
 
-.filter__region {
+.filter__switch-country {
   display: none;
-  padding-left: 25px;
-  padding-right: 25px;
+
+  &--open {
+    display: block;
+  }
+}
+
+.filter__region {
+  padding: 33px 25px 0;
   margin-bottom: 24px;
 
   @media (min-width: $tablet-width) {
@@ -160,34 +174,21 @@
 }
 
 .filter__button {
-  position: absolute;
-  top: 0;
-  right: 0;
   padding: 0;
-  border: 0;
+  width: 17px;
+  height: 4px;
+  background-image: url("../img/svg/dots.svg");
+  background-size: 17px 3px;
   background-color: inherit;
+  background-repeat: no-repeat;
+  border: 0;
 
   &--open {
-    width: 17px;
-    height: 3px;
-    background-image: url("../img/dots.svg");
-    background-size: 17px 3px;
-  }
-
-  &--close {
     width: 16px;
     height: 16px;
-    background-image: url("../img/filter-close.svg");
+    background-image: url("../img/svg/filter-close.svg");
     background-size: 16px;
   }
-
-  // @media (min-width: $tablet-width) {
-
-  // }
-
-  // @media (min-width: $desktop-width) {
-
-  // }
 }
 
 .filter__text {
