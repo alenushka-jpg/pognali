@@ -46,6 +46,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    row-gap: 92px;
+
     .country-toggle__letter-list {
       display: none;
     }
@@ -105,7 +107,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(5, 250px);
-    row-gap: 40px;
+    row-gap: 53px;
     padding-left: 25px;
     padding-right: 25px;
   }
