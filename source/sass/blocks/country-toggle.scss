@@ -18,7 +18,8 @@
     column-gap: 79px;
     row-gap: 80px;
     grid-column: 1/-1;
-    grid-template-columns: 1fr 175px;
+    grid-template-columns: 1fr;
+    padding-top: 74px;
 
     .country-toggle__letter-list {
       margin-right: 0;

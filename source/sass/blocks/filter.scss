@@ -4,6 +4,8 @@
   border-bottom-right-radius: 20px;
 
   @media (min-width: $desktop-width) {
+    padding-top: 56px;
+    margin-top: -56px;
     margin-bottom: 48px;
   }
 }
@@ -70,6 +72,7 @@
     grid-template-columns: max-content max-content auto;
     column-gap: 0;
     row-gap: 0;
+    padding-top: 62px;
   }
 }
 
@@ -82,6 +85,7 @@
     align-items: center;
     column-gap: 80px;
     grid-column: 1/-1;
+    padding-right: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -120,12 +124,16 @@
   @media (min-width: $desktop-width) {
     display: block;
     padding-left: 64px;
-    padding-right: 30px;
+    padding-right: 20px;
     font-size: 20px;
     line-height: 20px;
 
     &::after {
-      left: 25px;
+      top: 1px;
+      left: 9px;
+      width: 23px;
+      height: 15px;
+      background-size: 23px 15px;
     }
   }
 }
