@@ -1,6 +1,12 @@
 .companion-filter {
   padding-top: 21px;
   margin-bottom: 28px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    margin-right: 59px;
+  }
+
 }
 
 .companion-filter__form {
