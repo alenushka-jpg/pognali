@@ -31,8 +31,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(3, 285px);
-    column-gap: 52px;
+    grid-template-columns: max-content 205px 135px 220px 105px;
     padding: 0;
     margin-bottom: 0;
     width: 950px;
@@ -89,8 +88,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 2/3;
-    padding: 46px 0 0 10px;
+    grid-column: 2/4;
+    padding: 46px 0 0 62px;
     margin-bottom: 20px;
     margin-left: 0;
   }
@@ -114,18 +113,40 @@
   @media (min-width: $desktop-width) {
     display: flex;
     align-items: center;
-    grid-column: 2/3;
+    grid-column: 3/4;
     grid-row: 3/4;
-    margin-left: auto;
+    margin-left: 0;
     margin-bottom: 48px;
   }
 }
 
 .filter-profiles__like-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
   padding: 0;
   border: none;
   background-color: inherit;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $special-red-10;
+  }
 }
+
+.filter-profiles__like-button img {
+  z-index: 1;
+}
+
 
 .filter-profiles__like-number {
   margin: 0;
@@ -134,13 +155,16 @@
   font-weight: 700;
   color: $special-blue-800;
 
-
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
     font-weight: 700;
     text-transform: uppercase;
     color: $special-blue-800;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 6px;
   }
 }
 
@@ -159,10 +183,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 2/3;
+    grid-column: 2/4;
     margin-bottom: 45px;
-    padding-left: 10px;
-    width: 254px;
+    padding-left: 62px;
+    padding-right: 20px;
+    width: auto;
   }
 }
 
@@ -177,7 +202,7 @@
 
   @media (min-width: $desktop-width) {
     grid-row: 1/3;
-    grid-column: 3/4;
+    grid-column: 4/5;
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -209,6 +234,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: column;
     padding-top: 32px;
+    padding-left: 49px;
     width: auto;
   }
 }
@@ -277,7 +303,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     align-items: center;
-    grid-column: 3/4;
+    grid-column: 4/5;
     grid-row: 3/4;
     margin-bottom: 48px;
   }
@@ -292,9 +318,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 3/4;
+    grid-column: 5/6;
     grid-row: 3/4;
-    margin-bottom: 42px;
   }
 }
 
@@ -321,6 +346,7 @@
     padding-left: 0;
     padding-right: 0;
     margin-bottom: 48px;
+    margin-left: 54px;
     font-size: 20px;
     line-height: 20px;
   }
