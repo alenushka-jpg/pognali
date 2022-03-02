@@ -113,7 +113,6 @@
         </div>
       </div>
       <section class="filter">
-        <h2 class="visually-hidden">Фильтрация по странам</h2>
         <div class="filter__container container">
           <div class="filter__header">
             <h2 class="filter__title">Фильтрация по странам:</h2>
@@ -633,25 +632,25 @@
       </section>
       <div class="page-main__body">
         <div class="page-main__body-container container">
-          <section class="page-main__companion-filter companion-filter container">
-            <form class="companion-filter__form" method="GET">
-              <h2 class="companion-filter__title">Подберите идеального попутчика</h2>
-              <fieldset class="companion-filter__fieldset companion-filter__fieldset--open">
-                <button class="companion-filter__toggle" type="button">Хобби</button>
-                <ul class="companion-filter__list">
-                  <li class="companion-filter__item">
+          <section class="page-main__accordion accordion-filter container">
+            <form class="accordion-filter__form" method="GET">
+              <h2 class="accordion-filter__title">Подберите идеального попутчика</h2>
+              <fieldset class="accordion-filter__fieldset accordion-filter__fieldset--open">
+                <button class="accordion-filter__toggle" type="button">Хобби</button>
+                <ul class="accordion-filter__list">
+                  <li class="accordion-filter__item">
                     <label class="checkbox">
                       <input class="checkbox__input" name="hobby" type="checkbox">
                       <span class="checkbox__label">Спортзал</span>
                     </label>
                   </li>
-                  <li class="companion-filter__item">
+                  <li class="accordion-filter__item">
                     <label class="checkbox">
                       <input class="checkbox__input" name="hobby" type="checkbox">
                       <span class="checkbox__label">Кальян</span>
                     </label>
                   </li>
-                  <li class="companion-filter__item">
+                  <li class="accordion-filter__item">
                     <label class="checkbox">
                       <input class="checkbox__input" name="hobby" type="checkbox">
                       <span class="checkbox__label">Диван</span>
@@ -659,22 +658,22 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="companion-filter__fieldset companion-filter__fieldset--open">
-                <button class="companion-filter__toggle" type="button">Музыка</button>
-                <ul class="companion-filter__list">
-                  <li class="companion-filter__item">
+              <fieldset class="accordion-filter__fieldset accordion-filter__fieldset--open">
+                <button class="accordion-filter__toggle" type="button">Музыка</button>
+                <ul class="accordion-filter__list">
+                  <li class="accordion-filter__item">
                     <label class="checkbox">
                       <input class="checkbox__input" name="music" type="checkbox">
                       <span class="checkbox__label">Тяжелый рок</span>
                     </label>
                   </li>
-                  <li class="companion-filter__item">
+                  <li class="accordion-filter__item">
                     <label class="checkbox">
                       <input class="checkbox__input" name="music" type="checkbox">
                       <span class="checkbox__label">Русский рэп</span>
                     </label>
                   </li>
-                  <li class="companion-filter__item">
+                  <li class="accordion-filter__item">
                     <label class="checkbox">
                       <input class="checkbox__input" name="music" type="checkbox">
                       <span class="checkbox__label">Евроденс</span>
@@ -682,22 +681,22 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="companion-filter__fieldset companion-filter__fieldset--open">
-                <button class="companion-filter__toggle" type="button">Еда</button>
-                <ul class="companion-filter__list">
-                  <li class="companion-filter__item">
+              <fieldset class="accordion-filter__fieldset accordion-filter__fieldset--open">
+                <button class="accordion-filter__toggle" type="button">Еда</button>
+                <ul class="accordion-filter__list">
+                  <li class="accordion-filter__item">
                     <label class="checkbox">
                       <input class="checkbox__input" name="food" type="checkbox">
                       <span class="checkbox__label">Мясоед</span>
                     </label>
                   </li>
-                  <li class="companion-filter__item">
+                  <li class="accordion-filter__item">
                     <label class="checkbox">
                       <input class="checkbox__input" name="food" type="checkbox">
                       <span class="checkbox__label">Сидит на ПП</span>
                     </label>
                   </li>
-                  <li class="companion-filter__item">
+                  <li class="accordion-filter__item">
                     <label class="checkbox">
                       <input class="checkbox__input" name="food" type="checkbox">
                       <span class="checkbox__label">Веган-сыроед</span>
@@ -705,44 +704,56 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="companion-filter__fieldset companion-filter__fieldset--open">
-                <button class="companion-filter__toggle" type="button">Транспорт</button>
-                <ul class="companion-filter__list companion-filter__list--transport type-of-transports">
-                  <li class="companion-filter__item">
+              <fieldset class="accordion-filter__fieldset accordion-filter__fieldset--open">
+                <button class="accordion-filter__toggle" type="button">Транспорт</button>
+                <ul class="accordion-filter__transports">
+                  <li class="accordion-filter__item">
                     <label class="checkbox checkbox--transport">
                       <input class="checkbox__input" name="transport" type="checkbox">
-                      <span class="checkbox__label">Авиаперелет</span>
-                      <img class="type-of-transports__image" src="./img/svg/icon_plane.svg" width="17" height="16" alt="">
+                      <div class="svg-transport">
+                        <svg width="17" height="16">
+                          <use href="./img/sprite.svg#icon_plane"></use>
+                        </svg>
+                      </div>
                     </label>
                   </li>
-                  <li class="companion-filter__item">
+                  <li class="accordion-filter__item">
                     <label class="checkbox checkbox--transport">
                       <input class="checkbox__input" name="transport" type="checkbox">
-                      <span class="checkbox__label">Автотранспорт</span>
-                      <img class="type-of-transports__image" src="./img/svg/icon_bus.svg" width="17" height="16" alt="">
+                      <div class="svg-transport">
+                        <svg width="17" height="16">
+                          <use href="./img/sprite.svg#icon_bus"></use>
+                        </svg>
+                      </div>
                     </label>
                   </li>
-                  <li class="companion-filter__item">
+                  <li class="accordion-filter__item">
                     <label class="checkbox checkbox--transport">
                       <input class="checkbox__input" name="transport" type="checkbox">
-                      <span class="checkbox__label">Велосипед</span>
-                      <img class="type-of-transports__image" src="./img/svg/icon_bicycle.svg" width="17" height="16" alt="">
+                      <div class="svg-transport">
+                        <svg width="20" height="20">
+                          <use href="./img/sprite.svg#icon_bicycle"></use>
+                        </svg>
+                      </div>
                     </label>
                   </li>
-                  <li class="companion-filter__item">
+                  <li class="accordion-filter__item">
                     <label class="checkbox checkbox--transport">
                       <input class="checkbox__input" name="transport" type="checkbox">
-                      <span class="checkbox__label">Пешком</span>
-                      <img class="type-of-transports__image" src="./img/svg/icon_run.svg" width="17" height="16" alt="">
+                      <div class="svg-transport">
+                        <svg width="19" height="18">
+                          <use href="./img/sprite.svg#icon_run"></use>
+                        </svg>
+                      </div>
                     </label>
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="companion-filter__fieldset companion-filter__fieldset--open">
-                <button class="companion-filter__toggle" type="button">Левел</button>
-                <div class="companion-filter__label">
-                  <input class="companion-filter__input" type="text" value="30" name="lavel">
-                  <input class="companion-filter__input" type="text" value="100" name="lavel">
+              <fieldset class="accordion-filter__fieldset accordion-filter__fieldset--open">
+                <button class="accordion-filter__toggle" type="button">Левел</button>
+                <div class="accordion-filter__label">
+                  <input class="accordion-filter__input" type="text" value="30" name="lavel">
+                  <input class="accordion-filter__input" type="text" value="100" name="lavel">
                 </div>
                 <div class="range-controls">
                   <div class="range-controls__scale"></div>
@@ -750,7 +761,7 @@
                   <button class="range-controls___toggle" type="button"></button>
                 </div>
               </fieldset>
-              <button class="companion-filter__button" type="button">показать</button>
+              <button class="accordion-filter__button" type="button">показать</button>
             </form>
           </section>
           <section class="page-main__filter-profiles filter-profiles container">

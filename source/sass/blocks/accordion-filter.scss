@@ -1,4 +1,4 @@
-.companion-filter {
+.accordion-filter {
   padding-top: 21px;
   margin-bottom: 28px;
 
@@ -6,10 +6,9 @@
     padding-top: 0;
     margin-right: 59px;
   }
-
 }
 
-.companion-filter__form {
+.accordion-filter__form {
   padding: 25px 25px 22px;
   background-color: $special-yellow-200;
   border-radius: 20px;
@@ -23,7 +22,7 @@
   }
 }
 
-.companion-filter__title {
+.accordion-filter__title {
   margin-top: 0;
   margin-bottom: 23px;
   font-weight: 700;
@@ -39,12 +38,12 @@
   }
 }
 
-.companion-filter__fieldset {
+.accordion-filter__fieldset {
   margin: 0;
   padding: 0;
   border: none;
 
-  .companion-filter__list {
+  .accordion-filter__list {
     display: none;
   }
 
@@ -59,31 +58,31 @@
   }
 }
 
-.companion-filter__fieldset--open {
-  .companion-filter__list {
+.accordion-filter__fieldset--open {
+  .accordion-filter__list {
     display: flex;
     flex-direction: column;
   }
 
-  .companion-filter__list--transport {
+  .accordion-filter__list--transport {
     flex-direction: row;
   }
 
   @media (min-width: $tablet-width) {
-    .companion-filter__list {
+    .accordion-filter__list {
       flex-direction: row;
     }
   }
 
   @media (min-width: $desktop-width) {
-    .companion-filter__list {
+    .accordion-filter__list {
       flex-direction: column;
     }
   }
 }
 
-.companion-filter__button,
-.companion-filter__toggle {
+.accordion-filter__button,
+.accordion-filter__toggle {
   width: 100%;
   font-weight: 700;
   text-transform: uppercase;
@@ -91,7 +90,7 @@
   border: none;
 }
 
-.companion-filter__toggle {
+.accordion-filter__toggle {
   padding: 12px 0;
   font-size: 16px;
   line-height: 18px;
@@ -109,7 +108,7 @@
   }
 }
 
-.companion-filter__button {
+.accordion-filter__button {
   padding: 12px 14px 12px;
   line-height: 17px;
   font-size: 17px;
@@ -124,11 +123,11 @@
   }
 }
 
-.companion-filter__label {
+.accordion-filter__label {
   display: flex;
 }
 
-.companion-filter__list {
+.accordion-filter__list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -139,21 +138,30 @@
   }
 }
 
-.companion-filter__list--transport {
+.accordion-filter__transports {
+  display: flex;
+  // display: none;
+  margin-top: 0;
+  margin-bottom: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.accordion-filter__list--transport {
   @media (min-width: $tablet-width) {
-    .companion-filter__item {
+    .accordion-filter__item {
       width: auto;
     }
   }
 }
 
-.companion-filter__item {
+.accordion-filter__item {
   @media (min-width: $tablet-width) {
     width: 150px;
   }
 }
 
-.companion-filter__input {
+.accordion-filter__input {
   width: 50%;
   height: 34px;
   padding: 0;

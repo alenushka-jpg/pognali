@@ -39,3 +39,13 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.svg-transport {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  background-color: $basic-while;
+}

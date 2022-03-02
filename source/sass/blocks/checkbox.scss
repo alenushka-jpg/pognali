@@ -1,12 +1,51 @@
+.checkbox {
+  position: relative;
+  display: block;
+  padding-left: 27px;
+}
+
+.checkbox--transport {
+  padding-left: 0;
+
+  .checkbox__input {
+    top: -2px;
+  }
+}
+
 .checkbox__label {
   font-size: 15px;
   line-height: 20px;
   color: $basic-black;
 
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 18px;
+    height: 18px;
+    background-color: $basic-while;
+    border-radius: 4px;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
   }
+}
+
+.checkbox__input {
+  position: absolute;
+  left: 0;
+  top: 7px;
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+
+
 }
 
 .checkbox--transport {
