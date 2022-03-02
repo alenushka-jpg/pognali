@@ -1,6 +1,15 @@
 .page-main--catalog {
   background-color: $special-blue-10;
 }
+.page-main__header {
+  position: relative;
+  z-index: 10;
+}
+
+.page-main__body {
+  margin-top: -20px;
+  background-color: $special-blue-10;
+}
 
 .page-main__container {
   padding-top: 43px;
@@ -130,10 +139,6 @@
   @media (min-width: $desktop-width) {
     margin-right: 48px;
   }
-}
-
-.page-main__body {
-  background-color: $special-blue-10;
 }
 
 .page-main__body-container {

@@ -1,7 +1,10 @@
 .filter {
+  position: relative;
+  margin-top: -20px;
   background-color: $special-blue-30;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  z-index: 5;
 
   @media (min-width: $desktop-width) {
     padding-top: 56px;
@@ -57,7 +60,7 @@
 .filter__container {
   display: grid;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 40px;
   padding-bottom: 17px;
 
   @media (min-width: $tablet-width) {
