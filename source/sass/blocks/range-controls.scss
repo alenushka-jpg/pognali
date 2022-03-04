@@ -1,1 +1,39 @@
-//комментарий
+.range-controls {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.range-controls__handlers {
+  position: relative;
+  height: 2px;
+  width: 100%;
+  background-color: rgba($special-blue-650, 0.2);
+}
+
+.range-controls__scale {
+  position: absolute;
+  right: 0;
+  width: 138px;
+  height: 2px;
+  background-color: $special-blue-650;
+}
+
+.range-controls___toggle {
+  position: absolute;
+  padding: 0;
+  width: 10px;
+  height: 10px;
+  background-color: $special-blue-650;
+  border: none;
+  border-radius: 50%;
+
+  &:last-child {
+    top: -4px;
+    left: 80px;
+  }
+
+  &:nth-child(2n) {
+    top: -4px;
+    right: 0;
+  }
+}
