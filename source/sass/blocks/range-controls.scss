@@ -13,7 +13,7 @@
 .range-controls__scale {
   position: absolute;
   right: 0;
-  width: 138px;
+  width: 150px;
   height: 2px;
   background-color: $special-blue-650;
 }
@@ -29,7 +29,7 @@
 
   &:last-child {
     top: -4px;
-    left: 80px;
+    left: 67px;
   }
 
   &:nth-child(2n) {

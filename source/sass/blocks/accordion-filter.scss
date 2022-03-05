@@ -9,7 +9,7 @@
 }
 
 .accordion-filter__form {
-  padding: 25px 25px 22px;
+  padding: 27px 20px 22px;
   background-color: $special-yellow-200;
   border-radius: 20px;
 
@@ -23,8 +23,9 @@
 }
 
 .accordion-filter__title {
+  padding-left: 5px;
   margin-top: 0;
-  margin-bottom: 23px;
+  margin-bottom: 21px;
   font-weight: 700;
   font-size: 22px;
   line-height: 22px;
@@ -40,7 +41,7 @@
 
 .accordion-filter__fieldset {
   margin: 0;
-  padding: 0;
+  padding: 0 5px;
   border: none;
 
   .accordion-filter__list {
@@ -68,6 +69,16 @@
     flex-direction: row;
   }
 
+  .accordion-filter__toggle {
+    &::after {
+      top: 16px;
+      width: 5px;
+      height: 3px;
+      border-top-width: 0;
+      border-bottom-width: 6px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     .accordion-filter__list {
       flex-direction: row;
@@ -86,17 +97,33 @@
   width: 100%;
   font-weight: 700;
   text-transform: uppercase;
+  font-family: inherit;
   color: $special-blue-650;
   border: none;
 }
 
 .accordion-filter__toggle {
-  padding: 12px 0;
+  position: relative;
+  padding: 12px 0 9px;
   font-size: 16px;
   line-height: 18px;
   text-align: start;
   background-color: inherit;
   border-top: 1px solid $special-yellow-300;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 17px;
+    right: 0;
+    width: 3px;
+    height: 5px;
+    border: 5px solid $special-blue-650;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-top-width: 6px;
+    border-bottom-width: 0;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 7px 0;
@@ -109,13 +136,12 @@
 }
 
 .accordion-filter__button {
-  padding: 12px 14px 12px;
+  padding: 14px 10px 10px;
   line-height: 17px;
   font-size: 17px;
   background-color: $basic-while;
   border-radius: 25px;
   text-align: center;
-
 
   @media (min-width: $tablet-width) {
     padding: 16px 14px 17px;
@@ -128,6 +154,10 @@
   padding: 0;
   list-style: none;
 
+  &:nth-child(2n) {
+    margin-bottom: 12px;
+  }
+
   @media (min-width: $tablet-width) {
     flex-direction: row;
     column-gap: 20px;
@@ -137,13 +167,19 @@
 .accordion-filter__transports {
   display: flex;
   // display: none;
+  padding-top: 6px;
   margin-top: 0;
   margin-bottom: 20px;
   list-style: none;
   padding: 0;
 }
 
+
 .accordion-filter__list--transport {
+  .accordion-filter__item {
+    margin-right: 2px;
+  }
+
   @media (min-width: $tablet-width) {
     .accordion-filter__item {
       width: auto;
@@ -180,6 +216,7 @@
 .accordion-filter__label {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding-top: 2px;
 
   input:first-child {
     border-top-left-radius: 4px;
