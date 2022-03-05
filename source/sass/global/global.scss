@@ -44,8 +44,12 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 31px;
-  height: 31px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   background-color: $basic-while;
+
+  &--profile {
+    background-color: $special-blue-10;
+  }
 }

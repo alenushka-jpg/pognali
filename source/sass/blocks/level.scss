@@ -7,9 +7,9 @@
   // margin-left: auto;
 }
 
-.level__circle-svg {
+.level svg {
   position: absolute;
-  fill: rgba($basic-black, 0.6);
+  fill: $basic-while;
 }
 
 .level__number {
@@ -80,18 +80,10 @@
 }
 
 .level--cards {
-  justify-content: space-around;
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: -2px;
-    height: 60px;
-    width: 60px;
-    background-image: url("../img/svg/circle-99.svg");
-    background-repeat: no-repeat;
-  }
+  margin-top: 12px;
+  margin-left: auto;
+  width: 45px;
+  height: 45px;
 
   .level__number {
     color: $special-blue-650;

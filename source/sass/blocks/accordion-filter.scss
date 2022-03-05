@@ -166,25 +166,15 @@
 
 .accordion-filter__transports {
   display: flex;
-  // display: none;
   padding-top: 6px;
+  padding-left: 0;
   margin-top: 0;
   margin-bottom: 20px;
   list-style: none;
-  padding: 0;
 }
 
-
-.accordion-filter__list--transport {
-  .accordion-filter__item {
-    margin-right: 2px;
-  }
-
-  @media (min-width: $tablet-width) {
-    .accordion-filter__item {
-      width: auto;
-    }
-  }
+.accordion-filter__transport {
+  margin-right: 1px;
 }
 
 .accordion-filter__item {
@@ -214,9 +204,31 @@
 }
 
 .accordion-filter__label {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-top: 2px;
+
+  &::before,
+  &::after {
+    position: absolute;
+    left: 50%;
+    content: "";
+    width: 16px;
+    transform: translateX(-50%);
+  }
+
+  &::before {
+    top: 16px;
+    height: 10px;
+    background-color: $basic-while;
+  }
+
+  &::after {
+    top: 20px;
+    height: 1px;
+    background-color: $special-blue-120;
+  }
 
   input:first-child {
     border-top-left-radius: 4px;

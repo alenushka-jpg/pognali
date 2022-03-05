@@ -705,7 +705,7 @@
               <fieldset class="accordion-filter__fieldset accordion-filter__fieldset--open">
                 <button class="accordion-filter__toggle" type="button">Транспорт</button>
                 <ul class="accordion-filter__transports">
-                  <li class="accordion-filter__item">
+                  <li class="accordion-filter__transport">
                     <label class="checkbox checkbox--transport">
                       <input class="checkbox__input" name="transport" type="checkbox">
                       <div class="svg-transport">
@@ -715,7 +715,7 @@
                       </div>
                     </label>
                   </li>
-                  <li class="accordion-filter__item">
+                  <li class="accordion-filter__transport">
                     <label class="checkbox checkbox--transport">
                       <input class="checkbox__input" name="transport" type="checkbox">
                       <div class="svg-transport">
@@ -725,7 +725,7 @@
                       </div>
                     </label>
                   </li>
-                  <li class="accordion-filter__item">
+                  <li class="accordion-filter__transport">
                     <label class="checkbox checkbox--transport">
                       <input class="checkbox__input" name="transport" type="checkbox">
                       <div class="svg-transport">
@@ -735,7 +735,7 @@
                       </div>
                     </label>
                   </li>
-                  <li class="accordion-filter__item">
+                  <li class="accordion-filter__transport">
                     <label class="checkbox checkbox--transport">
                       <input class="checkbox__input" name="transport" type="checkbox">
                       <div class="svg-transport">
@@ -778,7 +778,9 @@
                 <div class="filter-profiles__like">
                   <button class="filter-profiles__like-button">
                     <span class="visually-hidden">Поставить лайк</span>
-                    <img src="img/svg/icon_like.svg" width="20" height="20" alt="">
+                    <svg width="12" height="11">
+                      <use href="./img/sprite.svg#icon_like"></use>
+                    </svg>
                   </button>
                   <p class="filter-profiles__like-number">1,5 М</p>
                 </div>
@@ -811,23 +813,44 @@
                   <span class="filter-profiles__subtitle">транспорт:</span>
                   <ul class="type-of-transports type-of-transports--profile">
                     <li class="type-of-transports__item">
-                      <img src="./img/svg/icon_plane.svg" width="17" height="16" alt="">
+                      <div class="svg-transport svg-transport--profile">
+                        <svg width="17" height="16">
+                          <use href="./img/sprite.svg#icon_plane"></use>
+                        </svg>
+                      </div>
                     </li>
                     <li class="type-of-transports__item">
-                      <img src="./img/svg/icon_bus.svg" width="17" height="16" alt="">
+                      <div class="svg-transport svg-transport--profile">
+                        <svg width="17" height="16">
+                          <use href="./img/sprite.svg#icon_bus"></use>
+                        </svg>
+                      </div>
                     </li>
                     <li class="type-of-transports__item">
-                      <img src="./img/svg/icon_bicycle.svg" width="17" height="16" alt="">
+                      <div class="svg-transport svg-transport--profile">
+                        <svg width="20" height="20">
+                          <use href="./img/sprite.svg#icon_bicycle"></use>
+                        </svg>
+                      </div>
                     </li>
                     <li class="type-of-transports__item">
-                      <img src="./img/svg/icon_run.svg" width="17" height="16" alt="">
+                      <div class="svg-transport svg-transport--profile">
+                        <svg width="19" height="18">
+                          <use href="./img/sprite.svg#icon_run"></use>
+                        </svg>
+                      </div>
                     </li>
                   </ul>
                 </div>
-                <div class="filter-profiles__level level level--cards">
-                  <span class="level__text">левел:</span>
-                  <span class="level__number">99</span>
-                  <span class="level__subtitle">level</span>
+                <div class="filter-profiles__level">
+                  <span class="filter-profiles__subtitle">левел:</span>
+                  <div class="level level--cards">
+                    <span class="level__number">99</span>
+                    <span class="level__subtitle">level</span>
+                    <svg width="45" height="45">
+                      <use href="./img/sprite.svg#circle-99"></use>
+                    </svg>
+                  </div>
                 </div>
                 <button class="filter-profiles__button button">Позвать!</button>
               </li>
@@ -843,7 +866,9 @@
                 <div class="filter-profiles__like">
                   <button class="filter-profiles__like-button">
                     <span class="visually-hidden">Поставить лайк</span>
-                    <img src="img/svg/icon_like.svg" width="20" height="20" alt="">
+                    <svg width="12" height="11">
+                      <use href="./img/sprite.svg#icon_like"></use>
+                    </svg>
                   </button>
                   <p class="filter-profiles__like-number">1500</p>
                 </div>
@@ -871,23 +896,44 @@
                   <span class="filter-profiles__subtitle">транспорт:</span>
                   <ul class="type-of-transports type-of-transports--profile">
                     <li class="type-of-transports__item">
-                      <img src="./img/svg/icon_plane.svg" width="17" height="16" alt="">
+                      <div class="svg-transport svg-transport--profile">
+                        <svg width="17" height="16">
+                          <use href="./img/sprite.svg#icon_plane"></use>
+                        </svg>
+                      </div>
                     </li>
                     <li class="type-of-transports__item">
-                      <img src="./img/svg/icon_bus.svg" width="17" height="16" alt="">
+                      <div class="svg-transport svg-transport--profile">
+                        <svg width="17" height="16">
+                          <use href="./img/sprite.svg#icon_bus"></use>
+                        </svg>
+                      </div>
                     </li>
                     <li class="type-of-transports__item">
-                      <img src="./img/svg/icon_bicycle.svg" width="17" height="16" alt="">
+                      <div class="svg-transport svg-transport--profile">
+                        <svg width="20" height="20">
+                          <use href="./img/sprite.svg#icon_bicycle"></use>
+                        </svg>
+                      </div>
                     </li>
                     <li class="type-of-transports__item">
-                      <img src="./img/svg/icon_run.svg" width="17" height="16" alt="">
+                      <div class="svg-transport svg-transport--profile">
+                        <svg width="19" height="18">
+                          <use href="./img/sprite.svg#icon_run"></use>
+                        </svg>
+                      </div>
                     </li>
                   </ul>
                 </div>
-                <div class="filter-profiles__level level level--cards">
-                  <span class="level__text">левел:</span>
-                  <span class="level__number">80</span>
-                  <span class="level__subtitle">level</span>
+                <div class="filter-profiles__level">
+                  <span class="filter-profiles__subtitle">левел:</span>
+                  <div class="level level--cards">
+                    <span class="level__number">80</span>
+                    <span class="level__subtitle">level</span>
+                    <svg width="45" height="45">
+                      <use href="./img/sprite.svg#circle-99"></use>
+                    </svg>
+                  </div>
                 </div>
                 <button class="filter-profiles__button button">Позвать!</button>
               </li>
@@ -903,7 +949,9 @@
                 <div class="filter-profiles__like">
                   <button class="filter-profiles__like-button">
                     <span class="visually-hidden">Поставить лайк</span>
-                    <img src="img/svg/icon_like.svg" width="20" height="20" alt="">
+                    <svg width="12" height="11">
+                      <use href="./img/sprite.svg#icon_like"></use>
+                    </svg>
                   </button>
                   <p class="filter-profiles__like-number">170</p>
                 </div>
@@ -935,23 +983,44 @@
                   <span class="filter-profiles__subtitle">транспорт:</span>
                   <ul class="type-of-transports type-of-transports--profile">
                     <li class="type-of-transports__item">
-                      <img src="./img/svg/icon_plane.svg" width="17" height="16" alt="">
+                      <div class="svg-transport svg-transport--profile">
+                        <svg width="17" height="16">
+                          <use href="./img/sprite.svg#icon_plane"></use>
+                        </svg>
+                      </div>
                     </li>
                     <li class="type-of-transports__item">
-                      <img src="./img/svg/icon_bus.svg" width="17" height="16" alt="">
+                      <div class="svg-transport svg-transport--profile">
+                        <svg width="17" height="16">
+                          <use href="./img/sprite.svg#icon_bus"></use>
+                        </svg>
+                      </div>
                     </li>
                     <li class="type-of-transports__item">
-                      <img src="./img/svg/icon_bicycle.svg" width="17" height="16" alt="">
+                      <div class="svg-transport svg-transport--profile">
+                        <svg width="20" height="20">
+                          <use href="./img/sprite.svg#icon_bicycle"></use>
+                        </svg>
+                      </div>
                     </li>
                     <li class="type-of-transports__item">
-                      <img src="./img/svg/icon_run.svg" width="17" height="16" alt="">
+                      <div class="svg-transport svg-transport--profile">
+                        <svg width="19" height="18">
+                          <use href="./img/sprite.svg#icon_run"></use>
+                        </svg>
+                      </div>
                     </li>
                   </ul>
                 </div>
-                <div class="filter-profiles__level level level--cards">
-                  <span class="level__text">левел:</span>
-                  <span class="level__number">25</span>
-                  <span class="level__subtitle">level</span>
+                <div class="filter-profiles__level">
+                  <span class="filter-profiles__subtitle">левел:</span>
+                  <div class="level level--cards">
+                    <span class="level__number">25</span>
+                    <span class="level__subtitle">level</span>
+                    <svg width="45" height="45">
+                      <use href="./img/sprite.svg#circle-99"></use>
+                    </svg>
+                  </div>
                 </div>
                 <button class="filter-profiles__button button">Позвать!</button>
               </li>
@@ -967,7 +1036,9 @@
                 <div class="filter-profiles__like">
                   <button class="filter-profiles__like-button">
                     <span class="visually-hidden">Поставить лайк</span>
-                    <img src="img/svg/icon_like.svg" width="20" height="20" alt="">
+                    <svg width="12" height="11">
+                      <use href="./img/sprite.svg#icon_like"></use>
+                    </svg>
                   </button>
                   <p class="filter-profiles__like-number">23</p>
                 </div>
@@ -994,23 +1065,44 @@
                   <span class="filter-profiles__subtitle">транспорт:</span>
                   <ul class="type-of-transports type-of-transports--profile">
                     <li class="type-of-transports__item">
-                      <img src="./img/svg/icon_plane.svg" width="17" height="16" alt="">
+                      <div class="svg-transport svg-transport--profile">
+                        <svg width="17" height="16">
+                          <use href="./img/sprite.svg#icon_plane"></use>
+                        </svg>
+                      </div>
                     </li>
                     <li class="type-of-transports__item">
-                      <img src="./img/svg/icon_bus.svg" width="17" height="16" alt="">
+                      <div class="svg-transport svg-transport--profile">
+                        <svg width="17" height="16">
+                          <use href="./img/sprite.svg#icon_bus"></use>
+                        </svg>
+                      </div>
                     </li>
                     <li class="type-of-transports__item">
-                      <img src="./img/svg/icon_bicycle.svg" width="17" height="16" alt="">
+                      <div class="svg-transport svg-transport--profile">
+                        <svg width="20" height="20">
+                          <use href="./img/sprite.svg#icon_bicycle"></use>
+                        </svg>
+                      </div>
                     </li>
                     <li class="type-of-transports__item">
-                      <img src="./img/svg/icon_run.svg" width="17" height="16" alt="">
+                      <div class="svg-transport svg-transport--profile">
+                        <svg width="19" height="18">
+                          <use href="./img/sprite.svg#icon_run"></use>
+                        </svg>
+                      </div>
                     </li>
                   </ul>
                 </div>
-                <div class="filter-profiles__level level level--cards">
-                  <span class="level__text">левел:</span>
-                  <span class="level__number">50</span>
-                  <span class="level__subtitle">level</span>
+                <div class="filter-profiles__level">
+                  <span class="filter-profiles__subtitle">левел:</span>
+                  <div class="level level--cards">
+                    <span class="level__number">50</span>
+                    <span class="level__subtitle">level</span>
+                    <svg width="45" height="45">
+                      <use href="./img/sprite.svg#circle-99"></use>
+                    </svg>
+                  </div>
                 </div>
                 <button class="filter-profiles__button button">Позвать!</button>
               </li>

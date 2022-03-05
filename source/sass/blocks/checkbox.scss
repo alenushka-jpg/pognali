@@ -6,10 +6,6 @@
 
 .checkbox--transport {
   padding-left: 0;
-
-  .checkbox__input {
-    top: -2px;
-  }
 }
 
 .checkbox__label {
@@ -39,13 +35,11 @@
   left: 0;
   top: 7px;
   display: block;
-  width: 18px;
-  height: 18px;
+  width: 32px;
+  height: 32px;
   margin: 0;
   opacity: 0;
   cursor: pointer;
-
-
 }
 
 .checkbox--transport {
