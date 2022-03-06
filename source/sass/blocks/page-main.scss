@@ -9,6 +9,10 @@
 .page-main__body {
   margin-top: -20px;
   background-color: $special-blue-10;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -59px;
+  }
 }
 
 .page-main__container {
@@ -20,8 +24,9 @@
 
   @media (min-width: $tablet-width) {
     padding: 94px 75px 62px;
-    background-color: inherit;
-    border-radius: inherit;
+    border-bottom-left-radius: 59px;
+    border-bottom-right-radius: 59px;
+
 
     &--catalog {
       display: grid;

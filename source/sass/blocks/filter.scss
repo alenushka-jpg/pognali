@@ -6,6 +6,12 @@
   border-bottom-right-radius: 20px;
   z-index: 5;
 
+  @media (min-width: $tablet-width) {
+    margin-top: -59px;
+    border-bottom-left-radius: 59px;
+    border-bottom-right-radius: 59px;
+  }
+
   @media (min-width: $desktop-width) {
     padding-top: 56px;
     margin-top: -56px;
@@ -64,10 +70,10 @@
   padding-bottom: 17px;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 2fr 175px;
+    grid-template-columns: 1fr 175px;
     column-gap: 63px;
     row-gap: 63px;
-    padding: 54px 72px 53px;
+    padding: 115px 72px 53px;
   }
 
   @media (min-width: $desktop-width) {
@@ -87,7 +93,6 @@
     align-items: center;
     column-gap: 80px;
     grid-column: 1/-1;
-    padding-right: 60px;
   }
 
   @media (min-width: $desktop-width) {
