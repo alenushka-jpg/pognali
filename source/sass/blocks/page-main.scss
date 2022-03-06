@@ -23,7 +23,7 @@
   border-bottom-right-radius: 22px;
 
   @media (min-width: $tablet-width) {
-    padding: 94px 75px 62px;
+    padding: 42px 75px 67px;
     border-bottom-left-radius: 59px;
     border-bottom-right-radius: 59px;
 
@@ -47,10 +47,6 @@
     }
   }
 }
-
-// .page-main__header {
-//   background-color: $special-blue-700;
-// }
 
 .page-main__background {
   position: relative;
@@ -96,10 +92,9 @@
     line-height: 60px;
 
     &::after {
-      bottom: -4px;
-      bottom: -65px;
-      width: 358px;
-      height: 8px;
+      bottom: -71px;
+      width: 287px;
+      height: 7px;
     }
   }
 

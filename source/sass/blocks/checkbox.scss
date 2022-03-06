@@ -25,8 +25,16 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding-left: 9px;
     font-size: 20px;
     line-height: 20px;
+
+    &::after {
+      left: 0px;
+      top: 2px;
+      width: 24px;
+      height: 24px;
+    }
   }
 }
 
@@ -35,15 +43,26 @@
   left: 0;
   top: 7px;
   display: block;
-  width: 32px;
-  height: 32px;
+  width: 18px;
+  height: 18px;
   margin: 0;
   opacity: 0;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    top: 4px;
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .checkbox--transport {
   .checkbox__label {
     display: none;
+  }
+
+  .checkbox__input {
+    width: 32px;
+    height: 32px;
   }
 }

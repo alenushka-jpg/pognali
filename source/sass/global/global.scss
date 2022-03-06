@@ -49,6 +49,16 @@ img {
   border-radius: 50%;
   background-color: $basic-while;
 
+  @media (min-width: $tablet-width) {
+    width: 44px;
+    height: 44px;
+
+    svg {
+      width: 23px;
+      height: 22px;
+    }
+  }
+
   &--profile {
     background-color: $special-blue-10;
   }

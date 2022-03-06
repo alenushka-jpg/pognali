@@ -14,7 +14,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    display: grid;
+    display: none;
     column-gap: 79px;
     row-gap: 80px;
     grid-column: 1/-1;
