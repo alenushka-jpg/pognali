@@ -1108,7 +1108,11 @@
               </li>
             </ul>
             <div class="catalog-pagination">
-              <button class="catalog-pagination__button">показать еще</button>
+              <button class="catalog-pagination__button">
+                <svg width="18" height="18">
+                  <use href="./img/sprite.svg#icon_plus"></use>
+                </svg>
+                показать еще</button>
               <div class="catalog-pagination__switchers">
                 <ol class="catalog-pagination__list">
                   <li class="catalog-pagination__item">1</li>
@@ -1117,12 +1121,12 @@
                   <li class="catalog-pagination__item">4</li>
                 </ol>
                 <div class="catalog-pagination__toggle">
-                  <button class="catalog-pagination__switchers-back">
+                  <a class="catalog-pagination__switchers-arrow">
                     <span class="visually-hidden">Перейти назад</span>
-                  </button>
-                  <button class="catalog-pagination__switchers-next">
+                  </a>
+                  <a class="catalog-pagination__switchers-arrow">
                     <span class="visually-hidden">Перейти вперед</span>
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
