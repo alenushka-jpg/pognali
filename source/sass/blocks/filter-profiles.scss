@@ -11,7 +11,7 @@
   row-gap: 9px;
 
   @media (min-width: $tablet-width) {
-    row-gap: 39px;
+    row-gap: 45px;
     margin-bottom: 46px;
   }
 
@@ -31,8 +31,8 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: max-content max-content max-content 1fr;
-    padding: 34px 43px 0 35px;
+    grid-template-columns: max-content min-content min-content 1fr;
+    padding: 34px 33px 0 35px;
   }
 
   @media (min-width: $desktop-width) {
@@ -51,7 +51,7 @@
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
     grid-row: 1/4;
-    margin-right: 36px;
+    margin-right: 28px;
     margin-bottom: 0;
   }
 
@@ -77,6 +77,7 @@
 }
 
 .filter-profiles__name {
+  display: block;
   grid-column: 2/4;
   padding-right: 39px;
   margin-left: 10px;
@@ -87,7 +88,9 @@
   @media (min-width: $tablet-width) {
     grid-column: 2/4;
     grid-row: 1/2;
-    margin-bottom: 19px;
+    padding-right: 17px;
+    margin-bottom: 17px;
+    margin-left: 5px;
     font-size: 30px;
     line-height: 30px;
   }
@@ -111,7 +114,7 @@
     position: static;
     grid-row: 3/4;
     grid-column: 3/4;
-    margin-bottom: 32px;
+    margin-bottom: 13px;
     align-items: center;
   }
 
@@ -147,6 +150,16 @@
     background-color: $special-red-10;
   }
 
+  @media (min-width: $tablet-width) {
+    width: 50px;
+    height: 50px;
+
+    &::before {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     width: 50px;
     height: 50px;
@@ -160,12 +173,16 @@
 
 .filter-profiles__like-button svg {
   z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 
 .filter-profiles__like-number {
-  padding-top: 5px;
-  padding-left: 5px;
+  padding: 5px 0;
   margin: 0;
   font-size: 14px;
   line-height: 16px;
@@ -173,6 +190,9 @@
   color: $special-blue-800;
 
   @media (min-width: $tablet-width) {
+    width: max-content;
+    padding-top: 12px;
+    padding-left: 8px;
     font-size: 20px;
     line-height: 20px;
     font-weight: 700;
@@ -188,16 +208,16 @@
 .filter-profiles__hashtag {
   grid-column: 1/4;
   justify-content: start;
-  padding-left: 8px;
-  padding-right: 25px;
+  padding: 0 25px 0 8px;
   margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
     grid-column: 2/4;
     grid-row: 2/3;
-    margin-bottom: 46px;
-    width: 220px;
     justify-content: start;
+    padding-right: 0;
+    margin-bottom: 46px;
+    min-width: 240px;
   }
 
   @media (min-width: $desktop-width) {
@@ -235,15 +255,32 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
-    padding-top: 25px;
-    padding-bottom: 26px;
+    padding: 10px 0;
+
+    .filter-profiles__subtitle {
+      display: block;
+    }
+
+    &::before,
+    &::after {
+      top: 19px;
+    }
+
+    &::before {
+      right: -34px;
+      width: 80%;
+    }
+
+    &::after {
+      left: -34px;
+      width: 11%;
+    }
   }
 
   @media (min-width: $desktop-width) {
     grid-row: 1/3;
     grid-column: 4/5;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0;
   }
 }
 
@@ -254,28 +291,24 @@
   color: $basic-grey;
 
   @media (min-width: $tablet-width) {
+    padding-left: 49px;
     display: none;
   }
 }
 
 .filter-profiles__flags-list {
-  margin-top: 18px;
-  margin-bottom: 11px;
-  padding: 0;
+  margin: 18px 0 11px;
   padding: 0;
   list-style: none;
 
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-between;
-    width: 465px;
+    margin-top: 20px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
-    padding-top: 32px;
-    padding-left: 49px;
-    width: auto;
+    padding: 32px 0 0 49px;
   }
 }
 
@@ -289,6 +322,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-right: 28px;
     margin-bottom: 0;
   }
 
@@ -360,6 +394,11 @@
   @media (min-width: $tablet-width) {
     grid-column: 4/5;
     grid-row: 1/3;
+
+    &::before,
+    &::after {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -411,8 +450,9 @@
   @media (min-width: $tablet-width) {
     grid-column: 2/3;
     grid-row: 3/4;
-    padding: 15px 33px 15px 33px;
-    margin-bottom: 32px;
+    min-width: 150px;
+    padding: 15px 19px;
+    margin: 0 0 13px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -421,10 +461,8 @@
     grid-column: 2/3;
     grid-row: 3/4;
     width: 150px;
-    padding-left: 0;
-    padding-right: 0;
-    margin-bottom: 48px;
-    margin-left: 54px;
+    padding: 15px 0;
+    margin: 0 0 48px 54px;
     font-size: 20px;
     line-height: 20px;
   }

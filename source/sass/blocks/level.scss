@@ -10,6 +10,11 @@
 .level svg {
   position: absolute;
   fill: $basic-while;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .level__number {
@@ -37,8 +42,6 @@
   line-height: 14px;
   color: $basic-while;
   z-index: 1;
-
-  // color: rgba($basic-black, 0.4);
 }
 
 .level--profile {
@@ -102,8 +105,12 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-top: 0;
+
     .level__subtitle {
       display: block;
+      color: rgba($basic-black, 0.4);
+      z-index: 1;
     }
 
     .level__text {
