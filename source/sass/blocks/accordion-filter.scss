@@ -191,6 +191,10 @@
     flex-direction: row;
     column-gap: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
 }
 
 .accordion-filter__transports {
@@ -219,6 +223,10 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: 281px 148px;
     column-gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr;
   }
 }
 
