@@ -14,7 +14,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    display: none;
+    display: block;
     column-gap: 79px;
     row-gap: 80px;
     grid-column: 1/-1;
@@ -107,8 +107,12 @@
     display: grid;
     grid-template-columns: repeat(5, 250px);
     row-gap: 53px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 0 25px;
+    margin-bottom: 64px;
+
+    .country-toggle__item:nth-child(11n) {
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -141,6 +145,7 @@
   line-height: 20px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  font-family: inherit;
   color: $special-blue-700;
   border: 0;
   background-color: $special-blue-90;
@@ -161,5 +166,9 @@
       width: 22px;
       height: 24px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 38px 83px;
   }
 }
