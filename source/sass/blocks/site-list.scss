@@ -1,4 +1,5 @@
 .site-list {
+  position: relative;
   list-style: none;
   text-align: center;
 
@@ -8,6 +9,16 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 25px;
+      content: "";
+      height: 2px;
+      width: 60px;
+      background-color: $basic-while;
+    }
   }
 }
 
