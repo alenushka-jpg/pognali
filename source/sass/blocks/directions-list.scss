@@ -1,7 +1,7 @@
 .directions-list {
   position: relative;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 27px;
   padding: 0;
   list-style: none;
 
@@ -22,7 +22,7 @@
 }
 
 .directions-list__item {
-  margin-bottom: 11px;
+  margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     display: grid;

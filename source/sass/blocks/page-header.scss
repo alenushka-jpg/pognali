@@ -31,7 +31,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 240px 1fr;
-    padding: 49px 0 11px;
+    padding: 49px 60px 11px;
   }
 }
 
@@ -175,7 +175,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 105px;
+    padding: 0 0 0 105px;
     margin-bottom: 0;
   }
 }
@@ -250,5 +250,10 @@
     &--dark {
       display: none;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+    height: 50px;
   }
 }
