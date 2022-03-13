@@ -18,8 +18,7 @@
   justify-content: space-between;
   margin-top: -10px;
   padding: 22px 21px 32px 24px;
-  // border-top-left-radius: 10px;
-  // border-top-right-radius: 10px;
+  border-radius: 10px 10px 0 0;
 
   &:first-child {
     margin-top: 0;
@@ -35,8 +34,9 @@
   }
 
   &:nth-child(5n-1) {
+    padding-bottom: 22px;
     background-color: $special-yellow-300;
-    // border-radius: 10px;
+    border-radius: 10px;
   }
 
   @media (min-width: $tablet-width) {
@@ -45,7 +45,6 @@
     padding: 31px 32px 21px;
 
     &:first-child {
-      width: 365px;
       border-radius: 20px 0 0 0;
     }
 
@@ -54,7 +53,6 @@
     }
 
     &:nth-child(4n-1) {
-      width: 365px;
       border-radius: 0 0 0 20px;
     }
 

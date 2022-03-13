@@ -1,9 +1,10 @@
 .promo {
   display: grid;
   grid-template-columns: 1fr;
-  background-color: $special-blue-900;
-  background-image: url("/img/globe-back-mobile.png");
-  background-position: 0 -60px;
+  background-color: $special-blue-850;
+  background-image: url("/img/traveller-illustration-mobile.png"),
+  url("/img/globe-back-mobile.png");
+  background-position: 80px 169px, 0 -60px;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
@@ -12,9 +13,9 @@
     row-gap: 38px;
     background-color: $special-blue-750;
     background-image: url("/img/traveller-illustration-tablet.png"),
-    url("/img/globe-back-desktop-tablet.png");
-    background-position: 72% 275px,center 240px;
-    background-size: 372px 451px, 100%;
+    url("/img/globe-back-tablet.png");
+    background-position: 72% 275px, center 254px;
+    background-size: 372px 451px, 1479px 612px;
   }
 
   @media (min-width: $desktop-width) {
@@ -44,7 +45,7 @@
 
 .promo__title {
   margin: 0 auto;
-  padding: 41px 0 265px;
+  padding: 41px 0 243px;
   text-align: center;
   font-weight: 700;
   font-size: 36px;
