@@ -4,17 +4,13 @@
   padding-left: 27px;
 }
 
-.checkbox--transport {
-  padding-left: 0;
-}
-
 .checkbox__label {
   font-size: 15px;
   line-height: 20px;
   color: $basic-black;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 4px;
@@ -30,7 +26,7 @@
     line-height: 20px;
 
     &::after {
-      left: 0px;
+      left: 0;
       top: 2px;
       width: 24px;
       height: 24px;
@@ -57,6 +53,8 @@
 }
 
 .checkbox--transport {
+  padding-left: 0;
+
   .checkbox__label {
     display: none;
   }

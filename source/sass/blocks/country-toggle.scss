@@ -4,6 +4,10 @@
 }
 
 .country-toggle--filter {
+  .country-toggle__input:checked + .country-toggle__letter {
+    color: $special-blue-650;
+  }
+
   .country-toggle__letter-list {
     width: auto;
     margin-right: 25px;
@@ -123,12 +127,6 @@
 
 .country-toggle__input:checked + .country-toggle__letter {
   background-color: $special-blue-10;
-}
-
-.country-toggle--filter {
-  .country-toggle__input:checked + .country-toggle__letter {
-    color: $special-blue-650;
-  }
 }
 
 .country-toggle__contries-list--selected {

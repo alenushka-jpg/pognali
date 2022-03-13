@@ -236,7 +236,7 @@
 
   &::before,
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 8px;
     height: 1px;
@@ -384,7 +384,7 @@
 
   &::before,
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 8px;
     height: 1px;
@@ -426,7 +426,7 @@
   grid-column: 3/4;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 8px;
     height: 1px;

@@ -13,7 +13,7 @@
       width: 1px;
       height: 407px;
       background-color: $special-blue-70;
-      background-image: linear-gradient(to top, #fff, transparent);
+      background-image: linear-gradient(to top, $basic-while, transparent);
     }
   }
 
@@ -123,7 +123,7 @@
     &::before {
       width: 52px;
       height: 36px;
-      background-image: linear-gradient(to left, $basic-while 68%, rgba(255,255,255, 0.3) 90%);
+      background-image: linear-gradient(to left, $basic-while 68%, rgba(255, 255, 255, 0.3) 90%);
     }
 
     &::after {
@@ -199,7 +199,7 @@
 .select-country__button-plus {
   position: absolute;
   top: 13px;
-  right: 15px
+  right: 15px;
 }
 
 .select-country__picture {
@@ -292,10 +292,9 @@
 
   @media (min-width: $desktop-width) {
     &::before {
-      right: -40px
+      right: -40px;
     }
   }
-
 }
 
 .select-country__button--add svg {

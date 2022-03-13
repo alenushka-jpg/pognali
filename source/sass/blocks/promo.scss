@@ -3,7 +3,7 @@
   grid-template-columns: 1fr;
   background-color: $special-blue-850;
   background-image: url("/img/traveller-illustration-mobile.png"),
-  url("/img/globe-back-mobile.png");
+    url("/img/globe-back-mobile.png");
   background-position: 80px 169px, 0 -60px;
   background-repeat: no-repeat;
 
@@ -13,7 +13,7 @@
     row-gap: 38px;
     background-color: $special-blue-750;
     background-image: url("/img/traveller-illustration-tablet.png"),
-    url("/img/globe-back-tablet.png");
+      url("/img/globe-back-tablet.png");
     background-position: 72% 275px, center 254px;
     background-size: 372px 451px, 1479px 612px;
   }
@@ -22,9 +22,9 @@
     grid-template-columns: 1fr;
     background-color: $special-blue-790;
     background-image: url("/img/traveller-illustration.png"),
-    url("/img/globe-back-desktop.png");
+      url("/img/globe-back-desktop.png");
     background-size: 430px 640px, 100%;
-    background-position: 60% 0, 0px -108px;
+    background-position: 60% 0, 0 -108px;
   }
 }
 

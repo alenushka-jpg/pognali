@@ -83,10 +83,18 @@
 .accordion-filter__list {
   display: none;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &:nth-child(2n) {
+    margin-bottom: 12px;
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
+    column-gap: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -183,25 +191,6 @@
     &::before {
       display: none;
     }
-  }
-}
-
-.accordion-filter__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-
-  &:nth-child(2n) {
-    margin-bottom: 12px;
-  }
-
-  @media (min-width: $tablet-width) {
-    flex-direction: row;
-    column-gap: 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    flex-direction: column;
   }
 }
 

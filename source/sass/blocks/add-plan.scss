@@ -85,7 +85,7 @@
 }
 
 .add-plan__select,
-.add-plan__countries{
+.add-plan__countries {
   @media (min-width: $desktop-width) {
     grid-column: 1/-1;
   }
@@ -223,4 +223,3 @@
 .add-plan__button-back {
   left: 98px;
 }
-
