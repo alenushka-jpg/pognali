@@ -62,8 +62,8 @@
     margin-top: 0;
     justify-content: start;
     flex-direction: column;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+    padding: 29px 28px 23px;
+    border-radius: 15px 0 0 15px;
   }
 }
 
@@ -95,7 +95,7 @@
   color: $basic-black;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 17px;
+    margin-bottom: 19px;
     max-width: 350px;
     font-size: 24px;
     line-height: 24px;
@@ -136,6 +136,13 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding-left: 30px;
     font-size: 20px;
+
+    &::after {
+      width: 24px;
+      height: 24px;
+      background-image: url("../img/svg/icon_user-tablet.svg");
+    }
   }
 }

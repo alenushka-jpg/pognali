@@ -2,8 +2,7 @@
   position: relative;
   margin-top: -30px;
   background-color: $special-blue-10;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+  border-radius: 0 0 30px 30px;
   z-index: 80;
 
   @media (min-width: $tablet-width) {
@@ -11,25 +10,23 @@
     background-image: url("/img/flags-back.png");
     background-repeat: no-repeat;
     background-position: right 40px top 80px;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
+    border-radius: 0 0 60px 60px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: -56px;
-    border-bottom-left-radius: 56px;
-    border-bottom-right-radius: 56px;
+    border-radius: 0 0 54px 54px;
   }
 }
 
 .about-directions__container {
   padding-top: 101px;
+  padding-bottom: 34px;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 288px;
-    padding-left: 76px;
-    padding-right: 76px;
+    grid-template-columns: 1fr 280px;
+    padding: 133px 73px 79px 76px;
   }
 
   @media (min-width: $desktop-width) {
@@ -107,7 +104,6 @@
 
 .about-directions__button {
   position: relative;
-  margin-bottom: 34px;
   padding: 22px 23px;
   font-size: 18px;
   line-height: 18px;
@@ -120,8 +116,10 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1/3;
+    padding: 30px 31px;
     font-size: 24px;
     line-height: 24px;
+    border-radius: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -135,4 +133,9 @@
   position: absolute;
   right: 21px;
   top: 25px;
+
+  @media (min-width: $tablet-width) {
+    right: 32px;
+    top: 37px;
+  }
 }

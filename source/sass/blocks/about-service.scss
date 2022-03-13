@@ -27,17 +27,14 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 619px 1fr;
-    padding-bottom: 89px;
+    padding: 40px 74px 89px;
     background-image: url("/img/about-tablet.png"),
       url("/img/about-background-tablet.png");
-    background-position: 390px 50px, 40px 0;
+      background-position: 384px 46px, 40px 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 132px;
-    padding-bottom: 130px;
-    padding-left: 130px;
-    padding-right: 130px;
+    padding: 132px 130px 130px;
     background-image: url("/img/about-desktop.png"),
       url("/img/square-tablet.png");
     background-position: 753px bottom, 60px 67px;
