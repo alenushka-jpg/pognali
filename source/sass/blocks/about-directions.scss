@@ -32,7 +32,7 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 350px;
     column-gap: 169px;
-    padding: 216px 230px 149px 131px;
+    padding: 216px 230px 134px 131px
   }
 }
 
@@ -43,6 +43,10 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     margin-bottom: 104px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 97px;
   }
 }
 
@@ -64,6 +68,7 @@
   @media (min-width: $desktop-width) {
     grid-column: 2/3;
     grid-row: 1/2;
+    margin-bottom: 64px;
   }
 }
 

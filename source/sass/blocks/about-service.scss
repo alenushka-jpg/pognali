@@ -1,19 +1,16 @@
 .about-service {
   position: relative;
   background-color: $special-blue-700;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+  border-radius: 0 0 30px 30px;
   z-index: 90;
 
   @media (min-width: $tablet-width) {
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
+    border-radius: 0 0 60px 60px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: -56px;
-    border-bottom-left-radius: 56px;
-    border-bottom-right-radius: 56px;
+    border-radius: 0 0 56px 56px;
   }
 }
 
@@ -34,10 +31,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 132px 130px 130px;
+    padding: 132px 130px 165px;
     background-image: url("/img/about-desktop.png"),
       url("/img/square-tablet.png");
-    background-position: 753px bottom, 60px 67px;
+    background-position: 750px 86px, 60px 67px;
   }
 }
 
