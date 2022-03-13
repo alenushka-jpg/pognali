@@ -14,7 +14,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    display: block;
+    display: grid;
     column-gap: 79px;
     row-gap: 80px;
     grid-column: 1/-1;
@@ -46,6 +46,7 @@
 
   @media (min-width: $desktop-width) {
     row-gap: 92px;
+    display: block;
 
     .country-toggle__letter-list {
       display: none;

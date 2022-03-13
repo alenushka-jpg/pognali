@@ -5,6 +5,11 @@
   @media (min-width: $tablet-width) {
     padding-top: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 31px;
+    padding-bottom: 22px;
+  }
 }
 
 .range-controls__handlers {

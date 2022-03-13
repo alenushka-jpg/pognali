@@ -176,6 +176,14 @@
       background-color: $special-yellow-300;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+
+    &::before {
+      display: none;
+    }
+  }
 }
 
 .accordion-filter__list {
@@ -247,6 +255,10 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+  }
 }
 
 .accordion-filter__range-controls {
@@ -255,6 +267,10 @@
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
     grid-row: 1/2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 2/3;
   }
 }
 
@@ -299,5 +315,9 @@
   @media (min-width: $tablet-width) {
     grid-column: 2/3;
     padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/-1;
   }
 }
