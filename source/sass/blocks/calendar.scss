@@ -37,6 +37,13 @@
   background-color: inherit;
 }
 
+.calendar__button svg {
+  @media (min-width: $tablet-width) {
+    width: 29px;
+    height: 36px;
+  }
+}
+
 .calendar__title {
   margin: 0;
   font-weight: 700;
@@ -120,7 +127,7 @@ input:checked + .calendar__number {
   font-size: 14px;
   line-height: 18px;
   color: $special-blue-650;
-  background-color: $special-blue-00;
+  background-color: $special-blue-10;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

@@ -1,26 +1,48 @@
 .fellow-travelers {
+  position: relative;
+  margin-top: -30px;
   background-color: $special-blue-700;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  z-index: 70;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -56px;
+    border-bottom-left-radius: 56px;
+    border-bottom-right-radius: 56px;
+  }
 }
 
 .fellow-travelers__container {
-  padding-top: 68px;
+  padding-top: 97px;
   padding-bottom: 31px;
+  background-image: url("../img/square.png"),
+    url("../img/smolov-back.png"),
+    url("../img/rogovaya-back.png");
+  background-repeat: no-repeat;
+  background-position: 0 60px, 152px 60px, 0 305px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 430px 221px;
-    padding-top: 141px;
-    padding-bottom: 87px;
-    padding-left: 74px;
-    padding-right: 74px;
+    padding: 201px 74px 87px;
+    background-image: url("../img/square-tablet.png"),
+      url("../img/smolov-back-tablet.png"),
+      url("../img/rogovaya-back-tablet.png");
+    background-position: 29px 145px, 32px 430px, 410px 145px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 430px 1fr;
     column-gap: 190px;
-    padding-left: 129px;
-    padding-top: 130px;
-    padding-bottom: 134px;
+    padding: 231px 74px 134px 129px;
+    background-position: 58px 160px, 531px 230px, 205px 455px;
   }
 }
 
@@ -99,10 +121,8 @@
 }
 
 .fellow-travelers__button {
-  padding-top: 22px;
-  padding-left: 23px;
-  padding-right: 23px;
-  padding-bottom: 21px;
+  position: relative;
+  padding: 22px 23px 21px;
   font-size: 18px;
   line-height: 18px;
   text-align: start;
@@ -110,7 +130,7 @@
   color: $special-blue-650;
   text-transform: none;
   border: none;
-  border-radius: 10px;
+  border-radius: 20px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
@@ -119,7 +139,20 @@
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
     width: 280px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+.fellow-travelers__button-arrow {
+  position: absolute;
+  right: 22px;
+  top: 24px;
+
+  @media (min-width: $desktop-width) {
+    right: 27px;
+    top: 32px;
   }
 }

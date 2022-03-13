@@ -1,15 +1,29 @@
 .about-directions {
-  background-color: $special-blue-00;
+  position: relative;
+  margin-top: -30px;
+  background-color: $special-blue-10;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  z-index: 80;
 
   @media (min-width: $tablet-width) {
+    margin-top: -60px;
     background-image: url("/img/flags-back.png");
     background-repeat: no-repeat;
     background-position: right 40px top 80px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -56px;
+    border-bottom-left-radius: 56px;
+    border-bottom-right-radius: 56px;
   }
 }
 
 .about-directions__container {
-  padding-top: 71px;
+  padding-top: 133px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -21,18 +35,23 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 350px;
     column-gap: 169px;
-    padding-top: 161px;
-    padding-bottom: 149px;
-    padding-left: 131px;
-    padding-right: 230px;
+    padding: 216px 230px 149px 131px;
+  }
+}
+
+.about-directions__header {
+  padding: 0 29px 0 23px;
+  margin-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-bottom: 104px;
   }
 }
 
 .about-directions__title {
   margin: 0;
   margin-bottom: 19px;
-  padding-left: 24px;
-  padding-right: 24px;
   font-weight: 700;
   font-size: 24px;
   line-height: 24px;
@@ -48,40 +67,26 @@
   @media (min-width: $desktop-width) {
     grid-column: 2/3;
     grid-row: 1/2;
-    padding-left: 0;
-    padding-right: 0;
   }
 }
 
 .about-directions__text {
   margin: 0;
-  padding-left: 24px;
-  padding-right: 24px;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
   color: $basic-grey;
 
-  &:last-of-type {
-    margin-bottom: 60px;
-  }
-
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
     font-size: 28px;
     line-height: 33px;
-
-    &:last-of-type {
-      margin-bottom: 104px;
-    }
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 2/3;
     grid-row: 2/3;
     width: 378px;
-    padding-left: 0;
-    padding-right: 0;
 
     &:last-of-type {
       grid-row: 3/4;
@@ -101,11 +106,9 @@
 }
 
 .about-directions__button {
+  position: relative;
   margin-bottom: 34px;
-  padding-left: 23px;
-  padding-right: 23px;
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding: 22px 23px;
   font-size: 18px;
   line-height: 18px;
   text-align: start;
@@ -126,4 +129,10 @@
     grid-row: 4/5;
     width: 275px;
   }
+}
+
+.about-directions__button-arrow {
+  position: absolute;
+  right: 32px;
+  top: 25px;
 }

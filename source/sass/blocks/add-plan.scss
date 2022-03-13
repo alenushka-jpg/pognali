@@ -1,5 +1,8 @@
 .add-plan {
   background-color: $special-blue-80;
+  margin-top: -29px;
+  border-top-left-radius: 29px;
+  border-top-right-radius: 29px;
 }
 
 .add-plan__container {
@@ -7,10 +10,7 @@
   padding-bottom: 43px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 53px;
-    padding-bottom: 63px;
-    padding-left: 75px;
-    padding-right: 75px;
+    padding: 53px 75px 63px;
   }
 
   @media (min-width: $desktop-width) {
@@ -30,15 +30,16 @@
   @media (min-width: $tablet-width) {
     padding-top: 48px;
     padding-bottom: 50px;
+    margin-bottom: 39px;
+    border-radius: 30px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 419px 219px;
-    padding-left: 160px;
-    padding-top: 100px;
-    padding-right: 160px;
-    padding-bottom: 106px;
+    padding: 100px 160px 106px 160px;
+    margin-bottom: 43px;
+    border-radius: 60px;
   }
 }
 
@@ -83,7 +84,8 @@
   }
 }
 
-.add-plan__select {
+.add-plan__select,
+.add-plan__countries{
   @media (min-width: $desktop-width) {
     grid-column: 1/-1;
   }
@@ -96,14 +98,12 @@
   }
 }
 
-.countries-description {
-  @media (min-width: $desktop-width) {
-    grid-column: 1/-1;
-  }
-}
-
 .add-plan__search {
   margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    border-top: 1px solid $special-blue-50;
+  }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 2fr 1fr;
@@ -176,10 +176,8 @@
 }
 
 .add-plan__button {
-  padding-left: 35px;
-  padding-right: 35px;
-  padding-top: 6px;
-  padding-bottom: 5px;
+  position: relative;
+  padding: 6px 35px 5px;
   text-decoration: none;
   text-align: center;
   color: $special-blue-650;
@@ -189,22 +187,40 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: auto;
-    padding-right: 75px;
-    padding-top: 29px;
-    padding-bottom: 27px;
+    width: 286px;
+    padding: 29px 75px 27px 35px;
+    text-align: start;
     text-transform: inherit;
 
     &--back {
       padding-right: 0;
+      text-align: end;
     }
   }
 
   @media (min-width: $desktop-width) {
-    width: 286px;
-
     &--back {
       text-align: end;
     }
   }
 }
+
+.add-plan__button-arrow,
+.add-plan__button-back {
+  position: absolute;
+  top: 33px;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
+}
+
+.add-plan__button-arrow {
+  right: 20px;
+}
+
+.add-plan__button-back {
+  left: 98px;
+}
+

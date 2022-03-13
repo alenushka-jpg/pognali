@@ -7,10 +7,18 @@
   line-height: 16px;
   text-decoration: none;
   color: $basic-grey;
+  border-top: 1px solid $special-red-30;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 0;
     font-size: 20px;
     line-height: 20px;
+    border-top: none;
+  }
+}
+
+.copyright__link svg {
+  @media (min-width: $tablet-width) {
+    margin-left: 23px;
   }
 }

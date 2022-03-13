@@ -73,17 +73,46 @@
   display: block;
 }
 
+.search-form__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 38px;
+  height: 38px;
+  margin: 0;
+  opacity: 0;
+}
+
 .search-form__label {
+  position: relative;
+  padding: 4px 0 4px 39px;
   font-size: 15px;
   line-height: 15px;
   color: $special-blue-650;
 
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 26px;
+    height: 26px;
+    border: 1px solid $special-blue-120;
+    border-radius: 4px;
+  }
+
   @media (min-width: $tablet-width) {
+    padding: 10px 0 6px 52px;
     font-weight: 500;
     font-size: 20px;
     line-height: 20px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+
+    &::after {
+      width: 36px;
+      height: 36px;
+    }
   }
 }
 

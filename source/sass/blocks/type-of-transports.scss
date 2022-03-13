@@ -1,18 +1,20 @@
 .type-of-transports {
+  display: flex;
+  justify-content: space-between;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   list-style: none;
 }
 
 .type-of-transports--profile {
   display: flex;
-  padding-top: 10px;
-  padding-bottom: 14px;
+  margin: 17px 0 14px;
+  width: 125px;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
-    padding-top: 0;
-    padding-bottom: 0;
+    margin: 0 7px 0 0;
+    width: auto;
 
     .type-of-transports__item img {
       margin-left: auto;
@@ -21,6 +23,31 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    justify-content: space-between;
+    width: 130px;
+  }
+}
+
+.type-of-transports--user-profile {
+  width: 128px;
+
+  .type-of-transports__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: $basic-while;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 172px;
+
+    .type-of-transports__item {
+      width: 44px;
+      height: 44px;
+    }
   }
 }
 

@@ -14,6 +14,9 @@
   }
 
   @media (min-width: $tablet-width) {
+    display: grid;
+    column-gap: 79px;
+    row-gap: 80px;
     grid-column: 1/-1;
     grid-template-columns: 1fr 175px;
 
@@ -42,6 +45,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    row-gap: 92px;
+    display: block;
+
     .country-toggle__letter-list {
       display: none;
     }
@@ -62,9 +68,14 @@
   height: 41px;
   border-right: 1px solid $special-blue-120;
   border-bottom: 1px solid $special-blue-120;
+  background-color: $basic-while;
 
   &:nth-child(5n) {
     border-right: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-color: inherit;
   }
 }
 
@@ -96,9 +107,13 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(5, 250px);
-    row-gap: 40px;
-    padding-left: 25px;
-    padding-right: 25px;
+    row-gap: 53px;
+    padding: 0 25px;
+    margin-bottom: 64px;
+
+    .country-toggle__item:nth-child(11n) {
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -107,7 +122,13 @@
 }
 
 .country-toggle__input:checked + .country-toggle__letter {
-  background-color: $special-blue-00;
+  background-color: $special-blue-10;
+}
+
+.country-toggle--filter {
+  .country-toggle__input:checked + .country-toggle__letter {
+    color: $special-blue-650;
+  }
 }
 
 .country-toggle__contries-list--selected {
@@ -115,7 +136,9 @@
 }
 
 .country-toggle__button {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   padding: 10px 83px;
   font-weight: 700;
@@ -123,15 +146,30 @@
   line-height: 20px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  font-family: inherit;
   color: $special-blue-700;
   border: 0;
   background-color: $special-blue-90;
   border-radius: 20px;
+
+  svg {
+    margin-right: 12px;
+  }
 
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
     padding: 40px 83px;
     font-size: 20px;
     line-height: 20px;
+
+    svg {
+      margin-right: 18px;
+      width: 22px;
+      height: 24px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 38px 83px;
   }
 }

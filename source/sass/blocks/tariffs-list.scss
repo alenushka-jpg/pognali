@@ -25,7 +25,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 146px;
+    padding: 50px 146px 50px 0;
 
     &::before {
       width: 446px;
@@ -36,46 +36,31 @@
 
 .tariffs-list__item {
   position: relative;
-  padding-top: 13px;
-  padding-bottom: 17px;
-
-  &::before {
-    content: attr(data-number);
-    position: absolute;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 34px;
-    height: 34px;
-    font-size: 16px;
-    line-height: 16px;
-    color: $basic-while;
-    background-color: $special-yellow-900;
-    border-radius: 50%;
-  }
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  column-gap: 13px;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
-    padding-left: 90px;
-    padding-right: 35px;
-    padding-bottom: 17px;
-
-    &::before {
-      left: 0;
-      top: 0;
-      width: 68px;
-      height: 68px;
-      font-size: 28px;
-      line-height: 28px;
-    }
+    grid-template-columns: max-content 1fr;
+    column-gap: 22px;
   }
 }
 
-.tariff-table__name,
-.tariff-table__price {
+.tariffs-list__description {
+  padding-top: 13px;
+  padding-bottom: 17px;
+  border-top: 1px solid $special-blue-50;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2/3;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 35px 18px 0;
+  }
+}
+
+.tariffs-list__name,
+.tariffs-list__price {
   display: block;
   font-weight: 300;
   font-size: 16px;
@@ -88,10 +73,54 @@
   }
 }
 
-.tariff-table__name {
+.tariffs-list__name {
+  margin-top: 0;
   margin-bottom: 6px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+  }
+}
+
+.tariffs-list__number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  font-size: 16px;
+  line-height: 16px;
+  color: $basic-while;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 68px;
+    height: 68px;
+    font-size: 28px;
+    line-height: 28px;
+  }
+}
+
+.tariffs-list__item:nth-child(2n-1) {
+  .tariffs-list__number {
+    background-color: $special-yellow-900;
+  }
+}
+
+.tariffs-list__item:nth-child(3n-1) {
+  .tariffs-list__number {
+    background-color: $special-yellow-700;
+  }
+}
+
+.tariffs-list__item:nth-child(4n-1) {
+  .tariffs-list__number {
+    background-color: $special-yellow-200;
+  }
+
+  .tariffs-list__description {
+    border-bottom: 1px solid $special-blue-50;
   }
 }

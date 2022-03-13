@@ -1,21 +1,36 @@
 .about-service {
+  position: relative;
   background-color: $special-blue-700;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  z-index: 90;
+
+  @media (min-width: $tablet-width) {
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -56px;
+    border-bottom-left-radius: 56px;
+    border-bottom-right-radius: 56px;
+  }
 }
 
 .about-service__container {
-  padding-top: 39px;
-  padding-bottom: 82px;
-  background-image: url("/img/about-mobile-background.png");
+  padding: 39px 49px 82px;
+  background-image: url("/img/about-mobile-background.png"),
+    url("/img/square.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center 0, 0 0;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 619px 1fr;
     padding-bottom: 89px;
-    background-image: url("/img/about--tablet.png"),
-      url("/img/about-background--tablet.png");
-    background-position: right 40px, 40px 0;
+    background-image: url("/img/about-tablet.png"),
+      url("/img/about-background-tablet.png");
+    background-position: 390px 50px, 40px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -23,8 +38,8 @@
     padding-bottom: 130px;
     padding-left: 130px;
     padding-right: 130px;
-    background-image: url("/img/about--desktop.png"),
-      url("/img/about-background--desktop.png");
+    background-image: url("/img/about-desktop.png"),
+      url("/img/square-tablet.png");
     background-position: 753px bottom, 60px 67px;
   }
 }
@@ -32,8 +47,6 @@
 .about-service__title {
   margin: 0;
   margin-bottom: 19px;
-  padding-left: 24px;
-  padding-right: 24px;
   font-weight: 700;
   font-size: 24px;
   line-height: 24px;
@@ -54,18 +67,18 @@
 .about-service__text {
   margin: 0;
   margin-bottom: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
   color: $basic-while;
+  max-width: 211px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
     font-size: 28px;
     line-height: 33px;
     margin-bottom: 31px;
+    max-width: 302px;
 
     &--footnote {
       margin-bottom: 52px;
@@ -77,9 +90,10 @@
   @media (min-width: $desktop-width) {
     line-height: 34px;
     margin-bottom: 38px;
+    max-width: 619px;
 
     &--footnote {
-      max-width: 465px;
+      max-width: 425px;
       line-height: 24px;
       margin-bottom: 85px;
     }
@@ -87,15 +101,25 @@
 }
 
 .about-service__button {
+  position: relative;
   display: none;
+  padding: 28px 35px 28px 32px;
+  width: 276px;
+  grid-column: 1/2;
+  text-transform: inherit;
+  background-color: $special-yellow-200;
+  border-radius: 20px;
+  text-align: start;
 
   @media (min-width: $tablet-width) {
     display: block;
-    padding-top: 28px;
-    padding-bottom: 28px;
-    width: 276px;
-    grid-column: 1/2;
-    margin-left: 24px;
-    margin-right: 24px;
+  }
+}
+
+.about-service__button-arrow {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    right: 35px;
+    top: 32px;
   }
 }

@@ -1,8 +1,10 @@
 .site-list {
-  margin: 0;
-  padding-left: 0;
   list-style: none;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: start;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -24,9 +26,14 @@
   text-transform: uppercase;
   text-decoration: none;
 
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 71px;
+  }
+
   @media (min-width: $desktop-width) {
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 17px;
+    padding-bottom: 10px;
     font-size: 20px;
     line-height: 20px;
     color: $basic-while;

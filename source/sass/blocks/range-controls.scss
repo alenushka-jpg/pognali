@@ -1,1 +1,70 @@
-//комментарий
+.range-controls {
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 31px;
+    padding-bottom: 22px;
+  }
+}
+
+.range-controls__handlers {
+  position: relative;
+  height: 2px;
+  width: 100%;
+  background-color: rgba($special-blue-650, 0.2);
+
+  @media (min-width: $tablet-width) {
+    height: 3px;
+  }
+}
+
+.range-controls__scale {
+  position: absolute;
+  right: 0;
+  width: 68%;
+  height: 2px;
+  background-color: $special-blue-650;
+
+  @media (min-width: $tablet-width) {
+    height: 3px;
+  }
+}
+
+.range-controls___toggle {
+  position: absolute;
+  padding: 0;
+  width: 10px;
+  height: 10px;
+  background-color: $special-blue-650;
+  border: none;
+  border-radius: 50%;
+
+  &:last-child {
+    top: -4px;
+    left: 67px;
+  }
+
+  &:nth-child(2n) {
+    top: -4px;
+    right: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 13px;
+    height: 13px;
+
+    &:last-child {
+      top: -5px;
+      left: 101px;
+    }
+
+    &:last-child {
+      top: -5px;
+    }
+  }
+}
