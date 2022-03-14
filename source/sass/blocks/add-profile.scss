@@ -33,14 +33,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 132px;
-    padding-bottom: 60px;
+    padding: 134px 40px 60px 39px;
     z-index: 20;
 
     &::before {
       right: 85px;
       top: auto;
-      bottom: 45px;
+      bottom: 44px;
       z-index: 15;
     }
   }
@@ -71,7 +70,6 @@
     grid-column: 1/3;
     width: auto;
     margin-bottom: 32px;
-    padding-right: 0;
     font-size: 45px;
     line-height: 45px;
     text-align: center;
