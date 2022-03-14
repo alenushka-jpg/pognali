@@ -24,7 +24,7 @@
   padding-bottom: 36px;
 
   @media (min-width: $tablet-width) {
-    padding: 124px 75px 84px;
+    padding: 109px 75px 84px;
   }
 
   @media (min-width: $desktop-width) {
@@ -64,6 +64,7 @@
   @media (min-width: $tablet-width) {
     min-height: 68px;
     padding-left: 93px;
+    margin-bottom: 43px;
     font-size: 28px;
     line-height: 28px;
 
@@ -113,19 +114,28 @@
   border: 3px solid $special-blue-700;
   border-radius: 10px;
 
+  @media (min-width: $tablet-width) {
+    padding: 26px 34px 24px;
+    font-size: 24px;
+    line-height: 24px;
+    border-radius: 20px;
+  }
+
   @media (min-width: $desktop-width) {
     height: 80px;
     width: 324px;
     display: flex;
     align-items: center;
-    font-size: 24px;
-    line-height: 24px;
   }
 }
 
 .address__button-arrow {
   position: absolute;
   right: 18px;
+
+  @media (min-width: $tablet-width) {
+    right: 32px;
+  }
 }
 
 .address__map {
