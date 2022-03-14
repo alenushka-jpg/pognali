@@ -44,6 +44,12 @@
   z-index: 1;
 }
 
+.level--travel {
+  svg {
+    fill: rgba($basic-black, 0.6);
+  }
+}
+
 .level--profile {
   position: relative;
 

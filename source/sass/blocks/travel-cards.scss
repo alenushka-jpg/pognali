@@ -1,7 +1,6 @@
 .travel-cards__list {
-  margin: 0;
-  margin-bottom: 20px;
   padding: 0;
+  margin: 0 0 20px;
   list-style: none;
 
   @media (min-width: $tablet-width) {
@@ -22,7 +21,7 @@
 .travel-cards__item {
   position: relative;
   width: 270px;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 
   @media (min-width: $tablet-width) {
     width: 285px;
@@ -32,69 +31,61 @@
 
 .travel-cards__level {
   position: absolute;
-  top: 25px;
-  left: 30px;
+  top: 26px;
+  left: 34px;
 }
 
 .travel-cards__photo {
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+  border-radius: 12px 12px 0 0;
 
   @media (min-width: $tablet-width) {
-    border-top-left-radius: 21px;
-    border-top-right-radius: 21px;
+    border-radius: 21px 21px 0 0;
     width: 285px;
     height: 286px;
   }
 }
 
-// .travel-cards__level {
-//   position: absolute;
-//   top: 17px;
-//   left: 17px;
-// }
-
 .travel-cards__description {
-  padding-left: 46px;
-  padding-right: 36px;
-  padding-bottom: 20px;
+  padding: 0 36px 8px 46px;
   text-align: center;
   background-color: $basic-while;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-radius: 0 0 10px 10px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 22px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 0 0 20px 20px;
   }
 }
 
 .travel-cards__flags {
   display: flex;
-  justify-content: space-around;
-  margin-top: -12px;
-  margin-bottom: 19px;
+  justify-content: center;
+  margin: -12px 0 13px 10px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 19px;
   }
 }
 
+.travel-cards__flags img {
+  margin-right: 20px;
+}
+
 .travel-cards__name {
   position: relative;
-  display: inline-block;
-  padding-left: 15px;
+  display: block;
+  padding-left: 23px;
   margin-bottom: 15px;
   font-weight: 700;
   font-size: 21px;
   line-height: 21px;
   color: $special-blue-650;
+  text-align: start;
 
   &::after {
     position: absolute;
-    left: 0;
-    top: 5px;
+    left: 7px;
+    top: 7px;
     content: "";
     width: 6px;
     height: 6px;
@@ -103,7 +94,11 @@
   }
 
   &--second {
+    padding-left: 33px;
+
     &::after {
+      left: 17px;
+      top: 8px;
       background-color: $special-green;
     }
   }
