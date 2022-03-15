@@ -1,17 +1,15 @@
 .plan-cards {
   background-color: $special-blue-60;
-  border-top-left-radius: 29px;
-  border-top-right-radius: 29px;
+  border-radius: 29px 29px 0 0;
 
   @media (min-width: $desktop-width) {
-    border-top-left-radius: 55px;
-    border-top-right-radius: 55px;
+    border-radius: 55px 55px 0 0;
   }
 }
 
 .plan-cards__container {
   padding-top: 28px;
-  padding-bottom: 50px;
+  padding-bottom: 47px;
 
   @media (min-width: $tablet-width) {
     padding: 57px 75px 66px;
