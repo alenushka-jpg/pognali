@@ -14,6 +14,12 @@
       width: 358px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    .page-main__container {
+      padding: 113px 124px 68px;
+    }
+  }
 }
 
 .page-main__header {

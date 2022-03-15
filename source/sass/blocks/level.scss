@@ -51,12 +51,14 @@
 
 .level--profile {
   position: relative;
+  width: 94px;
+  margin: 0 auto;
 
   &::before {
     content: "";
     position: absolute;
-    top: 0;
-    right: 15px;
+    top: 2px;
+    right: -5px;
     height: 100px;
     width: 100px;
     background-image: url("../img/svg/circle-100.svg");
