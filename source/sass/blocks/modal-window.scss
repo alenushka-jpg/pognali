@@ -1,8 +1,30 @@
 .modal-window {
+  position: fixed;
+  top: 18px;
+  left: 50%;
   display: none;
+  width: 270px;
+  height: 443px;
+  z-index: 100;
+  transform: translateX(-50%);
   background-color: $basic-while;
-  box-shadow: 0 2px 8px rgba($special-blue-650, 0.14);
+  box-shadow: 0 30px 26px rgba($special-blue-650, 0.14);
   border-radius: 20px;
+
+  &--open {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 63px;
+    width: 688px;
+    height: 526px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 308px;
+    width: 750px;
+  }
 }
 
 .modal-window__tariffs {
@@ -10,6 +32,12 @@
 
   @media (min-width: $tablet-width) {
     padding: 54px 90px 0;
+    margin-bottom: 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 59px;
+    padding-right: 59px;
   }
 }
 
@@ -23,6 +51,7 @@
   color: $special-yellow-900;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 46px;
     font-size: 45px;
     line-height: 45px;
   }
@@ -38,12 +67,13 @@
 
 .modal-window__item {
   padding-top: 12px;
-  padding-bottom: 13px;
+  padding-bottom: 9px;
   border-bottom: 1px solid $special-red-30;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 14px;
   }
 }
 
@@ -62,18 +92,21 @@
 
 .modal-window__button {
   width: 100%;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding: 21px 10px 12px;
   font-weight: 700;
   font-size: 16px;
+  font-family: inherit;
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
   color: $special-blue-650;
   background-color: $special-blue-00;
   border: 0;
+  border-radius: 0 0 20px 20px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    padding-bottom: 45px;
     font-size: 24px;
     text-transform: none;
   }
