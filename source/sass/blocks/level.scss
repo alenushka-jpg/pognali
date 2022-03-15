@@ -75,6 +75,14 @@
     color: $basic-grey;
   }
 
+  @media (min-width: $tablet-width) {
+    width: 93px;
+
+    &::before {
+      right: -5px;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     &::before {
       top: -18px;

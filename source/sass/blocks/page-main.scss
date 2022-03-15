@@ -2,6 +2,20 @@
   background-color: $special-blue-10;
 }
 
+.page-main--form {
+  background-color: $special-blue-10;
+
+  @media (min-width: $tablet-width) {
+    .page-main__container {
+      padding: 95px 75px 66px;
+    }
+
+    .page-main__title::after {
+      width: 358px;
+    }
+  }
+}
+
 .page-main__header {
   position: relative;
   z-index: 10;
