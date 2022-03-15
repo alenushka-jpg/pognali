@@ -9,9 +9,7 @@
 .user-form__background {
   margin-bottom: 4px;
   background-color: $special-blue-750;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-
+  border-radius: 0 0 30px 30px;
 
   @media (min-width: $desktop-width) {
     font-size: 60px;
@@ -78,10 +76,7 @@
     width: 190px;
     height: 190px;
     margin-left: 0;
-    border-top-left-radius: 23px;
-    border-top-right-radius: 23px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+    border-radius: 23px 23px 0 0;
   }
 }
 
@@ -93,6 +88,7 @@
   font-size: 20px;
   line-height: 18px;
   text-align: center;
+  font-family: inherit;
   background-color: $special-blue-60;
   text-transform: uppercase;
   border: 0;
@@ -108,8 +104,7 @@
     grid-row: 2/3;
     width: 190px;
     border-radius: 0;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 0 0 20px 20px;
   }
 }
 
