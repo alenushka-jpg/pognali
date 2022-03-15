@@ -6,15 +6,13 @@
   z-index: 20;
 
   @media (min-width: $tablet-width) {
-    margin-top: -60px;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
+    margin-top: -70px;
+    border-radius: 60px 60px 0 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -56px;
-    border-bottom-left-radius: 56px;
-    border-bottom-right-radius: 56px;
+    margin-top: -66px;
+    border-radius: 0 0 56px 56px;
   }
 }
 
@@ -26,7 +24,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 46px;
+    padding-top: 45px;
     padding-bottom: 32px;
   }
 
@@ -58,6 +56,11 @@
     &--t-dark {
       display: block;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+    height: 50px;
   }
 }
 

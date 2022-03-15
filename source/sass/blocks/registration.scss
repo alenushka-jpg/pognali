@@ -25,7 +25,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 168px 133px 104px 133px;
+    padding: 168px 134px 113px;
   }
 }
 
@@ -43,6 +43,10 @@
     font-size: 45px;
     line-height: 45px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
+  }
 }
 
 .registration__form {
@@ -51,12 +55,12 @@
   margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
-    width: 618px;
+    width: 100%;
     margin-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
+    margin-bottom: 68px;
   }
 }
 
@@ -84,6 +88,14 @@
       margin-bottom: 43px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 58px;
+
+    &:last-of-type {
+      margin-bottom: 55px;
+    }
+  }
 }
 
 .registration__span {
@@ -102,6 +114,7 @@
   height: 100%;
   padding: 0;
   font-size: 0;
+  font-family: inherit;
   background-color: $special-yellow-300;
   border: none;
   border-radius: 12px;
@@ -161,5 +174,9 @@
     font-size: 24px;
     line-height: 24px;
     border-radius: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 24px;
   }
 }
