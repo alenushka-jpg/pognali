@@ -62,6 +62,10 @@
 
 .search-form__checkbox {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 28px;
+  }
 }
 
 .search-form__input {
@@ -93,7 +97,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 10px 0 6px 52px;
+    padding: 10px 0 6px 58px;
     font-weight: 500;
     font-size: 20px;
     line-height: 20px;

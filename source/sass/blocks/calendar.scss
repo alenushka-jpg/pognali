@@ -9,6 +9,7 @@
 
   @media (min-width: $tablet-width) {
     height: 86px;
+    padding: 0 10px;
     margin-bottom: 39px;
   }
 }
@@ -39,7 +40,7 @@
 
 .calendar__button svg {
   @media (min-width: $tablet-width) {
-    width: 29px;
+    width: 33px;
     height: 36px;
   }
 }
