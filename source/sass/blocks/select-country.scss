@@ -1,13 +1,8 @@
 .select-country {
-  padding-top: 42px;
-  border-top: 1px solid $special-blue-50;
-
-  &--add-plan {
-    padding-top: 0;
-  }
-
   @media (min-width: $tablet-width) {
     position: relative;
+    padding-top: 42px;
+    border-top: 1px solid $special-blue-50;
 
     &::after {
       content: "";
@@ -62,10 +57,10 @@
     display: grid;
     grid-template-columns: 1fr 139px;
     column-gap: 27px;
+    margin-bottom: 15px;
 
     &::before {
-      width: auto;
-      height: auto;
+      display: none;
       background-image: none;
     }
 
@@ -169,11 +164,10 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 20px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.1em;
 
     &::before {
-      width: auto;
-      height: auto;
+      // display: none;
       background-image: none;
     }
 

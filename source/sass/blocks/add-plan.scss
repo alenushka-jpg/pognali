@@ -77,6 +77,21 @@
     margin-bottom: 21px;
   }
 
+  @media (min-width: $tablet-width) {
+    padding-left: 42px;
+    padding-bottom: 53px;
+    margin-bottom: 51px;
+
+    .add-plan__title {
+      margin-bottom: 32px;
+    }
+
+    .add-plan__text {
+      padding-right: 100px;
+      margin-bottom: 34px;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     grid-template-columns: 419px 219px;
     column-gap: 365px;
@@ -248,4 +263,8 @@
 
 .add-plan__button-back {
   left: 98px;
+
+  @media (min-width: $tablet-width) {
+    left: 0;
+  }
 }
