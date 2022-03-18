@@ -17,7 +17,7 @@
     &::before {
       left: auto;
       top: 19px;
-      right: -27px;
+      right: 0px;
       width: 14px;
       height: 274px;
       background-image: url("../img/svg/line-decor-tablet.svg");
@@ -34,8 +34,13 @@
   margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
+    padding-right: 33px;
     margin-bottom: 44px;
     row-gap: 30px;
+
+    &:nth-child(2n) {
+      margin-bottom: 50px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -56,8 +61,10 @@
   color: $special-blue-650;
 
   @media (min-width: $tablet-width) {
+    padding-left: 0;
     font-size: 30px;
     line-height: 30px;
+    font-weight: 700;
   }
 
   @media (min-width: $desktop-width) {
@@ -92,7 +99,7 @@
 
   @media (min-width: $tablet-width) {
     height: 140px;
-    padding: 18px 19px;
+    padding: 18px 31px 18px 20px;
     font-size: 20px;
     line-height: 20px;
   }

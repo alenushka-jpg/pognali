@@ -10,7 +10,7 @@
   padding-bottom: 62px;
 
   @media (min-width: $tablet-width) {
-    padding: 53px 75px 63px;
+    padding: 53px 75px 94px;
   }
 
   @media (min-width: $desktop-width) {
@@ -28,8 +28,7 @@
   border-radius: 10px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 48px;
-    padding-bottom: 54px;
+    padding: 48px 40px 54px 43px;
     margin-bottom: 39px;
     border-radius: 30px;
   }
@@ -78,7 +77,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-left: 42px;
     padding-bottom: 53px;
     margin-bottom: 51px;
 
@@ -107,6 +105,18 @@
 
   .add-plan__button {
     margin-bottom: 7px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 45px;
+
+    .add-plan__title {
+      margin-bottom: 31px;
+    }
+
+    .add-plan__text {
+      margin-bottom: 63px;
+    }
   }
 
   @media (min-width: $desktop-width) {
