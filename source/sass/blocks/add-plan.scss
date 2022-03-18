@@ -67,8 +67,14 @@
 }
 
 .add-plan__fieldset--step-two {
+  padding-bottom: 9px;
+
+  .add-plan__title {
+    margin-bottom: 13px;
+  }
+
   .add-plan__text {
-    margin-bottom: 33px;
+    margin-bottom: 21px;
   }
 
   @media (min-width: $desktop-width) {
@@ -82,6 +88,10 @@
     grid-template-columns: 490px 219px;
     column-gap: 295px;
   }
+}
+
+.add-plan__select {
+  padding-top: 0;
 }
 
 .add-plan__select,

@@ -1,6 +1,6 @@
 .filtering-by-countries {
-  display: none;
-  padding: 20px;
+  display: block;
+  padding: 20px 18px;
   list-style: none;
 
   &--selected {
@@ -19,6 +19,7 @@
 }
 
 .filtering-by-countries__item {
+  margin-bottom: 4px;
   font-size: 16px;
   line-height: 22px;
   color: $basic-grey;

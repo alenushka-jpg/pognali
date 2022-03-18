@@ -1,6 +1,5 @@
-.country-toggle--route {
-  border: 1px solid $special-blue-120;
-  background-color: $basic-while;
+.country-toggle {
+  display: none;
 }
 
 .country-toggle--filter {
@@ -100,7 +99,7 @@
 }
 
 .country-toggle__all-contries {
-  margin: 0 25px;
+  margin: 0;
   padding: 0;
   list-style: none;
 
