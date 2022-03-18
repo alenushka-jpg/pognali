@@ -7,7 +7,7 @@
 
 .add-plan__container {
   padding-top: 30px;
-  padding-bottom: 43px;
+  padding-bottom: 62px;
 
   @media (min-width: $tablet-width) {
     padding: 53px 75px 63px;
@@ -84,6 +84,16 @@
 }
 
 .add-plan__fieldset--step-three {
+  padding-bottom: 0px;
+
+  .add-plan__title {
+    margin-bottom: 14px;
+  }
+
+  .add-plan__button {
+    margin-bottom: 7px;
+  }
+
   @media (min-width: $desktop-width) {
     grid-template-columns: 490px 219px;
     column-gap: 295px;

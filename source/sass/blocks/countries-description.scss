@@ -30,7 +30,7 @@
   display: grid;
   grid-template-columns: 1fr max-content;
   align-items: center;
-  row-gap: 18px;
+  row-gap: 13px;
   margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
@@ -79,6 +79,7 @@
   height: 220px;
   padding: 10px 14px;
   font-weight: normal;
+  font-family: inherit;
   font-size: 16px;
   line-height: 22px;
   color: rgba($basic-grey, 0.3);

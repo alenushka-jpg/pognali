@@ -36,6 +36,7 @@
 .social-list--footer {
   width: 135px;
   margin-top: 0;
+  margin-bottom: 37px;
 
   .social-list__link {
     position: relative;
@@ -63,6 +64,7 @@
   @media (min-width: $tablet-width) {
     width: auto;
     margin-left: 86px;
+    margin-bottom: 0;
 
     .social-list__link,
     .social-list__link::before {
