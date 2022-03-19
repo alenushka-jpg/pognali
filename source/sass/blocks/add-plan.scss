@@ -19,6 +19,7 @@
   @media (min-width: $desktop-width) {
     padding-left: 60px;
     padding-right: 60px;
+    padding-bottom: 97px;
   }
 }
 
@@ -135,7 +136,12 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 490px 219px;
-    column-gap: 295px;
+    column-gap: 281px;
+    padding-bottom: 96px;
+
+    .add-plan__text {
+      margin-bottom: 58px;
+    }
   }
 }
 
@@ -147,6 +153,13 @@
 .add-plan__countries {
   @media (min-width: $desktop-width) {
     grid-column: 1/-1;
+  }
+}
+
+.add-plan__countries {
+  @media (min-width: $desktop-width) {
+    padding-top: 70px;
+    border-top: 1px solid black;
   }
 }
 

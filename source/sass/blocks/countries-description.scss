@@ -23,6 +23,13 @@
       background-image: url("../img/svg/line-decor-tablet.svg");
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      top: 88px;
+      right: 209px;
+    }
+  }
 }
 
 .countries-description__country {
@@ -45,9 +52,13 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 226px;
-    column-gap: 37px;
-    row-gap: 37px;
-    margin-bottom: 52px;
+    column-gap: 0;
+    row-gap: 25px;
+    margin-bottom: 45px;
+
+    &:nth-child(2n) {
+      margin-bottom: 61px;
+    }
   }
 }
 
@@ -66,16 +77,16 @@
     line-height: 30px;
     font-weight: 700;
   }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 11px;
-  }
 }
 
 .countries-description__img {
   @media (min-width: $tablet-width) {
     width: 70px;
     height: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 4px auto 0;
   }
 }
 
@@ -106,5 +117,6 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
+    padding: 23px 18px 18px 24px;
   }
 }
