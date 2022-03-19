@@ -2,14 +2,12 @@
   position: relative;
   margin-top: -20px;
   background-color: $special-blue-30;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-radius: 0 0 20px 20px;
   z-index: 5;
 
   @media (min-width: $tablet-width) {
     margin-top: -59px;
-    border-bottom-left-radius: 59px;
-    border-bottom-right-radius: 59px;
+    border-radius: 0 0 59px 59px;
   }
 
   @media (min-width: $desktop-width) {
@@ -66,7 +64,7 @@
 .filter__container {
   display: grid;
   align-items: center;
-  padding-top: 40px;
+  padding-top: 37px;
   padding-bottom: 17px;
 
   @media (min-width: $tablet-width) {
@@ -150,7 +148,6 @@
   align-items: center;
   width: 24px;
   height: 17px;
-
 
   @media (min-width: $tablet-width) {
     position: relative;

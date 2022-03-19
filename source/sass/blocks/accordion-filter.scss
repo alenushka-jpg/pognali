@@ -62,6 +62,13 @@
   padding: 0 5px;
   border: none;
 
+  &:nth-of-type(2n) {
+    .accordion-filter__list {
+      margin-bottom: 11px;
+    }
+  }
+
+
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
@@ -104,8 +111,9 @@
 
 .accordion-filter__triangle {
   position: absolute;
-  right: 5px;
-  top: 11px;
+  right: 4px;
+  top: 16px;
+  transform: rotate(-180deg);
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -118,7 +126,7 @@
 
 .accordion-filter__fieldset--open {
   .accordion-filter__triangle {
-    transform: rotate(-180deg);
+    transform: none;
   }
 
   .accordion-filter__list {

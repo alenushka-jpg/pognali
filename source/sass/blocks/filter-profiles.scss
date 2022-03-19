@@ -273,7 +273,7 @@
 
     &::after {
       left: -34px;
-      width: 11%;
+      width: 5%;
     }
   }
 
@@ -442,6 +442,10 @@
   @media (min-width: $tablet-width) {
     grid-column: 4/5;
     grid-row: 3/4;
+
+    &::before {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {

@@ -3,6 +3,10 @@
   padding: 20px 18px;
   list-style: none;
 
+  &--filter {
+    display: none;
+  }
+
   &--selected {
     display: block;
   }
