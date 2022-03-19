@@ -1,18 +1,15 @@
 .review {
   width: 100%;
   padding: 48px 0 0;
-  background-color: $special-blue-800;
+  background-image: linear-gradient($special-blue-800 287px, $special-blue-700 287px);
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 96px;
-    background-color: transparent;
+    padding-bottom: 58px;
+    background-image: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 92px;
-    padding-left: 63px;
-    padding-right: 57px;
-    padding-bottom: 126px;
+    padding: 92px 60px 140px 61px;
   }
 }
 
@@ -20,47 +17,43 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 365px 1fr;
-    row-gap: 165px;
+    row-gap: 182px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    row-gap: 92px;
+    row-gap: 84px;
   }
 }
 
 .review__blockquote {
+  padding: 0 50px;
   margin: 0 0 29px;
   width: 265px;
-  padding-left: 50px;
-  padding-right: 50px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
+    padding: 0 30px 0 73px;
     width: 367px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 4/5;
-    padding-left: 67px;
-    padding-right: 20px;
+    padding: 20px 22px 0 81px;
   }
 }
 
 .review__steps {
-  padding: 0 25px 39px;
-  background-color: $special-blue-700;
-  background-image: linear-gradient($special-blue-800 22%, $special-blue-700 22%);
+  margin: 0 25px 39px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
-    background-image: linear-gradient(45deg, $special-blue-550 50%, $special-blue-550 50%);
+    margin: 0 40px 39px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 0 39px;
-    background-image: none;
-    background-color: inherit;
+    margin: 0;
   }
 }
 

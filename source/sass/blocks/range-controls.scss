@@ -46,7 +46,7 @@
 
   &:last-child {
     top: -4px;
-    left: 67px;
+    left: 31%;
   }
 
   &:nth-child(2n) {
@@ -57,11 +57,6 @@
   @media (min-width: $tablet-width) {
     width: 13px;
     height: 13px;
-
-    &:last-child {
-      top: -5px;
-      left: 101px;
-    }
 
     &:last-child {
       top: -5px;

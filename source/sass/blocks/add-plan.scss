@@ -1,21 +1,25 @@
 .add-plan {
   background-color: $special-blue-80;
   margin-top: -29px;
-  border-top-left-radius: 29px;
-  border-top-right-radius: 29px;
+  border-radius: 29px 29px 0 0;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 54px 54px 0 0;
+  }
 }
 
 .add-plan__container {
   padding-top: 30px;
-  padding-bottom: 43px;
+  padding-bottom: 62px;
 
   @media (min-width: $tablet-width) {
-    padding: 53px 75px 63px;
+    padding: 53px 75px 94px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 60px;
     padding-right: 60px;
+    padding-bottom: 97px;
   }
 }
 
@@ -28,8 +32,7 @@
   border-radius: 10px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 48px;
-    padding-bottom: 50px;
+    padding: 48px 40px 54px 43px;
     margin-bottom: 39px;
     border-radius: 30px;
   }
@@ -37,7 +40,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 419px 219px;
-    padding: 100px 160px 106px 160px;
+    padding: 100px 160px 103px 160px;
     margin-bottom: 43px;
     border-radius: 60px;
   }
@@ -47,7 +50,11 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    column-gap: 170px;
+    column-gap: 99px;
+
+    .add-plan__text {
+      width: 86%;
+    }
 
     .add-plan__title,
     .add-plan__text {
@@ -67,27 +74,92 @@
 }
 
 .add-plan__fieldset--step-two {
+  padding-bottom: 9px;
+
+  .add-plan__title {
+    margin-bottom: 13px;
+  }
+
   .add-plan__text {
-    margin-bottom: 33px;
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 53px;
+    margin-bottom: 51px;
+
+    .add-plan__title {
+      margin-bottom: 32px;
+    }
+
+    .add-plan__text {
+      padding-right: 100px;
+      margin-bottom: 34px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 419px 219px;
-    column-gap: 365px;
+    column-gap: 354px;
+    padding-bottom: 104px;
+    margin-bottom: 43px;
+
+    .add-plan__text {
+      padding-right: 0;
+      margin-bottom: 58px;
+    }
   }
 }
 
 .add-plan__fieldset--step-three {
+  padding-bottom: 0px;
+
+  .add-plan__title {
+    margin-bottom: 14px;
+  }
+
+  .add-plan__button {
+    margin-bottom: 7px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 45px;
+
+    .add-plan__title {
+      margin-bottom: 31px;
+    }
+
+    .add-plan__text {
+      margin-bottom: 63px;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     grid-template-columns: 490px 219px;
-    column-gap: 295px;
+    column-gap: 281px;
+    padding-bottom: 96px;
+
+    .add-plan__text {
+      margin-bottom: 58px;
+    }
   }
 }
 
+.add-plan__select {
+  padding-top: 0;
+}
+
 .add-plan__select,
-.add-plan__countries{
+.add-plan__countries {
   @media (min-width: $desktop-width) {
     grid-column: 1/-1;
+  }
+}
+
+.add-plan__countries {
+  @media (min-width: $desktop-width) {
+    padding-top: 70px;
+    border-top: 1px solid $special-blue-50;
   }
 }
 
@@ -99,9 +171,10 @@
 }
 
 .add-plan__search {
-  margin-bottom: 24px;
+  margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 37px;
     border-top: 1px solid $special-blue-50;
   }
 
@@ -151,7 +224,7 @@
   color: $basic-grey;
 
   @media (min-width: $tablet-width) {
-    padding-right: 73px;
+    padding-right: 12px;
     margin-bottom: 38px;
     font-size: 20px;
     line-height: 24px;
@@ -195,6 +268,7 @@
     &--back {
       padding-right: 0;
       text-align: end;
+      width: auto;
     }
   }
 
@@ -218,9 +292,16 @@
 
 .add-plan__button-arrow {
   right: 20px;
+
+  @media (min-width: $tablet-width) {
+    right: 36px;
+  }
 }
 
 .add-plan__button-back {
   left: 98px;
-}
 
+  @media (min-width: $tablet-width) {
+    left: 0;
+  }
+}

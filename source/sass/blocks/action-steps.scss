@@ -18,23 +18,23 @@
   justify-content: space-between;
   margin-top: -10px;
   padding: 22px 21px 32px 24px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-radius: 10px 10px 0 0;
 
-  &--one {
+  &:first-child {
     margin-top: 0;
     background-color: $special-yellow-900;
   }
 
-  &--two {
+  &:nth-child(3n-1) {
     background-color: $special-yellow-800;
   }
 
-  &--three {
+  &:nth-child(4n-1) {
     background-color: $special-yellow-700;
   }
 
-  &--four {
+  &:nth-child(5n-1) {
+    padding-bottom: 22px;
     background-color: $special-yellow-300;
     border-radius: 10px;
   }
@@ -42,52 +42,53 @@
   @media (min-width: $tablet-width) {
     margin-top: 0;
     flex-direction: column;
-    padding-top: 31px;
-    padding-left: 33px;
-    padding-right: 33px;
+    padding: 31px 32px 21px;
 
-    &--one {
-      border-top-left-radius: 18px;
-      border-top-right-radius: 0;
+    &:first-child {
+      border-radius: 20px 0 0 0;
     }
 
-    &--two,
-    &--four {
+    &:nth-child(3n-1) {
+      border-radius: 20px 20px 0 0;
+    }
+
+    &:nth-child(4n-1) {
+      border-radius: 0 0 0 20px;
+    }
+
+    &:nth-child(5n-1) {
+      border-radius: 0 0 20px 20px;
+    }
+
+    &:nth-child(3n-1),
+    &:nth-child(5n-1) {
       margin-left: -20px;
-    }
-
-    &--two {
-      border-top-left-radius: 18px;
-      border-top-right-radius: 18px;
-    }
-
-    &--three {
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 18px;
-    }
-
-    &--four {
-      border-top-left-radius: 0;
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 18px;
-      border-bottom-left-radius: 18px;
     }
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
-    padding-right: 57px;
-    margin-left: -30px;
-    border-top-left-radius: 18px;
-    border-bottom-left-radius: 18px;
+    padding: 29px 65px 29px 33px;
+    margin-left: -31px;
+    border-radius: 20px;
 
     &:first-child {
       margin-left: 0;
+      width: 345px;
+      border-radius: 20px 0 0 20px;
     }
 
-    &--four {
+    &:nth-child(3n-1),
+    &:nth-child(4n-1) {
+      width: 375px;
+      margin-left: -31px;
+    }
+
+    &:nth-child(5n-1) {
+      width: 315px;
       padding-right: 33px;
-      border-top-right-radius: 18px;
+      margin-left: -31px;
+      border-radius: 0 20px 20px 0;
     }
   }
 }
@@ -120,5 +121,11 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 30px;
+    font-weight: 700;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    line-height: 24px;
   }
 }

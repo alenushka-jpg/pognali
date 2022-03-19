@@ -6,6 +6,16 @@
   list-style: none;
 }
 
+.type-of-transports--travel-cards {
+  width: 122px;
+  margin: 0 auto 0 29px;
+
+
+  @media (min-width: $tablet-width) {
+    margin-left: 53px;
+  }
+}
+
 .type-of-transports--profile {
   display: flex;
   margin: 17px 0 14px;

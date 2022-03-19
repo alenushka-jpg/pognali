@@ -1,9 +1,8 @@
 .select-country {
-  padding-top: 42px;
-  border-top: 1px solid $special-blue-50;
-
   @media (min-width: $tablet-width) {
     position: relative;
+    padding-top: 42px;
+    border-top: 1px solid $special-blue-50;
 
     &::after {
       content: "";
@@ -13,13 +12,15 @@
       width: 1px;
       height: 407px;
       background-color: $special-blue-70;
-      background-image: linear-gradient(to top, #fff, transparent);
+      background-image: linear-gradient(to top, $basic-while, transparent);
     }
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 59px;
+
     &::after {
-      right: 240px;
+      right: 217px;
       height: 540px;
     }
   }
@@ -31,9 +32,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0;
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 22px;
+  margin: 0 0 21px;
   border: 0;
 
   &::before {
@@ -60,10 +59,10 @@
     display: grid;
     grid-template-columns: 1fr 139px;
     column-gap: 27px;
+    margin-bottom: 15px;
 
     &::before {
-      width: auto;
-      height: auto;
+      display: none;
       background-image: none;
     }
 
@@ -75,6 +74,10 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 222px;
     margin-bottom: 15px;
+
+    &:last-of-type {
+      margin-bottom: 59px;
+    }
   }
 }
 
@@ -86,7 +89,6 @@
     width: 100%;
   }
 
-
   @media (min-width: $desktop-width) {
     .select-country__button {
       width: 730px;
@@ -94,9 +96,34 @@
   }
 }
 
+.select-country__fieldset--open {
+  display: block;
+  background-color: $special-blue-650;
+
+  .select-country__button {
+    padding-left: 15px;
+    letter-spacing: 0.02em;
+    color: $basic-while;
+  }
+
+  .select-country__button svg {
+    display: none;
+  }
+
+  .select-country__close {
+    top: 10px;
+    right: 12px;
+    background-color: inherit;
+  }
+
+  .select-country__close-svg {
+    fill: $basic-while;
+  }
+}
+
 .select-country__button {
   position: relative;
-  padding: 11px 15px 11px 11px;
+  padding: 12px 15px 11px 9px;
   width: 168px;
   font-weight: 500;
   font-size: 14px;
@@ -123,7 +150,7 @@
     &::before {
       width: 52px;
       height: 36px;
-      background-image: linear-gradient(to left, $basic-while 68%, rgba(255,255,255, 0.3) 90%);
+      background-image: linear-gradient(to left, $basic-while 68%, rgba(255, 255, 255, 0.3) 90%);
     }
 
     &::after {
@@ -143,11 +170,10 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 20px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.1em;
 
     &::before {
-      width: auto;
-      height: auto;
+      // display: none;
       background-image: none;
     }
 
@@ -163,7 +189,7 @@
     width: 730px;
 
     &::after {
-      right: -40px;
+      right: -52px;
     }
   }
 }
@@ -199,7 +225,7 @@
 .select-country__button-plus {
   position: absolute;
   top: 13px;
-  right: 15px
+  right: 15px;
 }
 
 .select-country__picture {
@@ -257,6 +283,14 @@
   }
 }
 
+.select-country__toggle {
+  position: absolute;
+  top: 42px;
+  border: 1px solid $special-blue-120;
+  background-color: $basic-while;
+  z-index: 10;
+}
+
 .select-country__close-svg {
   @media (min-width: $tablet-width) {
     width: 22px;
@@ -292,10 +326,9 @@
 
   @media (min-width: $desktop-width) {
     &::before {
-      right: -40px
+      right: -52px;
     }
   }
-
 }
 
 .select-country__button--add svg {

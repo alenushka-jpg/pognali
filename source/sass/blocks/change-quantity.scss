@@ -1,6 +1,15 @@
 .change-quantity {
   position: relative;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+    margin-bottom: 0
+  }
 }
 
 .change-quantity__button {
@@ -37,10 +46,9 @@
 
 .change-quantity__input {
   width: 100%;
-  padding: 16px 0 13px;
-  padding-bottom: 13px;
+  padding: 13px 0 10px;
   font-weight: 500;
-  font-size: 14.86px;
+  font-size: 15px;
   line-height: 14px;
   text-align: center;
   color: $special-blue-650;
@@ -51,6 +59,7 @@
   @media (min-width: $tablet-width) {
     padding: 23px 0 22px;
     font-size: 20px;
+    font-family: inherit;
     line-height: 20px;
   }
 }

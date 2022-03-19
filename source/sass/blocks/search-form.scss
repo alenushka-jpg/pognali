@@ -22,14 +22,17 @@
   @media (min-width: $desktop-width) {
     display: flex;
     align-items: center;
+
+    &:first-child {
+      margin-bottom: 17px;
+    }
   }
 }
 
-.search-form__title {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  margin-bottom: 8px;
+.search-form__title,
+.search-form__span {
+  display: inline;
+  margin: 0 0 8px;
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
@@ -45,25 +48,25 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 220px;
+    padding-top: 0;
+    margin-bottom: 0;
+    letter-spacing: 0;
   }
 }
 
-.search-form__type {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 16px;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  opacity: 0.3;
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 18px;
+.search-form__title {
+  @media (min-width: $desktop-width) {
+    width: 164px;
   }
+}
+
+.search-form__span {
+  letter-spacing: 0.07em;
+  opacity: 0.3;
 
   @media (min-width: $desktop-width) {
     order: 1;
+    width: 39px;
     margin-left: auto;
     opacity: 1;
   }
@@ -71,6 +74,14 @@
 
 .search-form__checkbox {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
+  }
 }
 
 .search-form__input {
@@ -102,7 +113,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 10px 0 6px 52px;
+    padding: 10px 0 6px 53px;
     font-weight: 500;
     font-size: 20px;
     line-height: 20px;

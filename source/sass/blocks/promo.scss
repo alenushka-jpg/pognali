@@ -1,9 +1,10 @@
 .promo {
   display: grid;
   grid-template-columns: 1fr;
-  background-color: $special-blue-900;
-  background-image: url("/img/globe-back--mobile.png");
-  background-position: 0 -60px;
+  background-color: $special-blue-850;
+  background-image: url("/img/traveller-illustration-mobile.png"),
+    url("/img/globe-back-mobile.png");
+  background-position: 80px 169px, 0 -60px;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
@@ -11,16 +12,19 @@
     grid-template-columns: 1fr 1fr;
     row-gap: 38px;
     background-color: $special-blue-750;
-    background-image: url("/img/globe-back--tablet.png");
-    background-position: center 240px;
+    background-image: url("/img/traveller-illustration-tablet.png"),
+      url("/img/globe-back-tablet.png");
+    background-position: 72% 275px, center 254px;
+    background-size: 372px 451px, 1479px 612px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr;
     background-color: $special-blue-790;
-    background-image: url("/img/globe-back--desktop.png");
-    background-size: contain;
-    background-position: center -80px;
+    background-image: url("/img/traveller-illustration.png"),
+      url("/img/globe-back-desktop.png");
+    background-size: 430px 640px, 100%;
+    background-position: 60% 0, 0 -108px;
   }
 }
 
@@ -30,6 +34,7 @@
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
     grid-row: 1/2;
+    padding-top: 33px;
   }
 
   @media (min-width: $desktop-width) {
@@ -40,8 +45,7 @@
 
 .promo__title {
   margin: 0 auto;
-  padding-top: 41px;
-  padding-bottom: 265px;
+  padding: 41px 0 243px;
   text-align: center;
   font-weight: 700;
   font-size: 36px;
@@ -49,16 +53,14 @@
   color: $basic-while;
 
   @media (min-width: $tablet-width) {
-    padding-top: 35px;
-    padding-bottom: 0;
+    padding: 0;
     font-size: 60px;
     line-height: 70px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    padding-top: 110px;
-    padding-left: 67px;
+    padding: 101px 0 0 127px;
     text-align: start;
   }
 }
