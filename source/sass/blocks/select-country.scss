@@ -17,8 +17,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 59px;
+
     &::after {
-      right: 240px;
+      right: 217px;
       height: 540px;
     }
   }
@@ -72,6 +74,10 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 222px;
     margin-bottom: 15px;
+
+    &:last-of-type {
+      margin-bottom: 59px;
+    }
   }
 }
 
@@ -183,7 +189,7 @@
     width: 730px;
 
     &::after {
-      right: -40px;
+      right: -52px;
     }
   }
 }
@@ -320,7 +326,7 @@
 
   @media (min-width: $desktop-width) {
     &::before {
-      right: -40px;
+      right: -52px;
     }
   }
 }
