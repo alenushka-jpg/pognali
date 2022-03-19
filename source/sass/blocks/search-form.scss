@@ -22,13 +22,16 @@
   @media (min-width: $desktop-width) {
     display: flex;
     align-items: center;
+
+    &:first-child {
+      margin-bottom: 17px;
+    }
   }
 }
 
-.search-form__title {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+.search-form__title,
+.search-form__span {
+  display: inline;
   margin: 0 0 8px;
   font-weight: 500;
   font-size: 16px;
@@ -45,16 +48,25 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 220px;
+    padding-top: 0;
+    margin-bottom: 0;
+    letter-spacing: 0;
   }
 }
 
-.search-form__title span {
+.search-form__title {
+  @media (min-width: $desktop-width) {
+    width: 164px;
+  }
+}
+
+.search-form__span {
   letter-spacing: 0.07em;
   opacity: 0.3;
 
   @media (min-width: $desktop-width) {
     order: 1;
+    width: 39px;
     margin-left: auto;
     opacity: 1;
   }
@@ -65,6 +77,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
   }
 }
 
@@ -97,7 +113,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 10px 0 6px 58px;
+    padding: 10px 0 6px 53px;
     font-weight: 500;
     font-size: 20px;
     line-height: 20px;

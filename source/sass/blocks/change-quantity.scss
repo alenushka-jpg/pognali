@@ -5,6 +5,11 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 28px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+    margin-bottom: 0
+  }
 }
 
 .change-quantity__button {

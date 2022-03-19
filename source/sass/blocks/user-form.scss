@@ -263,4 +263,10 @@
       margin-bottom: 56px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &--pogination {
+      padding-left: 68px;
+    }
+  }
 }
