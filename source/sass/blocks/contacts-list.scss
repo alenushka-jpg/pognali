@@ -15,6 +15,20 @@
       height: 45px;
       background-color: $special-blue-950;
     }
+
+    &--phone:hover,
+    &--phone:focus {
+      &::before {
+        background-color: $special-orange-100;
+      }
+    }
+
+    &--email:hover,
+    &--email:focus {
+      &::before {
+        background-color: $special-yellow-900;
+      }
+    }
   }
 
   .contacts-list__svg {
@@ -53,7 +67,6 @@
 
       .contacts-list__svg {
         fill: $special-blue-900;
-
 
         &--phone,
         &--email {
