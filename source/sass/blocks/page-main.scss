@@ -1,5 +1,16 @@
+.page-main {
+  margin-top: -3px;
+  z-index: 1;
+}
+
 .page-main--catalog {
   background-color: $special-blue-10;
+
+  @media (min-width: $desktop-width) {
+    .page-main__background {
+      background-color: #161c34;
+    }
+  }
 }
 
 .page-main--form {
