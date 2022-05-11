@@ -193,6 +193,15 @@
 .page-header__button {
   margin-bottom: 66px;
   font-family: inherit;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $special-yellow-700;
+  }
+
+  &:active {
+    color: rgba($special-blue-800, 0.3)
+  }
 
   @media (min-width: $tablet-width) {
     display: block;

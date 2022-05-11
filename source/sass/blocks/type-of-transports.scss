@@ -49,6 +49,37 @@
     height: 32px;
     border-radius: 50%;
     background-color: $basic-while;
+
+    &:nth-child(3n) {
+      &:hover {
+        .type-of-transports__svg {
+          opacity: 0.6;
+        }
+      }
+
+      &:active {
+        .type-of-transports__svg {
+          opacity: 0.8;
+        }
+      }
+    }
+
+    &:hover,
+    &:active {
+      filter: drop-shadow(0px 2px 6px rgba($special-blue-800, 0.17));
+
+      .type-of-transports__svg {
+        opacity: 0.7;
+      }
+    }
+
+    &:active {
+      background-color: $special-blue-40;
+
+      .type-of-transports__svg {
+        opacity: 0.3;
+      }
+    }
   }
 
   @media (min-width: $tablet-width) {
