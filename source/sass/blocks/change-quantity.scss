@@ -1,6 +1,24 @@
 .change-quantity {
   position: relative;
   margin-bottom: 20px;
+  border: 1px solid $special-blue-120;
+
+  &:hover {
+    border: 1px solid $special-blue-400;
+
+    .change-quantity__svg {
+      stroke: $special-blue-400;
+    }
+  }
+
+  &:active,
+  &:focus {
+    border: 1px solid $special-blue-800;
+
+    .change-quantity__svg {
+      stroke: $special-blue-800;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 28px;
@@ -24,6 +42,7 @@
   padding: 0;
   border: none;
   background-color: inherit;
+  cursor: pointer;
 
   &--minus {
     left: 0;
@@ -38,7 +57,9 @@
   }
 }
 
-.change-quantity__button svg {
+.change-quantity__svg {
+  stroke: $special-red-40;
+
   @media (min-width: $tablet-width) {
     width: 20px;
   }
@@ -52,7 +73,7 @@
   line-height: 14px;
   text-align: center;
   color: $special-blue-650;
-  border: 1px solid $special-blue-120;
+  border: none;
   border-radius: 4px;
   text-transform: uppercase;
 
