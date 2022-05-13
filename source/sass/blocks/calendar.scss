@@ -124,6 +124,8 @@
 .calendar__input:disabled + .calendar__number {
   color: rgba($basic-grey, 0.3);
   background-color: transparent;
+  border: none;
+  cursor: default;
 }
 
 input:checked + .calendar__number {
@@ -144,8 +146,9 @@ input:checked + .calendar__number {
   background-color: $special-blue-10;
 
   &:hover {
-    background: #1D2E5B;
-    border: 4px solid #FF5C23;
+    background-color: $special-blue-650;
+    border: 4px solid $special-orange;
+    color: $basic-while;
     cursor: pointer;
   }
 
