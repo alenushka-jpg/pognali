@@ -1,12 +1,9 @@
-.address {
-  z-index: 40;
-}
-
 .address__information {
   position: relative;
   margin-top: -30px;
   border-radius: 0 0 30px 30px;
   background-color: $special-yellow-300;
+  z-index: 45;
 
   @media (min-width: $tablet-width) {
     margin-top: -60px;
@@ -140,6 +137,19 @@
 
 .address__map {
   margin-top: -54px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 41%;
+    left: 46%;
+    background-image: url('../img/svg/icon_map.svg');
+    width: 56px;
+    height: 56px;
+    transform: translateX(-50%);
+    z-index: 50;
+  }
 
   @media (min-width: $tablet-width) {
     margin-top: -47px;
