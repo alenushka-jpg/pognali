@@ -33,6 +33,7 @@
   padding: 0;
   margin: 0 0 21px;
   border: 0;
+  border-radius: 7px;
 
   &:nth-child(3n) > .select-country__button,
   &:nth-child(4n) > .select-country__button {
@@ -70,6 +71,11 @@
       background-image: none;
     }
 
+    &:nth-child(3n) > .select-country__button,
+    &:nth-child(4n) > .select-country__button {
+      grid-column: 1/2;
+    }
+
     &:last-of-type {
       margin-bottom: 50px;
     }
@@ -103,13 +109,11 @@
 }
 
 .select-country__fieldset--open {
-  display: block;
-  background-color: $special-blue-650;
-
   .select-country__button {
     padding-left: 15px;
     letter-spacing: 0.02em;
     color: $basic-while;
+    background-color: $special-blue-650;
   }
 
   .select-country__button svg {
@@ -297,7 +301,12 @@
   top: 42px;
   border: 1px solid $special-blue-120;
   background-color: $basic-while;
+  box-shadow: 0 8px 16px rgba($special-blue-450, 0.18);
   z-index: 10;
+
+  @media (min-width: $tablet-width) {
+    top: 69px
+  }
 }
 
 .select-country__close-svg {
@@ -307,7 +316,7 @@
   }
 }
 
-.select-country__button--open,
+.select-country__button--select,
 .select-country__button--add {
   position: relative;
 
@@ -337,6 +346,12 @@
     &::before {
       right: -52px;
     }
+  }
+}
+
+.select-country__button--add {
+  &::before {
+    background-color: $special-blue-10;
   }
 }
 

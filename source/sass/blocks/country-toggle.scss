@@ -1,5 +1,14 @@
 .country-toggle {
-  display: none;
+  // display: none;
+  width: 100%;
+}
+
+.country-toggle--form {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: minmax(min-content, 100%) max-content;
+    column-gap: 52px;
+  }
 }
 
 .country-toggle--filter {
@@ -64,6 +73,13 @@
   margin-bottom: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    border-top: 1px solid #cbced9;
+    border-left: 1px solid #cbced9;
+    border-right: 1px solid #cbced9;
+    height: 346px;
+  }
 }
 
 .country-toggle__letter-item {
@@ -79,15 +95,9 @@
 
   @media (min-width: $tablet-width) {
     background-color: inherit;
+    height: 70px;
+    width: 55px;
   }
-}
-
-.country-toggle__label {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: $special-blue-650;
 }
 
 .country-toggle__letter {
@@ -96,6 +106,17 @@
   justify-content: center;
   width: 100%;
   height: 100%;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special-blue-650;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .country-toggle__all-contries {
