@@ -8,6 +8,14 @@
     background-color: $special-blue-850;
   }
 
+  &--active {
+    position: fixed;
+    top: 0;
+    z-index: 11;
+    width: 100%;
+    background-color: $basic-while;
+  }
+
   @media (min-width: $tablet-width) {
     &--index {
       background-color: $special-blue-750;
