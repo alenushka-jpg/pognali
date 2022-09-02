@@ -7,7 +7,7 @@
     <title>HTML Academy: Погнали</title>
   </head>
   <body class="page__body">
-    <header class="page-header page-header--index page-header--active">
+    <header class="page-header page-header--index">
       <div class="page-header__container container">
         <div class="page-header__top">
           <a class="page-header__logo logo" href="">
@@ -25,13 +25,14 @@
             </svg>
           </a>
           <button class="page-header__burger" type="button">
+            <span class="visually-hidden">Открыть меню</span>
             <svg class="page-header__open" width="25" height="11">
               <use xlink:href="./img/sprite.svg#icon_burger"></use>
             </svg>
+            <span class="visually-hidden">Закрыть меню</span>
             <svg class="page-header__close" width="18" height="19">
               <use xlink:href="./img/sprite.svg#menu-close"></use>
             </svg>
-            <span class="visually-hidden">Открыть меню</span>
           </button>
           <button class="page-header__button button" type="button">Авторизация</button>
         </div>
@@ -552,5 +553,6 @@
       </div>
       <button class="modal-window__button">Закрыть окно</button>
     </div>
+    <script src="./js/script.min.js"></script>
   </body>
 </html>
