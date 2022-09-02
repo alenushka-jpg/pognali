@@ -150,8 +150,6 @@
   cursor: pointer;
 
   &--selected {
-
-
     &::before,
     &::after {
       content: "";
@@ -230,9 +228,18 @@
   width: 100%;
   background-color: $special-blue-10;
 
+  &::before {
+    background-color: $special-blue-10;
+  }
+
   @media (min-width: $desktop-width) {
     width: 730px;
   }
+}
+
+.select-country__button--add svg {
+  opacity: 1;
+  stroke: $special-blue-110;
 }
 
 .select-country__button-plus {
@@ -305,7 +312,7 @@
   z-index: 10;
 
   @media (min-width: $tablet-width) {
-    top: 69px
+    top: 69px;
   }
 }
 
@@ -347,15 +354,4 @@
       right: -52px;
     }
   }
-}
-
-.select-country__button--add {
-  &::before {
-    background-color: $special-blue-10;
-  }
-}
-
-.select-country__button--add svg {
-  opacity: 1;
-  stroke: $special-blue-110;
 }

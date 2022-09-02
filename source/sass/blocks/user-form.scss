@@ -139,6 +139,8 @@
   border-radius: 10px;
 
   &--hashtag {
+    margin-bottom: 7px;
+
     &:hover {
       border: 1px solid $special-blue-300;
     }
@@ -160,6 +162,7 @@
 
     &--hashtag {
       grid-column: 1/-1;
+      margin-bottom: 0;
     }
   }
 
@@ -175,6 +178,11 @@
     &--hashtag {
       grid-column: 1/2;
       grid-row: 3/4;
+      margin: 30px 64px 0 49px;
+
+      .user-form__list-title {
+        left: 62px;
+      }
     }
   }
 }
@@ -200,22 +208,6 @@
     font-size: 20px;
     line-height: 20px;
     letter-spacing: 0.08em;
-  }
-}
-
-.user-form__list--hashtag {
-  margin-bottom: 7px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 30px 64px 0 49px;
-
-    .user-form__list-title {
-      left: 62px;
-    }
   }
 }
 
