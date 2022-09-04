@@ -1,6 +1,6 @@
 .modal-window {
   position: fixed;
-  top: 18px;
+  top: 217px;
   left: 50%;
   display: none;
   width: 270px;
@@ -8,7 +8,7 @@
   z-index: 100;
   transform: translateX(-50%);
   background-color: $basic-while;
-  box-shadow: 0 30px 26px rgba($special-blue-650, 0.14);
+  box-shadow: 0 15px 15px rgba($basic-black, 0.25);
   border-radius: 20px;
 
   &--open {
