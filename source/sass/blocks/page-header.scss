@@ -96,7 +96,11 @@
   top: 0;
   width: 100%;
   background-color: $basic-while;
-  z-index: 5;
+  z-index: 100;
+
+  .page-header__container {
+    box-shadow: 0 15px 15px rgba($basic-black, 0.25);
+  }
 
   .page-header__information,
   .page-header__svg--dark,
@@ -133,6 +137,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    .page-header__container {
+      box-shadow: none;
+    }
+
     .page-header__social {
       display: none;
     }
