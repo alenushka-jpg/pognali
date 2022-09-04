@@ -10,6 +10,9 @@
   width: 122px;
   margin: 0 auto 0 29px;
 
+  .type-of-transports__item {
+    display: flex;
+  }
 
   @media (min-width: $tablet-width) {
     margin-left: 53px;
