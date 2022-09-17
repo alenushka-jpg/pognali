@@ -16,6 +16,10 @@
 .page-main--form {
   background-color: $special-blue-10;
 
+  .page-main__container {
+    padding-top: 45px;
+  }
+
   @media (min-width: $tablet-width) {
     .page-main__container {
       padding: 95px 75px 66px;
@@ -104,7 +108,7 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: -13px;
+    bottom: -14px;
     left: 0;
     width: 214px;
     height: 5px;
