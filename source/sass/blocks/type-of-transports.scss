@@ -52,6 +52,7 @@
     height: 32px;
     border-radius: 50%;
     background-color: $basic-while;
+    cursor: pointer;
 
     &:nth-child(3n) {
       &:hover {

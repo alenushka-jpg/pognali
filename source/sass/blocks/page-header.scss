@@ -29,6 +29,8 @@
   z-index: 11;
   width: 100%;
   background-color: $basic-while;
+  animation-name: fadeInUp;
+  animation-duration: 1s;
 
   .page-header--index {
     background-color: $basic-while;
@@ -334,4 +336,16 @@
 
 .page-header__open {
   fill: $basic-while;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    top: -50px;
+  }
+
+  to {
+    opacity: 1;
+    top: 0;
+  }
 }

@@ -103,6 +103,7 @@
   color: rgba($basic-grey, 0.3);
   border: 1px solid $special-blue-120;
   border-radius: 4px;
+  resize: none;
 
   &:nth-child(2) {
     color: rgba($basic-grey, 1);

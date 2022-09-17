@@ -52,3 +52,13 @@ function onCloseClick() {
 
 modalWindowOpen.addEventListener('click', onOpenClick);
 modalWindowClose.addEventListener('click', onCloseClick);
+
+// скрипт для фиксированного меню
+
+window.addEventListener('scroll', e => {
+  if(pageYOffset > 200) {
+    header.classList.add('page-header--active');
+  } else {
+    header.classList.remove('page-header--active');
+  };
+});
