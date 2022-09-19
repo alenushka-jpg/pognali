@@ -23,35 +23,42 @@ function onHeaderClick() {
 
 burger.addEventListener('click', onHeaderClick);
 
-//открытие модального окна Бизнес-тарифы
-function showModal() {
-  modalWindow.classList.add('modal-window--open');
+
+const buttonCountry = document.getElementById('select-country');
+const buttonCloseCountrySelect  = document.querySelector('.select-country__close--countries');
+const fieldsetChoose = document.querySelector('.select-country__fieldset--choose');
+const countryToggle = document.querySelector('.country-toggle');
+
+// function showCountrySelect() {
+//   countryToggle.classList.add('country-toggle--open');
+// }
+
+// function hiddenCountrySelect() {
+//   countryToggle.classList.remove('country-toggle--open');
+// }
+
+// function onOpenSelectClick() {
+//   showCountrySelect();
+// }
+
+// function onCloseSelectClick() {
+//   hiddenCountrySelect();
+// }
+
+
+function showCountrySelect() {
+  fieldsetChoose.classList.add('select-country__fieldset--open');
 }
 
-function hiddenModal() {
-  modalWindow.classList.remove('modal-window--open');
+function onOpenSelectClick() {
+  showCountrySelect();
 }
 
-function bodyHidden() {
-  body.classList.add('page__body--hidden');
-}
+buttonCountry.addEventListener('click', () => {
+  // onOpenSelectClick();
+  console.log('hi')
+})
 
-function bodyShow() {
-  body.classList.remove('page__body--hidden');
-}
-
-function onOpenClick() {
-  showModal();
-  bodyHidden();
-}
-
-function onCloseClick() {
-  hiddenModal();
-  bodyShow();
-}
-
-modalWindowOpen.addEventListener('click', onOpenClick);
-modalWindowClose.addEventListener('click', onCloseClick);
 
 // скрипт для фиксированного меню
 

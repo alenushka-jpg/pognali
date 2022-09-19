@@ -1,11 +1,14 @@
 .country-toggle {
-  // display: none;
+  display: none;
   width: 100%;
+
+  &--open {
+    display: grid;
+  }
 }
 
 .country-toggle--form {
   @media (min-width: $tablet-width) {
-    display: grid;
     grid-template-columns: minmax(min-content, 100%) max-content;
     column-gap: 52px;
   }
@@ -75,9 +78,9 @@
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    border-top: 1px solid #cbced9;
-    border-left: 1px solid #cbced9;
-    border-right: 1px solid #cbced9;
+    border-top: 1px solid $special-blue-120;
+    border-left: 1px solid $special-blue-120;
+    border-right: 1px solid $special-blue-120;
     height: 346px;
   }
 }

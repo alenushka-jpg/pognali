@@ -260,13 +260,13 @@
               </div>
               <div class="add-plan__calendar calendar">
                 <div class="calendar__header">
-                  <button class="calendar__button calendar__button--back">
+                  <button class="calendar__button calendar__button--back" type="button">
                     <svg width="15" height="21">
                       <use xlink:href="./img/sprite.svg#arrow-back"></use>
                     </svg>
                   </button>
                   <p class="calendar__title">Март 2019</p>
-                  <button class="calendar__button calendar__button--next">
+                  <button class="calendar__button calendar__button--next" type="button">
                     <svg width="15" height="21">
                       <use xlink:href="./img/sprite.svg#arrow-next"></use>
                     </svg>
@@ -588,7 +588,7 @@
               </ul>
               <div class="add-plan__select select-country select-country--add-plan">
                 <fieldset class="select-country__fieldset">
-                  <button class="select-country__button select-country__button--selected">
+                  <button class="select-country__button select-country__button--selected" type="button">
                     <span>Босния и герцеговина</span>
                     <svg width="12" height="16">
                       <use xlink:href="./img/sprite.svg#select-open"></use>
@@ -599,7 +599,7 @@
                       <source media="(min-width: 768px)" srcset="./img/bosnia-and-herzegovina-tablet.png">
                       <img class="select-country__img" src="./img/bosnia-and-herzegovina.png" width="35" height="24" alt="">
                     </picture>
-                    <button class="select-country__close">
+                    <button class="select-country__close" type="button" type="button">
                       <svg class="select-country__close-svg" width="9" height="9">
                         <use xlink:href="./img/sprite.svg#menu-close"></use>
                       </svg>
@@ -607,7 +607,7 @@
                   </div>
                 </fieldset>
                 <fieldset class="select-country__fieldset">
-                  <button class="select-country__button select-country__button--selected">
+                  <button class="select-country__button select-country__button--selected" type="button">
                     <span>Чехия</span>
                     <svg width="12" height="16">
                       <use xlink:href="./img/sprite.svg#select-open"></use>
@@ -618,21 +618,21 @@
                       <source media="(min-width: 768px)" srcset="./img/flag-czech-tablet.png">
                       <img class="select-country__img" src="./img/flag-czech.png" width="35" height="24" alt="">
                     </picture>
-                    <button class="select-country__close">
+                    <button class="select-country__close" type="button">
                       <svg class="select-country__close-svg" width="9" height="9">
                         <use xlink:href="./img/sprite.svg#menu-close"></use>
                       </svg>
                     </button>
                   </div>
                 </fieldset>
-                <fieldset class="select-country__fieldset select-country__fieldset--choose select-country__fieldset--open">
-                  <button class="select-country__button select-country__button--select">выберите страну
+                <fieldset class="select-country__fieldset select-country__fieldset--choose">
+                  <button class="select-country__button select-country__button--select" type="button"  id="select-country">выберите страну
                     <svg width="12" height="16">
                       <use xlink:href="./img/sprite.svg#select-open"></use>
                     </svg>
                     </svg>
                   </button>
-                  <button class="select-country__close">
+                  <button class="select-country__close select-country__close--countries" type="button">
                     <svg class="select-country__close-svg" width="9" height="9">
                       <use xlink:href="./img/sprite.svg#menu-close"></use>
                     </svg>
@@ -1054,7 +1054,7 @@
                   </div>
                 </fieldset>
                 <fieldset class="select-country__fieldset">
-                  <button class="select-country__button select-country__button--add">Добавить страну
+                  <button class="select-country__button select-country__button--add" type="button">Добавить страну
                     <svg class="select-country__button-plus" width="14" height="14">
                       <use xlink:href="./img/sprite.svg#plus"></use>
                     </svg>
@@ -1172,5 +1172,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>
