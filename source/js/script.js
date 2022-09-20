@@ -23,31 +23,60 @@ function onHeaderClick() {
 
 burger.addEventListener('click', onHeaderClick);
 
+//открытие модального окна Бизнес-тарифы
+function showModal() {
+  modalWindow.classList.add('modal-window--open');
+}
+
+function hiddenModal() {
+  modalWindow.classList.remove('modal-window--open');
+}
+
+function bodyHidden() {
+  body.classList.add('page__body--hidden');
+}
+
+function bodyShow() {
+  body.classList.remove('page__body--hidden');
+}
+
+function onOpenClick() {
+  showModal();
+  bodyHidden();
+}
+
+function onCloseClick() {
+  hiddenModal();
+  bodyShow();
+}
+
+if (modalWindowOpen) {
+  modalWindowOpen.addEventListener('click', onOpenClick);
+}
+
+if (modalWindowClose) {
+  modalWindowClose.addEventListener('click', onCloseClick);
+}
 
 const buttonCountry = document.getElementById('select-country');
 const buttonCloseCountrySelect  = document.querySelector('.select-country__close--countries');
 const fieldsetChoose = document.querySelector('.select-country__fieldset--choose');
 const countryToggle = document.querySelector('.country-toggle');
 
-// function showCountrySelect() {
-//   countryToggle.classList.add('country-toggle--open');
-// }
-
-// function hiddenCountrySelect() {
-//   countryToggle.classList.remove('country-toggle--open');
-// }
-
-// function onOpenSelectClick() {
-//   showCountrySelect();
-// }
-
-// function onCloseSelectClick() {
-//   hiddenCountrySelect();
-// }
-
-
 function showCountrySelect() {
-  fieldsetChoose.classList.add('select-country__fieldset--open');
+  countryToggle.classList.add('country-toggle--open');
+}
+
+function hiddenCountrySelect() {
+  countryToggle.classList.remove('country-toggle--open');
+}
+
+function onOpenSelectClick() {
+  showCountrySelect();
+}
+
+function onCloseSelectClick() {
+  hiddenCountrySelect();
 }
 
 function onOpenSelectClick() {
@@ -55,10 +84,17 @@ function onOpenSelectClick() {
 }
 
 buttonCountry.addEventListener('click', () => {
-  // onOpenSelectClick();
-  console.log('hi')
+  onOpenSelectClick();
+});
+
+buttonCloseCountrySelect.addEventListener('click', () => {
+  onCloseSelectClick();
 })
 
+
+// function showCountrySelect() {
+//   fieldsetChoose.classList.add('select-country__fieldset--open');
+// }
 
 // скрипт для фиксированного меню
 

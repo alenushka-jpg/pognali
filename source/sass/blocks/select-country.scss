@@ -27,7 +27,7 @@
 }
 
 .select-country__fieldset {
-  position: relative;
+  // position: relative;
   display: grid;
   grid-template-columns: minmax(168px, 89%) 53px;
   padding: 0;
@@ -58,6 +58,8 @@
       background-image: none;
     }
   }
+
+
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -92,6 +94,7 @@
 }
 
 .select-country__fieldset--choose {
+  position: relative;
   flex-direction: column;
   align-items: start;
   z-index: 1;
