@@ -71,16 +71,22 @@ function hiddenCountrySelect() {
   countryToggle.classList.remove('country-toggle--open');
 }
 
+function showCountryBackground() {
+  fieldsetChoose.classList.add('select-country__fieldset--open');
+}
+
+function hiddenCountryBackground() {
+  fieldsetChoose.classList.remove('select-country__fieldset--open');
+}
+
 function onOpenSelectClick() {
   showCountrySelect();
+  showCountryBackground();
 }
 
 function onCloseSelectClick() {
   hiddenCountrySelect();
-}
-
-function onOpenSelectClick() {
-  showCountrySelect();
+  hiddenCountryBackground();
 }
 
 buttonCountry.addEventListener('click', () => {
@@ -91,10 +97,6 @@ buttonCloseCountrySelect.addEventListener('click', () => {
   onCloseSelectClick();
 })
 
-
-// function showCountrySelect() {
-//   fieldsetChoose.classList.add('select-country__fieldset--open');
-// }
 
 // скрипт для фиксированного меню
 
