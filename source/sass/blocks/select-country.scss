@@ -3,6 +3,7 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
+    max-width: 100%;
     padding-top: 42px;
     border-top: 1px solid $special-blue-50;
 
@@ -12,7 +13,7 @@
       top: 0;
       right: 137px;
       width: 1px;
-      height: 407px;
+      height: 332px;
       background-color: $special-blue-70;
       background-image: linear-gradient(to top, $basic-while, transparent);
     }

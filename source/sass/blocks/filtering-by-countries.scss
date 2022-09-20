@@ -17,6 +17,7 @@
     }
 
     &--form {
+      padding-top: 37px;
       padding-left: 25px;
       padding-right: 23px;
     }
@@ -34,8 +35,9 @@
   color: $basic-grey;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
     font-size: 20px;
-    line-height: 30px;
+    line-height: 20px;
   }
 }
 
