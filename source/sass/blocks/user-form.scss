@@ -38,6 +38,7 @@
     row-gap: 0;
     padding-top: 0;
     padding-right: 59px;
+    padding-bottom: 64px;
     margin-top: -190px;
     background-color: inherit;
     z-index: -1;
@@ -278,6 +279,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-left: 6px;
+
     &--pogination {
       padding-left: 68px;
     }

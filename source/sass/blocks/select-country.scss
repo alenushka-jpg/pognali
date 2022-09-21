@@ -3,7 +3,7 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    max-width: 100%;
+    max-width: 780px;
     padding-top: 42px;
     border-top: 1px solid $special-blue-50;
 
@@ -129,7 +129,7 @@
 
   .select-country__close {
     top: 10px;
-    right: 12px;
+    right: 0;
     background-color: inherit;
   }
 

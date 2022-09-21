@@ -1,6 +1,8 @@
 .country-toggle {
   display: none;
   width: 100%;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
 
   &--open {
     display: grid;
@@ -14,6 +16,10 @@
 .country-toggle--form {
   @media (min-width: $tablet-width) {
     grid-template-columns: minmax(min-content, 100%) max-content;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 2fr 1fr;
   }
 }
 
@@ -128,11 +134,13 @@
     height: 70px;
     width: 60px;
     margin-right: 16px;
+    margin-bottom: 15px;
     border: 1px solid $special-blue-120;
     border-radius: 4px;
 
     &:nth-of-type(5n) {
       margin-right: 0;
+      margin-bottom: 0;
       border: 1px solid $special-blue-120;
     }
   }
@@ -159,19 +167,20 @@
 
 .country-toggle__all-contries {
   margin: 0;
-  padding: 0;
+  padding: 22px 18px 20px;
   list-style: none;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    padding: 37px 25px 56px;
+    border-left: 1px solid $special-blue-70;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(5, 250px);
     row-gap: 53px;
-    padding: 0 25px;
-    margin-bottom: 64px;
+    padding: 37px 26px 50px;
 
     &--form {
       grid-template-columns: 1fr;
@@ -187,7 +196,11 @@
   display: none;
 
   @media (min-width: $tablet-width) {
-    border-left: 1px solid $special-blue-70;
+    border-left: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-left: none;
   }
 }
 
