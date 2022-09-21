@@ -89,14 +89,18 @@ function onCloseSelectClick() {
   hiddenCountryBackground();
 }
 
-buttonCountry.addEventListener('click', () => {
-  onOpenSelectClick();
-});
+if(buttonCountry) {
+  buttonCountry.addEventListener('click', () => {
+    onOpenSelectClick();
+  });
+}
 
-buttonCloseCountrySelect.addEventListener('click', () => {
-  onCloseSelectClick();
-})
+if(buttonCloseCountrySelect) {
+  buttonCloseCountrySelect.addEventListener('click', () => {
+    onCloseSelectClick();
+  })
 
+}
 
 // скрипт для фиксированного меню
 

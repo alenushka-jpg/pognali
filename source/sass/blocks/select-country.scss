@@ -119,6 +119,8 @@
     letter-spacing: 0.02em;
     color: $basic-while;
     background-color: $special-blue-650;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .select-country__button svg {
