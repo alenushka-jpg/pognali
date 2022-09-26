@@ -8,7 +8,7 @@
 
   @media (min-width: $desktop-width) {
     .page-main__background {
-      background-color: $special-blue-790;
+      background-color: $special-blue-700;
     }
   }
 }
@@ -91,7 +91,6 @@
     &--catalog {
       padding: 89px 75px 36px 126px;
       min-height: 243px;
-      background-color: $special-blue-790;
 
       .page-main__title::after {
         width: 288px;
