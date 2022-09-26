@@ -208,7 +208,7 @@
         <section class="add-plan">
           <div class="add-plan__container container">
             <h2 class="user-form__subtitle user-form__subtitle--pogination">Добавить план:</h2>
-            <fieldset class="add-plan__fieldset add-plan__fieldset--step-one container">
+            <fieldset class="add-plan__fieldset add-plan__fieldset--step-one container" id="step-one">
               <h3 class="add-plan__title">
                 <span class="add-plan__step">Шаг 1.</span>
                 Даты пребывания
@@ -570,14 +570,14 @@
                   </tbody>
                 </table>
               </div>
-              <a class="add-plan__button button" href="">
+              <a class="add-plan__button button" href="#step-two">
                 <span>Следующий шаг</span>
                 <svg class="add-plan__button-arrow" width="14" height="13">
                   <use xlink:href="./img/sprite.svg#button-arrow"></use>
                 </svg>
               </a>
             </fieldset>
-            <fieldset class="add-plan__fieldset add-plan__fieldset--step-two container">
+            <fieldset class="add-plan__fieldset add-plan__fieldset--step-two container" id="step-two">
               <h3 class="add-plan__title">
                 <span class="add-plan__step">Шаг 2.</span>
                 Маршрут
@@ -1060,13 +1060,13 @@
                   </div>
                 </fieldset>
                 <div class="add-plan__step-buttons">
-                  <a class="add-plan__button add-plan__button--next button" href="">
+                  <a class="add-plan__button add-plan__button--next button" href="#step-three">
                     <span>Следующий шаг</span>
                     <svg class="add-plan__button-arrow" width="14" height="13">
                       <use xlink:href="./img/sprite.svg#button-arrow"></use>
                     </svg>
                   </a>
-                  <a class="add-plan__button add-plan__button--back button" href="">
+                  <a class="add-plan__button add-plan__button--back button" href="#step-one">
                     <svg class="add-plan__button-back" width="14" height="13">
                       <use xlink:href="./img/sprite.svg#button-back"></use>
                     </svg>
@@ -1075,7 +1075,7 @@
                 </div>
               </div>
             </fieldset>
-            <fieldset class="add-plan__fieldset add-plan__fieldset--step-three container">
+            <fieldset class="add-plan__fieldset add-plan__fieldset--step-three container" id="step-three">
               <h3 class="add-plan__title">
                 <span class="add-plan__step">Шаг 3.</span>
                 Развлечения
@@ -1108,13 +1108,13 @@
                 </div>
               </section>
               <div class="add-plan__step-buttons">
-                <a class="add-plan__button add-plan__button--next button" href="">
+                <button class="add-plan__button add-plan__button--next button" type="submit">
                   <span>Отправить</span>
                   <svg class="add-plan__button-arrow" width="14" height="13">
                     <use xlink:href="./img/sprite.svg#button-arrow"></use>
                   </svg>
-                </a>
-                <a class="add-plan__button add-plan__button--back button" href="">
+                </button>
+                <a class="add-plan__button add-plan__button--back button" href="#step-two">
                   <svg class="add-plan__button-back" width="14" height="13">
                     <use xlink:href="./img/sprite.svg#button-back"></use>
                   </svg>
