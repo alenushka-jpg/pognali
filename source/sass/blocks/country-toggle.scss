@@ -12,6 +12,15 @@
 .country-toggle--form {
   @media (min-width: $tablet-width) {
     grid-template-columns: minmax(min-content, 100%) max-content;
+
+    .country-toggle__letter-item {
+      height: 70px;
+      width: 52px;
+    }
+
+    .country-toggle__all-contries {
+      border-left: 1px solid $special-blue-70;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -39,7 +48,7 @@
     column-gap: 79px;
     row-gap: 80px;
     grid-column: 1/-1;
-    grid-template-columns: 1fr 175px;
+    grid-template-columns: minmax(400px, 700px) 305px;
 
     .country-toggle__letter-list {
       margin-right: 0;
@@ -51,6 +60,16 @@
       display: flex;
       height: auto;
       border: none;
+    }
+
+    .country-toggle__letter {
+      font-size: 60px;
+      line-height: 60px;
+      color: rgba($special-blue-650, 0.3);
+    }
+
+    .country-toggle__label--selected {
+      color: rgba($special-blue-650, 1);
     }
 
     .country-toggle__input:checked + .country-toggle__letter {
@@ -123,8 +142,6 @@
 
   @media (min-width: $tablet-width) {
     background-color: inherit;
-    height: 70px;
-    width: 52px;
   }
 
   @media (min-width: $desktop-width) {
@@ -170,7 +187,6 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     padding: 37px 25px 56px;
-    border-left: 1px solid $special-blue-70;
   }
 
   @media (min-width: $desktop-width) {
