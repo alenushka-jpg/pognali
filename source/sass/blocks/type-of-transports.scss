@@ -6,12 +6,54 @@
   list-style: none;
 }
 
+.type-of-transports__item {
+  position: relative;
+
+  &:hover span {
+    display: block;
+  }
+}
+
+.type-of-transports__item span {
+  position: absolute;
+  bottom: -65px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 1;
+  display: none;
+  width: max-content;
+  padding: 18px 25px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  background-color: $special-blue-600;
+  color: $basic-while;
+  border-radius: 4px
+}
+
+.type-of-transports__item span::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -7px;
+  transform: translate(-50%);
+  display: block;
+  width: 14px;
+  height: 8px;
+  border: 7px solid transparent;
+  border-top: 0;
+  border-bottom: 8px solid $special-blue-600;
+}
+
 .type-of-transports--travel-cards {
   width: 122px;
   margin: 0 auto 0 29px;
 
   .type-of-transports__item {
+    position: relative;
     display: flex;
+    cursor: pointer;
   }
 
   @media (min-width: $tablet-width) {
