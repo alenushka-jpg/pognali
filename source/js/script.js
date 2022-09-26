@@ -4,6 +4,10 @@ const body = document.querySelector('.page__body');
 const modalWindow = document.querySelector('.modal-window');
 const modalWindowClose = document.querySelector('.modal-window__button');
 const modalWindowOpen = document.querySelector('.add-profile__link');
+const buttonCountry = document.getElementById('select-country');
+const buttonCloseCountrySelect  = document.querySelector('.select-country__close--countries');
+const fieldsetChoose = document.querySelector('.select-country__fieldset--choose');
+const countryToggle = document.querySelector('.country-toggle');
 
 //открытие хедера
 function bodyHiddenToggle() {
@@ -24,6 +28,7 @@ function onHeaderClick() {
 burger.addEventListener('click', onHeaderClick);
 
 //открытие модального окна Бизнес-тарифы
+
 function showModal() {
   modalWindow.classList.add('modal-window--open');
 }
@@ -33,11 +38,11 @@ function hiddenModal() {
 }
 
 function bodyHidden() {
-  body.classList.add('page__body--hidden');
+  document.body.style.overflowY = 'scroll';
 }
 
-function bodyShow() {
-  body.classList.remove('page__body--hidden');
+function bodyVisible() {
+  document.body.style.overflowY = 'scroll';
 }
 
 function onOpenClick() {
@@ -47,7 +52,7 @@ function onOpenClick() {
 
 function onCloseClick() {
   hiddenModal();
-  bodyShow();
+  bodyVisible();
 }
 
 if (modalWindowOpen) {
@@ -57,11 +62,6 @@ if (modalWindowOpen) {
 if (modalWindowClose) {
   modalWindowClose.addEventListener('click', onCloseClick);
 }
-
-const buttonCountry = document.getElementById('select-country');
-const buttonCloseCountrySelect  = document.querySelector('.select-country__close--countries');
-const fieldsetChoose = document.querySelector('.select-country__fieldset--choose');
-const countryToggle = document.querySelector('.country-toggle');
 
 function showCountrySelect() {
   countryToggle.classList.add('country-toggle--open');
@@ -99,7 +99,6 @@ if(buttonCloseCountrySelect) {
   buttonCloseCountrySelect.addEventListener('click', () => {
     onCloseSelectClick();
   })
-
 }
 
 // скрипт для фиксированного меню
