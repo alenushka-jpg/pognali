@@ -8,7 +8,7 @@
 
   @media (min-width: $desktop-width) {
     .page-main__background {
-      background-color: #161c34;
+      background-color: $special-blue-790;
     }
   }
 }
@@ -89,9 +89,14 @@
     padding-bottom: 64px;
 
     &--catalog {
-      padding: 84px 75px 37px 126px;
-      min-height: 240px;
+      padding: 89px 75px 36px 126px;
+      min-height: 243px;
       background-color: $special-blue-790;
+
+      .page-main__title::after {
+        width: 288px;
+        bottom: -70px;
+      }
     }
   }
 }

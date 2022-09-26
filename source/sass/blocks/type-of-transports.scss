@@ -68,8 +68,8 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
-    margin: 0 7px 0 0;
-    width: auto;
+    margin: 0 7px 0 auto;
+    width: 30px;
 
     .type-of-transports__item img {
       margin-left: auto;

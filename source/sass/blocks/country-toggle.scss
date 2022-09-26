@@ -7,10 +7,6 @@
   &--open {
     display: grid;
   }
-
-  @media (min-width: $desktop-width) {
-    max-width: 730px;
-  }
 }
 
 .country-toggle--form {
@@ -20,6 +16,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 2fr 1fr;
+    max-width: 730px;
   }
 }
 
@@ -180,7 +177,7 @@
     display: grid;
     grid-template-columns: repeat(5, 250px);
     row-gap: 53px;
-    padding: 37px 26px 50px;
+    padding: 37px 26px 61px;
 
     &--form {
       grid-template-columns: 1fr;
