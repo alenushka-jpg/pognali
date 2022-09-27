@@ -2,6 +2,19 @@
   position: relative;
   display: block;
   padding-left: 27px;
+
+  &:hover {
+    .checkbox__label {
+      color: rgba($basic-black, 0.6);
+    }
+  }
+
+  &:active,
+  &:focus {
+    .checkbox__label {
+      color: rgba($basic-black, 0.3);
+    }
+  }
 }
 
 .checkbox__label {

@@ -168,6 +168,15 @@
   background-color: inherit;
   border-top: 1px solid $special-yellow-300;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 7px 0;
     width: 127px;
