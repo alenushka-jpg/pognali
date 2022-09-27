@@ -60,7 +60,8 @@
     }
 
     .filter__header {
-      margin-bottom: 65px;
+      margin-bottom: 0;
+      grid-column: 1/2;
     }
   }
 }
@@ -78,6 +79,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    grid-template-columns: 340px 1fr;
     column-gap: 0;
     row-gap: 39px;
     padding-top: 62px;
@@ -165,6 +167,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    display: none;
     margin-left: auto;
     margin-right: 51px;
   }
