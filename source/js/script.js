@@ -8,6 +8,9 @@ const buttonCountry = document.getElementById('select-country');
 const buttonCloseCountrySelect  = document.querySelector('.select-country__close--countries');
 const fieldsetChoose = document.querySelector('.select-country__fieldset--choose');
 const countryToggle = document.querySelector('.country-toggle');
+const filter = document.querySelector('.filter');
+const filterButtonToggle = document.querySelector('.filter__interactive-button');
+const filterButtonBig = document.querySelector('.country-toggle__button');
 
 //открытие хедера
 function bodyHiddenToggle() {
@@ -99,6 +102,24 @@ if(buttonCloseCountrySelect) {
   buttonCloseCountrySelect.addEventListener('click', () => {
     onCloseSelectClick();
   })
+}
+
+// открытие фильтрации на странице каталог
+
+function showFilter() {
+  filter.classList.toggle('filter--open');
+}
+
+function hiddenFilter() {
+  filter.classList.remove('filter--open')
+}
+
+if(filterButtonToggle) {
+  filterButtonToggle.addEventListener('click', showFilter);
+}
+
+if(filterButtonBig) {
+  filterButtonBig.addEventListener('click', hiddenFilter);
 }
 
 // скрипт для фиксированного меню
