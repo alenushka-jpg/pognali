@@ -68,11 +68,22 @@
     }
   }
 
-
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
+
+    &:first-of-type {
+      margin-bottom: 19px;
+    }
+
+    &:nth-of-type(2) {
+      margin-bottom: 8px;
+
+      .accordion-filter__toggle {
+        padding-bottom: 16px;
+      }
+    }
 
     &:nth-of-type(4n) {
       .accordion-filter__toggle {
