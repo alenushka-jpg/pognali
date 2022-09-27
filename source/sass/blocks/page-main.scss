@@ -79,6 +79,11 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       align-items: center;
+      padding-top: 96px;
+
+      .page-main__title::after {
+        width: 288px;
+      }
     }
   }
 
@@ -165,7 +170,7 @@
   @media (min-width: $tablet-width) {
     display: block;
     grid-column: 2/3;
-    padding: 15px 61px 15px 0;
+    padding: 21px 61px 15px 0;
     margin-left: auto;
   }
 

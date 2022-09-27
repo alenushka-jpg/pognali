@@ -45,10 +45,14 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    column-gap: 79px;
-    row-gap: 80px;
+    column-gap: 40px;
+    row-gap: 72px;
     grid-column: 1/-1;
-    grid-template-columns: minmax(400px, 700px) 305px;
+    grid-template-columns: 385px 196px;
+
+    .country-toggle__all-contries {
+      padding: 0 20px 56px;
+    }
 
     .country-toggle__letter-list {
       margin-right: 0;
@@ -58,6 +62,7 @@
 
     .country-toggle__letter-item {
       display: flex;
+      margin-bottom: 23px;
       height: auto;
       border: none;
     }
@@ -241,6 +246,7 @@
   border: 0;
   background-color: $special-blue-90;
   border-radius: 20px;
+  cursor: pointer;
 
   svg {
     margin-right: 12px;
