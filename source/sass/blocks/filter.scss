@@ -64,16 +64,17 @@
 .filter__container {
   display: grid;
   align-items: center;
+
   padding-top: 37px;
   padding-bottom: 17px;
 
   @media (min-width: $tablet-width) {
+    grid-template-columns: 3fr 1fr;
     row-gap: 60px;
     padding: 122px 72px 57px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: max-content max-content auto;
     column-gap: 0;
     row-gap: 39px;
     padding-top: 62px;
@@ -87,10 +88,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 1/-1;
     justify-content: start;
   }
 }
@@ -140,6 +142,7 @@
 }
 
 .filter__interactive-button {
+  padding: 0;
   position: absolute;
   top: 0;
   right: 0;
@@ -148,10 +151,13 @@
   align-items: center;
   width: 24px;
   height: 17px;
+  border: 0;
+  background-color: inherit;
 
   @media (min-width: $tablet-width) {
     position: relative;
     width: 187px;
+    height: auto;
     order: 1;
   }
 
@@ -191,7 +197,7 @@
   display: none;
 }
 
-.filter__button {
+.filter__ellipsis {
   padding: 0;
   width: 17px;
   height: 4px;
