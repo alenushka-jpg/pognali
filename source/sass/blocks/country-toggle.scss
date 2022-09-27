@@ -44,15 +44,15 @@
   }
 
   @media (min-width: $tablet-width) {
-    display: grid;
+    // display: grid;
     column-gap: 40px;
     row-gap: 72px;
     grid-column: 1/-1;
     grid-template-columns: minmax(385px, 1fr) 196px;
 
-    &--open {
-      display: grid;
-    }
+    // &--open {
+    //   display: grid;
+    // }
 
     .country-toggle__all-contries {
       padding: 0 20px 56px;
