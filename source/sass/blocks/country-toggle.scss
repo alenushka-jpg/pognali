@@ -257,6 +257,14 @@
   border-radius: 20px;
   cursor: pointer;
 
+  &:hover {
+    background-color: $special-blue-200;
+  }
+
+  &:active {
+    color: rgba($special-blue-700, 0.3);
+  }
+
   svg {
     margin-right: 12px;
   }

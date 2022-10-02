@@ -98,8 +98,8 @@
 
   &::after {
     position: absolute;
-    left: 44px;
-    top: 54px;
+    left: -16px;
+    top: 4px;
     content: "";
     width: 6px;
     height: 6px;
@@ -130,6 +130,11 @@
     margin-left: 5px;
     font-size: 30px;
     line-height: 30px;
+
+    &::after {
+      left: -12px;
+      top: 10px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -137,6 +142,11 @@
     padding: 46px 0 0 62px;
     margin-bottom: 20px;
     margin-left: 0;
+
+    &::after {
+      left: 44px;
+      top: 54px;
+    }
   }
 }
 
