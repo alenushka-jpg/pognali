@@ -221,7 +221,7 @@
 
   &--open {
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       top: 2px;
       right: 0;
@@ -235,7 +235,7 @@
 
   &--close {
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       top: 7px;
       right: 0;
