@@ -15,27 +15,6 @@
       height: 45px;
       background-color: $special-blue-950;
     }
-
-    &:active {
-      .contacts-list__svg--mobile,
-      .contacts-list__svg--mail {
-        opacity: 0.3;
-      }
-    }
-
-    &--phone:hover,
-    &--phone:focus {
-      &::before {
-        background-color: $special-orange-100;
-      }
-    }
-
-    &--email:hover,
-    &--email:focus {
-      &::before {
-        background-color: $special-yellow-900;
-      }
-    }
   }
 
   .contacts-list__svg {
@@ -71,6 +50,27 @@
       padding: 0;
       width: 50px;
       height: 50px;
+
+      &:active {
+        .contacts-list__svg--mobile,
+        .contacts-list__svg--mail {
+          opacity: 0.3;
+        }
+      }
+
+      &--phone:hover,
+      &--phone:focus {
+        &::before {
+          background-color: $special-orange-100;
+        }
+      }
+
+      &--email:hover,
+      &--email:focus {
+        &::before {
+          background-color: $special-yellow-900;
+        }
+      }
 
       .contacts-list__svg {
         fill: $special-blue-900;
@@ -173,7 +173,19 @@
     text-transform: uppercase;
 
     &::before {
-      background-color: $special-blue-900;
+      background-color: $special-blue-950;
+    }
+
+    &:hover {
+      color: $special-yellow-700;
+
+      .contacts-list__svg {
+        fill: $special-yellow-700;
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 

@@ -29,6 +29,21 @@
   }
 }
 
+.travel-cards__link {
+  display: block;
+  border-radius: 12px 12px 0 0;
+  overflow: hidden;
+
+  &:hover .travel-cards__photo,
+  &:focus .travel-cards__photo {
+    transform: scale(1.1);
+  }
+
+  @media (min-width: $tablet-width) {
+    border-radius: 21px 21px 0 0;
+  }
+}
+
 .travel-cards__level {
   position: absolute;
   top: 26px;
@@ -41,10 +56,7 @@
 }
 
 .travel-cards__photo {
-  border-radius: 12px 12px 0 0;
-
   @media (min-width: $tablet-width) {
-    border-radius: 21px 21px 0 0;
     width: 285px;
     height: 286px;
   }
@@ -74,6 +86,7 @@
 
 .travel-cards__flags img {
   margin-right: 20px;
+  z-index: 20;
 }
 
 .travel-cards__name {

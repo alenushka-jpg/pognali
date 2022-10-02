@@ -45,6 +45,21 @@
 }
 
 .filter-profiles__picture {
+  display: block;
+  border-radius: 12px 12px 0 0;
+  overflow: hidden;
+
+  &:hover .filter-profiles__photo,
+  &:focus .filter-profiles__photo {
+    transform: scale(1.1);
+  }
+
+  @media (min-width: $tablet-width) {
+    border-radius: 21px 21px 0 0;
+  }
+}
+
+.filter-profiles__picture {
   grid-column: 1/2;
   margin-bottom: 12px;
 

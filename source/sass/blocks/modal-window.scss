@@ -103,6 +103,15 @@
   background-color: $special-blue-00;
   border: 0;
   border-radius: 0 0 20px 20px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $special-blue-10;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 40px;

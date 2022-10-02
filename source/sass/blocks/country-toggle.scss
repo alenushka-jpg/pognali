@@ -16,6 +16,14 @@
     .country-toggle__letter-item {
       height: 70px;
       width: 52px;
+
+      &:hover {
+        border: 1px solid $special-blue-400;
+
+        &:nth-child(5n) {
+          border: 1px solid $special-blue-400;
+        }
+      }
     }
 
     .country-toggle__all-contries {
@@ -144,14 +152,6 @@
     border-right: none;
   }
 
-  &:hover {
-    border: 1px solid $special-blue-400;
-
-    &:nth-child(5n) {
-      border: 1px solid $special-blue-400;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     background-color: inherit;
   }
@@ -210,6 +210,7 @@
 
     &--form {
       grid-template-columns: 1fr;
+
     }
 
     .country-toggle__item:nth-child(11n) {

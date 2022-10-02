@@ -54,6 +54,7 @@
     position: relative;
     display: flex;
     cursor: pointer;
+    align-items: center;
   }
 
   @media (min-width: $tablet-width) {
@@ -142,5 +143,11 @@
   @media (min-width: $tablet-width) {
     width: 24px;
     height: 24px;
+
+    &--bicycle,
+    &--run {
+      width: 27px;
+      height: 27px;
+    }
   }
 }
