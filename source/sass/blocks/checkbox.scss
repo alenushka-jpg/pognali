@@ -2,6 +2,7 @@
   position: relative;
   display: block;
   padding-left: 27px;
+  cursor: pointer;
 
   &:hover {
     .checkbox__label {
@@ -15,6 +16,12 @@
       color: rgba($basic-black, 0.3);
     }
   }
+}
+
+.checkbox .checkbox__input:checked + .checkbox__label::after {
+  background-image: url('../img/svg/icon_check-mark.svg');
+  background-repeat: no-repeat;
+  background-position: 3px 3px;
 }
 
 .checkbox__label {
