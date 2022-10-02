@@ -78,5 +78,11 @@ img {
       margin-left: auto;
       background-color: inherit;
     }
+
+    &--bicycle svg,
+    &--run svg {
+      width: 29px;
+      height: 27px;
+    }
   }
 }

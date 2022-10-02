@@ -30,6 +30,7 @@
   background-color: $special-blue-600;
   color: $basic-while;
   border-radius: 4px;
+  z-index: 50;
 }
 
 .type-of-transports__item span::before {
