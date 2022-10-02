@@ -147,6 +147,11 @@
   .accordion-filter__list--transport {
     flex-direction: row;
   }
+
+  .accordion-filter__transports,
+  .accordion-filter__level {
+    display: none;
+  }
 }
 
 .accordion-filter__button,

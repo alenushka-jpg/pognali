@@ -21,7 +21,11 @@
 .checkbox .checkbox__input:checked + .checkbox__label::after {
   background-image: url('../img/svg/icon_check-mark.svg');
   background-repeat: no-repeat;
-  background-position: 3px 3px;
+  background-position: 0 0;
+
+  @media (min-width: $tablet-width) {
+    background-position: 3px 3px;
+  }
 }
 
 .checkbox__label {

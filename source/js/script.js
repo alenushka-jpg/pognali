@@ -11,6 +11,7 @@ const countryToggle = document.querySelector('.country-toggle');
 const filter = document.querySelector('.filter');
 const filterButtonToggle = document.querySelector('.filter__interactive-button');
 const filterButtonBig = document.querySelector('.country-toggle__button');
+const accordionToggle = document.querySelectorAll('.accordion-filter__toggle');
 
 //открытие хедера
 function bodyHiddenToggle() {
@@ -131,3 +132,13 @@ window.addEventListener('scroll', e => {
     header.classList.remove('page-header--active');
   };
 });
+
+// Аккордеон фильтр
+
+accordionToggle.forEach(function (array) {
+  array.addEventListener('click', function (item) {
+    const parent = array.parentNode;
+
+    parent.classList.toggle('accordion-filter__fieldset--open');
+  })
+})
