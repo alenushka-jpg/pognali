@@ -104,6 +104,14 @@
 
 .registration__link {
   color: $special-yellow-300;
+
+  &:hover {
+    color: $special-yellow-900;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .registration__button {
@@ -119,6 +127,18 @@
   border: none;
   border-radius: 12px;
   cursor: pointer;
+
+  &:hover {
+    background-color: $special-yellow-700;
+  }
+
+  &:active {
+    color: rgba($special-blue-650, 0.3);
+
+    svg {
+      opacity: 0.3;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     width: 80px;
@@ -165,6 +185,10 @@
   color: $basic-grey;
   border: none;
   border-radius: 12px;
+
+  &:hover {
+    background-color: $special-blue-10;
+  }
 
   &::placeholder {
     color: rgba($basic-grey, 0.3);

@@ -77,6 +77,7 @@
 }
 
 .filter-profiles__name {
+  position: relative;
   display: block;
   grid-column: 2/4;
   padding-right: 39px;
@@ -85,6 +86,23 @@
   font-size: 20px;
   line-height: 20px;
   cursor: default;
+
+  &::after {
+    position: absolute;
+    left: 44px;
+    top: 54px;
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: $special-red-400;
+    border-radius: 50%;
+  }
+
+  &--second {
+    &::after {
+      background-color: $special-green;
+    }
+  }
 
   &:hover {
     opacity: 0.6;

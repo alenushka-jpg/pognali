@@ -256,20 +256,30 @@
   text-align: center;
   color: $special-blue-650;
 
-  &:hover {
-    background-color: $special-yellow-700;
-  }
+  &--next {
+    &:hover {
+      background-color: $special-yellow-700;
+    }
 
-  &:active {
-    color: rgba($special-blue-650, 0.3);
+    &:active {
+      color: rgba($special-blue-650, 0.3);
 
-    .add-plan__button-arrow {
-      opacity: 0.3;
+      .add-plan__button-arrow {
+        opacity: 0.3;
+      }
     }
   }
 
   &--back {
     background-color: inherit;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $tablet-width) {

@@ -126,6 +126,18 @@
   border: none;
   border-radius: 10px;
 
+  &:hover {
+    background-color: $special-yellow-700;
+  }
+
+  &:active {
+    color: rgba($special-blue-650, 0.3);
+
+    svg {
+      opacity: 0.3;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
     padding: 27px 32px 29px;

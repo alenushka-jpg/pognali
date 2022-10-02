@@ -99,6 +99,16 @@
   }
 }
 
+.address__button-arrow {
+  fill: $special-blue-650;
+  position: absolute;
+  right: 18px;
+
+  @media (min-width: $tablet-width) {
+    right: 32px;
+  }
+}
+
 .address__button {
   position: relative;
   display: block;
@@ -110,6 +120,23 @@
   color: $special-blue-650;
   border: 3px solid $special-blue-700;
   border-radius: 10px;
+
+  &:hover {
+    background-color: $special-blue-700;
+    color: $basic-while;
+
+    .address__button-arrow {
+      fill: $basic-while;
+    }
+  }
+
+  &:active {
+    color: rgba($basic-while, 0.3);
+
+    .address__button-arrow {
+      fill: rgba($basic-while, 0.3);
+    }
+  }
 
   @media (min-width: $tablet-width) {
     padding: 26px 34px 24px;
@@ -123,15 +150,6 @@
     width: 324px;
     display: flex;
     align-items: center;
-  }
-}
-
-.address__button-arrow {
-  position: absolute;
-  right: 18px;
-
-  @media (min-width: $tablet-width) {
-    right: 32px;
   }
 }
 

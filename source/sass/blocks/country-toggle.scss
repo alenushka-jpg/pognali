@@ -144,6 +144,14 @@
     border-right: none;
   }
 
+  &:hover {
+    border: 1px solid $special-blue-400;
+
+    &:nth-child(5n) {
+      border: 1px solid $special-blue-400;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     background-color: inherit;
   }
@@ -175,6 +183,7 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special-blue-650;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     font-weight: 500;
@@ -222,7 +231,8 @@
 }
 
 .country-toggle__input:checked + .country-toggle__letter {
-  background-color: $special-blue-10;
+  background-color: $special-blue-650;
+  color: $basic-while;
 }
 
 .country-toggle__contries-list--selected {

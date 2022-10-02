@@ -24,6 +24,7 @@
   font-family: inherit;
   border: none;
   background-color: inherit;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -76,6 +77,7 @@
     font-size: 20px;
     line-height: 20px;
     color: $special-blue-650;
+    cursor: pointer;
 
     &--active {
       width: 50px;
@@ -118,6 +120,7 @@
   justify-content: center;
   width: 50%;
   text-decoration: none;
+  cursor: pointer;
 
   svg {
     width: 20px;

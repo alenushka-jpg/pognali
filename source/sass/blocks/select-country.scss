@@ -3,7 +3,7 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    max-width: 100%;
+    max-width: 800px;
     padding-top: 42px;
     border-top: 1px solid $special-blue-50;
 
@@ -21,6 +21,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 59px;
+    max-width: 100%;
 
     &::after {
       right: 217px;
@@ -100,7 +101,13 @@
   align-items: start;
   z-index: 1;
 
+  .select-country__close {
+    cursor: pointer;
+  }
+
   .select-country__button {
+    cursor: pointer;
+
     &:hover {
       border: 1px solid $special-blue-400;
     }
@@ -154,7 +161,6 @@
   border: 1px solid $special-blue-120;
   border-radius: 4px;
   white-space: nowrap;
-  cursor: pointer;
   z-index: 50;
 
   &--selected {
@@ -232,24 +238,6 @@
   }
 }
 
-.select-country__button--add {
-  width: 100%;
-  background-color: $special-blue-10;
-
-  &::before {
-    background-color: $special-blue-10;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 730px;
-  }
-}
-
-.select-country__button--add svg {
-  opacity: 1;
-  stroke: $special-blue-110;
-}
-
 .select-country__button-plus {
   position: absolute;
   top: 13px;
@@ -305,7 +293,7 @@
   z-index: 100;
 
   @media (min-width: $tablet-width) {
-    top: 15px;
+    top: 10px;
     right: 0;
     border-radius: 0;
     background-color: inherit;
@@ -332,8 +320,7 @@
   }
 }
 
-.select-country__button--select,
-.select-country__button--add {
+.select-country__button--select {
   position: relative;
 
   &::before {
