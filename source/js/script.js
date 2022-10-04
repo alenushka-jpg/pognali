@@ -12,6 +12,7 @@ const filter = document.querySelector('.filter');
 const filterButtonToggle = document.querySelector('.filter__interactive-button');
 const filterButtonBig = document.querySelector('.country-toggle__button');
 const accordionToggle = document.querySelectorAll('.accordion-filter__toggle');
+const overlay = document.querySelector('.overlay');
 
 //открытие хедера
 function bodyHiddenToggle() {
@@ -143,3 +144,9 @@ accordionToggle.forEach(function (array) {
     parent.classList.toggle('accordion-filter__fieldset--open');
   })
 })
+
+// Закрытии блока modal-window при клике на overlay
+
+if (overlay) {
+  overlay.addEventListener('click', hiddenModal);
+}
