@@ -162,4 +162,41 @@ if (overlay) {
   overlay.addEventListener('click', hiddenModal);
 }
 
-overlay.addEventListener('click', bodyVisible);
+if (overlay) {
+  overlay.addEventListener('click', bodyVisible);
+}
+
+
+//Переключение букв выбора страны
+
+const letterSelection = document.querySelectorAll('.country-toggle__label');
+const countriesSelection = document.querySelectorAll('.country-toggle__contries-list');
+
+window.onload = function () {
+  for (let i = 0; i < letterSelection.length; i++) {
+    letterSelection[i].onclick = countriesSwitchClick;
+  }
+}
+
+function tabsSwitchOnOff(index, enable) {
+  if (enable) {
+    letterSelection[index].classList.add('country-toggle__label--selected');
+  }
+  else {
+    letterSelection[index].classList.remove('country-toggle__label--selected');
+  }
+}
+
+function countriesSwitchOnOff(index, show) {
+  countriesSelection[index].style.display = show === true ? "block" : "none";
+}
+
+function countriesSwitchClick(e) {
+  let target = e.target;
+  let isEnable;
+  for (let i = 0; i < letterSelection.length; i++) {
+    isEnable = (letterSelection[i] == target);
+    tabsSwitchOnOff(i, isEnable);
+    countriesSwitchOnOff(i, isEnable);
+  }
+}
