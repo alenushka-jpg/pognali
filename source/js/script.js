@@ -18,17 +18,17 @@ const overlay = document.querySelector('.overlay');
 function bodyHiddenToggle() {
   if (body !== 'body') {
     body.classList.toggle('page__body--hidden');
-  }
-}
+  };
+};
 
 function showHeader() {
   header.classList.toggle('page-header--open');
-}
+};
 
 function onHeaderClick() {
   showHeader();
   bodyHiddenToggle();
-}
+};
 
 burger.addEventListener('click', onHeaderClick);
 
@@ -36,38 +36,37 @@ burger.addEventListener('click', onHeaderClick);
 
 function showModal() {
   modalWindow.classList.add('modal-window--open');
-}
+};
 
 function hiddenModal() {
   modalWindow.classList.remove('modal-window--open');
-}
+};
 
 function bodyHidden() {
-  // document.body.style.overflowY = 'scroll';
   document.body.style.overflow = 'hidden';
-}
+};
 
 function bodyVisible() {
   document.body.style.overflowY = 'scroll';
-}
+};
 
 function onOpenClick() {
   showModal();
   bodyHidden();
-}
+};
 
 function onCloseClick() {
   hiddenModal();
   bodyVisible();
-}
+};
 
 if (modalWindowOpen) {
   modalWindowOpen.addEventListener('click', onOpenClick);
-}
+};
 
 if (modalWindowClose) {
   modalWindowClose.addEventListener('click', onCloseClick);
-}
+};
 
 function showCountrySelect() {
   countryToggle.classList.add('country-toggle--open');
@@ -83,29 +82,29 @@ function showCountryBackground() {
 
 function hiddenCountryBackground() {
   fieldsetChoose.classList.remove('select-country__fieldset--open');
-}
+};
 
 function onOpenSelectClick() {
   showCountrySelect();
   showCountryBackground();
-}
+};
 
 function onCloseSelectClick() {
   hiddenCountrySelect();
   hiddenCountryBackground();
-}
+};
 
-if(buttonCountry) {
+if (buttonCountry) {
   buttonCountry.addEventListener('click', () => {
     onOpenSelectClick();
   });
-}
+};
 
-if(buttonCloseCountrySelect) {
+if (buttonCloseCountrySelect) {
   buttonCloseCountrySelect.addEventListener('click', () => {
     onCloseSelectClick();
-  })
-}
+  });
+};
 
 // открытие фильтрации на странице каталог
 
@@ -114,7 +113,7 @@ function showFilter() {
 }
 
 function hiddenFilter() {
-  filter.classList.remove('filter--open')
+  filter.classList.remove('filter--open');
 }
 
 if(filterButtonToggle) {
@@ -125,13 +124,25 @@ if(filterButtonBig) {
   filterButtonBig.addEventListener('click', hiddenFilter);
 }
 
-// скрипт для фиксированного меню
+// Скрипт для фиксированного меню
 
 window.addEventListener('scroll', e => {
   if(pageYOffset > 200) {
     header.classList.add('page-header--active');
   } else {
     header.classList.remove('page-header--active');
+  };
+});
+
+// Скрипт для закрытия блока modal-window при клике на клавишу esc
+
+window.addEventListener('keydown', function (evt) {
+  if (evt.keyCode === 27) {
+    if (modalWindow.classList.contains('modal-window--open')) {
+      evt.preventDefault();
+      modalWindow.classList.remove('modal-window--open');
+      bodyVisible();
+    };
   };
 });
 
@@ -150,3 +161,5 @@ accordionToggle.forEach(function (array) {
 if (overlay) {
   overlay.addEventListener('click', hiddenModal);
 }
+
+overlay.addEventListener('click', bodyVisible);
