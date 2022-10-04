@@ -6,6 +6,7 @@
   z-index: 10;
   width: 100%;
   height: 100%;
+  overflow: scroll;
 
   &--open {
     display: block;
@@ -25,13 +26,12 @@
   border-radius: 20px;
 
   @media (min-width: $tablet-width) {
-    // top: 63px;
     width: 688px;
     height: 526px;
   }
 
   @media (min-width: $desktop-width) {
-    // top: 157px;
+    top: 157px;
     width: 750px;
   }
 }

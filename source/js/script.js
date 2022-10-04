@@ -42,7 +42,8 @@ function hiddenModal() {
 }
 
 function bodyHidden() {
-  document.body.style.overflowY = 'scroll';
+  // document.body.style.overflowY = 'scroll';
+  document.body.style.overflow = 'hidden';
 }
 
 function bodyVisible() {
