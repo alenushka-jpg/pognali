@@ -212,7 +212,9 @@
 
     .contacts-list__svg {
       top: 18px;
-      left: 18px;
+      left: 21px;
+      width: 27px;
+      height: 32px;
     }
 
     .contacts-list__item {
@@ -239,18 +241,10 @@
     }
 
     .contacts-list__svg {
-      top: 21px;
-      left: 26px;
-
-      &--phone {
-        width: 36px;
-        height: 34px;
-      }
-
-      &--email {
-        width: 36px;
-        height: 25px;
-      }
+      top: 19px;
+      left: 27px;
+      width: 36px;
+      height: 30px;
     }
   }
 }
