@@ -176,19 +176,16 @@ for (let i = 0; i < letterTabs.length; i++) {
   letterTabs[i].addEventListener('click', () => {
 
     // удаляет активный класс с вкладок
-    for (let t = 0; t < letterTabs.length; t++) {
-      letterTabs[t].classList.remove('country-toggle__label--selected');
-    }
-
+    for (let i = 0; i < letterTabs.length; i++) {
+      letterTabs[i].classList.remove('country-toggle__label--selected');
+    };
     // добавляет активный класс
     letterTabs[i].classList.add('country-toggle__label--selected');
-
-   // удаляет активный класс с блоков содержимого вкладок
-    for (let c = 0; c < contents.length; c++) {
-      contents[c].classList.remove('country-toggle__contries-list--selected');
-    }
-
-		// добавляет активный класс
-		contents[i].classList.add('country-toggle__contries-list--selected');
-  })
+    // удаляет активный класс с блоков содержимого вкладок
+    for (let i = 0; i < contents.length; i++) {
+      contents[i].classList.remove('country-toggle__contries-list--selected');
+    };
+    // добавляет активный класс
+    contents[i].classList.add('country-toggle__contries-list--selected');
+  });
 };
