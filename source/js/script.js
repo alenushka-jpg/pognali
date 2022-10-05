@@ -169,34 +169,43 @@ if (overlay) {
 
 //Переключение букв выбора страны
 
-const letterSelection = document.querySelectorAll('.country-toggle__label');
-const countriesSelection = document.querySelectorAll('.country-toggle__contries-list');
 
-window.onload = function () {
-  for (let i = 0; i < letterSelection.length; i++) {
-    letterSelection[i].onclick = countriesSwitchClick;
-  }
-}
+// const countriesSelection = document.querySelectorAll('.country-toggle__contries-list');
 
-function tabsSwitchOnOff(index, enable) {
-  if (enable) {
-    letterSelection[index].classList.add('country-toggle__label--selected');
-  }
-  else {
-    letterSelection[index].classList.remove('country-toggle__label--selected');
-  }
-}
+// window.onload = function () {
+//   for (let i = 0; i < letterSelection.length; i++) {
+//     letterSelection[i].onclick = countriesSwitchClick;
+//   }
+// }
 
-function countriesSwitchOnOff(index, show) {
-  countriesSelection[index].style.display = show === true ? "block" : "none";
-}
+// function tabsSwitchOnOff(index, enable) {
+//   if (enable) {
+//     letterSelection[index].classList.add('country-toggle__label--selected');
+//   }
+//   else {
+//     letterSelection[index].classList.remove('country-toggle__label--selected');
+//   }
+// }
 
-function countriesSwitchClick(e) {
-  let target = e.target;
-  let isEnable;
-  for (let i = 0; i < letterSelection.length; i++) {
-    isEnable = (letterSelection[i] == target);
-    tabsSwitchOnOff(i, isEnable);
-    countriesSwitchOnOff(i, isEnable);
-  }
-}
+// function countriesSwitchOnOff(index, show) {
+//   countriesSelection[index].style.display = show === true ? "flex" : "none";
+// }
+
+// function countriesSwitchClick(e) {
+//   let target = e.target;
+//   let isEnable;
+//   for (let i = 0; i < letterSelection.length; i++) {
+//     isEnable = (letterSelection[i] == target);
+//     tabsSwitchOnOff(i, isEnable);
+//     countriesSwitchOnOff(i, isEnable);
+//   }
+// }
+
+
+const letterTabs = document.querySelectorAll('.country-toggle__label');
+
+for (let i = 0; i < letterTabs.length; i++) {
+  letterTabs[1].addEventListener('click', () => {
+    alert('test');
+  })
+};
