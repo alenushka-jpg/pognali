@@ -13,6 +13,8 @@ const filterButtonToggle = document.querySelector('.filter__interactive-button')
 const filterButtonBig = document.querySelector('.country-toggle__button');
 const accordionToggle = document.querySelectorAll('.accordion-filter__toggle');
 const overlay = document.querySelector('.overlay');
+const letterTabs = document.querySelectorAll('.country-toggle__label');
+const contents = document.querySelectorAll('.country-toggle__contries-list');
 
 //открытие хедера
 function bodyHiddenToggle() {
@@ -167,45 +169,26 @@ if (overlay) {
 }
 
 
-//Переключение букв выбора страны
+// Скрипт вкладок переключения стран
 
-
-// const countriesSelection = document.querySelectorAll('.country-toggle__contries-list');
-
-// window.onload = function () {
-//   for (let i = 0; i < letterSelection.length; i++) {
-//     letterSelection[i].onclick = countriesSwitchClick;
-//   }
-// }
-
-// function tabsSwitchOnOff(index, enable) {
-//   if (enable) {
-//     letterSelection[index].classList.add('country-toggle__label--selected');
-//   }
-//   else {
-//     letterSelection[index].classList.remove('country-toggle__label--selected');
-//   }
-// }
-
-// function countriesSwitchOnOff(index, show) {
-//   countriesSelection[index].style.display = show === true ? "flex" : "none";
-// }
-
-// function countriesSwitchClick(e) {
-//   let target = e.target;
-//   let isEnable;
-//   for (let i = 0; i < letterSelection.length; i++) {
-//     isEnable = (letterSelection[i] == target);
-//     tabsSwitchOnOff(i, isEnable);
-//     countriesSwitchOnOff(i, isEnable);
-//   }
-// }
-
-
-const letterTabs = document.querySelectorAll('.country-toggle__label');
-
+// запускает цикл для каждой вкладки и добавляет на неё событие
 for (let i = 0; i < letterTabs.length; i++) {
-  letterTabs[1].addEventListener('click', () => {
-    alert('test');
+  letterTabs[i].addEventListener('click', () => {
+
+    // удаляет активный класс с вкладок
+    for (let t = 0; t < letterTabs.length; t++) {
+      letterTabs[t].classList.remove('country-toggle__label--selected');
+    }
+
+    // добавляет активный класс
+    letterTabs[i].classList.add('country-toggle__label--selected');
+
+   // удаляет активный класс с блоков содержимого вкладок
+    for (let c = 0; c < contents.length; c++) {
+      contents[c].classList.remove('country-toggle__contries-list--selected');
+    }
+
+		// добавляет активный класс
+		contents[i].classList.add('country-toggle__contries-list--selected');
   })
 };
