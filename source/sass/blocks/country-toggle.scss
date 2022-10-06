@@ -13,6 +13,10 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: minmax(min-content, 100%) max-content;
 
+    .country-toggle__contries-list {
+      border-left: none;
+    }
+
     .country-toggle__letter-item {
       height: 70px;
       width: 52px;
@@ -34,12 +38,16 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: 2fr 1fr;
     max-width: 730px;
+
+    .country-toggle__contries-list {
+      border-left: none;
+    }
   }
 }
 
 .country-toggle--filter {
-  .country-toggle__input:checked + .country-toggle__letter {
-    color: $special-blue-650;
+  .country-toggle__all-contries {
+    padding: 22px 25px 20px;
   }
 
   .country-toggle__letter-list {
@@ -113,6 +121,14 @@
 
   @media (min-width: $desktop-width) {
     padding: 32px 102px 36px 26px;
+  }
+}
+
+.country-toggle__contries-list {
+  display: none;
+
+  &--selected {
+    display: block;
   }
 }
 
@@ -218,17 +234,7 @@
   }
 }
 
-.country-toggle__contries-list {
-  display: none;
 
-  @media (min-width: $tablet-width) {
-    border-left: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    border-left: none;
-  }
-}
 
 .country-toggle__label--selected {
   .country-toggle__letter {
@@ -242,9 +248,6 @@
 //   color: $basic-while;
 // }
 
-.country-toggle__contries-list--selected {
-  display: block;
-}
 
 .country-toggle__button {
   display: flex;

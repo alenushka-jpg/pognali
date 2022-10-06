@@ -3,24 +3,18 @@
   padding: 0;
   list-style: none;
 
-  &--filter {
-    display: none;
-  }
+  // &--filter {
+  //   display: none;
+  // }
 
-  &--selected {
-    display: block;
-  }
+  // &--selected {
+  //   display: block;
+  // }
 
   @media (min-width: $tablet-width) {
     &--filter {
       padding: 0;
     }
-
-    // &--form {
-    //   padding-top: 37px;
-    //   padding-left: 25px;
-    //   padding-right: 23px;
-    // }
   }
 
   @media (min-width: $desktop-width) {
