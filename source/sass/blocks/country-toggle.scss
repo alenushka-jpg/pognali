@@ -234,20 +234,12 @@
   }
 }
 
-
-
 .country-toggle__label--selected {
   .country-toggle__letter {
     background-color: $special-blue-650;
     color: $basic-while;
   }
 }
-
-// .country-toggle__input:checked + .country-toggle__letter {
-//   background-color: $special-blue-650;
-//   color: $basic-while;
-// }
-
 
 .country-toggle__button {
   display: flex;
