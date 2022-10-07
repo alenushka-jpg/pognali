@@ -45,10 +45,15 @@
 
 .directions-list__img {
   width: 100%;
+  border-top-right-radius: 13px;
+  border-top-left-radius: 13px;
 
   @media (min-width: $tablet-width) {
     width: 186px;
     height: 140px;
+    border-top-right-radius: 23px;
+    border-bottom-right-radius: 23px;
+    border-top-left-radius: 0;
   }
 }
 
