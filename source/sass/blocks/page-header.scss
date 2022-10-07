@@ -30,6 +30,7 @@
     background-color: $basic-while;
     animation-name: fadeInUp;
     animation-duration: 1s;
+    top: 0;
   }
 
   .page-header__svg--light {
@@ -68,7 +69,18 @@
 
   @media (min-width: $desktop-width) {
     .page-header__container {
-      padding: 23px 60px 17px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      max-width: 100%;
+      background-color: $basic-while;
+      animation-name: fadeInUp;
+      animation-duration: 1s;
+    }
+
+    .page-header__top {
+      position: static;
+      animation: none;
     }
   }
 }
@@ -81,12 +93,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    padding: 40px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 240px 1fr;
-    padding: 49px 60px 11px;
   }
 }
 
@@ -183,6 +193,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr;
+    padding: 9px 25px 9px;
     grid-column: 1/2;
     margin-right: 40px;
 
@@ -206,11 +217,15 @@
   @media (min-width: $tablet-width) {
     grid-row: 2/5;
     grid-column: 1/-1;
+    top: 72px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
+    position: static;
     justify-content: space-between;
+    padding-bottom: 0;
+    background-color: inherit;
     grid-column: 2/3;
     grid-row: 1/2;
 
