@@ -6,7 +6,7 @@
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 35px;
+    margin-bottom: 38px;
 
     &::after {
       position: absolute;
@@ -35,7 +35,7 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 186px;
+    grid-template-columns: 1fr 190px;
   }
 }
 
@@ -54,7 +54,7 @@
   border-top-left-radius: 13px;
 
   @media (min-width: $tablet-width) {
-    width: 186px;
+    width: 190px;
     height: 140px;
     border-top-right-radius: 23px;
     border-bottom-right-radius: 23px;

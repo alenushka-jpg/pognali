@@ -45,10 +45,12 @@
     padding: 31px 32px 21px;
 
     &:first-child {
+      margin-bottom: -1px;
       border-radius: 20px 0 0 0;
     }
 
     &:nth-child(3n-1) {
+      margin-bottom: -1px;
       border-radius: 20px 20px 0 0;
     }
 
@@ -60,9 +62,9 @@
       border-radius: 0 0 20px 20px;
     }
 
-    &:nth-child(3n-1),
-    &:nth-child(5n-1) {
-      margin-left: -20px;
+    &:first-child,
+    &:nth-child(4n-1) {
+      margin-right: -20px;
     }
   }
 

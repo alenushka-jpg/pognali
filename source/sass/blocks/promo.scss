@@ -14,7 +14,7 @@
     background-color: $special-blue-750;
     background-image: url("/img/traveller-illustration-tablet.png"),
       url("/img/globe-back-tablet.png");
-    background-position: 72% 275px, center 254px;
+      background-position: 72% 308px, center 254px;
     background-size: 372px 451px, 1479px 612px;
   }
 
@@ -34,7 +34,7 @@
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
     grid-row: 1/2;
-    padding-top: 33px;
+    padding-top: 68px;
   }
 
   @media (min-width: $desktop-width) {

@@ -170,7 +170,12 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: -47px;
+    margin-top: -49px;
+
+    &::before {
+      top: 39.5%;
+      left: 48.5%;
+    }
   }
 
   @media (min-width: $desktop-width) {

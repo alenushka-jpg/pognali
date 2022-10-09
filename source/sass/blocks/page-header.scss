@@ -58,6 +58,10 @@
   }
 
   @media (min-width: $tablet-width) {
+    .page-header__top {
+      padding: 21px 41px 19px;
+    }
+
     .page-header__svg--dark {
       display: none;
     }
@@ -122,6 +126,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-column: 1/-1;
     grid-row: 1/2;
+    padding: 40px 41px 9px;
     z-index: 50;
 
     .page-header__button {
@@ -181,10 +186,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    .page-header__top {
-      padding: 40px 41px 9px;
-    }
-
     .page-header__svg--dark,
     .page-header__svg-t--light {
       display: none;
