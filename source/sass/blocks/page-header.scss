@@ -115,9 +115,9 @@
 .page-header__top {
   display: grid;
   grid-template-columns: 1fr max-content;
-  align-items: center;
-  padding: 15px 25px 9px;
+  padding: 19px 25px 9px;
   width: 100%;
+  align-items: center;
   z-index: 11;
 
   .page-header__button {
@@ -226,7 +226,7 @@
   z-index: 20;
   padding-right: 25px;
   padding-left: 25px;
-  padding-bottom: 70px;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     grid-row: 2/5;
@@ -280,8 +280,8 @@
 
 .page-header__list {
   padding-left: 0;
-  padding-top: 76px;
-  margin: 0 0 51px;
+  padding-top: 66px;
+  margin: 0 0 48px;
 
   @media (min-width: $tablet-width) {
     padding-top: 114px;
@@ -304,7 +304,7 @@
 }
 
 .page-header__button {
-  margin-bottom: 66px;
+  margin-bottom: 50px;
   font-family: inherit;
   cursor: pointer;
 
@@ -332,13 +332,20 @@
   }
 }
 
+.page-header__user {
+  display: flex;
+  flex-direction: column;
+}
+
 .page-header__contacts {
-  margin-bottom: 53px;
+  margin-bottom: 42px;
+  order: 2;
 
   @media (min-width: $tablet-width) {
     padding-left: 57px;
     padding-left: 72px;
     margin-bottom: 129px;
+    order: 0;
   }
 
   @media (min-width: $desktop-width) {
