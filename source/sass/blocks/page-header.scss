@@ -153,6 +153,7 @@
   top: 0;
   width: 100%;
   z-index: 100;
+  background-color: inherit;
 
   .page-header__top {
     position: fixed;
@@ -246,6 +247,7 @@
     background-color: inherit;
     grid-column: 2/3;
     grid-row: 1/2;
+    overflow: inherit;
 
     button {
       display: block;
@@ -336,6 +338,10 @@
 .page-header__user {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .page-header__contacts {

@@ -19,8 +19,16 @@
 
   .contacts-list__svg {
     fill: $special-yellow-200;
-    top: 16px;
-    left: 13px;
+
+    &--phone {
+      top: 16px;
+      left: 14px;
+    }
+
+    &--email {
+      top: 17px;
+      left: 13px;
+    }
 
     &--phone,
     &--email {
@@ -34,6 +42,18 @@
   }
 
   @media (min-width: $tablet-width) {
+
+    .contacts-list__svg {
+      &--phone {
+        top: 21px;
+        left: 20px;
+      }
+
+      &--email {
+        top: 23px;
+        left: 17px;
+      }
+    }
     .contacts-list__link {
       padding: 20px 30px 19px 91px;
 
