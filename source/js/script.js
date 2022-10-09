@@ -45,12 +45,14 @@ function hiddenModal() {
 };
 
 function bodyHidden() {
-  document.body.style.overflow = 'hidden';
-};
+  document.body.style.overflowY = 'scroll';
+  document.body.style.position = 'fixed';
+}
 
 function bodyVisible() {
   document.body.style.overflowY = 'scroll';
-};
+  document.body.style.position = 'inherit';
+}
 
 function onOpenClick() {
   showModal();
@@ -62,12 +64,29 @@ function onCloseClick() {
   bodyVisible();
 };
 
+// скрипт устранения бага(прыгает страница при открытии модального окна modalWindowOpen)
+
+function getBodyScrollTop() {
+  return self.pageYOffset || (document.documentElement && document.documentElement.ScrollTop) || (document.body && document.body.scrollTop);
+}
+
 if (modalWindowOpen) {
-  modalWindowOpen.addEventListener('click', onOpenClick);
-};
+  modalWindowOpen.addEventListener('click', e => {
+    e.preventDefault();
+
+    body.dataset.scrollY = getBodyScrollTop(); // сохраним значение скролла
+    body.style.top = `-${body.dataset.scrollY}px`;
+    onOpenClick();
+  }
+)};
 
 if (modalWindowClose) {
-  modalWindowClose.addEventListener('click', onCloseClick);
+  modalWindowClose.addEventListener('click', e => {
+    e.preventDefault();
+
+    onCloseClick();
+    window.scrollTo(0, body.dataset.scrollY);
+  } );
 };
 
 function showCountrySelect() {
