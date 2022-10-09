@@ -56,26 +56,15 @@ function bodyVisible() {
 
 function onOpenClick() {
   showModal();
-  bodyHidden();
 };
 
 function onCloseClick() {
   hiddenModal();
-  bodyVisible();
 };
-
-// скрипт устранения бага(прыгает страница при открытии модального окна modalWindowOpen)
-
-function getBodyScrollTop() {
-  return self.pageYOffset || (document.documentElement && document.documentElement.ScrollTop) || (document.body && document.body.scrollTop);
-}
 
 if (modalWindowOpen) {
   modalWindowOpen.addEventListener('click', e => {
     e.preventDefault();
-
-    body.dataset.scrollY = getBodyScrollTop(); // сохраним значение скролла
-    body.style.top = `-${body.dataset.scrollY}px`;
     onOpenClick();
   }
 )};
@@ -83,11 +72,21 @@ if (modalWindowOpen) {
 if (modalWindowClose) {
   modalWindowClose.addEventListener('click', e => {
     e.preventDefault();
-
     onCloseClick();
-    window.scrollTo(0, body.dataset.scrollY);
   } );
 };
+
+// Скрипт для закрытия блока modal-window при клике на клавишу esc
+
+window.addEventListener('keydown', evt => {
+  if (evt.keyCode === 27) {
+    if (modalWindow.classList.contains('modal-window--open')) {
+      evt.preventDefault();
+
+      modalWindow.classList.remove('modal-window--open');
+    };
+  };
+});
 
 function showCountrySelect() {
   countryToggle.classList.add('country-toggle--open');
@@ -152,18 +151,6 @@ window.addEventListener('scroll', e => {
     header.classList.add('page-header--active');
   } else {
     header.classList.remove('page-header--active');
-  };
-});
-
-// Скрипт для закрытия блока modal-window при клике на клавишу esc
-
-window.addEventListener('keydown', function (evt) {
-  if (evt.keyCode === 27) {
-    if (modalWindow.classList.contains('modal-window--open')) {
-      evt.preventDefault();
-      modalWindow.classList.remove('modal-window--open');
-      bodyVisible();
-    };
   };
 });
 

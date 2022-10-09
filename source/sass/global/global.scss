@@ -15,6 +15,18 @@ body {
   color: $special-blue-700;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .page__body {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
@@ -26,16 +38,12 @@ body {
   }
 }
 
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
+.logo {
+  display: block;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+.logo__svg--dark {
+  display: none;
 }
 
 .overlay {

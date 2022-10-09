@@ -16,7 +16,7 @@
 
 .about-service__container {
   padding: 32px 49px 62px;
-  background-image: url("/img/about-mobile-background.png"),
+  background-image: url("../img/about-mobile-background.png"),
     url("/img/square.png");
   background-repeat: no-repeat;
   background-position: center 0, 0 0;
@@ -25,14 +25,14 @@
     display: grid;
     grid-template-columns: 619px 1fr;
     padding: 40px 74px 89px;
-    background-image: url("/img/about-tablet.png"),
+    background-image: url("../img/about-tablet.png"),
       url("/img/about-background-tablet.png");
     background-position: 384px 46px, 40px 0;
   }
 
   @media (min-width: $desktop-width) {
     padding: 132px 130px 163px;
-    background-image: url("/img/about-desktop.png"),
+    background-image: url("../img/about-desktop.png"),
       url("/img/square-tablet.png");
     background-position: 750px 86px, 60px 67px;
   }
