@@ -46,8 +46,8 @@
 
 .travel-cards__level {
   position: absolute;
-  top: 26px;
-  left: 34px;
+  top: 18px;
+  left: 17px;
 
   @media (min-width: $tablet-width) {
     top: 33px;
@@ -63,7 +63,7 @@
 }
 
 .travel-cards__description {
-  padding: 0 36px 8px 46px;
+  padding: 0 36px 20px 46px;
   text-align: center;
   background-color: $basic-while;
   border-radius: 0 0 10px 10px;
@@ -81,7 +81,7 @@
 .travel-cards__flags {
   display: flex;
   justify-content: center;
-  margin: -12px 0 13px 10px;
+  margin: -10px 0 13px 10px;
 
   @media (min-width: $tablet-width) {
     margin: -12px 0 18px 18px;
@@ -97,7 +97,7 @@
   position: relative;
   display: block;
   padding-left: 23px;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
   font-weight: 700;
   font-size: 21px;
   line-height: 21px;
