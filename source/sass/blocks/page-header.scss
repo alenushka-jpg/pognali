@@ -73,6 +73,8 @@
       top: 0;
       width: 100%;
       max-width: 100%;
+      padding-top: 13px;
+      padding-bottom: 13px;
       background-color: $basic-while;
       animation-name: fadeInUp;
       animation-duration: 1s;
@@ -96,7 +98,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 240px 1fr;
+    grid-template-columns: 240px 1080px;
+    padding-top: 42px;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: center;
   }
 }
 
@@ -193,7 +199,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr;
-    padding: 9px 25px 9px;
+    padding: 7px 0;
     grid-column: 1/2;
     margin-right: 40px;
 
@@ -225,6 +231,8 @@
     position: static;
     justify-content: space-between;
     padding-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
     background-color: inherit;
     grid-column: 2/3;
     grid-row: 1/2;

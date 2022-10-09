@@ -24,7 +24,7 @@
     background-image: url("/img/traveller-illustration.png"),
       url("/img/globe-back-desktop.png");
     background-size: 430px 640px, 100%;
-    background-position: 60% 0, 0 -108px;
+    background-position: 60% 8px, 0 -102px;
   }
 }
 
@@ -60,7 +60,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    padding: 101px 0 0 127px;
+    padding: 108px 0 0 127px;
     text-align: start;
   }
 }

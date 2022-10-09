@@ -7,7 +7,7 @@
 
   @media (min-width: $tablet-width) {
     margin-top: -60px;
-    background-image: url("/img/flags-back.png");
+    background-image: url('./img/flags-back.png');
     background-repeat: no-repeat;
     background-position: right 40px top 80px;
     border-radius: 0 0 60px 60px;
@@ -15,6 +15,7 @@
 
   @media (min-width: $desktop-width) {
     margin-top: -56px;
+    background-position: right 59px top 143px;
     border-radius: 0 0 54px 54px;
   }
 }
@@ -32,7 +33,7 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 350px;
     column-gap: 169px;
-    padding: 216px 230px 134px 131px;
+    padding: 216px 230px 140px 131px;
   }
 }
 
@@ -68,7 +69,8 @@
   @media (min-width: $desktop-width) {
     grid-column: 2/3;
     grid-row: 1/2;
-    margin-bottom: 64px;
+    padding-top: 5px;
+    margin-bottom: 58px;
   }
 }
 
@@ -142,6 +144,7 @@
   @media (min-width: $desktop-width) {
     grid-column: 2/3;
     grid-row: 4/5;
+    padding: 28px 35px;
     width: 275px;
   }
 }
@@ -155,5 +158,9 @@
   @media (min-width: $tablet-width) {
     right: 35px;
     top: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 31px;
   }
 }

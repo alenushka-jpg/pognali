@@ -72,6 +72,10 @@
     padding: 0 26px 17px 29px;
     border-radius: 0 0 20px 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 26px 26px 29px;
+  }
 }
 
 .travel-cards__flags {
