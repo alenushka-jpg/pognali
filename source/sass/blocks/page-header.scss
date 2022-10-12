@@ -308,12 +308,6 @@
   }
 }
 
-.page-header__user {
-  @media (min-width: $desktop-width) {
-    display: flex;
-  }
-}
-
 .page-header__button {
   margin-bottom: 50px;
   font-family: inherit;
@@ -350,6 +344,10 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .page-header__contacts {
@@ -357,7 +355,6 @@
   order: 2;
 
   @media (min-width: $tablet-width) {
-    padding-left: 57px;
     padding-left: 72px;
     margin-bottom: 129px;
     order: 0;

@@ -10,6 +10,10 @@
     height: 60px;
     background-color: rgba($basic-black, 0.6);
     border-radius: 50%;
+
+    svg {
+      fill: rgba($basic-black, 0.1);
+    }
   }
 }
 
@@ -49,12 +53,6 @@
   line-height: 14px;
   color: $basic-while;
   z-index: 1;
-}
-
-.level--travel {
-  svg {
-    fill: rgba($basic-black, 0.1);
-  }
 }
 
 .level--profile {

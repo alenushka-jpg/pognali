@@ -12,6 +12,8 @@
 .country-toggle--form {
   @media (min-width: $tablet-width) {
     grid-template-columns: minmax(min-content, 100%) max-content;
+    width: 575px;
+    max-width: 100%;
 
     .country-toggle__contries-list {
       border-left: none;
