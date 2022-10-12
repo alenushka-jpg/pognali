@@ -97,26 +97,21 @@
     background-color: $basic-while;
     cursor: pointer;
 
-    &:nth-child(3n) {
-      &:hover {
-        .type-of-transports__svg {
-          opacity: 0.6;
-        }
-      }
-
-      &:active {
-        .type-of-transports__svg {
-          opacity: 0.8;
-        }
-      }
+    .type-of-transports__svg--plane,
+    .type-of-transports__svg--bus,
+    .type-of-transports__svg--run {
+      fill: $special-blue-650;
     }
 
-    &:hover,
-    &:active {
+    .type-of-transports__svg--bicycle {
+      fill: rgba($special-blue-650, 0.15);
+    }
+
+    &:hover {
       filter: drop-shadow(0 2px 6px rgba($special-blue-800, 0.17));
 
       .type-of-transports__svg {
-        opacity: 0.7;
+        opacity: 0.6;
       }
     }
 
@@ -124,7 +119,7 @@
       background-color: $special-blue-40;
 
       .type-of-transports__svg {
-        opacity: 0.3;
+        opacity: 0.8;
       }
     }
   }
