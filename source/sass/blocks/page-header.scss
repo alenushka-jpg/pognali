@@ -79,8 +79,8 @@
       top: 0;
       width: 100%;
       max-width: 100%;
-      padding-top: 13px;
-      padding-bottom: 13px;
+      padding-top: 0;
+      padding-bottom: 0;
       background-color: $basic-while;
       animation-name: fadeInUp;
       animation-duration: 1s;
@@ -88,7 +88,15 @@
 
     .page-header__top {
       position: static;
+      padding: 21px 0 19px;
       animation: none;
+    }
+
+    .page-header__list {
+      &::before {
+        left: 15px;
+        width: 44px;
+      }
     }
   }
 }
