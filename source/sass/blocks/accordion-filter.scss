@@ -152,6 +152,13 @@
   .accordion-filter__level {
     display: none;
   }
+
+  @media (min-width: $tablet-width) {
+    .accordion-filter__transports,
+    .accordion-filter__level {
+      display: grid;
+    }
+  }
 }
 
 .accordion-filter__button,
@@ -172,6 +179,7 @@
   text-align: start;
   background-color: inherit;
   border-top: 1px solid $special-yellow-300;
+  cursor: pointer;
 
   &:hover {
     opacity: 0.6;
@@ -201,6 +209,16 @@
   border-radius: 25px;
   text-align: center;
   cursor: pointer;
+
+  &:hover {
+    filter: drop-shadow(0 3px 6px rgba($basic-black, 0.14));
+    background-color: $special-blue-00;
+  }
+
+  &:active {
+    background-color: $special-yellow-300;
+    color: rgba($special-blue-800, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     padding: 16px 14px 14px;
@@ -271,6 +289,14 @@
   text-align: center;
   color: $special-blue-650;
   border: 1px solid $special-blue-120;
+
+  &:hover {
+    border: 1px solid $special-blue-400;
+  }
+
+  &:active {
+    border: 1px solid $special-blue-800;
+  }
 
   @media (min-width: $tablet-width) {
     width: 74px;
