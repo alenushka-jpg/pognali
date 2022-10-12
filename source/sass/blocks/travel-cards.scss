@@ -23,6 +23,25 @@
   width: 270px;
   margin-bottom: 8px;
 
+  .type-of-transports__svg--plane {
+    fill: $special-blue-720;
+  }
+
+  &:first-of-type .type-of-transports__svg--bus,
+  &:first-of-type .type-of-transports__svg--bicycle,
+  &:first-of-type .type-of-transports__svg--run {
+    fill: rgba($special-blue-650, 0.15);
+  }
+
+  &:nth-of-type(2n) .type-of-transports__svg--bus,
+  &:nth-of-type(2n) .type-of-transports__svg--run {
+    fill: $special-blue-650;
+  }
+
+  &:nth-of-type(2n) .type-of-transports__svg--bicycle {
+    fill: rgba($special-blue-650, 0.15);
+  }
+
   @media (min-width: $tablet-width) {
     width: 285px;
     margin: 0;
@@ -133,6 +152,7 @@
 
     &::after {
       left: 19px;
+      top: 5px;
       width: 8px;
       height: 8px;
     }
