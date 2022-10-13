@@ -29,6 +29,48 @@
   background-color: $basic-while;
   border-radius: 20px;
 
+  &:first-child {
+    .type-of-transports__svg {
+      fill: rgba($special-blue-650, 0.15);
+
+      &--plane {
+        fill: $special-blue-650;
+      }
+    }
+  }
+
+  &:nth-child(2){
+    .type-of-transports__svg {
+      fill: $special-blue-650;
+
+      &--bicycle {
+        fill: rgba($special-blue-650, 0.15);
+      }
+    }
+  }
+
+  &:nth-child(3){
+    .type-of-transports__svg {
+      fill: $special-blue-650;
+
+      &--bus,
+      &--run {
+        fill: rgba($special-blue-650, 0.15);
+      }
+    }
+  }
+
+  &:nth-child(4){
+    .type-of-transports__svg {
+      fill: $special-blue-650;
+
+      &--bicycle,
+      &--run {
+        fill: rgba($special-blue-650, 0.15);
+      }
+    }
+  }
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: max-content min-content min-content 1fr;
