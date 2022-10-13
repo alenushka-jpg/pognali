@@ -22,6 +22,10 @@
   height: 32px;
   border-radius: 50%;
   background-color: $special-blue-10;
+
+  @media (min-width: $tablet-width) {
+    background-color: inherit;
+  }
 }
 
 .type-of-transports__item span {

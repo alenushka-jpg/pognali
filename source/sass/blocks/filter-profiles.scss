@@ -231,6 +231,7 @@
   padding: 0;
   border: none;
   background-color: inherit;
+  cursor: pointer;
 
   &::before {
     position: absolute;
@@ -241,6 +242,26 @@
     height: 31px;
     border-radius: 50%;
     background-color: $special-red-10;
+  }
+
+  &:hover {
+    &::before {
+      background-color: $special-red-50;
+    }
+
+    svg {
+      stroke: $special-red;
+    }
+  }
+
+  &:active {
+    &::before {
+      background-color: rgba($special-red-300, 0.15);
+    }
+
+    svg {
+      stroke: $special-red-300;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -556,6 +577,14 @@
   margin-top: 7px;
   font-size: 17px;
   line-height: 17px;
+
+  &:hover {
+    background-color: $special-yellow-700;
+  }
+
+  &:active {
+    color: rgba($special-blue-800, 0.3)
+  }
 
   @media (min-width: $tablet-width) {
     grid-column: 2/3;
