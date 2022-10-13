@@ -24,7 +24,7 @@
 .filter-profiles__item {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 70px 1fr 1fr;
   padding: 15px 22px 23px 18px;
   background-color: $basic-while;
   border-radius: 20px;
@@ -46,6 +46,7 @@
 
 .filter-profiles__picture {
   display: block;
+  grid-row: 1/3;
   grid-column: 1/2;
   margin-bottom: 12px;
   border-radius: 12px 12px 0 0;
@@ -89,6 +90,7 @@
   position: relative;
   display: block;
   grid-column: 2/4;
+  grid-row: 1/2;
   padding-right: 39px;
   margin-left: 10px;
   font-weight: 700;
@@ -151,9 +153,11 @@
 }
 
 .filter-profiles__like {
-  position: absolute;
-  top: 52px;
-  left: 68px;
+  position: relative;
+  left: -28px;
+  top: -9px;
+  grid-column: 2/4;
+  grid-row: 2/3;
   display: flex;
   align-items: center;
 
@@ -342,13 +346,15 @@
 
 .filter-profiles__subtitle {
   display: block;
+  width: 110px;
   font-size: 15px;
   line-height: 16px;
   color: $basic-grey;
 
   @media (min-width: $tablet-width) {
-    padding-left: 49px;
     display: none;
+    padding-left: 49px;
+    width: 100%;
   }
 }
 

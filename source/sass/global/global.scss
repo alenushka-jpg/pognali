@@ -69,22 +69,10 @@ img {
 }
 
 // .svg-transport {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   width: 32px;
-//   height: 32px;
-//   border-radius: 50%;
-//   background-color: $basic-while;
-
-//   &--profile {
-//     background-color: $special-blue-10;
-//   }
-
 //   &--accordion {
-//     .svg-transport--plane svg,
-//     .svg-transport--bus svg,
-//     .svg-transport--run svg {
+//     .svg-transport,
+//     .svg-transport svg,
+//     .svg-transport svg {
 //       fill: $special-blue-650;
 //     }
 //   }

@@ -14,6 +14,16 @@
   }
 }
 
+.type-of-transports__circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: $special-blue-10;
+}
+
 .type-of-transports__item span {
   position: absolute;
   bottom: -65px;

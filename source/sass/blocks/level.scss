@@ -119,6 +119,10 @@
 
   .level__number {
     color: $special-blue-650;
+
+    &::after {
+      display: none;
+    }
   }
 
   .level__subtitle {
@@ -135,6 +139,12 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
+
+    .level__number {
+      &::after {
+        display: block;
+      }
+    }
 
     .level__subtitle {
       display: block;
