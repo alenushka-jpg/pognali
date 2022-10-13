@@ -136,12 +136,26 @@
 
   .select-country__close {
     top: 10px;
-    right: 0;
+    right: 10px;
     background-color: inherit;
   }
 
   .select-country__close-svg {
     fill: $basic-while;
+    width: 12px;
+    height: 10px;
+  }
+
+  @media (min-width: $tablet-width) {
+    .select-country__close {
+      right: 0px;
+    }
+
+    .select-country__close-svg {
+      width: 22px;
+      height: 24px;
+      fill: $special-blue-250;
+    }
   }
 }
 
@@ -314,6 +328,8 @@
 }
 
 .select-country__close-svg {
+  fill: $special-blue-250;
+
   @media (min-width: $tablet-width) {
     width: 22px;
     height: 24px;

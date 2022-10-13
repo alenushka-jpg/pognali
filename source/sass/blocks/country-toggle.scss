@@ -10,10 +10,17 @@
 }
 
 .country-toggle--form {
+  .country-toggle__contries-list {
+    display: none;
+
+    &--selected {
+      display: block;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     grid-template-columns: minmax(min-content, 100%) max-content;
-    width: 575px;
-    max-width: 100%;
+    max-width: 634px;
 
     .country-toggle__contries-list {
       border-left: none;
@@ -40,6 +47,7 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: 2fr 1fr;
     max-width: 730px;
+    width: 100%;
 
     .country-toggle__contries-list {
       border-left: none;
@@ -118,19 +126,11 @@
 
 .country-toggle__container {
   @media (min-width: $tablet-width) {
-    padding: 35px 70px 33px 27px;
+    padding: 35px 55px 33px 27px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 32px 102px 36px 26px;
-  }
-}
-
-.country-toggle__contries-list {
-  display: none;
-
-  &--selected {
-    display: block;
   }
 }
 
@@ -217,7 +217,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    padding: 37px 25px 56px;
+    padding: 37px 16px 56px;
   }
 
   @media (min-width: $desktop-width) {
