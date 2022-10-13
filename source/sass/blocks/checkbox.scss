@@ -98,9 +98,8 @@
   }
 
   &--bicycle {
-    fill: rgba($special-blue-650, 0.15) ;
+    fill: rgba($special-blue-650, 0.15);
   }
-
 
   @media (min-width: $tablet-width) {
     width: 23px;
