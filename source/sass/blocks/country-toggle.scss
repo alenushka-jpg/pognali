@@ -40,6 +40,7 @@
     }
 
     .country-toggle__all-contries {
+      width: 210px;
       border-left: 1px solid $special-blue-70;
     }
   }
@@ -58,6 +59,14 @@
 .country-toggle--filter {
   .country-toggle__all-contries {
     padding: 22px 25px 20px;
+  }
+
+  .country-toggle__contries-list {
+    display: none;
+
+    &--selected {
+      display: block;
+    }
   }
 
   .country-toggle__letter-list {
@@ -126,7 +135,7 @@
 
 .country-toggle__container {
   @media (min-width: $tablet-width) {
-    padding: 35px 55px 33px 27px;
+    padding: 35px 33px 33px 27px;
   }
 
   @media (min-width: $desktop-width) {

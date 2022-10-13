@@ -223,12 +223,12 @@
     &::before {
       content: "";
       position: absolute;
-      top: 2px;
+      top: 7px;
       right: 0;
-      width: 16px;
-      height: 16px;
-      background-image: url("../img/svg/filter-close.svg");
-      background-size: 16px;
+      width: 30px;
+      height: 8px;
+      background-image: url("../img/svg/dots.svg");
+      background-size: 30px 8px;
       background-repeat: no-repeat;
     }
   }
@@ -237,12 +237,12 @@
     &::before {
       content: "";
       position: absolute;
-      top: 7px;
+      top: 2px;
       right: 0;
-      width: 30px;
-      height: 8px;
-      background-image: url("../img/svg/dots.svg");
-      background-size: 30px 8px;
+      width: 16px;
+      height: 16px;
+      background-image: url("../img/svg/filter-close.svg");
+      background-size: 16px;
       background-repeat: no-repeat;
     }
   }
