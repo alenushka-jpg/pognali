@@ -61,7 +61,7 @@
 .checkbox__input {
   position: absolute;
   left: 0;
-  top: 7px;
+  top: 0;
   display: block;
   width: 18px;
   height: 18px;
@@ -70,9 +70,47 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    top: 4px;
     width: 24px;
     height: 24px;
+  }
+}
+
+.checkbox__transport {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: $basic-while;
+
+  @media (min-width: $tablet-width) {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.checkbox__svg {
+  &--plane,
+  &--bus,
+  &--run {
+    fill: $special-blue-650;
+  }
+
+  &--bicycle {
+    fill: rgba($special-blue-650, 0.15) ;
+  }
+
+
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 22px;
+
+    &--run,
+    &--bicycle {
+      width: 29px;
+      height: 27px;
+    }
   }
 }
 

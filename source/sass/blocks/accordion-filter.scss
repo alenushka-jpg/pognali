@@ -154,9 +154,12 @@
   }
 
   @media (min-width: $tablet-width) {
-    .accordion-filter__transports,
     .accordion-filter__level {
       display: grid;
+    }
+
+    .accordion-filter__transports {
+      display: flex;
     }
   }
 }
@@ -197,6 +200,10 @@
     font-size: 20px;
     line-height: 20px;
     border-top: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 }
 
@@ -254,6 +261,7 @@
   list-style: none;
 
   @media (min-width: $tablet-width) {
+
     margin: 0;
     padding-top: 0;
   }

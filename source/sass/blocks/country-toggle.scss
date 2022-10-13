@@ -127,6 +127,10 @@
   @media (min-width: $desktop-width) {
     row-gap: 92px;
 
+    .country-toggle__contries-list {
+      display: block;
+    }
+
     .country-toggle__letter-list {
       display: none;
     }
