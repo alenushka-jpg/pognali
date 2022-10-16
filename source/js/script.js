@@ -195,25 +195,38 @@ for (let i = 0; i < letterTabs.length; i++) {
   });
 };
 
+// Пишет скрипт для отрисовки календаря
 
-const Calendar = function(calendarTable) {
+const date = new Date();
 
-  //Сохраняем идентификатор div
-  this.calendarTable = calendarTable;
+const renderCalendar = () => {
+  date.setDate(1);
 
-  // Дни недели с понедельника
-  this.DaysOfWeek = [
-    'Пн',
-    'Вт',
-    'Ср',
-    'Чт',
-    'Пт',
-    'Cб',
-    'Вс'
-  ];
+  const monthDays = document.querySelector(".days");
 
-  // Месяцы начиная с января
-  this.Months = [
+  const lastDay = new Date(
+    date.getFullYear(),
+    date.getMonth() + 1,
+    0
+  ).getDate();
+
+  const prevLastDay = new Date(
+    date.getFullYear(),
+    date.getMonth(),
+    0
+  ).getDate();
+
+  const firstDayIndex = date.getDay();
+
+  const lastDayIndex = new Date(
+    date.getFullYear(),
+    date.getMonth() + 1,
+    0
+  ).getDay();
+
+  const nextDays = 7 - lastDayIndex - 1;
+
+  const months = [
     'Январь',
     'Февраль',
     'Март',
@@ -228,131 +241,43 @@ const Calendar = function(calendarTable) {
     'Декабрь'
   ];
 
-  //Устанавливаем текущий месяц, год
-  const currentDate = new Date();
+  const calendarTitle =  document.querySelector(".calendar__title");
 
-  this.currentMonth = currentDate.getMonth('9');
-  this.currentYear = currentDate.getFullYear('22');
-  this.currentDay = currentDate.getDate('3');
-};
+  calendarTitle.innerHTML = months[date.getMonth()];
 
-// Переход к следующему месяцу
+  document.querySelector(".calendar__subtitle").innerHTML = new Date().getFullYear();
 
-Calendar.prototype.nextMonth = function() {
-  if (this.currentMonth == 11) {
-    this.currentMonth = 0;
-    this.currentYear = this.currentYear + 1;
-  } else {
-    this.currentMonth = this.currentMonth + 1;
+  let days = "";
+
+  for (let x = firstDayIndex; x > 0; x--) {
+    days += `<div class="prev-date">${prevLastDay - x + 1}</div>`;
   }
-  this.showCurrent();
-};
 
-// Переход к предыдущему месяцу
-Calendar.prototype.previousMonth = function() {
-  if ( this.currentMonth == 0 ) {
-    this.currentMonth = 11;
-    this.currentYear = this.currentYear - 1;
-  }
-  else {
-    this.currentMonth = this.currentMonth - 1;
-  }
-  this.showCurrent();
-};
-
-// Показать текущий месяц
-Calendar.prototype.showCurrent = function() {
-  this.showMonth(this.currentYear, this.currentMonth);
-};
-
-Calendar.prototype.showMonth = function(y, m) {
-  const currentDate = new Date(),
-  // Первый день недели в выбранном месяце
-  firstDayOfMonth = new Date(y, m, 7).getDay(),
-  // Последний день выбранного месяца
-  lastDateOfMonth =  new Date(y, m+1, 0).getDate(),
-  // Последний день предыдущего месяца
-  lastDayOfLastMonth = m == 0 ? new Date(y-1, 11, 0).getDate() : new Date(y, m, 0).getDate();
-
-  var table = '<table>';
-
-  // Запись выбранного месяца и года
-  table += '<thead><tr>';
-  table += '<td colspan="7">' + this.Months[m] + ' ' + y + '</td>';
-  table += '</tr></thead>';
-
-  // заголовок дней недели
-  table += '<tr class="days">';
-  for (var i = 0; i < this.DaysOfWeek.length; i++) {
-    table += '<td>' + this.DaysOfWeek[i] + '</td>';
-  }
-  table += '</tr>';
-
-  //Записываем дни
-  const im = 1;
-  do {
-    const dow = new Date(y, m, i).getDay();
-
-    // Начать новую строку в понедельник
-    if ( dow == 1 ) {
-      table += '<tr>';
-    }
-
-    // Если первый день недели не понедельник показать последние дни придедущего месяца
-    else if ( i == 1 ) {
-      table += '<tr>';
-
-      const k = lastDayOfLastMonth - firstDayOfMonth + 1;
-
-      for (let j = 0; j < firstDayOfMonth; j++) {
-        table += '<td class="not-current">' + k + '</td>';
-        k++;
-      }
-    }
-
-    // Записываем текущий день в цикл
-    const check = new Date();
-    const checkYear = check.getFullYear();
-    constcheckMonth = check.getMonth();
-    if (checkYear == this.currentYear && checkMonth == this.currentMonth && i == this.currentDay) {
-      table += '<td class="today">' + i + '</td>';
+  for (let i = 1; i <= lastDay; i++) {
+    if (
+      i === new Date().getDate() &&
+      date.getMonth() === new Date().getMonth()
+    ) {
+      days += `<div class="today">${i}</div>`;
     } else {
-      table += '<td class="normal">' + i + '</td>';
-    };
-
-    // закрыть строку в воскресенье
-    if ( dow == 0 ) {
-      table += '</tr>';
-    } // Если последний день месяца не воскресенье, показать первые дни следующего месяца
-    else if ( i == lastDateOfMonth ) {
-      const k = 1;
-      for (dow; dow < 7; dow++) {
-        table += '<td class="not-current">' + k + '</td>';
-        k++;
-      }
+      days += `<div class="day">${i}</div>`;
     }
-    i++;
-  } while (i <= lastDateOfMonth);
+  }
 
-  // Конец таблицы
-  table += '</table>';
-
-  // Записываем HTML в div
-  document.getElementById(this.calendarTable).innerHTML = html;
+  for (let j = 1; j <= nextDays; j++) {
+    days += `<div class="next-date">${j}</div>`;
+    monthDays.innerHTML = days;
+  }
 };
 
-// При загрузке окна
-window.onload = function() {
+document.querySelector(".prev").addEventListener("click", () => {
+  date.setMonth(date.getMonth() - 1);
+  renderCalendar();
+});
 
-  // Начать календарь
-  const c = new Cal("calendarTable");
-  c.showCurrent();
+document.querySelector(".next").addEventListener("click", () => {
+  date.setMonth(date.getMonth() + 1);
+  renderCalendar();
+});
 
-  // Привязываем кнопки «Следующий» и «Предыдущий»
-  getId('btnNext').onclick = function() {
-    c.nextMonth();
-  };
-  getId('btnPrev').onclick = function() {
-    c.previousMonth();
-  };
-}
+renderCalendar();

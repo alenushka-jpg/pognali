@@ -39,7 +39,7 @@
     }
   }
 
-  &:nth-child(2){
+  &:nth-child(2) {
     .type-of-transports__svg {
       fill: $special-blue-650;
 
@@ -49,7 +49,7 @@
     }
   }
 
-  &:nth-child(3){
+  &:nth-child(3) {
     .type-of-transports__svg {
       fill: $special-blue-650;
 
@@ -60,7 +60,7 @@
     }
   }
 
-  &:nth-child(4){
+  &:nth-child(4) {
     .type-of-transports__svg {
       fill: $special-blue-650;
 
@@ -583,7 +583,7 @@
   }
 
   &:active {
-    color: rgba($special-blue-800, 0.3)
+    color: rgba($special-blue-800, 0.3);
   }
 
   @media (min-width: $tablet-width) {

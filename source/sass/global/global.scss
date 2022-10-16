@@ -68,35 +68,80 @@ img {
   overflow: hidden;
 }
 
-// .svg-transport {
-//   &--accordion {
-//     .svg-transport,
-//     .svg-transport svg,
-//     .svg-transport svg {
-//       fill: $special-blue-650;
-//     }
-//   }
+.container-wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-//   @media (min-width: $tablet-width) {
-//     width: 44px;
-//     height: 44px;
+.calendar-wrapper {
+  width: 45rem;
+  height: 52rem;
+}
 
-//     svg {
-//       width: 23px;
-//       height: 22px;
-//     }
+.weekdays {
+  width: 100%;
+  height: 5rem;
+  padding: 0 0.4rem;
+  display: flex;
+  align-items: center;
+}
 
-//     &--profile {
-//       width: 30px;
-//       height: 30px;
-//       margin-left: auto;
-//       background-color: inherit;
-//     }
+.weekdays li {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  width: calc(44.2rem / 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
 
-//     &--bicycle svg,
-//     &--run svg {
-//       width: 29px;
-//       height: 27px;
-//     }
-//   }
+.date {
+  display: flex;
+  align-items: center;
+}
+
+.days {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.2rem;
+}
+
+.days div {
+  font-size: 1.4rem;
+  margin: 0.3rem;
+  width: calc(40.2rem / 7);
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+  transition: background-color 0.2s;
+}
+
+// .days div:hover:not(.today) {
+//   background-color: #262626;
+//   border: 0.2rem solid #777;
+//   cursor: pointer;
 // }
+
+.prev-date,
+.next-date {
+  opacity: 0.5;
+}
+
+.today {
+  background-color: #167e56;
+}
+
+.calendar__subtitle {
+  margin: 0;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
