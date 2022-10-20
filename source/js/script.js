@@ -202,7 +202,7 @@ const date = new Date();
 const renderCalendar = () => {
   date.setDate(1);
 
-  const monthDays = document.querySelector(".days");
+  const monthDays = document.querySelector(".calendar__list");
 
   const lastDay = new Date(
     date.getFullYear(),
@@ -241,31 +241,52 @@ const renderCalendar = () => {
     'Декабрь'
   ];
 
-  const calendarTitle =  document.querySelector(".calendar__title");
+  const calendarTitle = document.querySelector(".calendar__title");
+  const calendarSubtitle = document.querySelector(".calendar__subtitle");
 
   calendarTitle.innerHTML = months[date.getMonth()];
-
-  document.querySelector(".calendar__subtitle").innerHTML = new Date().getFullYear();
+  calendarSubtitle.innerHTML = new Date().getFullYear();
 
   let days = "";
 
   for (let x = firstDayIndex; x > 0; x--) {
-    days += `<div class="prev-date">${prevLastDay - x + 1}</div>`;
+    days +=
+    `<li class="calendar__item">
+      <label class="calendar__label calendar__label--prev">
+        <input class="calendar__input visually-hidden" type="radio" name="calendar__number">
+        <span class="calendar__prev-date">${prevLastDay - x + 1}</span>
+      </label>
+    </li>`;
   }
 
   for (let i = 1; i <= lastDay; i++) {
-    if (
-      i === new Date().getDate() &&
-      date.getMonth() === new Date().getMonth()
-    ) {
-      days += `<div class="today">${i}</div>`;
+    if (i === new Date().getDate() && date.getMonth() === new Date().getMonth()) {
+      days +=
+      `<li class="calendar__item">
+        <label class="calendar__label calendar__label--current-today">
+          <input class="calendar__input visually-hidden" type="radio" name="calendar__number">
+          <span class="calendar__today">${i}</span>
+        </label>
+      </li>`;
     } else {
-      days += `<div class="day">${i}</div>`;
+      days +=
+      `<li class="calendar__item">
+        <label class="calendar__label calendar__label--current-days">
+          <input class="calendar__input visually-hidden" type="radio" name="calendar__number">
+          <span class="calendar__day">${i}</span>
+        </label>
+      </li>`;
     }
   }
 
   for (let j = 1; j <= nextDays; j++) {
-    days += `<div class="next-date">${j}</div>`;
+    days +=
+    `<li class="calendar__item">
+      <label class="calendar__label calendar__label--next">
+        <input class="calendar__input visually-hidden" type="radio" name="calendar__number">
+        <span class="calendar__next-date">${j}</span>
+      </label>
+    </li>`;
     monthDays.innerHTML = days;
   }
 };

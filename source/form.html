@@ -264,15 +264,15 @@
               </div>
 
               <div class="add-plan__calendar calendar">
-                <div class="calendar__container container-wrapper">
-                  <div class="calendar-wrapper">
-                    <div class="month calendar__header">
+                <div class="calendar__container">
+                  <div class="calendar__table">
+                    <div class="calendar__header">
                       <button class="calendar__button calendar__button--back prev" type="button">
                         <svg width="15" height="21">
                           <use xlink:href="./img/sprite.svg#arrow-back"></use>
                         </svg>
                       </button>
-                      <div class="date">
+                      <div class="calendar__date">
                         <p class="calendar__title"></p>
                         <p class="calendar__subtitle"></p>
                       </div>
@@ -282,7 +282,10 @@
                         </svg>
                       </button>
                     </div>
-                    <ul class="weekdays ">
+                    <ul class="calendar__weekdays">
+                      <li class="calendar__day-of-week calendar__day-of-week--weekends">В
+                        <span class="calendar__second-letter">с</span>
+                      </li>
                       <li class="calendar__day-of-week">П
                         <span class="calendar__second-letter">н</span>
                       </li>
@@ -301,307 +304,18 @@
                       <li class="calendar__day-of-week calendar__day-of-week--weekends">С
                         <span class="calendar__second-letter">б</span>
                       </li>
-                      <li class="calendar__day-of-week calendar__day-of-week--weekends">В
-                        <span class="calendar__second-letter">с</span>
+
+                    </ul>
+                    <ul class="calendar__list">
+                      <li class="calendar__item">
+                        <label class="calendar__label">
+                          <input class="calendar__input visually-hidden" type="radio" name="calendar__number">
+                          <span class="calendar__days"></span>
+                        </label>
                       </li>
                     </ul>
-                    <div class="days"></div>
                   </div>
                 </div>
-              </div>
-                <!-- <table class="calendar__table">
-                  <thead class="calendar__table-thead">
-                    <tr class="calendar__table-row">
-                      <th class="calendar__day-of-week">П
-                        <span class="calendar__second-letter">н</span>
-                      </th>
-                      <th class="calendar__day-of-week">В
-                        <span class="calendar__second-letter">т</span>
-                      </th>
-                      <th class="calendar__day-of-week">С
-                        <span class="calendar__second-letter">р</span>
-                      </th>
-                      <th class="calendar__day-of-week">Ч
-                        <span class="calendar__second-letter">т</span>
-                      </th>
-                      <th class="calendar__day-of-week">П
-                        <span class="calendar__second-letter">т</span>
-                      </th>
-                      <th class="calendar__day-of-week calendar__day-of-week--weekends">С
-                        <span class="calendar__second-letter">б</span>
-                      </th>
-                      <th class="calendar__day-of-week calendar__day-of-week--weekends">В
-                        <span class="calendar__second-letter">с</span>
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody class="calendar__table-body">
-                    <tr class="calendar__table-row">
-                      <td class="calendar__table-cell">
-                        <label class="calendar__label">
-                          <input class="calendar__input visually-hidden" type="checkbox" disabled>
-                          <span class="calendar__number">23</span>
-                        </label>
-                      </td>
-                      <td class="calendar__table-cell">
-                        <label class="calendar__label">
-                          <input class="calendar__input visually-hidden" type="checkbox" disabled>
-                          <span class="calendar__number">24</span>
-                        </label>
-                      </td>
-                      <td class="calendar__table-cell">
-                        <label class="calendar__label">
-                          <input class="calendar__input visually-hidden" type="checkbox" disabled>
-                          <span class="calendar__number">25</span>
-                        </label>
-                      </td>
-                      <td class="calendar__table-cell">
-                        <label class="calendar__label">
-                          <input class="calendar__input visually-hidden" type="checkbox" disabled>
-                          <span class="calendar__number">26</span>
-                        </label>
-                      </td>
-                      <td class="calendar__table-cell">
-                        <label class="calendar__label">
-                          <input class="calendar__input visually-hidden" type="checkbox" disabled>
-                          <span class="calendar__number">27</span>
-                        </label>
-                      </td>
-                      <td class="calendar__table-cell">
-                        <label class="calendar__label">
-                          <input class="calendar__input visually-hidden" type="checkbox" disabled>
-                          <span class="calendar__number">28</span>
-                        </label>
-                      </td>
-                      <td class="calendar__table-cell">
-                        <label class="calendar__label">
-                          <input class="calendar__input visually-hidden" type="checkbox" disabled>
-                          <span class="calendar__number">1</span>
-                        </label>
-                      </td>
-                    </tr>
-                    <tr class="calendar__table-row">
-                      <td class="calendar__table-cell">
-                        <label class="calendar__label">
-                          <input class="calendar__input visually-hidden" type="checkbox" disabled>
-                          <span class="calendar__number">2</span>
-                        </label>
-                      </td>
-                      <td class="calendar__table-cell">
-                        <label class="calendar__label">
-                          <input class="calendar__input visually-hidden" type="checkbox" disabled>
-                          <span class="calendar__number">3</span>
-                        </label>
-                      </td>
-                      <td class="calendar__table-cell">
-                        <label class="calendar__label">
-                          <input class="calendar__input visually-hidden" type="checkbox" disabled>
-                          <span class="calendar__number">4</span>
-                        </label>
-                      </td>
-                      <td class="calendar__table-cell">
-                        <label class="calendar__label">
-                          <input class="calendar__input visually-hidden" type="checkbox" disabled>
-                          <span class="calendar__number">5</span>
-                        </label>
-                      </td>
-                      <td class="calendar__table-cell">
-                        <label class="calendar__label">
-                          <input class="calendar__input visually-hidden" type="checkbox" disabled>
-                          <span class="calendar__number">6</span>
-                        </label>
-                      </td>
-                      <td class="calendar__table-cell">
-                        <label class="calendar__label">
-                          <input class="calendar__input visually-hidden" type="checkbox" disabled>
-                          <span class="calendar__number">7</span>
-                        </label>
-                      </td>
-                      <td class="calendar__table-cell">
-                        <label class="calendar__label">
-                          <input class="calendar__input visually-hidden" type="checkbox" disabled>
-                          <span class="calendar__number">8</span>
-                        </label>
-                      </td>
-                    </tr>
-                    <tr class="calendar__table-row">
-                      <td class="calendar__table-cell">
-                        <label class="calendar__label">
-                          <input class="calendar__input visually-hidden" type="checkbox" disabled>
-                          <span class="calendar__number">9</span>
-                        </label>
-                      </td>
-                      <td class="calendar__table-cell">
-                        <label class="calendar__label">
-                          <input class="calendar__input visually-hidden" type="checkbox" disabled>
-                          <span class="calendar__number">10</span>
-                        </label>
-                      </td>
-                      <td class="calendar__table-cell">
-                        <label class="calendar__label">
-                          <input class="calendar__input visually-hidden" type="checkbox" disabled>
-                          <span class="calendar__number">11</span>
-                        </label>
-                      </td>
-                      <td class="calendar__table-cell">
-                        <label class="calendar__label">
-                          <input class="calendar__input visually-hidden" type="checkbox" disabled>
-                          <span class="calendar__number">12</span>
-                        </label>
-                      </td>
-                      <td class="calendar__table-cell">
-                        <label class="calendar__label">
-                          <input class="calendar__input visually-hidden" type="checkbox" disabled>
-                          <span class="calendar__number">13</span>
-                        </label>
-                      </td>
-                      <td class="calendar__table-cell">
-                        <label class="calendar__label">
-                          <input class="calendar__input visually-hidden" type="checkbox" disabled>
-                          <span class="calendar__number">14</span>
-                        </label>
-                      </td>
-                      <td class="calendar__table-cell">
-                        <label class="calendar__label">
-                          <input class="calendar__input visually-hidden" type="checkbox" disabled>
-                          <span class="calendar__number">15</span>
-                        </label>
-                      </td>
-                    </tr>
-                    <tr class="calendar__table-row">
-                      <td class="calendar__table-cell">
-                        <label class="calendar__label">
-                          <input class="calendar__input visually-hidden" type="checkbox" disabled>
-                          <span class="calendar__number">16</span>
-                        </label>
-                      </td>
-                      <td class="calendar__table-cell">
-                        <label class="calendar__label">
-                          <input class="calendar__input visually-hidden" type="checkbox" disabled>
-                          <span class="calendar__number">17</span>
-                        </label>
-                      </td>
-                      <td class="calendar__table-cell">
-                        <label class="calendar__label">
-                          <input class="calendar__input visually-hidden" type="checkbox" disabled>
-                          <span class="calendar__number">18</span>
-                        </label>
-                      </td>
-                      <td class="calendar__table-cell">
-                        <label class="calendar__label">
-                          <input class="calendar__input visually-hidden" type="checkbox" disabled>
-                          <span class="calendar__number">19</span>
-                        </label>
-                      </td>
-                      <td class="calendar__table-cell">
-                        <label class="calendar__label">
-                          <input class="calendar__input visually-hidden" type="checkbox" disabled>
-                          <span class="calendar__number">20</span>
-                        </label>
-                      </td>
-                      <td class="calendar__table-cell">
-                        <label class="calendar__label">
-                          <input class="calendar__input visually-hidden" type="checkbox" disabled>
-                          <span class="calendar__number">21</span>
-                        </label>
-                      </td>
-                      <td class="calendar__table-cell">
-                        <label class="calendar__label">
-                          <input class="calendar__input visually-hidden" type="checkbox" disabled>
-                          <span class="calendar__number">22</span>
-                        </label>
-                      </td>
-                    </tr>
-                    <tr class="calendar__table-row">
-                      <td class="calendar__table-cell">
-                        <label class="calendar__label">
-                          <input class="calendar__input visually-hidden" type="checkbox" disabled>
-                          <span class="calendar__number">23</span>
-                        </label>
-                      </td>
-                      <td class="calendar__table-cell">
-                        <label class="calendar__label">
-                          <input class="calendar__input visually-hidden" type="checkbox" disabled>
-                          <span class="calendar__number">24</span>
-                        </label>
-                      </td>
-                      <td class="calendar__table-cell">
-                        <label class="calendar__label">
-                          <input class="calendar__input visually-hidden" type="checkbox" disabled>
-                          <span class="calendar__number">25</span>
-                        </label>
-                      </td>
-                      <td class="calendar__table-cell">
-                        <label class="calendar__label">
-                          <input class="calendar__input visually-hidden" type="checkbox" checked>
-                          <span class="calendar__number">26</span>
-                        </label>
-                      </td>
-                      <td class="calendar__table-cell">
-                        <label class="calendar__label">
-                          <input class="calendar__input visually-hidden" type="checkbox" checked>
-                          <span class="calendar__number">27</span>
-                        </label>
-                      </td>
-                      <td class="calendar__table-cell">
-                        <label class="calendar__label">
-                          <input class="calendar__input visually-hidden" type="checkbox" checked>
-                          <span class="calendar__number">28</span>
-                        </label>
-                      </td>
-                      <td class="calendar__table-cell">
-                        <label class="calendar__label">
-                          <input class="calendar__input visually-hidden" type="checkbox">
-                          <span class="calendar__number">29</span>
-                        </label>
-                      </td>
-                    </tr>
-                    <tr class="calendar__table-row">
-                      <td class="calendar__table-cell">
-                        <label class="calendar__label">
-                          <input class="calendar__input visually-hidden" type="checkbox">
-                          <span class="calendar__number">30</span>
-                        </label>
-                      </td>
-                      <td class="calendar__table-cell">
-                        <label class="calendar__label">
-                          <input class="calendar__input visually-hidden" type="checkbox">
-                          <span class="calendar__number">31</span>
-                        </label>
-                      </td>
-                      <td class="calendar__table-cell">
-                        <label class="calendar__label">
-                          <input class="calendar__input visually-hidden" type="checkbox">
-                          <span class="calendar__number">1</span>
-                        </label>
-                      </td>
-                      <td class="calendar__table-cell">
-                        <label class="calendar__label">
-                          <input class="calendar__input visually-hidden" type="checkbox">
-                          <span class="calendar__number">2</span>
-                        </label>
-                      </td>
-                      <td class="calendar__table-cell">
-                        <label class="calendar__label">
-                          <input class="calendar__input visually-hidden" type="checkbox">
-                          <span class="calendar__number">3</span>
-                        </label>
-                      </td>
-                      <td class="calendar__table-cell">
-                        <label class="calendar__label">
-                          <input class="calendar__input visually-hidden" type="checkbox">
-                          <span class="calendar__number">4</span>
-                        </label>
-                      </td>
-                      <td class="calendar__table-cell">
-                        <label class="calendar__label">
-                          <input class="calendar__input visually-hidden" type="checkbox">
-                          <span class="calendar__number">5</span>
-                        </label>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table> -->
               </div>
               <a class="add-plan__button add-plan__button--next button" href="#step-two">
                 <span>Следующий шаг</span>
