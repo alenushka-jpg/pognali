@@ -79,9 +79,9 @@ exports.default = gulp.series(
 );
 
 const scripts = () => {
-  return gulp.src("source/js/script.js") // возьми файл с js
+  return gulp.src("source/js/**/*.js") // возьми файлы js
     .pipe(terser()) // js минифицированный
-    .pipe(rename("script.js")) // переименуй файл в "script.min.js"
+    // .pipe(rename("*.js")) // переименуй файл в "script.min.js"
     .pipe(gulp.dest("build/js")) // положи этот файл в "build/js"
     .pipe(sync.stream()) // обнови страницу, как при нажатии на F5
 }
