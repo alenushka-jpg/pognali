@@ -195,10 +195,10 @@ for (let i = 0; i < letterTabs.length; i++) {
 };
 
 
-var depth = document.querySelector(".value-level__depth");
-var line = document.querySelector(".value-level__line");
+const depth = document.querySelector(".value-level__depth");
+const line = document.querySelector(".value-level__line");
 
-var firstPin = {
+const firstPin = {
   pin: document.querySelector(".value-level__pin--first"),
   value: document.querySelector(".value-level__value--first"),
   label: document.querySelector(".value-level__label--first"),
@@ -217,8 +217,8 @@ var firstPin = {
           return x; }
 }
 
-var mx = 0;
-var secondPin = {
+const mx = 0;
+const secondPin = {
   pin: document.querySelector(".value-level__pin--second"),
   value: document.querySelector(".value-level__value--second"),
   label: document.querySelector(".value-level__label--second"),
@@ -242,11 +242,11 @@ var secondPin = {
           return x; }
 }
 
-var MIN = 0;
-var MAX = line.offsetWidth - firstPin.pin.offsetWidth;
-var maxValue = firstPin.value.getAttribute("data-max");
+const MIN = 0;
+const MAX = line.offsetWidth - firstPin.pin.offsetWidth;
+const maxValue = firstPin.value.getAttribute("data-max");
 
-var toValue = function (pin) {
+const toValue = function (pin) {
   if (pin.classList.contains("value-level__pin--first")) {
     return firstPin.value;
   }
@@ -255,25 +255,25 @@ var toValue = function (pin) {
   }
 }
 
-var sliderHandler = function (evt) {
+const sliderHandler = function (evt) {
   evt.preventDefault();
 
-  var mouseMoveHandler = function (em) {
+  const mouseMoveHandler = function (em) {
     em.preventDefault();
 
     if (evt.target.classList.contains("value-level__pin--first")) {
-      var x = firstPin.pin.offsetLeft + em.movementX;
+      const x = firstPin.pin.offsetLeft + em.movementX;
       x = firstPin.getX(x);
       firstPin.value.value = Math.floor(x / MAX * maxValue);
     }
     else {
-      var x = secondPin.pin.offsetLeft + em.movementX;
+      const x = secondPin.pin.offsetLeft + em.movementX;
       x = secondPin.getX(x, em.movementX);
       secondPin.value.value = Math.floor(x / MAX * maxValue);
     }
   }
 
-  var mouseUpHandler = function (eu) {
+  const mouseUpHandler = function (eu) {
     eu.preventDefault();
     document.removeEventListener("mousemove", mouseMoveHandler);
     document.removeEventListener("mouseup", mouseUpHandler);
@@ -283,20 +283,20 @@ var sliderHandler = function (evt) {
   document.addEventListener("mouseup", mouseUpHandler);
 }
 
-var mobileSliderHandler = function (evt) {
+const mobileSliderHandler = function (evt) {
   evt.preventDefault();
 
-  var touchStart = evt.changedTouches[0].pageX;
+  const touchStart = evt.changedTouches[0].pageX;
 
-  var touchMoveHandler = function (tm) {
-    var touchCurrent = tm.changedTouches[0].pageX - touchStart;
+  const touchMoveHandler = function (tm) {
+    const touchCurrent = tm.changedTouches[0].pageX - touchStart;
     if (evt.target.classList.contains("value-level__pin--first")) {
-      var x = firstPin.pin.offsetLeft + touchCurrent;
+      const x = firstPin.pin.offsetLeft + touchCurrent;
       x = firstPin.getX(x);
       firstPin.value.value = Math.floor(x / MAX * maxValue);
     }
     else {
-      var x = secondPin.pin.offsetLeft + touchCurrent;
+      const x = secondPin.pin.offsetLeft + touchCurrent;
       x = secondPin.getX(x, touchCurrent);
       secondPin.value.value = Math.floor(x / MAX * maxValue);
     }
@@ -304,7 +304,7 @@ var mobileSliderHandler = function (evt) {
     touchStart = tm.changedTouches[0].pageX;
   }
 
-  var touchEndHandler = function (te) {
+  const touchEndHandler = function (te) {
     te.preventDefault();
 
     document.removeEventListener("touchmove", touchMoveHandler);
@@ -315,16 +315,16 @@ var mobileSliderHandler = function (evt) {
   document.addEventListener("touchend", touchEndHandler);
 }
 
-var numberChange = function (index) {
+const numberChange = function (index) {
   if (index === 0) {
-    var x = firstPin.value.value * MAX / maxValue;
+    const x = firstPin.value.value * MAX / maxValue;
     x = firstPin.getX(x);
     if (x < (firstPin.value.value * MAX / maxValue)) {
       firstPin.value.value = secondPin.value.value;
     }
   }
   else {
-    var x = secondPin.value.value * MAX / maxValue;
+    const x = secondPin.value.value * MAX / maxValue;
     x = secondPin.getX(x);
     if (x > (secondPin.value.value * MAX / maxValue)) {
       secondPin.value.value = firstPin.value.value;
@@ -332,7 +332,7 @@ var numberChange = function (index) {
   }
 };
 
-var initSlider = function () {
+const initSlider = function () {
   MAX = line.offsetWidth - firstPin.pin.offsetWidth;
   firstPin.getX(firstPin.value.value * MAX / maxValue);
   secondPin.getX(secondPin.value.value * MAX / maxValue);
@@ -359,7 +359,7 @@ document.querySelectorAll(".value-level__pin").forEach(function (pin, index) {
 
 window.addEventListener("resize", function () {
   if (currentDevice !== getCurrentDevice()) {
-    var currentFilterItem = line.closest(".filter__category");
+    const currentFilterItem = line.closest(".filter__category");
     if (!currentFilterItem.classList.contains("filter__category--active")) {
       currentFilterItem.classList.toggle("filter__category--active");
       initSlider();
