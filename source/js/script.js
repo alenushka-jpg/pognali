@@ -372,4 +372,3 @@ window.addEventListener("resize", function () {
 })
 
 initSlider();
-
