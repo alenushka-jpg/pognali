@@ -241,11 +241,8 @@ const renderCalendar = () => {
     'Декабрь'
   ];
 
-  const calendarTitle = document.querySelector(".calendar__title");
-  const calendarSubtitle = document.querySelector(".calendar__subtitle");
-
-  calendarTitle.innerHTML = months[date.getMonth()];
-  calendarSubtitle.innerHTML = new Date().getFullYear();
+  document.querySelector(".calendar__title").innerHTML = months[date.getMonth()];
+  document.querySelector(".calendar__subtitle").innerHTML = new Date().getFullYear();
 
   let days = "";
 

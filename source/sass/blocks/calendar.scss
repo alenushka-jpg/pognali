@@ -94,7 +94,7 @@
   align-items: center;
   justify-content: center;
   height: 100%;
-  width: calc(100%/7);
+  width: calc(100% / 7);
   padding-left: 17px;
   padding-right: 17px;
   font-weight: 400;
@@ -137,7 +137,7 @@
 .calendar__item {
   display: flex;
   height: 31px;
-  width: calc(100%/7);
+  width: calc(100% / 7);
   text-shadow: 0 0.3rem 0.5rem rgba($basic-black, 0.5);
   border: 1px solid $special-blue-120;
 
