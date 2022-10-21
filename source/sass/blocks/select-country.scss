@@ -15,7 +15,7 @@
       width: 1px;
       height: 332px;
       background-color: $special-blue-70;
-      background-image: linear-gradient(to top, $basic-while, transparent);
+      background-image: linear-gradient(to top, $basic-white, transparent);
     }
   }
 
@@ -124,7 +124,7 @@
   .select-country__button {
     padding-left: 15px;
     letter-spacing: 0.02em;
-    color: $basic-while;
+    color: $basic-white;
     background-color: $special-blue-650;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
@@ -141,7 +141,7 @@
   }
 
   .select-country__close-svg {
-    fill: $basic-while;
+    fill: $basic-white;
     width: 12px;
     height: 10px;
   }
@@ -189,7 +189,7 @@
     &::before {
       width: 52px;
       height: 36px;
-      background-image: linear-gradient(to left, $basic-while 68%, rgba(255, 255, 255, 0.3) 90%);
+      background-image: linear-gradient(to left, $basic-white 68%, rgba(255, 255, 255, 0.3) 90%);
     }
 
     &::after {
@@ -318,7 +318,7 @@
   position: absolute;
   top: 42px;
   border: 1px solid $special-blue-120;
-  background-color: $basic-while;
+  background-color: $basic-white;
   box-shadow: 0 8px 16px rgba($special-blue-450, 0.18);
   z-index: 10;
 
@@ -348,7 +348,7 @@
     height: 8px;
     border-radius: 50%;
     border: 1px solid $special-blue-120;
-    background-color: $basic-while;
+    background-color: $basic-white;
     z-index: 5;
   }
 

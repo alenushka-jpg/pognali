@@ -124,18 +124,18 @@
 
   &:hover {
     background-color: $special-blue-700;
-    color: $basic-while;
+    color: $basic-white;
 
     .address__button-arrow {
-      fill: $basic-while;
+      fill: $basic-white;
     }
   }
 
   &:active {
-    color: rgba($basic-while, 0.3);
+    color: rgba($basic-white, 0.3);
 
     .address__button-arrow {
-      fill: rgba($basic-while, 0.3);
+      fill: rgba($basic-white, 0.3);
     }
   }
 

@@ -29,7 +29,7 @@
 .page-header--active {
   .page-header__top {
     position: fixed;
-    background-color: $basic-while;
+    background-color: $basic-white;
     animation-name: fadeInUp;
     animation-duration: 1s;
     top: 0;
@@ -81,7 +81,7 @@
       max-width: 100%;
       padding-top: 0;
       padding-bottom: 0;
-      background-color: $basic-while;
+      background-color: $basic-white;
       animation-name: fadeInUp;
       animation-duration: 1s;
     }
@@ -167,7 +167,7 @@
     position: fixed;
     top: 0;
     padding-top: 19px;
-    background-color: $basic-while;
+    background-color: $basic-white;
   }
 
   .page-header__information {
@@ -232,7 +232,7 @@
   position: fixed;
   top: 53px;
   width: 100%;
-  background-color: $basic-while;
+  background-color: $basic-white;
   z-index: 20;
   padding-right: 25px;
   padding-left: 25px;
@@ -404,7 +404,7 @@
 }
 
 .page-header__open {
-  fill: $basic-while;
+  fill: $basic-white;
 }
 
 @keyframes fadeInUp {

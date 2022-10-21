@@ -161,7 +161,7 @@
 
   &--current-today {
     background-color: $special-blue-650;
-    color: $basic-while;
+    color: $basic-white;
   }
 
   &--prev,
@@ -207,7 +207,7 @@
 }
 
 .calendar__input:checked + .calendar__days {
-  color: $basic-while;
+  color: $basic-white;
   background-color: $special-blue-650;
 }
 
@@ -215,6 +215,6 @@
   background-color: $special-blue-650;
   outline: 4px solid $special-orange;
   outline-offset: -3px;
-  color: $basic-while;
+  color: $basic-white;
   cursor: pointer;
 }

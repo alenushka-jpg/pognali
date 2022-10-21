@@ -177,7 +177,7 @@
   height: 41px;
   border-right: 1px solid $special-blue-120;
   border-bottom: 1px solid $special-blue-120;
-  background-color: $basic-while;
+  background-color: $basic-white;
 
   &:nth-child(5n) {
     border-right: none;
@@ -252,7 +252,7 @@
 .country-toggle__label--selected {
   .country-toggle__letter {
     background-color: $special-blue-650;
-    color: $basic-while;
+    color: $basic-white;
   }
 }
 

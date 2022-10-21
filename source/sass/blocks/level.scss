@@ -19,7 +19,7 @@
 
 .level svg {
   position: absolute;
-  fill: $basic-while;
+  fill: $basic-white;
 
   @media (min-width: $tablet-width) {
     width: 60px;
@@ -33,7 +33,7 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 24px;
-  color: $basic-while;
+  color: $basic-white;
   z-index: 1;
 
   &::after {
@@ -51,7 +51,7 @@
   margin: 0;
   font-size: 14px;
   line-height: 14px;
-  color: $basic-while;
+  color: $basic-white;
   z-index: 1;
 }
 
@@ -106,7 +106,7 @@
 
     .level__number,
     .level__text {
-      color: $basic-while;
+      color: $basic-white;
     }
   }
 }
