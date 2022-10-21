@@ -264,7 +264,7 @@ const renderCalendar = () => {
       days +=
       `<li class="calendar__item">
         <label class="calendar__label calendar__label--current-today">
-          <input class="calendar__input visually-hidden" type="radio" name="calendar__number">
+          <input class="calendar__input visually-hidden" type="checkbox" name="calendar__number">
           <span class="calendar__today">${i}</span>
         </label>
       </li>`;
@@ -272,8 +272,8 @@ const renderCalendar = () => {
       days +=
       `<li class="calendar__item">
         <label class="calendar__label calendar__label--current-days">
-          <input class="calendar__input visually-hidden" type="radio" name="calendar__number">
-          <span class="calendar__day">${i}</span>
+          <input class="calendar__input visually-hidden" type="checkbox" name="calendar__number">
+          <span class="calendar__days">${i}</span>
         </label>
       </li>`;
     }
@@ -283,7 +283,7 @@ const renderCalendar = () => {
     days +=
     `<li class="calendar__item">
       <label class="calendar__label calendar__label--next">
-        <input class="calendar__input visually-hidden" type="radio" name="calendar__number">
+        <input class="calendar__input visually-hidden" type="checkbox" name="calendar__number">
         <span class="calendar__next-date">${j}</span>
       </label>
     </li>`;
