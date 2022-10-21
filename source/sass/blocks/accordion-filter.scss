@@ -210,6 +210,14 @@
   }
 }
 
+.accordion-filter__colon {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
 .accordion-filter__button {
   position: relative;
   padding: 14px 10px 10px;

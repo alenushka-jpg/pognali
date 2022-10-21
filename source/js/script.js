@@ -286,17 +286,17 @@ const sliderHandler = function (evt) {
 const mobileSliderHandler = function (evt) {
   evt.preventDefault();
 
-  const touchStart = evt.changedTouches[0].pageX;
+  var touchStart = evt.changedTouches[0].pageX;
 
-  const touchMoveHandler = function (tm) {
-    const touchCurrent = tm.changedTouches[0].pageX - touchStart;
+  var touchMoveHandler = function (tm) {
+    var touchCurrent = tm.changedTouches[0].pageX - touchStart;
     if (evt.target.classList.contains("value-level__pin--first")) {
-      const x = firstPin.pin.offsetLeft + touchCurrent;
+      let x = firstPin.pin.offsetLeft + touchCurrent;
       x = firstPin.getX(x);
       firstPin.value.value = Math.floor(x / MAX * maxValue);
     }
     else {
-      const x = secondPin.pin.offsetLeft + touchCurrent;
+      let x = secondPin.pin.offsetLeft + touchCurrent;
       x = secondPin.getX(x, touchCurrent);
       secondPin.value.value = Math.floor(x / MAX * maxValue);
     }
@@ -304,7 +304,7 @@ const mobileSliderHandler = function (evt) {
     touchStart = tm.changedTouches[0].pageX;
   }
 
-  const touchEndHandler = function (te) {
+  var touchEndHandler = function (te) {
     te.preventDefault();
 
     document.removeEventListener("touchmove", touchMoveHandler);
@@ -315,16 +315,16 @@ const mobileSliderHandler = function (evt) {
   document.addEventListener("touchend", touchEndHandler);
 }
 
-const numberChange = function (index) {
+var numberChange = function (index) {
   if (index === 0) {
-    const x = firstPin.value.value * MAX / maxValue;
+    let x = firstPin.value.value * MAX / maxValue;
     x = firstPin.getX(x);
     if (x < (firstPin.value.value * MAX / maxValue)) {
       firstPin.value.value = secondPin.value.value;
     }
   }
   else {
-    const x = secondPin.value.value * MAX / maxValue;
+    let x = secondPin.value.value * MAX / maxValue;
     x = secondPin.getX(x);
     if (x > (secondPin.value.value * MAX / maxValue)) {
       secondPin.value.value = firstPin.value.value;
@@ -332,7 +332,7 @@ const numberChange = function (index) {
   }
 };
 
-const initSlider = function () {
+var initSlider = function () {
   MAX = line.offsetWidth - firstPin.pin.offsetWidth;
   firstPin.getX(firstPin.value.value * MAX / maxValue);
   secondPin.getX(secondPin.value.value * MAX / maxValue);
@@ -357,9 +357,22 @@ document.querySelectorAll(".value-level__pin").forEach(function (pin, index) {
   })
 })
 
+var currentDevice = null;
+// matchMedia API
+var getCurrentDevice = function () {
+  if (window.matchMedia("(max-width: 767px)").matches) {
+    return "mobile";
+  }
+  else if (window.matchMedia("(min-width: 1440px)").matches) {
+    return "desktop";
+  }
+  return "tablet";
+}
+
+
 window.addEventListener("resize", function () {
   if (currentDevice !== getCurrentDevice()) {
-    const currentFilterItem = line.closest(".filter__category");
+    var currentFilterItem = line.closest(".filter__category");
     if (!currentFilterItem.classList.contains("filter__category--active")) {
       currentFilterItem.classList.toggle("filter__category--active");
       initSlider();
