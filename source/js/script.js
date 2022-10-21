@@ -194,7 +194,7 @@ for (let i = 0; i < letterTabs.length; i++) {
   });
 };
 
-
+// Скрипт счетчика с ползунком
 const depth = document.querySelector(".value-level__depth");
 const line = document.querySelector(".value-level__line");
 
@@ -243,7 +243,7 @@ const secondPin = {
 }
 
 const MIN = 0;
-const MAX = line.offsetWidth - firstPin.pin.offsetWidth;
+let MAX = line.offsetWidth - firstPin.pin.offsetWidth;
 const maxValue = firstPin.value.getAttribute("data-max");
 
 const toValue = function (pin) {
@@ -262,12 +262,12 @@ const sliderHandler = function (evt) {
     em.preventDefault();
 
     if (evt.target.classList.contains("value-level__pin--first")) {
-      const x = firstPin.pin.offsetLeft + em.movementX;
+      let x = firstPin.pin.offsetLeft + em.movementX;
       x = firstPin.getX(x);
       firstPin.value.value = Math.floor(x / MAX * maxValue);
     }
     else {
-      const x = secondPin.pin.offsetLeft + em.movementX;
+      let x = secondPin.pin.offsetLeft + em.movementX;
       x = secondPin.getX(x, em.movementX);
       secondPin.value.value = Math.floor(x / MAX * maxValue);
     }
