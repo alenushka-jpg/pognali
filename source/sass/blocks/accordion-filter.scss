@@ -148,9 +148,12 @@
     flex-direction: row;
   }
 
-  .accordion-filter__transports,
+  .accordion-filter__transports {
+    display: flex;
+  }
+
   .accordion-filter__level {
-    display: none;
+    display: grid;
   }
 
   @media (min-width: $tablet-width) {
@@ -254,7 +257,7 @@
 }
 
 .accordion-filter__transports {
-  display: flex;
+  display: none;
   padding-top: 6px;
   padding-left: 0;
   margin: 0 1px 20px 0;
@@ -274,7 +277,7 @@
 }
 
 .accordion-filter__level {
-  display: grid;
+  display: none;
   grid-template-columns: 1fr 1fr;
 
   @media (min-width: $tablet-width) {

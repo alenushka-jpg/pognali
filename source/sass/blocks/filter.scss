@@ -47,7 +47,7 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 3fr 205px;
+    grid-template-columns: 3fr 230px;
     justify-content: start;
     grid-column: 1/-1;
   }
@@ -295,6 +295,15 @@
 
     .filter__region {
       grid-row: 2/3;
+    }
+
+    .filter__text--close {
+      &::before {
+        top: -2px;
+        width: 21.9px;
+        height: 24px;
+        background-size: 21px 24px;
+      }
     }
   }
 }

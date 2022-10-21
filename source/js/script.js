@@ -73,7 +73,7 @@ if (modalWindowClose) {
   modalWindowClose.addEventListener('click', e => {
     e.preventDefault();
     onCloseClick();
-  } );
+  });
 };
 
 // Скрипт для закрытия блока modal-window при клике на клавишу esc
@@ -90,15 +90,15 @@ window.addEventListener('keydown', evt => {
 
 function showCountrySelect() {
   countryToggle.classList.add('country-toggle--open');
-}
+};
 
 function hiddenCountrySelect() {
   countryToggle.classList.remove('country-toggle--open');
-}
+};
 
 function showCountryBackground() {
   fieldsetChoose.classList.add('select-country__fieldset--open');
-}
+};
 
 function hiddenCountryBackground() {
   fieldsetChoose.classList.remove('select-country__fieldset--open');
@@ -130,19 +130,19 @@ if (buttonCloseCountrySelect) {
 
 function showFilter() {
   filter.classList.toggle('filter--open');
-}
+};
 
 function hiddenFilter() {
   filter.classList.remove('filter--open');
-}
+};
 
 if(filterButtonToggle) {
   filterButtonToggle.addEventListener('click', showFilter);
-}
+};
 
 if(filterButtonBig) {
   filterButtonBig.addEventListener('click', hiddenFilter);
-}
+};
 
 // Скрипт для фиксированного меню
 
@@ -161,25 +161,24 @@ accordionToggle.forEach(function (array) {
     const parent = array.parentNode;
 
     parent.classList.toggle('accordion-filter__fieldset--open');
-  })
-})
+  });
+});
 
 // Закрытии блока modal-window при клике на overlay
 
 if (overlay) {
   overlay.addEventListener('click', hiddenModal);
-}
+};
 
 if (overlay) {
   overlay.addEventListener('click', bodyVisible);
-}
+};
 
 // Скрипт вкладок переключения стран
 
 // запускает цикл для каждой вкладки и добавляет на неё событие
 for (let i = 0; i < letterTabs.length; i++) {
   letterTabs[i].addEventListener('click', () => {
-
     // удаляет активный класс с вкладок
     for (let i = 0; i < letterTabs.length; i++) {
       letterTabs[i].classList.remove('country-toggle__label--selected');
