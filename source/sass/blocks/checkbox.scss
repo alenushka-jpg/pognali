@@ -90,6 +90,46 @@
   }
 }
 
+.checkbox--transport {
+  position: relative;
+
+  &:hover span {
+    display: block;
+  }
+}
+
+.checkbox--transport span {
+  position: absolute;
+  bottom: -65px;
+  left: 50%;
+  transform: translate(-50%);
+  display: none;
+  width: max-content;
+  padding: 18px 25px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  background-color: $special-blue-600;
+  color: $basic-white;
+  border-radius: 4px;
+  z-index: 50;
+}
+
+.checkbox--transport span::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -7px;
+  transform: translate(-50%);
+  display: block;
+  width: 14px;
+  height: 8px;
+  border: 7px solid transparent;
+  border-top: 0;
+  border-bottom: 8px solid $special-blue-600;
+}
+
 .checkbox__svg {
   &--plane,
   &--bus,
