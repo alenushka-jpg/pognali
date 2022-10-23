@@ -286,10 +286,10 @@ const sliderHandler = function (evt) {
 const mobileSliderHandler = function (evt) {
   evt.preventDefault();
 
-  var touchStart = evt.changedTouches[0].pageX;
+  let touchStart = evt.changedTouches[0].pageX;
 
-  var touchMoveHandler = function (tm) {
-    var touchCurrent = tm.changedTouches[0].pageX - touchStart;
+  const touchMoveHandler = function (tm) {
+    const touchCurrent = tm.changedTouches[0].pageX - touchStart;
     if (evt.target.classList.contains("value-level__pin--first")) {
       let x = firstPin.pin.offsetLeft + touchCurrent;
       x = firstPin.getX(x);
@@ -304,7 +304,7 @@ const mobileSliderHandler = function (evt) {
     touchStart = tm.changedTouches[0].pageX;
   }
 
-  var touchEndHandler = function (te) {
+  const touchEndHandler = function (te) {
     te.preventDefault();
 
     document.removeEventListener("touchmove", touchMoveHandler);
@@ -315,7 +315,7 @@ const mobileSliderHandler = function (evt) {
   document.addEventListener("touchend", touchEndHandler);
 }
 
-var numberChange = function (index) {
+const numberChange = function (index) {
   if (index === 0) {
     let x = firstPin.value.value * MAX / maxValue;
     x = firstPin.getX(x);
@@ -332,7 +332,7 @@ var numberChange = function (index) {
   }
 };
 
-var initSlider = function () {
+const initSlider = function () {
   MAX = line.offsetWidth - firstPin.pin.offsetWidth;
   firstPin.getX(firstPin.value.value * MAX / maxValue);
   secondPin.getX(secondPin.value.value * MAX / maxValue);
@@ -357,9 +357,9 @@ document.querySelectorAll(".value-level__pin").forEach(function (pin, index) {
   })
 })
 
-var currentDevice = null;
+const currentDevice = null;
 // matchMedia API
-var getCurrentDevice = function () {
+const getCurrentDevice = function () {
   if (window.matchMedia("(max-width: 767px)").matches) {
     return "mobile";
   }
@@ -372,11 +372,11 @@ var getCurrentDevice = function () {
 
 window.addEventListener("resize", function () {
   if (currentDevice !== getCurrentDevice()) {
-    var currentFilterItem = line.closest(".filter__category");
-    if (!currentFilterItem.classList.contains("filter__category--active")) {
-      currentFilterItem.classList.toggle("filter__category--active");
+    const currentFilterItem = line.closest(".accordion-filter__fieldset");
+    if (!currentFilterItem.classList.contains("accordion-filter__fieldset--open")) {
+      currentFilterItem.classList.toggle("accordion-filter__fieldset--open");
       initSlider();
-      currentFilterItem.classList.toggle("filter__category--active");
+      currentFilterItem.classList.toggle("accordion-filter__fieldset--open");
     }
     else {
       initSlider();
