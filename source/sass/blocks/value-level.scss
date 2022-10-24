@@ -129,11 +129,12 @@
   background-color: rgba($special-blue-650, 0.2);
 
   @media (min-width: $tablet-width) {
-    order: 0;
-    width: 281px;
-    height: 3px;
+    top: -18px;
     margin-top: -1px;
     margin-left: 6px;
+    width: 281px;
+    height: 3px;
+    order: 0;
   }
 
   @media (min-width: $desktop-width) {
