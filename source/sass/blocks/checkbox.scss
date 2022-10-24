@@ -28,6 +28,15 @@
   }
 }
 
+.checkbox--transport .checkbox__input:checked + .checkbox__svg::after {
+  fill: rgba($special-blue-650, 0.15);
+}
+
+.checkbox__svg::after {
+  opacity: 1;
+}
+
+
 .checkbox__label {
   font-size: 15px;
   line-height: 20px;
@@ -91,15 +100,7 @@
 }
 
 .checkbox__svg {
-  &--plane,
-  &--bus,
-  &--run {
-    fill: $special-blue-650;
-  }
-
-  &--bicycle {
-    fill: rgba($special-blue-650, 0.15);
-  }
+  fill: rgba($special-blue-650, 0.15);
 
   @media (min-width: $tablet-width) {
     width: 23px;

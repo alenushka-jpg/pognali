@@ -9,11 +9,9 @@ const labelPinFirst = document.querySelector(".value-level__label--first");
 const levelPinSecond = document.querySelector(".value-level__pin--second");
 const valuePinSecond = document.querySelector(".value-level__value--second");
 const labelPinSecond = document.querySelector(".value-level__label--second");
-const maxValue = firstPin.value.getAttribute("data-max");
 const mx = 0;
 const MIN = 0;
 const currentDevice = null;
-let MAX = line.offsetWidth - firstPin.pin.offsetWidth;
 
 const firstPin = {
   pin: levelPinFirst,
@@ -37,6 +35,9 @@ const firstPin = {
     return x;
   }
 }
+
+const maxValue = firstPin.value.getAttribute("data-max");
+let MAX = line.offsetWidth - firstPin.pin.offsetWidth;
 
 const secondPin = {
   pin: levelPinSecond,
