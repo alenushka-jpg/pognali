@@ -62,6 +62,15 @@
       height: 24px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 14px;
+
+    &::after {
+      left: 4px;
+      top: 0px;
+    }
+  }
 }
 
 .checkbox__input {

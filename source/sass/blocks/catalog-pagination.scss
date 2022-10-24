@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 77px;
+    padding-bottom: 70px;
   }
 }
 
@@ -135,6 +135,12 @@
     &::before {
       display: none;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 87px;
+    right: -14px;
+    top: -3px;
   }
 }
 
