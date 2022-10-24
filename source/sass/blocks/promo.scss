@@ -2,8 +2,8 @@
   display: grid;
   grid-template-columns: 1fr;
   background-color: $special-blue-850;
-  background-image: url("/img/traveller-illustration-mobile.png"),
-    url("/img/globe-back-mobile.png");
+  background-image: url("../img/traveller-illustration-mobile.png"),
+    url("../img/globe-back-mobile.png");
   background-position: 80px 172px, 0 -60px;
   background-repeat: no-repeat;
 
@@ -12,8 +12,8 @@
     grid-template-columns: 1fr 1fr;
     row-gap: 38px;
     background-color: $special-blue-750;
-    background-image: url("/img/traveller-illustration-tablet.png"),
-      url("/img/globe-back-tablet.png");
+    background-image: url("../img/traveller-illustration-tablet.png"),
+      url("../img/globe-back-tablet.png");
     background-position: 72% 308px, center 254px;
     background-size: 372px 451px, 1479px 612px;
   }
@@ -21,8 +21,8 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr;
     background-color: $special-blue-790;
-    background-image: url("/img/traveller-illustration.png"),
-      url("/img/globe-back-desktop.png");
+    background-image: url("../img/traveller-illustration.png"),
+      url("../img/globe-back-desktop.png");
     background-size: 430px 640px, 100%;
     background-position: 60% 8px, 0 -102px;
   }
