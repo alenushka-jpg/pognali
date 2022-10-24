@@ -12,7 +12,7 @@
 
   @media (min-width: $tablet-width) {
     row-gap: 45px;
-    margin-bottom: 46px;
+    margin-bottom: 52px;
   }
 
   @media (min-width: $desktop-width) {
@@ -134,7 +134,7 @@
   grid-column: 2/4;
   grid-row: 1/2;
   padding-right: 39px;
-  margin-left: 10px;
+  margin-left: 16px;
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
@@ -142,8 +142,8 @@
 
   &::after {
     position: absolute;
-    left: -16px;
-    top: 4px;
+    right: 0;
+    top: 9px;
     content: "";
     width: 6px;
     height: 6px;
@@ -196,7 +196,7 @@
 
 .filter-profiles__like {
   position: relative;
-  left: -28px;
+  left: -21px;
   top: -9px;
   grid-column: 2/4;
   grid-row: 2/3;
@@ -296,7 +296,7 @@
 
 
 .filter-profiles__like-number {
-  padding: 5px 0;
+  padding: 9px 0 3px 6px;
   margin: 0;
   font-size: 14px;
   line-height: 16px;

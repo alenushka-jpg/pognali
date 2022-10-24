@@ -25,6 +25,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    top: 5px;
+
     &::after {
       top: 22px;
       left: 63px;

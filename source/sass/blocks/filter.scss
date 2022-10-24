@@ -107,6 +107,7 @@
   align-items: center;
   width: 24px;
   height: 17px;
+  font-family: $main-font;
   border: 0;
   background-color: inherit;
   cursor: pointer;
@@ -207,7 +208,8 @@
 
   @media (min-width: $tablet-width) {
     &--open {
-      padding-right: 15px;
+      padding-right: 25px;
+      padding-left: 19px;
 
       span {
         display: block;

@@ -3,8 +3,8 @@
   margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 102px;
-    margin-bottom: 44px;
+    padding-top: 59px;
+    margin-bottom: 86px;
   }
 
   @media (min-width: $desktop-width) {
@@ -39,6 +39,7 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
+    padding-left: 8px;
     margin-bottom: 68px;
     font-size: 30px;
     line-height: 30px;
@@ -74,7 +75,7 @@
     margin-bottom: 14px;
 
     &:first-of-type {
-      margin-bottom: 19px;
+      margin-bottom: 7px;
     }
 
     &:nth-of-type(2) {
@@ -85,9 +86,16 @@
       }
     }
 
+    &:nth-of-type(3) {
+      margin-bottom: 5px;
+    }
+
     &:nth-of-type(4n) {
+      margin-bottom: 3px;
+
       .accordion-filter__toggle {
         margin-right: -5px;
+        padding: 17px 0 16px 5px;
       }
     }
   }
@@ -188,7 +196,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    padding: 5px 0 16px;
+    padding: 7px 0 16px 5px;
     width: 127px;
     font-weight: 500;
     font-size: 20px;
@@ -233,7 +241,7 @@
     padding: 16px 14px 14px;
     font-size: 20px;
     line-height: 20px;
-    margin-top: 54px;
+    margin-top: 38px;
 
     &::before {
       position: absolute;
