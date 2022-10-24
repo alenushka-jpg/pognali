@@ -255,7 +255,7 @@
   line-height: 24px;
   color: $special-blue-650;
 
-  &--pogination {
+  &--pagination {
     &::after {
       content: "";
       position: absolute;
@@ -263,7 +263,7 @@
       bottom: 10px;
       width: 47px;
       height: 5px;
-      background-image: url("../img/svg/pogination.svg");
+      background-image: url("../img/svg/pagination.svg");
       background-repeat: no-repeat;
     }
   }
@@ -273,7 +273,7 @@
     font-size: 36px;
     line-height: 36px;
 
-    &--pogination {
+    &--pagination {
       margin-bottom: 56px;
     }
   }
@@ -281,7 +281,7 @@
   @media (min-width: $desktop-width) {
     padding-left: 6px;
 
-    &--pogination {
+    &--pagination {
       padding-left: 68px;
       margin-bottom: 55px;
     }

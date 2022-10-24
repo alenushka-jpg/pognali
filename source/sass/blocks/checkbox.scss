@@ -28,12 +28,16 @@
   }
 }
 
-.checkbox--transport .checkbox__input:checked + .checkbox__svg::after {
-  fill: rgba($special-blue-650, 0.15);
+.checkbox--transport .checkbox__input:checked + .checkbox__transport {
+  .checkbox__svg {
+    fill: $special-blue-650;
+  }
 }
 
-.checkbox__svg::after {
-  opacity: 1;
+.checkbox__transport {
+  .checkbox__svg {
+    opacity: 1;
+  }
 }
 
 
