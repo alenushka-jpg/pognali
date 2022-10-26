@@ -1,5 +1,3 @@
-// Пишет скрипт для отрисовки календаря
-
 const date = new Date();
 
 const renderCalendar = () => {
