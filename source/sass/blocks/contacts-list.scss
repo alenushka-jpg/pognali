@@ -82,6 +82,7 @@
       &--phone:focus {
         &::before {
           background-color: $special-orange-100;
+          transition: 0.5s;
         }
       }
 
@@ -89,6 +90,7 @@
       &--email:focus {
         &::before {
           background-color: $special-yellow-900;
+          transition: 0.5s;
         }
       }
 
@@ -198,6 +200,7 @@
 
     &:hover {
       color: $special-yellow-700;
+      transition: 0.5s;
 
       .contacts-list__svg {
         fill: $special-yellow-700;

@@ -11,10 +11,12 @@
 
   &:hover {
     opacity: 0.6;
+    transition: 0.5s;
   }
 
   &:active {
     opacity: 0.3;
+    transition: 0.5s;
   }
 
   @media (min-width: $tablet-width) {

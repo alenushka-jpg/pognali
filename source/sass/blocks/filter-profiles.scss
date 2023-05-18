@@ -97,6 +97,7 @@
   &:hover .filter-profiles__photo,
   &:focus .filter-profiles__photo {
     transform: scale(1.1);
+    transition: 0.5s;
   }
 
   @media (min-width: $tablet-width) {
@@ -248,6 +249,7 @@
   &:hover {
     &::before {
       background-color: $special-red-50;
+      transition: 0.5s;
     }
 
     svg {
@@ -582,6 +584,7 @@
 
   &:hover {
     background-color: $special-yellow-700;
+    transition: 0.5s;
   }
 
   &:active {

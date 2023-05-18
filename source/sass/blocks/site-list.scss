@@ -55,6 +55,7 @@
   &:focus[href] span {
     transform: translateY(-100%);
     color: $special-yellow-200;
+    transition: 0.5s;
   }
 
   &:active[href] span {
@@ -86,6 +87,7 @@
     line-height: 20px;
     color: $basic-white;
     transition: transform 0.3s;
+    transition: 0.5s;
 
     &::before {
       position: absolute;

@@ -259,6 +259,7 @@
   &--next {
     &:hover {
       background-color: $special-yellow-700;
+      transition: 0.5s;
     }
 
     &:active {
@@ -275,6 +276,7 @@
 
     &:hover {
       opacity: 0.7;
+      transition: 0.5s;
     }
 
     &:active {

@@ -157,6 +157,7 @@
 
   &:hover {
     color: rgba($basic-black, 0.6);
+    transition: 0.5s;
   }
 
   @media (min-width: $tablet-width) {

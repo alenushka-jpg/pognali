@@ -56,6 +56,7 @@
   &:hover .travel-cards__photo,
   &:focus .travel-cards__photo {
     transform: scale(1.1);
+    transition: 0.5s;
   }
 
   @media (min-width: $tablet-width) {

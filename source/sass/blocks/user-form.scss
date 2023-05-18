@@ -101,6 +101,7 @@
 
   &:hover {
     background-color: $special-blue-100;
+    transition: 0.5s;
   }
 
   &:active {
@@ -144,6 +145,7 @@
 
     &:hover {
       border: 1px solid $special-blue-300;
+      transition: 0.5s;
     }
 
     &:focus,
