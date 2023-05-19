@@ -1,4 +1,5 @@
 const header = document.querySelector('.page-header');
+const siteList = document.querySelector('.site-list');
 const burger = document.querySelector('.page-header__burger');
 const body = document.querySelector('.page__body');
 const modalWindow = document.querySelector('.modal-window');
@@ -146,11 +147,14 @@ if(filterButtonBig) {
 
 // Скрипт для фиксированного меню
 
+
 window.addEventListener('scroll', e => {
   if(pageYOffset > 200) {
     header.classList.add('page-header--active');
+    siteList.classList.add('site-list--active');
   } else {
     header.classList.remove('page-header--active');
+    siteList.classList.remove('site-list--active');
   };
 });
 

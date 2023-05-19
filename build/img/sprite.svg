@@ -1,4 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs>
+<clipPath id="clip0_13536_5310">
+<rect width="21.9028" height="24" fill="white" transform="matrix(0 -1 1 0 0 22.0807)"/>
+</clipPath>
+
 <clipPath id="clip0_16501:1216">
 <rect width="16.858" height="16.125" fill="white" transform="translate(0.329559 0.0625)"/>
 </clipPath>
@@ -60,6 +64,12 @@
 <circle cx="1.5" cy="1.5" r="1.5" fill="#192144"/>
 <circle cx="8.5" cy="1.5" r="1.5" fill="#192144"/>
 <circle cx="15.5" cy="1.5" r="1.5" fill="#192144"/>
+</symbol><symbol id="filter-close-tablet" viewBox="0 0 24 23">
+<g clip-path="url(#clip0_13536_5310)">
+<path d="M21 2.91573L3 19.3428" stroke="#192144" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3 2.91573L21 19.3428" stroke="#192144" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+
 </symbol><symbol id="filter-close" viewBox="0 0 16 16">
 <path d="M14 2L2 14" stroke="#192144" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M2 2L14 14" stroke="#192144" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>

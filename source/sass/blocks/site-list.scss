@@ -19,6 +19,12 @@
       width: 60px;
       background-color: $basic-white;
     }
+
+    &--active {
+      .site-list__link::before {
+        display: none;
+      }
+    }
   }
 }
 
